@@ -1,0 +1,22 @@
+# Dependencies and generated output
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+__pycache__/
+.venv/
+.ipynb_checkpoints/
+
+# Local configuration and secrets
+.env*
+!.env.example
+!.env.sample
+*.pem
+*.key
+.aws/
+
+# Editor, OS and debug files
+.DS_Store
+Thumbs.db
+*.log
