@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-primary":"#93cdf6","tertiary-fixed-dim":"#f4be59","inverse-surface":"#21333e","primary":"#004563","surface":"#f5faff","on-secondary-fixed":"#002114","surface-container-highest":"#d2e5f4","on-secondary":"#ffffff","on-primary":"#ffffff","inverse-on-surface":"#e3f3ff","on-surface-variant":"#40484e","tertiary-container":"#745100","surface-variant":"#d2e5f4","error":"#ba1a1a","on-tertiary-fixed":"#271900","on-secondary-fixed-variant":"#005138","primary-fixed":"#c7e7ff","on-primary-fixed-variant":"#004c6c","secondary-fixed":"#9ef4ca","secondary":"#046c4b","outline":"#71787e","surface-container":"#ddf1ff","secondary-fixed-dim":"#82d7af","surface-container-lowest":"#ffffff","outline-variant":"#c0c7ce","on-error":"#ffffff","primary-container":"#185d80","tertiary-fixed":"#ffdea9","surface-dim":"#c9ddeb","on-secondary-container":"#0f704f","on-surface":"#0a1e28","on-tertiary":"#ffffff","on-error-container":"#93000a","on-tertiary-fixed-variant":"#5e4200","surface-container-low":"#e9f5ff","on-tertiary-container":"#fcc55f","secondary-container":"#9bf1c7","tertiary":"#563b00","background":"#f5faff","error-container":"#ffdad6","on-background":"#0a1e28","surface-bright":"#f5faff","on-primary-container":"#9ad5fd","surface-tint":"#236487","primary-fixed-dim":"#93cdf6","on-primary-fixed":"#001e2e","surface-container-high":"#d7ebf9"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-mobile":"1rem",margin:"2rem",gutter:"1.5rem","space-xl":"2rem","space-sm":"0.5rem","space-xs":"0.25rem","margin-mobile":"1rem","space-md":"1rem","space-lg":"1.5rem","space-2xl":"3rem"},fontFamily:{"headline-md":["Be Vietnam Pro"],"body-lg":["Be Vietnam Pro"],"body-sm":["Be Vietnam Pro"],"pinyin-display":["Be Vietnam Pro"],"headline-sm":["Be Vietnam Pro"],"hanzi-card":["Noto Sans SC"],"display-lg-mobile":["Be Vietnam Pro"],"label-md":["Be Vietnam Pro"],"hanzi-hero":["Noto Sans SC"],"body-md":["Be Vietnam Pro"],"headline-lg-mobile":["Be Vietnam Pro"],"label-sm":["Be Vietnam Pro"],"headline-lg":["Be Vietnam Pro"],"hanzi-inline":["Noto Sans SC"],"display-lg":["Be Vietnam Pro"]},fontSize:{"headline-md":["24px",{lineHeight:"32px",fontWeight:"600"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}],"pinyin-display":["18px",{lineHeight:"24px",letterSpacing:"0.02em",fontWeight:"500"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"hanzi-card":["40px",{lineHeight:"48px",fontWeight:"500"}],"display-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-md":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"hanzi-hero":["72px",{lineHeight:"84px",fontWeight:"500"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",fontWeight:"600"}],"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"600"}],"hanzi-inline":["20px",{lineHeight:"28px",fontWeight:"500"}],"display-lg":["44px",{lineHeight:"52px",letterSpacing:"-0.02em",fontWeight:"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-[200px]"><a class="group flex items-center justify-center w-10 h-10 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface-variant hover:text-on-surface" data-path="dashboard-overview" href="#" title="Thoát luyện tập"><span class="material-symbols-outlined text-[20px]">close</span></a><div class="flex items-center gap-space-xs"><img alt="logo.jpg" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vsh2LAS9uBPlaa3Xs2R0g6GcBsIpGZKk7ZVSkNHpGee_C6USFkNEaArq6SuvHQhj96dYoUCWPmC3RbD9IZnogeDkq9mUHlqLAdQSofXiohdm3NWzM_pPkinLFwgsYC3kAbKBs4fsppC5r3wMJ-IVdSC4rYeeRTDsKKKqiDjCdU0e7Whn3olkAgjfHXqBWaPON2ddVMlYcj6pLuwrWyOcd8GWNgIBMxZJdiwv7aIzLJN7BLlPOG2Kzm-TWviFs-Y5CFf2Ft053Jjg"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">XUEYAN</span><span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">HSK 3</span></div></div><div class="flex-1 max-w-xl mx-auto flex flex-col items-center gap-1.5 px-space-md"><div class="w-full flex items-center justify-between font-label-sm text-label-sm"><div class="flex items-center gap-1 text-on-surface"><span class="font-semibold text-primary">L04:</span><span>Từ vựng trọng tâm</span><span class="text-outline font-normal mx-1">•</span><span class="text-on-surface-variant font-medium">Câu 4/10</span></div><div class="flex items-center gap-3"><div class="flex items-center gap-1 text-secondary font-medium"><span class="material-symbols-outlined text-[16px]">verified</span><span>100%</span></div><div class="flex items-center gap-1 text-tertiary-container font-semibold"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">local_fire_department</span><span>3 liên tiếp</span></div></div></div><div class="w-full h-2 rounded-full bg-surface-container overflow-hidden"><div class="h-full rounded-full bg-secondary transition-all duration-300" style="width: 40%;"></div></div></div><div class="flex items-center justify-end gap-space-md min-w-[200px]"><div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm"><span class="material-symbols-outlined text-[15px]">keyboard</span><span>1-4, Enter</span></div><button class="w-9 h-9 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Cài đặt âm thanh" type="button"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><button class="w-9 h-9 rounded-xl flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Phím tắt" type="button"><span class="material-symbols-outlined text-[20px]">help_outline</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida/AEtjO1WExU2vlwf7wNywyoHaaKFB-F8BryiE08_7j_K51ImKDU_N8dMJiQvwwh8z6iEa7qGb_cXE3SnFCub-WYBMNoECriBXU1r72NgKUORpsMyQUtVcwUgL0tjxOGVuqCP3kD3mAohdmVkNQL_J1_LydeSkv-PXJfTY-nSRG2PUoCTdwpxt7ur19vHq9X_oFz_8sdOp5CFQLSb5i7EkhEzQFlLN2s7cetd2y9Io9UhZ7-G6aW0wxcMr5V0Y86o"/></div></div></header><main class="w-full pt-16 bg-surface"><div class="max-w-3xl mx-auto px-gutter-mobile md:px-gutter py-space-xl flex flex-col justify-center min-h-[calc(100vh-4rem-3.5rem)]"><div class="flex flex-col w-full">
+<div class="w-full flex flex-col gap-space-lg">
+<!-- State Switcher Control (Interactive Demo Bar) -->
+<section class="w-full bg-surface-container-low rounded-xl p-space-sm flex flex-wrap items-center justify-between gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm px-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">tune</span>
+<span class="font-semibold text-on-surface">Mô phỏng trạng thái bài tập:</span>
+</div>
+<div class="flex items-center gap-1.5 p-1 bg-surface rounded-lg">
+<button class="state-tab-btn active px-3 py-1.5 rounded-md font-label-sm text-label-sm transition-all bg-primary text-on-primary shadow-sm font-semibold" id="btn-state-selecting" onclick="switchState('selecting')">
+          1. Đang làm bài
+        </button>
+<button class="state-tab-btn px-3 py-1.5 rounded-md font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" id="btn-state-correct" onclick="switchState('correct')">
+          2. Trả lời Đúng (+10)
+        </button>
+<button class="state-tab-btn px-3 py-1.5 rounded-md font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container" id="btn-state-wrong" onclick="switchState('wrong')">
+          3. Trả lời Sai (Giải thích)
+        </button>
+</div>
+</section>
+<!-- Context Meta & Academic Score Header -->
+<section class="w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md bg-surface-container-lowest rounded-2xl p-space-md shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+            Luyện tập từ vựng
+          </span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• Bài 01: Chào hỏi &amp; Làm quen</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Chọn nghĩa chính xác của từ</span>
+</div>
+</div>
+<!-- Objective Practice Metrics (Distinct from SRS intervals) -->
+<div class="flex items-center gap-space-md self-stretch md:self-auto bg-surface-container-low px-space-md py-space-sm rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Điểm bài tập</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary font-bold" id="score-display">30</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 30 điểm</span>
+</div>
+</div>
+<div class="h-8 w-px bg-surface-container-highest"></div>
+<div class="flex items-center gap-1.5 text-secondary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span>3 câu liên tiếp 🎯</span>
+</div>
+</div>
+</section>
+<!-- Main Study Card: Vocabulary Flash Prompt -->
+<div class="w-full bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col items-center text-center relative overflow-hidden">
+<!-- Background Calligraphic Watermark Accent -->
+<div class="absolute -right-6 -bottom-8 select-none pointer-events-none opacity-[0.03] text-primary font-hanzi-hero text-[180px] leading-none">
+        友
+      </div>
+<!-- Sino-Vietnamese (Hán-Việt) Etymology Capsule -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-medium mb-space-md">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>Âm Hán-Việt: <strong>Bằng Hữu</strong></span>
+<span class="mx-1 text-outline-variant">•</span>
+<span>HSK 1</span>
+</div>
+<!-- Hero Character Display -->
+<div class="flex flex-col items-center justify-center my-space-xs">
+<h1 class="font-hanzi-hero text-hanzi-hero text-on-surface tracking-wide drop-shadow-sm select-all">
+          朋友
+        </h1>
+<div class="flex items-center gap-space-sm mt-1">
+<span class="font-pinyin-display text-pinyin-display text-primary-container font-medium tracking-wide">
+            péngyou
+          </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+            Thanh 2 + Thanh nhẹ
+          </span>
+</div>
+</div>
+<!-- Pronunciation Audio Action Trigger -->
+<div class="mt-space-md flex items-center gap-space-sm">
+<button class="group inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md transition-all active:scale-95 shadow-sm" id="audio-btn" onclick="playAudioSimulation()">
+<span class="material-symbols-outlined text-[20px] text-primary group-hover:scale-110 transition-transform">volume_up</span>
+<span class="font-semibold">Phát âm</span>
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm shadow-xs">Space</kbd>
+</button>
+<button class="w-9 h-9 rounded-xl flex items-center justify-center bg-surface-container-low hover:bg-surface-container text-on-surface-variant transition-colors" title="Xem chi tiết các nét viết">
+<span class="material-symbols-outlined text-[18px]">gesture</span>
+</button>
+</div>
+</div>
+<!-- 4 Structured Answer Options (2x2 Grid with Hotkeys 1-4) -->
+<div class="w-full">
+<div class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-space-sm font-semibold flex items-center justify-between">
+<span>Chọn một phương án đúng:</span>
+<span class="hidden md:inline text-outline text-[12px]">Dùng phím số [1 - 4] trên bàn phím</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Option 1 (Correct) -->
+<button class="answer-card group text-left p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-low transition-all shadow-sm flex items-center justify-between cursor-pointer" id="opt-1" onclick="selectOption(1)">
+<div class="flex items-center gap-space-md">
+<div class="hotkey-badge w-8 h-8 rounded-xl bg-surface-container text-primary font-label-md text-label-md font-bold flex items-center justify-center transition-colors">
+              1
+            </div>
+<div class="flex flex-col">
+<span class="option-title font-headline-sm text-headline-sm text-on-surface font-medium transition-colors">Bạn; bạn bè</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Người quen biết thân thiết</span>
+</div>
+</div>
+<div class="status-indicator w-6 h-6 rounded-full bg-surface-container flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant opacity-0">check</span>
+</div>
+</button>
+<!-- Option 2 -->
+<button class="answer-card group text-left p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-low transition-all shadow-sm flex items-center justify-between cursor-pointer" id="opt-2" onclick="selectOption(2)">
+<div class="flex items-center gap-space-md">
+<div class="hotkey-badge w-8 h-8 rounded-xl bg-surface-container text-primary font-label-md text-label-md font-bold flex items-center justify-center transition-colors">
+              2
+            </div>
+<div class="flex flex-col">
+<span class="option-title font-headline-sm text-headline-sm text-on-surface font-medium transition-colors">Thầy cô giáo</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Người giảng dạy (老师 lǎoshī)</span>
+</div>
+</div>
+<div class="status-indicator w-6 h-6 rounded-full bg-surface-container flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant opacity-0">check</span>
+</div>
+</button>
+<!-- Option 3 -->
+<button class="answer-card group text-left p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-low transition-all shadow-sm flex items-center justify-between cursor-pointer" id="opt-3" onclick="selectOption(3)">
+<div class="flex items-center gap-space-md">
+<div class="hotkey-badge w-8 h-8 rounded-xl bg-surface-container text-primary font-label-md text-label-md font-bold flex items-center justify-center transition-colors">
+              3
+            </div>
+<div class="flex flex-col">
+<span class="option-title font-headline-sm text-headline-sm text-on-surface font-medium transition-colors">Gia đình; người thân</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Các thành viên trong nhà (家人)</span>
+</div>
+</div>
+<div class="status-indicator w-6 h-6 rounded-full bg-surface-container flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant opacity-0">check</span>
+</div>
+</button>
+<!-- Option 4 -->
+<button class="answer-card group text-left p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-low transition-all shadow-sm flex items-center justify-between cursor-pointer" id="opt-4" onclick="selectOption(4)">
+<div class="flex items-center gap-space-md">
+<div class="hotkey-badge w-8 h-8 rounded-xl bg-surface-container text-primary font-label-md text-label-md font-bold flex items-center justify-center transition-colors">
+              4
+            </div>
+<div class="flex flex-col">
+<span class="option-title font-headline-sm text-headline-sm text-on-surface font-medium transition-colors">Đồng nghiệp; bạn học</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Người cùng cơ quan (同事)</span>
+</div>
+</div>
+<div class="status-indicator w-6 h-6 rounded-full bg-surface-container flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant opacity-0">check</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Feedback Action Dock: Dynamic based on Selected State -->
+<div class="w-full rounded-2xl p-space-lg shadow-md transition-all duration-300 bg-surface-container" id="feedback-container">
+<!-- Default Idle / Selecting Action Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md" id="state-selecting-view">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[20px] text-primary">lightbulb</span>
+<span>Chọn đáp án bạn cho là chính xác nhất hoặc nhấn [1, 2, 3, 4]</span>
+</div>
+<button class="w-full sm:w-auto px-6 py-3 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center justify-center gap-2" onclick="confirmAnswer()">
+<span>Kiểm tra đáp án</span>
+<kbd class="px-1.5 py-0.5 rounded bg-surface-tint text-on-primary font-label-sm text-label-sm">Enter ↵</kbd>
+</button>
+</div>
+<!-- Correct Answer State Card (Green Academic Scholarly Tone) -->
+<div class="hidden flex-col gap-space-md" id="state-correct-view">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm border-b border-secondary/15">
+<div class="flex items-center gap-space-sm text-secondary font-headline-md text-headline-md font-bold">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-secondary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<span>Chính xác! (+10 điểm)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+              Độ chính xác: 100%
+            </span>
+</div>
+</div>
+<div class="bg-surface-container-lowest/80 rounded-xl p-space-md flex flex-col gap-space-xs text-on-surface">
+<div class="flex items-baseline gap-2">
+<span class="font-hanzi-inline text-hanzi-inline font-bold text-primary">朋友 (péngyou)</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">có nghĩa là: <strong>Bạn; bạn bè</strong>.</span>
+</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm mt-1">
+<strong>Ví dụ ngữ cảnh:</strong> 他是我的好朋友。 <span class="text-primary italic">(Tā shì wǒ de hǎo péngyou - Anh ấy là người bạn tốt của tôi.)</span>
+</div>
+</div>
+<div class="flex items-center justify-end pt-space-xs">
+<button class="w-full sm:w-auto px-6 py-3 rounded-xl bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center justify-center gap-2" onclick="nextQuestion()">
+<span>Tiếp tục câu tiếp theo</span>
+<kbd class="px-1.5 py-0.5 rounded bg-on-secondary-fixed-variant/40 text-on-secondary font-label-sm text-label-sm">Enter ↵</kbd>
+</button>
+</div>
+</div>
+<!-- Incorrect Answer State Card (Constructive Amber/Red Explanatory) -->
+<div class="hidden flex-col gap-space-md" id="state-wrong-view">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm border-b border-error/15">
+<div class="flex items-center gap-space-sm text-error font-headline-md text-headline-md font-bold">
+<div class="w-10 h-10 rounded-xl bg-error-container text-error flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[24px]">cancel</span>
+</div>
+<span>Chưa chính xác!</span>
+</div>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+            Từ này sẽ lặp lại vào cuối lượt luyện
+          </span>
+</div>
+<div class="bg-surface-container-lowest/90 rounded-xl p-space-md flex flex-col gap-space-xs text-on-surface">
+<div class="text-error font-semibold font-body-md text-body-md">
+            Đáp án đúng là: 1. Bạn; bạn bè
+          </div>
+<p class="text-on-surface-variant font-body-sm text-body-sm mt-1">
+<strong>Giải thích:</strong> <span class="font-hanzi-inline text-hanzi-inline text-on-surface">朋友</span> mang nghĩa bạn bè, bằng hữu thân hữu; không phải "Đồng nghiệp" (<span class="font-hanzi-inline text-hanzi-inline text-on-surface">同事</span> tóngshì) hay "Bạn học" (<span class="font-hanzi-inline text-hanzi-inline text-on-surface">同学</span> tóngxué).
+          </p>
+</div>
+<div class="flex items-center justify-end pt-space-xs">
+<button class="w-full sm:w-auto px-6 py-3 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm flex items-center justify-center gap-2" onclick="nextQuestion()">
+<span>Đã hiểu, Tiếp tục</span>
+<kbd class="px-1.5 py-0.5 rounded bg-surface-tint text-on-primary font-label-sm text-label-sm">Enter ↵</kbd>
+</button>
+</div>
+</div>
+</div>
+<!-- Reusable System Variants Showcase (Educational Modular Architecture) -->
+<div class="w-full mt-space-xl pt-space-lg border-t border-surface-container-highest flex flex-col gap-space-lg">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+<span class="font-headline-sm text-headline-sm font-bold">Các dạng bài tập tương thích cùng khung layout</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hệ thống L04 hỗ trợ chuyển đổi linh hoạt dạng câu hỏi (Listening, Drag-Drop, Fill-in) giữ nguyên thanh tiến độ và cơ chế haptic hotkey.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<!-- Variant A: Listening-Choice (Luyện nghe chọn chữ Hán) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+                Dạng A: Nghe phát âm chọn mặt chữ
+              </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">3 lượt nghe</span>
+</div>
+<!-- Audio Waveform Simulation Card -->
+<div class="mt-space-sm p-space-md rounded-xl bg-surface-container-low flex items-center gap-space-md">
+<button class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center hover:scale-105 active:scale-95 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[24px]">play_arrow</span>
+</button>
+<div class="flex-1 flex flex-col gap-1">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Nhấn để nghe âm thanh mẫu</span>
+<!-- Visual EQ bars -->
+<div class="flex items-center gap-1 h-5">
+<span class="w-1 h-3 rounded-full bg-primary/40"></span>
+<span class="w-1 h-5 rounded-full bg-primary"></span>
+<span class="w-1 h-2 rounded-full bg-primary/40"></span>
+<span class="w-1 h-4 rounded-full bg-primary/80"></span>
+<span class="w-1 h-3 rounded-full bg-primary/60"></span>
+<span class="w-1 h-5 rounded-full bg-primary"></span>
+<span class="w-1 h-2 rounded-full bg-primary/40"></span>
+<span class="w-1 h-4 rounded-full bg-primary/70"></span>
+<span class="w-1 h-3 rounded-full bg-primary/50"></span>
+<span class="w-1 h-1 rounded-full bg-primary/30"></span>
+</div>
+</div>
+</div>
+<!-- Chinese Character Mini Grid Options -->
+<div class="grid grid-cols-2 gap-2 mt-space-sm">
+<button class="p-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-center transition-colors">
+<span class="font-hanzi-inline text-hanzi-inline font-bold text-on-surface">A. 谢谢</span>
+</button>
+<button class="p-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-center transition-colors">
+<span class="font-hanzi-inline text-hanzi-inline font-bold text-on-surface">B. 再见</span>
+</button>
+<button class="p-3 rounded-xl bg-surface-container-high text-primary ring-2 ring-primary text-center transition-colors font-bold">
+<span class="font-hanzi-inline text-hanzi-inline">C. 朋友</span>
+</button>
+<button class="p-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-center transition-colors">
+<span class="font-hanzi-inline text-hanzi-inline font-bold text-on-surface">D. 你好</span>
+</button>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Lựa chọn C khớp với phát âm "péngyou"
+          </span>
+</div>
+<!-- Variant B: Sentence-Order (Sắp xếp trật tự câu) -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+                Dạng B: Sắp xếp trật tự ngữ pháp
+              </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Cú pháp HSK 1-2</span>
+</div>
+<div class="font-body-md text-body-md text-on-surface font-medium mt-1">
+              "Tôi là bạn của anh ấy."
+            </div>
+<!-- Sentence Construction Slot Dropzone -->
+<div class="min-h-[52px] p-2 rounded-xl bg-surface-container-low flex flex-wrap items-center gap-2">
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-hanzi-inline text-hanzi-inline font-bold shadow-xs">
+                我 (Wǒ)
+              </span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-hanzi-inline text-hanzi-inline font-bold shadow-xs">
+                是 (shì)
+              </span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-hanzi-inline text-hanzi-inline font-bold shadow-xs">
+                他的 (tā de)
+              </span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-hanzi-inline text-hanzi-inline font-bold shadow-xs">
+                朋友 (péngyou)
+              </span>
+<span class="px-2 py-1 text-on-surface-variant font-hanzi-inline text-hanzi-inline">。</span>
+</div>
+<!-- Available Word Bank Chips -->
+<div class="flex flex-wrap items-center gap-2 mt-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container opacity-40 cursor-not-allowed font-hanzi-inline text-hanzi-inline">
+                我
+              </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container opacity-40 cursor-not-allowed font-hanzi-inline text-hanzi-inline">
+                他的
+              </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container opacity-40 cursor-not-allowed font-hanzi-inline text-hanzi-inline">
+                是
+              </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container opacity-40 cursor-not-allowed font-hanzi-inline text-hanzi-inline">
+                朋友
+              </button>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Thứ tự đúng: S + 是 + Định ngữ + 的 + Trung tâm ngữ</span>
+<button class="text-primary hover:underline font-semibold">Tạo lại</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    let currentState = 'selecting';
+    let selectedOptionId = 1;
+
+    function resetOptionStyles() {
+      for (let i = 1; i <= 4; i++) {
+        const card = document.getElementById(`opt-${i}`);
+        if (!card) continue;
+        const badge = card.querySelector('.hotkey-badge');
+        const title = card.querySelector('.option-title');
+        const indicator = card.querySelector('.status-indicator');
+        const checkIcon = indicator.querySelector('.material-symbols-outlined');
+
+        card.className = "answer-card group text-left p-space-md rounded-2xl bg-surface-container-lowest hover:bg-surface-container-low transition-all shadow-sm flex items-center justify-between cursor-pointer";
+        badge.className = "hotkey-badge w-8 h-8 rounded-xl bg-surface-container text-primary font-label-md text-label-md font-bold flex items-center justify-center transition-colors";
+        title.className = "option-title font-headline-sm text-headline-sm text-on-surface font-medium transition-colors";
+        indicator.className = "status-indicator w-6 h-6 rounded-full bg-surface-container flex items-center justify-center transition-all";
+        checkIcon.className = "material-symbols-outlined text-[16px] text-on-surface-variant opacity-0";
+        checkIcon.innerText = "check";
+      }
+    }
+
+    function selectOption(id) {
+      if (currentState !== 'selecting') return;
+      selectedOptionId = id;
+      resetOptionStyles();
+
+      const selectedCard = document.getElementById(`opt-${id}`);
+      if (selectedCard) {
+        selectedCard.className = "answer-card group text-left p-space-md rounded-2xl bg-surface-container-low shadow-sm flex items-center justify-between cursor-pointer ring-2 ring-primary bg-primary/5";
+        const badge = selectedCard.querySelector('.hotkey-badge');
+        badge.className = "hotkey-badge w-8 h-8 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center justify-center";
+        const title = selectedCard.querySelector('.option-title');
+        title.className = "option-title font-headline-sm text-headline-sm text-primary font-bold";
+        const indicator = selectedCard.querySelector('.status-indicator');
+        indicator.className = "status-indicator w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary";
+        const checkIcon = indicator.querySelector('.material-symbols-outlined');
+        checkIcon.className = "material-symbols-outlined text-[16px] text-on-primary opacity-100";
+      }
+    }
+
+    function switchState(state) {
+      currentState = state;
+      document.querySelectorAll('.state-tab-btn').forEach(btn => {
+        btn.className = "state-tab-btn px-3 py-1.5 rounded-md font-label-sm text-label-sm transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container";
+      });
+      const activeBtn = document.getElementById(`btn-state-${state}`);
+      if (activeBtn) {
+        activeBtn.className = "state-tab-btn active px-3 py-1.5 rounded-md font-label-sm text-label-sm transition-all bg-primary text-on-primary shadow-sm font-semibold";
+      }
+
+      const selectingView = document.getElementById('state-selecting-view');
+      const correctView = document.getElementById('state-correct-view');
+      const wrongView = document.getElementById('state-wrong-view');
+      const container = document.getElementById('feedback-container');
+
+      selectingView.classList.add('hidden');
+      correctView.classList.add('hidden');
+      wrongView.classList.add('hidden');
+
+      resetOptionStyles();
+
+      if (state === 'selecting') {
+        container.className = "w-full rounded-2xl p-space-lg shadow-md transition-all duration-300 bg-surface-container";
+        selectingView.classList.remove('hidden');
+        selectOption(selectedOptionId || 1);
+      } else if (state === 'correct') {
+        container.className = "w-full rounded-2xl p-space-lg shadow-md transition-all duration-300 bg-secondary-container/30";
+        correctView.classList.remove('hidden');
+
+        // Style Option 1 as Correct
+        const opt1 = document.getElementById('opt-1');
+        opt1.className = "answer-card text-left p-space-md rounded-2xl bg-secondary-fixed/40 shadow-sm flex items-center justify-between ring-2 ring-secondary";
+        opt1.querySelector('.hotkey-badge').className = "hotkey-badge w-8 h-8 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md font-bold flex items-center justify-center";
+        opt1.querySelector('.option-title').className = "option-title font-headline-sm text-headline-sm text-secondary font-bold";
+        const indicator = opt1.querySelector('.status-indicator');
+        indicator.className = "status-indicator w-6 h-6 rounded-full bg-secondary flex items-center justify-center text-on-secondary";
+        const checkIcon = indicator.querySelector('.material-symbols-outlined');
+        checkIcon.className = "material-symbols-outlined text-[16px] text-on-secondary opacity-100";
+        checkIcon.innerText = "check";
+      } else if (state === 'wrong') {
+        container.className = "w-full rounded-2xl p-space-lg shadow-md transition-all duration-300 bg-error-container/30";
+        wrongView.classList.remove('hidden');
+
+        // Style Option 4 as Wrong Selected
+        const opt4 = document.getElementById('opt-4');
+        opt4.className = "answer-card text-left p-space-md rounded-2xl bg-error-container/40 shadow-sm flex items-center justify-between ring-2 ring-error";
+        opt4.querySelector('.hotkey-badge').className = "hotkey-badge w-8 h-8 rounded-xl bg-error text-on-error font-label-md text-label-md font-bold flex items-center justify-center";
+        opt4.querySelector('.option-title').className = "option-title font-headline-sm text-headline-sm text-error font-bold";
+        const ind4 = opt4.querySelector('.status-indicator');
+        ind4.className = "status-indicator w-6 h-6 rounded-full bg-error flex items-center justify-center text-on-error";
+        const icon4 = ind4.querySelector('.material-symbols-outlined');
+        icon4.className = "material-symbols-outlined text-[16px] text-on-error opacity-100";
+        icon4.innerText = "close";
+
+        // Show Option 1 as Highlighted Correct
+        const opt1 = document.getElementById('opt-1');
+        opt1.className = "answer-card text-left p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-between ring-2 ring-secondary/80";
+        opt1.querySelector('.hotkey-badge').className = "hotkey-badge w-8 h-8 rounded-xl bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-bold flex items-center justify-center";
+        opt1.querySelector('.option-title').className = "option-title font-headline-sm text-headline-sm text-secondary font-bold";
+      }
+    }
+
+    function confirmAnswer() {
+      if (selectedOptionId === 1) {
+        switchState('correct');
+      } else {
+        switchState('wrong');
+      }
+    }
+
+    function nextQuestion() {
+      switchState('selecting');
+    }
+
+    function playAudioSimulation() {
+      const btn = document.getElementById('audio-btn');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = `<span class="material-symbols-outlined text-[20px] text-secondary animate-pulse">graphic_eq</span><span class="font-semibold text-secondary">Đang phát...</span>`;
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+      }, 1000);
+    }
+
+    // Keyboard Shortcuts Listener [1-4], [Space], [Enter]
+    document.addEventListener('keydown', (e) => {
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+      if (e.key >= '1' && e.key <= '4') {
+        selectOption(parseInt(e.key));
+      } else if (e.code === 'Space') {
+        e.preventDefault();
+        playAudioSimulation();
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        if (currentState === 'selecting') {
+          confirmAnswer();
+        } else {
+          nextQuestion();
+        }
+      }
+    });
+
+    // Default initialization
+    selectOption(1);
+  </script>
+</div></div></main><footer class="w-full bg-surface-container-low py-3"><div class="max-w-3xl mx-auto px-gutter-mobile md:px-gutter flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span>Hệ thống Spaced Repetition (Lặp lại ngắt quãng) đang hoạt động</span></div><div class="flex items-center gap-3"><span>Tự động phát âm: Bật</span><span class="text-outline-variant">•</span><span>Hán-Việt chiết tự: Sẵn sàng</span></div></div></footer></body></html>

@@ -1,0 +1,127 @@
+[
+  {
+    "flow": "Dashboard → HSK",
+    "url": "http://127.0.0.1:3101/vocabulary",
+    "status": "clicked"
+  },
+  {
+    "flow": "HSK1 → lesson1",
+    "url": "http://127.0.0.1:3101/lessons/1",
+    "heading": "Bài 01: Chào hỏi & Làm quen",
+    "status": "clicked"
+  },
+  {
+    "flow": "learn second word → practice",
+    "url": "http://127.0.0.1:3101/lessons/1/practice?word=pengyou",
+    "status": "clicked",
+    "word": "pengyou"
+  },
+  {
+    "flow": "Practice reload + Browser Back",
+    "url": "http://127.0.0.1:3101/lessons/1",
+    "status": "clicked",
+    "note": "reload retained pengyou; Back returned lesson overview"
+  },
+  {
+    "flow": "Dashboard → review(3) → summary",
+    "url": "http://127.0.0.1:3101/review/summary?source=review&count=3",
+    "status": "clicked"
+  },
+  {
+    "flow": "review summary → Dashboard; avatar → profile → edit → profile",
+    "url": "http://127.0.0.1:3101/profile",
+    "status": "clicked"
+  },
+  {
+    "flow": "teacher profile → consultation",
+    "url": "http://127.0.0.1:3101/teachers/lan-anh",
+    "name": "Cô Vũ Lan Anh",
+    "consultation": "http://127.0.0.1:3101/teachers/lan-anh/consultation",
+    "status": "clicked"
+  },
+  {
+    "flow": "teacher profile → consultation",
+    "url": "http://127.0.0.1:3101/teachers/minh-duc",
+    "name": "Thầy Trần Minh Đức",
+    "consultation": "http://127.0.0.1:3101/teachers/minh-duc/consultation",
+    "status": "clicked"
+  },
+  {
+    "flow": "teacher profile → consultation",
+    "url": "http://127.0.0.1:3101/teachers/cam-tu",
+    "name": "Cô Hoàng Cẩm Tú",
+    "consultation": "http://127.0.0.1:3101/teachers/cam-tu/consultation",
+    "status": "clicked"
+  },
+  {
+    "flow": "teacher profile → consultation",
+    "url": "http://127.0.0.1:3101/teachers/vuong-tuan",
+    "name": "Thầy Vương Tuấn",
+    "consultation": "http://127.0.0.1:3101/teachers/vuong-tuan/consultation",
+    "status": "clicked"
+  },
+  {
+    "flow": "teacher profile → consultation",
+    "url": "http://127.0.0.1:3101/teachers/mai-phuong",
+    "name": "Cô Lê Mai Phương",
+    "consultation": "http://127.0.0.1:3101/teachers/mai-phuong/consultation",
+    "status": "clicked"
+  },
+  {
+    "flow": "teacher profile → consultation",
+    "url": "http://127.0.0.1:3101/teachers/quoc-bao",
+    "name": "Thầy Đỗ Quốc Bảo",
+    "consultation": "http://127.0.0.1:3101/teachers/quoc-bao/consultation",
+    "status": "clicked"
+  },
+  {
+    "flow": "login → register → login → forgot; submit",
+    "url": "http://127.0.0.1:3101/forgot-password",
+    "status": "clicked",
+    "api": "unavailable, correctly reported"
+  },
+  {
+    "flow": "teacher → K24 → assignments tab → review → submit",
+    "url": "http://127.0.0.1:3101/teacher/assignments/4",
+    "status": "clicked",
+    "api": "unavailable, correctly reported"
+  },
+  {
+    "flow": "mobile menu → profile → edit",
+    "url": "http://127.0.0.1:3101/profile/edit",
+    "status": "clicked",
+    "menuClosed": true
+  },
+  {
+    "flow": "HSK2 unavailable lesson + Dashboard shopping unavailable",
+    "url": "http://127.0.0.1:3101/vocabulary/hsk-2",
+    "status": "clicked",
+    "blocked": "missing lesson screen/content"
+  },
+  {
+    "flow": "dictionary pengyou → word → review → exit fallback",
+    "url": "http://127.0.0.1:3101/collection/pengyou",
+    "status": "clicked",
+    "word": "朋友"
+  },
+  {
+    "flow": "public mobile menu → teachers",
+    "url": "http://127.0.0.1:3101/teachers",
+    "status": "clicked"
+  },
+  {
+    "flow": "home start → lesson → practice(first word) → exit lesson",
+    "url": "http://127.0.0.1:3101/lessons/1",
+    "status": "clicked"
+  },
+  {
+    "flow": "learn all6 → lesson summary → lesson",
+    "url": "http://127.0.0.1:3101/lessons/1",
+    "status": "clicked"
+  },
+  {
+    "flow": "teacher mobile unavailable dialog Escape",
+    "status": "clicked",
+    "api": "missing consultation management screen"
+  }
+]

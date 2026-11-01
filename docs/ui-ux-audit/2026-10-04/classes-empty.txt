@@ -1,0 +1,40 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- banner:
+  - button "Mở menu":
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - link "Thông báo":
+    - /url: /notifications
+- main:
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Lớp học của tôi" [level=1]
+  - paragraph: Lịch học, tài liệu và nhiệm vụ trong lớp trực tuyến.
+  - button "Đang học"
+  - button "Đã hoàn thành"
+  - button "Chưa tham gia" [active] [pressed]
+  - text: 学
+  - heading "Bạn đang học theo lộ trình cá nhân?" [level=2]
+  - paragraph: Khám phá giáo viên hoặc tiếp tục tự học HSK.
+  - link "Tìm giáo viên":
+    - /url: /teachers
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- navigation "Điều hướng nhanh trên di động":
+  - link "Hôm nay":
+    - /url: /dashboard
+    - generic: Hôm nay
+  - link "Lộ trình HSK":
+    - /url: /vocabulary
+    - generic: Lộ trình HSK
+  - link "Ôn tập SRS":
+    - /url: /review
+    - generic: Ôn tập SRS
+  - link "Sổ từ":
+    - /url: /collection
+    - generic: Sổ từ
+  - link "Hồ sơ học viên":
+    - /url: /profile
+    - generic: Hồ sơ học viên
+- button "Open Next.js Dev Tools":
+- alert

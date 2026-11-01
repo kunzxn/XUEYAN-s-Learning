@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#0a1e28", "inverse-primary": "#93cdf6", "outline-variant": "#c0c7ce", "tertiary": "#563b00", "primary-fixed-dim": "#93cdf6", "surface-container-high": "#d7ebf9", "on-primary-fixed-variant": "#004c6c", "primary": "#004563", "surface-dim": "#c9ddeb", "on-background": "#0a1e28", "on-secondary": "#ffffff", "tertiary-fixed-dim": "#f4be59", "on-tertiary-fixed": "#271900", "on-primary": "#ffffff", "background": "#f5faff", "surface-container-highest": "#d2e5f4", "primary-container": "#185d80", "surface-container-low": "#e9f5ff", "surface-container-lowest": "#ffffff", "tertiary-container": "#745100", "error": "#ba1a1a", "secondary": "#046c4b", "secondary-fixed": "#9ef4ca", "on-error": "#ffffff", "surface-variant": "#d2e5f4", "on-secondary-fixed-variant": "#005138", "on-primary-container": "#9ad5fd", "surface": "#f5faff", "on-tertiary": "#ffffff", "surface-bright": "#f5faff", "on-secondary-fixed": "#002114", "primary-fixed": "#c7e7ff", "on-surface-variant": "#40484e", "tertiary-fixed": "#ffdea9", "inverse-on-surface": "#e3f3ff", "on-error-container": "#93000a", "on-tertiary-container": "#fcc55f", "inverse-surface": "#21333e", "secondary-container": "#9bf1c7", "error-container": "#ffdad6", "surface-tint": "#236487", "secondary-fixed-dim": "#82d7af", "on-secondary-container": "#0f704f", "surface-container": "#ddf1ff", "on-primary-fixed": "#001e2e", "on-tertiary-fixed-variant": "#5e4200", "outline": "#71787e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "space-xs": "0.25rem", "gutter-mobile": "1rem", "space-2xl": "3rem", "space-md": "1rem", "margin-mobile": "1rem", "gutter": "1.5rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "margin": "2rem" }, "fontFamily": { "headline-md": ["Be Vietnam Pro"], "headline-sm": ["Be Vietnam Pro"], "hanzi-hero": ["Noto Sans SC"], "body-lg": ["Be Vietnam Pro"], "pinyin-display": ["Be Vietnam Pro"], "headline-lg-mobile": ["Be Vietnam Pro"], "display-lg": ["Be Vietnam Pro"], "label-md": ["Be Vietnam Pro"], "hanzi-card": ["Noto Sans SC"], "body-sm": ["Be Vietnam Pro"], "headline-lg": ["Be Vietnam Pro"], "label-sm": ["Be Vietnam Pro"], "body-md": ["Be Vietnam Pro"], "hanzi-inline": ["Noto Sans SC"], "display-lg-mobile": ["Be Vietnam Pro"] }, "fontSize": { "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "hanzi-hero": ["72px", { "lineHeight": "84px", "fontWeight": "500" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "pinyin-display": ["18px", { "lineHeight": "24px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "display-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "hanzi-card": ["40px", { "lineHeight": "48px", "fontWeight": "500" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "hanzi-inline": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button aria-label="Quay lại" class="min-h-[44px] px-2 -ml-2 flex items-center gap-1 text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back_ios_new</span><span class="font-label-md text-label-md">Quay lại</span></button></div><div class="flex items-center gap-space-xs max-w-[45%] truncate"><img alt="logo.jpg" class="h-6 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1Vsh2LAS9uBPlaa3Xs2R0g6GcBsIpGZKk7ZVSkNHpGee_C6USFkNEaArq6SuvHQhj96dYoUCWPmC3RbD9IZnogeDkq9mUHlqLAdQSofXiohdm3NWzM_pPkinLFwgsYC3kAbKBs4fsppC5r3wMJ-IVdSC4rYeeRTDsKKKqiDjCdU0e7Whn3olkAgjfHXqBWaPON2ddVMlYcj6pLuwrWyOcd8GWNgIBMxZJdiwv7aIzLJN7BLlPOG2Kzm-TWviFs-Y5CFf2Ft053Jjg"/><h1 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Thông Báo</h1></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Cài đặt thông báo" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px]">settings</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WExU2vlwf7wNywyoHaaKFB-F8BryiE08_7j_K51ImKDU_N8dMJiQvwwh8z6iEa7qGb_cXE3SnFCub-WYBMNoECriBXU1r72NgKUORpsMyQUtVcwUgL0tjxOGVuqCP3kD3mAohdmVkNQL_J1_LydeSkv-PXJfTY-nSRG2PUoCTdwpxt7ur19vHq9X_oFz_8sdOp5CFQLSb5i7EkhEzQFlLN2s7cetd2y9Io9UhZ7-G6aW0wxcMr5V0Y86o"/></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface flex-1 min-h-0"><div class="flex flex-col w-full pb-safe">
+<!-- Sticky Sub-Action & Filter Bar -->
+<section class="sticky top-16 z-40 bg-surface/95 backdrop-blur-md px-margin-mobile pt-space-sm pb-space-sm flex flex-col gap-space-sm shadow-sm">
+<!-- Unread Summary & Mark All Read Action -->
+<div class="flex items-center justify-between min-w-0">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="inline-flex w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate" id="unread-counter-label">3 thông báo chưa đọc</span>
+</div>
+<button class="flex items-center gap-1 text-primary hover:text-primary-container px-2 py-1.5 rounded-lg active:scale-95 transition-all text-left" id="mark-all-read-btn">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span class="font-label-sm text-label-sm font-semibold whitespace-nowrap">Đánh dấu đã đọc</span>
+</button>
+</div>
+<!-- Scrollable Horizontal Filter Chips -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+<button class="filter-chip active flex-shrink-0 px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-medium shadow-sm transition-all" data-category="all">
+        Tất cả (8)
+      </button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-medium transition-all" data-category="study">
+        Học tập (3)
+      </button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-medium transition-all" data-category="class">
+        Lớp học (3)
+      </button>
+<button class="filter-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-medium transition-all" data-category="account">
+        Tài khoản (2)
+      </button>
+</div>
+</section>
+<!-- Notification Feed Content -->
+<div class="flex flex-col px-margin-mobile pt-space-md gap-space-lg">
+<!-- SECTION: HÔM NAY -->
+<div class="flex flex-col gap-space-sm" id="section-today">
+<div class="flex items-center justify-between px-1">
+<h2 class="font-label-sm text-label-sm font-bold tracking-wider text-on-surface-variant uppercase flex items-center gap-1.5">
+<span>Hôm nay</span>
+<span class="inline-block px-1.5 py-0.5 rounded-full bg-surface-container-highest text-[10px] font-semibold text-primary">3 mới</span>
+</h2>
+<span class="font-label-sm text-label-sm text-outline">Thứ tư, 23/10</span>
+</div>
+<!-- Card 1: Học tập (Chưa đọc) -->
+<article class="notification-item unread relative flex flex-col bg-surface-container-lowest rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow" data-card-category="study">
+<!-- Accent stripe on the left -->
+<div class="absolute left-0 top-3 bottom-3 w-1 bg-primary rounded-r-full"></div>
+<div class="flex items-start gap-3">
+<!-- Icon slot with tone indicator ring -->
+<div class="relative flex-shrink-0 mt-0.5">
+<div class="w-11 h-11 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">school</span>
+</div>
+<span class="absolute -top-1 -right-1 w-3 h-3 bg-primary rounded-full ring-2 ring-surface-container-lowest"></span>
+</div>
+<!-- Main meta & title -->
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1 mb-1">
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-label-sm text-label-sm font-bold text-primary truncate">Ôn tập SRS</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-outline flex-shrink-0">10 phút trước</span>
+</div>
+<span class="unread-pill inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[11px] font-bold tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Chưa đọc
+              </span>
+</div>
+<h3 class="font-headline-sm text-body-md text-on-surface font-semibold mb-1 leading-snug">
+              Nhắc nhở ôn tập Spaced Repetition
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3 leading-relaxed">
+<span class="font-medium text-on-surface">15 từ vựng</span> cần ôn hôm nay (<span class="font-hanzi-inline font-medium text-primary">学习, 朋友, 谢谢...</span>) theo chu kỳ giãn cách Ebbinghaus.
+            </p>
+<!-- Action button -->
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold active:translate-y-0.5 transition-transform shadow-sm" href="#study-session">
+<span>Bắt đầu ôn tập</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 2: Lớp học - Cô Lan Anh (Chưa đọc) -->
+<article class="notification-item unread relative flex flex-col bg-surface-container-lowest rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow" data-card-category="class">
+<div class="absolute left-0 top-3 bottom-3 w-1 bg-secondary rounded-r-full"></div>
+<div class="flex items-start gap-3">
+<!-- Avatar slot with role badge -->
+<div class="relative flex-shrink-0 mt-0.5">
+<img alt="Cô Lan Anh" class="w-11 h-11 rounded-xl object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1XYdNwqHAB7XhdabYfepPVMJiQYbcZ-hP4Do0cM9FMfMEf3F2eGFCiJjg0IEMBRo9TkF164-uOpXRq676Oik--YH3zKDTl31xVsRwGKJy3WAjYY_E9jolpdQaXclYvRllT2P0Zfz602KxZmLuzwcZvtxwj9rlkysH3kxwm26IFcrVHpTq1yuv7qufoMq2z36w-31NpFGRQDrgEcbxZ3e4CFHHOPxFol6gYV_uwVNxheZDiE9tfzifM9Srw"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center ring-2 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-[12px]">school</span>
+</div>
+<span class="absolute -top-1 -left-1 w-3 h-3 bg-secondary rounded-full ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1 mb-1">
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-label-sm text-label-sm font-bold text-secondary truncate">Bài tập • Cô Lan Anh</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-outline flex-shrink-0">1 giờ trước</span>
+</div>
+<span class="unread-pill inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[11px] font-bold tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Chưa đọc
+              </span>
+</div>
+<h3 class="font-headline-sm text-body-md text-on-surface font-semibold mb-1 leading-snug">
+              Đã có nhận xét bài phát âm Bài 2
+            </h3>
+<div class="bg-surface-container-low rounded-lg p-2.5 mb-3">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] font-bold">Điểm 9.5/10</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Xuất sắc</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed">
+                “Âm cuốn lưỡi zh, ch rất chuẩn. Chú ý thanh 4 dứt khoát hơn nhé Hùng!”
+              </p>
+</div>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-primary hover:bg-surface-container-highest font-label-sm text-label-sm font-semibold active:translate-y-0.5 transition-all" href="#feedback-detail">
+<span>Xem nhận xét &amp; điểm số</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 3: Lớp học - Phòng học mới (Chưa đọc) -->
+<article class="notification-item unread relative flex flex-col bg-surface-container-lowest rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow" data-card-category="class">
+<div class="absolute left-0 top-3 bottom-3 w-1 bg-tertiary-fixed-dim rounded-r-full"></div>
+<div class="flex items-start gap-3">
+<div class="relative flex-shrink-0 mt-0.5">
+<div class="w-11 h-11 rounded-xl bg-tertiary-fixed/40 flex items-center justify-center text-tertiary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">event_upcoming</span>
+</div>
+<span class="absolute -top-1 -right-1 w-3 h-3 bg-tertiary rounded-full ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1 mb-1">
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-label-sm text-label-sm font-bold text-tertiary truncate">Lớp HSK 2</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-outline flex-shrink-0">3 giờ trước</span>
+</div>
+<span class="unread-pill inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[11px] font-bold tracking-wide">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Chưa đọc
+              </span>
+</div>
+<h3 class="font-headline-sm text-body-md text-on-surface font-semibold mb-1 leading-snug">
+              Cập nhật phòng học trực tuyến mới
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3 leading-relaxed">
+              Buổi học <strong class="text-on-surface">19:30 ngày mai</strong> chuyển sang phòng học mới. Vui lòng kiểm tra link lớp học trước 15 phút.
+            </p>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold active:translate-y-0.5 transition-all" href="#room-details">
+<span>Chi tiết phòng học</span>
+<span class="material-symbols-outlined text-[16px]">meeting_room</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<!-- SECTION: TRƯỚC ĐÓ -->
+<div class="flex flex-col gap-space-sm" id="section-earlier">
+<div class="flex items-center justify-between px-1">
+<h2 class="font-label-sm text-label-sm font-bold tracking-wider text-on-surface-variant uppercase">
+          Trước đó
+        </h2>
+<span class="font-label-sm text-label-sm text-outline">Đã xem</span>
+</div>
+<!-- Card 4: Học tập - Hoàn thành 50% HSK 1 (Đã đọc) -->
+<article class="notification-item flex flex-col bg-surface-container-low/70 rounded-xl p-4 transition-all" data-card-category="study">
+<div class="flex items-start gap-3">
+<div class="flex-shrink-0 mt-0.5">
+<div class="w-11 h-11 rounded-xl bg-surface-container-highest flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[24px]">emoji_events</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1 mb-1">
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant truncate">Tiến độ học tập</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-outline flex-shrink-0">Hôm qua</span>
+</div>
+<span class="inline-flex items-center gap-1 text-outline font-label-sm text-[11px] font-medium">
+<span class="material-symbols-outlined text-[14px]">done</span>
+                Đã đọc
+              </span>
+</div>
+<h3 class="font-headline-sm text-body-md text-on-surface font-semibold mb-1 leading-snug">
+              Chúc mừng! Hoàn thành 50% HSK 1 🎉
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2 leading-relaxed">
+              Bạn đã đạt mốc <strong class="text-on-surface">75/150</strong> từ vựng cốt lõi và chuỗi <strong class="text-tertiary">18 ngày streak</strong> học liên tục.
+            </p>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-semibold hover:underline" href="#progress">
+<span>Xem tiến độ học tập</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 5: Tài khoản - Bảo mật (Đã đọc) -->
+<article class="notification-item flex flex-col bg-surface-container-low/70 rounded-xl p-4 transition-all" data-card-category="account">
+<div class="flex items-start gap-3">
+<div class="flex-shrink-0 mt-0.5">
+<div class="w-11 h-11 rounded-xl bg-surface-container-highest flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[24px]">shield</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1 mb-1">
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface-variant truncate">Bảo mật tài khoản</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-outline flex-shrink-0">2 ngày trước</span>
+</div>
+<span class="inline-flex items-center gap-1 text-outline font-label-sm text-[11px] font-medium">
+<span class="material-symbols-outlined text-[14px]">done</span>
+                Đã đọc
+              </span>
+</div>
+<h3 class="font-headline-sm text-body-md text-on-surface font-semibold mb-1 leading-snug">
+              Đăng nhập mới từ macOS
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2 leading-relaxed">
+              Tài khoản vừa đăng nhập từ Chrome trên máy tính Mac tại <span class="text-on-surface font-medium">Hà Nội, Việt Nam</span>.
+            </p>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-semibold hover:underline" href="#security">
+<span>Bảo mật &amp; Thiết bị</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<!-- Empty State View Mode (Displayed dynamically or when filtered empty) -->
+<div class="flex flex-col items-center justify-center text-center p-6 bg-surface-container-low rounded-2xl gap-3" id="all-caught-up-card">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">notifications_paused</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1">
+          Bạn đã xem hết thông báo
+        </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mx-auto">
+          Không có thông báo mới nào cần xử lý lúc này. Hãy duy trì nhịp học hôm nay!
+        </p>
+</div>
+<a class="mt-1 inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-surface-container-highest text-primary font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors" href="#today-focus">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span>Quay về trang Hôm nay</span>
+</a>
+</div>
+<!-- Footer Quick Link -->
+<div class="flex items-center justify-center py-4 mb-4">
+<a class="inline-flex items-center gap-1.5 text-on-surface-variant hover:text-primary font-label-sm text-label-sm font-medium transition-colors" href="#notification-settings">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Tùy chỉnh thông báo trong Cài đặt</span>
+</a>
+</div>
+</div>
+</div>
+<script>
+  // Filter chips functionality
+  const chips = document.querySelectorAll('.filter-chip');
+  const cards = document.querySelectorAll('.notification-item');
+  const todaySection = document.getElementById('section-today');
+  const earlierSection = document.getElementById('section-earlier');
+
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => {
+        c.classList.remove('active', 'bg-primary', 'text-on-primary');
+        c.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      });
+      chip.classList.add('active', 'bg-primary', 'text-on-primary');
+      chip.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+
+      const category = chip.getAttribute('data-category');
+
+      let visibleToday = 0;
+      let visibleEarlier = 0;
+
+      cards.forEach(card => {
+        const cardCat = card.getAttribute('data-card-category');
+        const matches = (category === 'all' || cardCat === category);
+        
+        if (matches) {
+          card.classList.remove('hidden');
+          if (card.closest('#section-today')) visibleToday++;
+          if (card.closest('#section-earlier')) visibleEarlier++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (todaySection) {
+        todaySection.style.display = visibleToday > 0 ? 'flex' : 'none';
+      }
+      if (earlierSection) {
+        earlierSection.style.display = visibleEarlier > 0 ? 'flex' : 'none';
+      }
+    });
+  });
+
+  // Mark all as read micro-interaction
+  const markAllBtn = document.getElementById('mark-all-read-btn');
+  const counterLabel = document.getElementById('unread-counter-label');
+
+  if (markAllBtn) {
+    markAllBtn.addEventListener('click', () => {
+      const unreadCards = document.querySelectorAll('.notification-item.unread');
+      unreadCards.forEach(card => {
+        card.classList.remove('unread');
+        // change background subtly to read state
+        card.classList.remove('bg-surface-container-lowest', 'shadow-sm');
+        card.classList.add('bg-surface-container-low/70');
+        
+        // Remove left colored bar
+        const bar = card.querySelector('.absolute.left-0');
+        if (bar) bar.style.display = 'none';
+
+        // Update badge to "Đã đọc"
+        const badge = card.querySelector('.unread-pill');
+        if (badge) {
+          badge.className = 'inline-flex items-center gap-1 text-outline font-label-sm text-[11px] font-medium';
+          badge.innerHTML = '<span class="material-symbols-outlined text-[14px]">done</span> Đã đọc';
+        }
+      });
+
+      if (counterLabel) {
+        counterLabel.textContent = '0 thông báo chưa đọc';
+      }
+      markAllBtn.classList.add('opacity-40', 'pointer-events-none');
+    });
+  }
+</script></main></body></html>

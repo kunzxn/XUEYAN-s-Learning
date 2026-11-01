@@ -1,0 +1,67 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- complementary "Menu điều hướng":
+  - link "XUEYAN Không gian giảng viên":
+    - /url: /
+    - text: XUEYAN
+    - generic: Không gian giảng viên
+  - generic: Không gian sư phạm
+  - navigation "Điều hướng giảng viên":
+    - link "Tổng quan":
+      - /url: /teacher
+      - text: Tổng quan
+    - link "Lớp học":
+      - /url: /teacher/classes/hsk2-k24
+      - text: Lớp học
+    - link "Bài cần chấm":
+      - /url: /teacher/assignments/4
+      - text: Bài cần chấm
+    - button "Yêu cầu tư vấn · chưa khả dụng":
+      - text: Yêu cầu tư vấn · chưa khả dụng
+    - link "Hồ sơ sư phạm":
+      - /url: /teacher/profile
+      - text: Hồ sơ sư phạm
+  - link "Chế độ học viên":
+    - /url: /dashboard
+  - link "Trợ giúp học tập":
+    - /url: /help
+  - link "Cài đặt cá nhân":
+    - /url: /settings
+    - text: Cài đặt cá nhân
+- banner:
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - text: 7 ngày
+  - link "Thông báo":
+    - /url: /notifications
+  - link "Hồ sơ":
+    - /url: /teacher/profile
+    - text: LA
+- main:
+  - link "← Không gian giảng viên":
+    - /url: /teacher
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "HSK 2 Cấp tốc K24" [level=1]
+  - paragraph: Ứng dụng giao tiếp & Ôn luyện chứng chỉ · T3–T5 · 19:30–21:00
+  - button "+ Tạo bài tập mới"
+  - button "Tải tài liệu"
+  - button "Gửi thông báo"
+  - paragraph: Tiến độ bài giảng
+  - paragraph: 14/24
+  - paragraph: Bài tập cần chấm
+  - paragraph: "6"
+  - paragraph: Chuyên cần
+  - paragraph: 94,2%
+  - button "Lịch trình & Buổi học" [pressed]
+  - button "Bài tập & Chấm bài"
+  - button "Danh sách học viên"
+  - button "Kho tài liệu"
+  - generic: Buổi học sắp tới · mẫu
+  - 'heading "Buổi 15: Ăn uống & Mua sắm" [level=2]'
+  - paragraph: 第十五课：在饭馆与去市场买东西
+  - paragraph: "Hán tự nòng cốt: 买 贵 钱 便 宜"
+  - button "Vào phòng học (chưa kết nối)"
+  - button "Điểm danh"
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- button "Open Next.js Dev Tools":

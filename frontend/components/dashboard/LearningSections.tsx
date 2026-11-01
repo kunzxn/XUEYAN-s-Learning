@@ -8,7 +8,7 @@ const pathways = [
     level: "HSK 1 - 2",
     length: "8 - 12 tuần",
     title: "Khởi đầu vững chắc & Phát âm Pinyin",
-    description: "Nắm vững 300 - 500 từ vựng cốt lõi, hoàn thiện chuẩn hóa bảng chữ cái ngữ âm và mẫu câu giao tiếp căn bản.",
+    description: "Từ vựng nền tảng và Pinyin cho người mới.",
     points: ["Chuẩn 21 thanh mẫu, 36 vận mẫu", "100 bộ thủ chữ Hán thông dụng"],
     tone: "levelBlue",
   },
@@ -16,7 +16,7 @@ const pathways = [
     level: "HSK 3",
     length: "12 - 16 tuần",
     title: "Giao tiếp độc lập & Đa ngữ cảnh",
-    description: "600 từ vựng mở rộng, tự tin trò chuyện công việc, du lịch, mua sắm và sinh hoạt đời sống hàng ngày.",
+    description: "Mở rộng từ vựng giao tiếp hằng ngày.",
     points: ["Cấu trúc ngữ pháp liên kết câu", "Viết đoạn văn ngắn 100 chữ"],
     tone: "levelGreen",
   },
@@ -24,7 +24,7 @@ const pathways = [
     level: "HSK 4 - 5",
     length: "24 - 32 tuần",
     title: "Thấu suốt văn bản & Thảo luận sâu",
-    description: "1200+ từ vựng, đọc hiểu tin tức, bài luận, phản xạ nghe nói chuyên nghiệp và diễn đạt ý niệm trừu tượng.",
+    description: "Mở rộng vốn từ cho đọc hiểu và thảo luận.",
     points: ["Kỹ năng đọc lướt & bắt ý chính", "Viết bài luận nghị luận xã hội"],
     tone: "levelSlate",
   },
@@ -32,7 +32,7 @@ const pathways = [
     level: "HSK 6 & 7-9",
     length: "Chuyên sâu",
     title: "Học thuật, Thương mại & Biên phiên dịch",
-    description: "Chinh phục chữ Hán cao cấp, dịch thuật, văn bản học thuật và tìm hiểu chiều sâu văn hóa truyền thống Á Đông.",
+    description: "Khám phá vốn từ học thuật và chuyên ngành.",
     points: ["Hán ngữ thương mại & đàm phán", "Nền tảng thi tuyển học bổng"],
     tone: "levelGold",
   },
@@ -42,21 +42,21 @@ const steps = [
   {
     number: "01",
     title: "Khám phá qua gốc Hán - Việt",
-    description: "Tận dụng nét tương đồng ngữ nghĩa giữa tiếng Việt và tiếng Hán để hiểu cội nguồn từng chữ, thay vì ghi nhớ máy móc.",
+    description: "Liên hệ từ mới với những kiến thức quen thuộc.",
     detail: "Phân tích hình thanh & hội ý",
     Icon: BookOpenText,
   },
   {
     number: "02",
     title: "Học bài ngắn 15 phút mỗi ngày",
-    description: "Bài học cô đọng gồm phát âm chuẩn, thứ tự nét viết tương tác và ứng dụng ngay vào ngữ cảnh giao tiếp đời sống.",
+    description: "Đọc chữ Hán, nghe phát âm và tự kiểm tra.",
     detail: "Luyện nét Mễ tự cách",
     Icon: Pencil,
   },
   {
     number: "03",
     title: "Ôn tập đúng chu kỳ Spaced Repetition",
-    description: "Lịch ôn tập nhắc lại từ vựng theo từng phiên để củng cố trí nhớ và duy trì nhịp học đều đặn.",
+    description: "Tự đánh giá để lên lịch ôn tiếp theo.",
     detail: "Theo dõi tiến độ ghi nhớ",
     Icon: RotateCw,
   },
@@ -70,12 +70,12 @@ export function HskPathways() {
           <div className={styles.sectionHeading}>
             <span className={styles.eyebrow}>Lộ trình học chuẩn hóa</span>
             <h2>Lộ trình học theo chuẩn HSK 3.0</h2>
-            <p>Thiết kế mạch lạc từ sơ cấp đến cao cấp, tập trung phản xạ tự nhiên và hiểu sâu ngữ nghĩa thông qua ngữ nguyên Hán - Việt.</p>
+            <p>Từ sơ cấp đến nâng cao. Chọn cấp phù hợp để học.</p>
           </div>
-          <Link className={styles.textLink} href="/vocabulary">Toàn bộ 6 cấp độ chuyên sâu <ArrowRight size={17} aria-hidden="true" /></Link>
+          <Link className={styles.textLink} href="/vocabulary">Xem 7 nhóm HSK <ArrowRight size={17} aria-hidden="true" /></Link>
         </div>
         <div className={styles.pathwayGrid}>
-          {pathways.map((pathway) => (
+          {pathways.map((pathway, index) => (
             <article className={styles.pathwayCard} key={pathway.level}>
               <div>
                 <div className={styles.pathwayMeta}>
@@ -88,7 +88,7 @@ export function HskPathways() {
                   {pathway.points.map((point) => <li key={point}><CheckCircle2 size={16} aria-hidden="true" />{point}</li>)}
                 </ul>
               </div>
-              <Link className={styles.cardLink} href="/vocabulary">Xem chi tiết</Link>
+              <Link className={styles.cardLink} href={["/vocabulary/hsk-1", "/vocabulary/hsk-3", "/vocabulary/hsk-4", "/vocabulary/hsk-6"][index]}>Xem chi tiết</Link>
             </article>
           ))}
         </div>
@@ -132,7 +132,7 @@ export function ClosingCallToAction({ onStart }: { onStart: () => void }) {
           <h2>Hành trình vạn dặm khởi đầu từ một nét bút thuần thục.</h2>
           <p>Tiếp tục bài học hiện tại và cảm nhận nhịp học tiếng Trung khoa học, vừa sức.</p>
         </div>
-        <button type="button" className={styles.ctaLightButton} onClick={onStart}>Tiếp tục bài học</button>
+        <button type="button" className={styles.ctaLightButton} onClick={onStart}>Học thử Bài 01</button>
       </div>
     </section>
   );

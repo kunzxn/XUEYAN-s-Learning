@@ -1,19 +1,28 @@
 "use client";
 
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { Menu, UserRound, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import styles from "@/app/dashboard/dashboard.module.css";
 
+import {AccountAvatar} from "@/components/ui/AccountHeader";
+import {useAccount} from "@/lib/session";
+import {roleHome} from "@/lib/workspace-roles";
+
 const navigation = [
-  { label: "Lộ trình HSK", href: "#lo-trinh" },
-  { label: "Từ điển", href: "/vocabulary" },
+  { label: "Đăng nhập", href: "/login" },
+  { label: "Lộ trình HSK", href: "/vocabulary" },
+  { label: "Từ điển", href: "/dictionary" },
   { label: "Giáo viên", href: "/teachers" },
-  { label: "Tài nguyên", href: "#tu-vung" },
+  { label: "Tài nguyên", href: "/resources" },
+  { label: "Việc học của tôi", href: "/my-learning" },
 ];
 
 export default function DashboardHeader({ onStart }: { onStart: () => void }) {
+  const pathname = usePathname();
+  const {account}=useAccount();
   const [menuOpen, setMenuOpen] = useState(false);
   const menuButtonRef = useRef<HTMLButtonElement | null>(null);
 
@@ -35,7 +44,7 @@ export default function DashboardHeader({ onStart }: { onStart: () => void }) {
     <header className={styles.siteHeader}>
       <a href="#dashboard-main" className={styles.skipLink}>Đến nội dung chính</a>
       <div className={styles.headerInner}>
-        <Link className={styles.brand} href="/dashboard" aria-label="XUEYAN, trang tổng quan">
+        <Link className={styles.brand} href="/" aria-label="XUEYAN, trang chủ">
           <Image src="/xueyan-logo.jpg" alt="" width={52} height={52} priority className={styles.brandLogo} />
           <span className={styles.brandCopy}>
             <strong>XUEYAN</strong>
@@ -45,18 +54,16 @@ export default function DashboardHeader({ onStart }: { onStart: () => void }) {
 
         <nav id="dashboard-navigation" className={`${styles.mainNav} ${menuOpen ? styles.mainNavOpen : ""}`} aria-label="Điều hướng chính">
           {navigation.map((item) => (
-            <Link key={item.label} href={item.href} onClick={() => setMenuOpen(false)}>
-              {item.label}
+            <Link key={item.label} className={item.href === "/login" ? styles.mobileLogin : undefined} href={item.href==="/login"&&account?"/profile":item.href==="/my-learning"&&account&&account.role!=="learner"?roleHome(account.role):item.href} aria-current={pathname === item.href || pathname.startsWith(item.href + "/") ? "page" : undefined} onClick={() => setMenuOpen(false)}>
+              {item.href==="/login"&&account?"Trang cá nhân":item.href==="/my-learning"&&account&&account.role!=="learner"?"Không gian của tôi":item.label}
             </Link>
           ))}
         </nav>
 
         <div className={styles.headerActions}>
-          <Link className={styles.loginLink} href="/profile">Đăng nhập</Link>
-          <button type="button" className={styles.headerCta} onClick={onStart}>Bắt đầu học</button>
-          <Link href="/profile" className={styles.profileLink} aria-label="Mở hồ sơ học viên">
-            <UserRound size={19} aria-hidden="true" />
-          </Link>
+          <Link className={styles.loginLink} href={account?"/profile":"/login"}>{account?account.name:"Đăng nhập"}</Link>
+          {account&&account.role!=="learner"?<Link href={roleHome(account.role)} className={styles.headerCta}>Không gian của tôi</Link>:<button type="button" className={styles.headerCta} onClick={onStart}>Thiết lập lộ trình</button>}
+          <AccountAvatar className={styles.profileLink}/>
           <button
             ref={menuButtonRef}
             type="button"

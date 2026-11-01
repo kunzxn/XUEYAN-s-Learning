@@ -1,0 +1,148 @@
+- banner:
+  - link "Đến nội dung chính":
+    - /url: "#dashboard-main"
+  - link "XUEYAN, trang chủ":
+    - /url: /
+    - strong: XUEYAN
+    - generic: Học viện tiếng Trung
+  - navigation "Điều hướng chính":
+    - link "Lộ trình HSK":
+      - /url: /vocabulary
+    - link "Từ điển":
+      - /url: /dictionary
+    - link "Giáo viên":
+      - /url: /teachers
+    - link "Tài nguyên":
+      - /url: /resources
+  - link "Đăng nhập":
+    - /url: /login
+  - button "Bắt đầu học"
+  - link "Mở hồ sơ học viên":
+    - /url: /profile
+- main:
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Tìm người đồng hành cùng bạn" [level=1]
+  - paragraph: Đội ngũ giáo viên tận tâm, vững chuyên môn sư phạm và thấu hiểu người học Việt.
+  - text: Tìm giáo viên
+  - textbox "Tìm giáo viên":
+    - /placeholder: Tên giáo viên, chuyên môn hoặc từ khóa…
+  - text: Mục tiêu giảng dạy
+  - combobox "Mục tiêu giảng dạy":
+    - option "Tất cả mục tiêu" [selected]
+    - option "Cơ bản"
+    - option "Luyện thi"
+    - option "Thương mại"
+    - option "Khẩu ngữ"
+    - option "Dịch thuật"
+  - text: Cấp độ hỗ trợ
+  - combobox "Cấp độ hỗ trợ":
+    - option "Tất cả cấp độ" [selected]
+    - option "HSK 1"
+    - option "HSK 3"
+    - option "HSK 5"
+    - option "HSK 6"
+  - generic: 6 giáo viên mẫu phù hợp
+  - button "Đặt lại bộ lọc"
+  - generic: LA
+  - text: Giảng viên Hán ngữ
+  - heading "Cô Vũ Lan Anh" [level=3]
+  - paragraph: Tiếng Việt & Tiếng Trung
+  - generic: HSK 1–4
+  - generic: Cơ bản
+  - paragraph: Phân tích cặn kẽ gốc rễ Hán–Việt, hướng dẫn sửa lỗi phát âm và thanh điệu.
+  - paragraph: Buổi tối thứ 2, 4, 6 & cuối tuần
+  - link "Xem hồ sơ →":
+    - /url: /teachers/lan-anh
+  - generic: MĐ
+  - text: Chuyên gia HSK cao cấp
+  - heading "Thầy Trần Minh Đức" [level=3]
+  - paragraph: Tiếng Việt & Tiếng Trung
+  - generic: HSK 5–6
+  - generic: Luyện thi
+  - paragraph: Hệ thống hóa cấu trúc ngữ pháp và phương pháp tư duy Hán văn.
+  - paragraph: Các buổi tối trong tuần
+  - link "Xem hồ sơ →":
+    - /url: /teachers/minh-duc
+  - generic: CT
+  - text: Hán ngữ thương mại
+  - heading "Cô Hoàng Cẩm Tú" [level=3]
+  - paragraph: Tiếng Việt & Tiếng Trung
+  - generic: HSK 3–5
+  - generic: Thương mại
+  - paragraph: Mô phỏng tình huống doanh nghiệp và văn hóa kinh doanh Trung Hoa.
+  - paragraph: Sáng thứ 3, 5, 7
+  - link "Xem hồ sơ →":
+    - /url: /teachers/cam-tu
+  - generic: VT
+  - text: Giáo viên bản ngữ
+  - heading "Thầy Vương Tuấn" [level=3]
+  - paragraph: Tiếng Trung
+  - generic: HSK 1–6
+  - generic: Khẩu ngữ
+  - paragraph: Môi trường giao tiếp tiếng Trung giúp rèn phản xạ nghe và nói.
+  - paragraph: Cuối tuần & chiều thứ 2, 4
+  - link "Xem hồ sơ →":
+    - /url: /teachers/vuong-tuan
+  - generic: MP
+  - text: Phương pháp ghi nhớ
+  - heading "Cô Lê Mai Phương" [level=3]
+  - paragraph: Tiếng Việt & Tiếng Trung
+  - generic: HSK 1–3
+  - generic: Cơ bản
+  - paragraph: Chiết tự chữ Hán và học từ trong ngữ cảnh gắn với lịch ôn tập.
+  - paragraph: Tối thứ 2, 4, 6
+  - link "Xem hồ sơ →":
+    - /url: /teachers/mai-phuong
+  - generic: QB
+  - text: Hán–Việt đối sánh & Dịch
+  - heading "Thầy Đỗ Quốc Bảo" [level=3]
+  - paragraph: Tiếng Việt & Tiếng Trung
+  - generic: HSK 4–6
+  - generic: Dịch thuật
+  - paragraph: Nâng cao vốn từ chuyên môn và kỹ năng dịch tài liệu.
+  - paragraph: Thứ 7 & Chủ nhật
+  - link "Xem hồ sơ →":
+    - /url: /teachers/quoc-bao
+  - heading "Minh bạch học thuật & Tiêu chuẩn XUEYAN" [level=2]:
+    - text: Minh bạch học thuật & Tiêu chuẩn XUEYAN
+  - paragraph: Hồ sơ hiện là nội dung minh họa từ Stitch. Thông tin bằng cấp và xác minh cần kết nối dữ liệu giáo viên thực tế.
+  - link "Tìm hiểu phương pháp":
+    - /url: /about
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- contentinfo:
+  - link "XUEYAN":
+    - /url: /
+    - strong: XUEYAN
+  - paragraph: XUEYAN - Nền tảng học tiếng Trung dành cho người Việt, kết hợp tri thức Hán - Việt với phương pháp lặp lại ngắt quãng.
+  - generic: HSK 1 - HSK 6+
+  - generic: Âm Hán Việt
+  - heading "Lộ trình HSK" [level=2]
+  - link "HSK 1 - Nhập môn":
+    - /url: /vocabulary/hsk-1
+  - link "HSK 2 - Giao tiếp cơ bản":
+    - /url: /vocabulary/hsk-2
+  - link "HSK 3 - Củng cố từ vựng":
+    - /url: /vocabulary/hsk-3
+  - link "HSK 4 - Diễn đạt chuyên sâu":
+    - /url: /vocabulary/hsk-4
+  - link "HSK 5 & 6 - Nâng cao":
+    - /url: /vocabulary
+  - heading "Cộng đồng & Giáo viên" [level=2]
+  - link "Đội ngũ giảng viên":
+    - /url: /teachers
+  - link "Lớp học trực tuyến":
+    - /url: /classes
+  - link "Chia sẻ kinh nghiệm":
+    - /url: /resources
+  - link "Đồng hành học tập":
+    - /url: /teachers/lan-anh/consultation
+  - heading "Hỗ trợ & Pháp lý" [level=2]
+  - link "Trung tâm trợ giúp":
+    - /url: /help
+  - generic: Điều khoản dịch vụ (chưa có nội dung)
+  - generic: Chính sách bảo mật (chưa có nội dung)
+  - link "Liên hệ cố vấn":
+    - /url: /contact
+  - generic: © 2026 XUEYAN Hán Học. Bảo lưu mọi quyền.
+  - generic: Nền tảng Hán ngữ dành cho người Việt
+- button "Open Next.js Dev Tools":

@@ -1,0 +1,32 @@
+- banner:
+  - button "Thoát phiên học":
+    - text: Thoát phiên học
+  - heading "Ôn tập hôm nay" [level=1]
+  - progressbar "Tiến độ phiên học"
+  - link "Cài đặt phiên học":
+    - /url: /settings
+- main:
+  - generic: 1/3 từ mẫu
+  - button "Kết thúc phiên"
+  - generic: HSK 1
+  - generic: Thẻ ghi nhớ SRS
+  - button "Đánh dấu"
+  - paragraph: 学习
+  - paragraph: xuéxí
+  - button "Ẩn/hiện Pinyin"
+  - button "Nghe phát âm 学习":
+    - text: Nghe phát âm
+  - status
+  - generic: "Âm Hán–Việt: HỌC TẬP"
+  - heading "Học tập" [level=2]
+  - paragraph: 我每天学习中文。
+  - paragraph: Wǒ měitiān xuéxí Zhōngwén.
+  - paragraph: Tôi học tiếng Trung mỗi ngày.
+  - button "Quên · 1"
+  - button "Khó · 2"
+  - button "Nhớ · 3" [active]
+  - button "Dễ · 4"
+  - paragraph: "Phím Space: lật thẻ · Phím 1–4: đánh giá khi đáp án mở. Kết quả chỉ trong phiên mẫu, chưa lưu lịch SRS."
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- button "Open Next.js Dev Tools":
+- alert

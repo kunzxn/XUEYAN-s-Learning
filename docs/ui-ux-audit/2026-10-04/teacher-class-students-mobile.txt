@@ -1,0 +1,80 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- banner:
+  - button "Mở menu":
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - link "Thông báo":
+    - /url: /notifications
+- main:
+  - link "← Không gian giảng viên":
+    - /url: /teacher
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "HSK 2 Cấp tốc K24" [level=1]
+  - paragraph: Ứng dụng giao tiếp & Ôn luyện chứng chỉ · T3–T5 · 19:30–21:00
+  - button "+ Tạo bài tập mới"
+  - button "Tải tài liệu"
+  - button "Gửi thông báo"
+  - paragraph: Tiến độ bài giảng
+  - paragraph: 14/24
+  - paragraph: Bài tập cần chấm
+  - paragraph: "6"
+  - paragraph: Chuyên cần
+  - paragraph: 94,2%
+  - button "Lịch trình & Buổi học"
+  - button "Bài tập & Chấm bài"
+  - button "Danh sách học viên" [active] [pressed]
+  - button "Kho tài liệu"
+  - heading "Tiến độ từng học viên" [level=2]
+  - table:
+    - rowgroup:
+      - row "Học viên mẫu Chuyên cần Tiến độ SRS Bài tập":
+        - columnheader "Học viên mẫu"
+        - columnheader "Chuyên cần"
+        - columnheader "Tiến độ SRS"
+        - columnheader "Bài tập"
+    - rowgroup:
+      - row "Nguyễn Văn Hùng 100% 245 từ Xem bài · chưa khả dụng":
+        - cell "Nguyễn Văn Hùng"
+        - cell "100%"
+        - cell "245 từ"
+        - cell "Xem bài · chưa khả dụng":
+          - button "Xem bài · chưa khả dụng"
+      - row "Trần Thị Mai 93% 220 từ Xem bài · chưa khả dụng":
+        - cell "Trần Thị Mai"
+        - cell "93%"
+        - cell "220 từ"
+        - cell "Xem bài · chưa khả dụng":
+          - button "Xem bài · chưa khả dụng"
+      - row "Lê Hoàng Long 86% 195 từ Xem bài · chưa khả dụng":
+        - cell "Lê Hoàng Long"
+        - cell "86%"
+        - cell "195 từ"
+        - cell "Xem bài · chưa khả dụng":
+          - button "Xem bài · chưa khả dụng"
+      - row "Phạm Thu Trang 79% 170 từ Xem bài · chưa khả dụng":
+        - cell "Phạm Thu Trang"
+        - cell "79%"
+        - cell "170 từ"
+        - cell "Xem bài · chưa khả dụng":
+          - button "Xem bài · chưa khả dụng"
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- navigation "Điều hướng nhanh trên di động":
+  - link "Tổng quan":
+    - /url: /teacher
+    - generic: Tổng quan
+  - link "Lớp học":
+    - /url: /teacher/classes/hsk2-k24
+    - generic: Lớp học
+  - link "Bài cần chấm":
+    - /url: /teacher/assignments/4
+    - generic: Bài cần chấm
+  - button "Yêu cầu tư vấn · chưa khả dụng":
+    - generic: Yêu cầu tư vấn
+    - text: · chưa khả dụng
+  - link "Hồ sơ sư phạm":
+    - /url: /teacher/profile
+    - generic: Hồ sơ sư phạm
+- button "Open Next.js Dev Tools":
+- alert

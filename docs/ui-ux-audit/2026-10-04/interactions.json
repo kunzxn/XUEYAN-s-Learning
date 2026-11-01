@@ -1,0 +1,305 @@
+[
+  {
+    "route": "/",
+    "action": "Menu mobile",
+    "result": "Không có link đăng nhập; có link hồ sơ mẫu và 4 mục công khai",
+    "evidence": "home-mobile-menu"
+  },
+  {
+    "route": "/resources",
+    "action": "Lọc Pinyin",
+    "result": "Chỉ còn tài nguyên phát âm, chữ trang trí đổi từ 声 sang 学 vì index bộ lọc",
+    "evidence": "resources-pinyin-filter"
+  },
+  {
+    "route": "/resources",
+    "action": "Xem audio",
+    "result": "Dialog báo chưa có tệp; không tải/phát giả",
+    "evidence": "resources-pinyin-filter"
+  },
+  {
+    "route": "/help",
+    "action": "Tìm mật khẩu, mở FAQ",
+    "result": "Đọc được hướng dẫn khôi phục; bộ lọc còn một câu hỏi",
+    "evidence": "help-search"
+  },
+  {
+    "route": "/help",
+    "action": "Xem hướng dẫn: Truy cập & Tài khoản",
+    "result": "Đưa tới /settings thay vì nội dung trợ giúp",
+    "evidence": "help-search"
+  },
+  {
+    "route": "/collection",
+    "action": "Tạo tên trùng Tất cả",
+    "result": "Dialog giữ nguyên; không thông báo lỗi, không tạo bộ từ",
+    "evidence": "collection-duplicate-no-error"
+  },
+  {
+    "route": "/collection",
+    "action": "Tìm xuexi",
+    "result": "Không tìm được 学习; Pinyin phải gõ dấu xuéxí",
+    "evidence": "collection-pinyin-search"
+  },
+  {
+    "route": "/dictionary",
+    "action": "Tìm xue2xi2",
+    "result": "Tìm đúng một kết quả 学习; cách tìm khác sổ từ",
+    "evidence": "dictionary-pinyin-search"
+  },
+  {
+    "route": "/lessons/1/learn",
+    "action": "Phím 3 khi nút Từ tiếp theo đang focus",
+    "result": "Vẫn 1/6, phím tắt bị bỏ qua khi focus button",
+    "evidence": "learn-pinyin-toggle"
+  },
+  {
+    "route": "/lessons/1/learn",
+    "action": "Ẩn Pinyin",
+    "result": "Nút aria-pressed=false; xuéxí vẫn hiển thị trên mặt đáp án",
+    "evidence": "learn-pinyin-toggle"
+  },
+  {
+    "route": "/review/study",
+    "action": "Lật đáp án trên mobile",
+    "result": "Các nút đánh giá nằm dưới viewport ban đầu; cần cuộn",
+    "evidence": "review-flipped-mobile"
+  },
+  {
+    "route": "/review/study",
+    "action": "Phím 3 khi focus Nhớ · 3",
+    "result": "Không chuyển từ; vẫn 1/3",
+    "evidence": "review-keyboard-focus"
+  },
+  {
+    "route": "/review/summary",
+    "action": "Thoát sau 1/3 và xem tổng kết",
+    "result": "Tiến độ luôn 100%, từ trong bộ=3, danh sách cần củng cố cố định; không phản ánh kết quả vừa học",
+    "evidence": "review-summary-partial"
+  },
+  {
+    "route": "/dashboard",
+    "action": "Menu mobile: Tab/Shift+Tab/Escape",
+    "result": "Focus vòng đầu/cuối và trở lại Mở menu hoạt động; nền không inert, drawer chưa có ngữ nghĩa modal",
+    "evidence": "dashboard-mobile-menu"
+  },
+  {
+    "route": "/review/study",
+    "action": "Đóng mô phỏng lỗi",
+    "result": "Banner lỗi đóng, vẫn học được phiên mẫu",
+    "evidence": "review_study-demo-error-375"
+  },
+  {
+    "route": "/dashboard",
+    "action": "Luồng Dashboard → HSK 1 → Bài 01 → học từ",
+    "result": "URL và tiêu đề đúng, giữ bài 1",
+    "evidence": "flow-hsk-to-learn"
+  },
+  {
+    "route": "/vocabulary",
+    "action": "Luồng Dashboard → HSK 1 → Bài 01 → học từ",
+    "result": "URL và tiêu đề đúng, giữ bài 1",
+    "evidence": "flow-hsk-to-learn"
+  },
+  {
+    "route": "/vocabulary/hsk-1",
+    "action": "Luồng Dashboard → HSK 1 → Bài 01 → học từ",
+    "result": "URL và tiêu đề đúng, giữ bài 1",
+    "evidence": "flow-hsk-to-learn"
+  },
+  {
+    "route": "/lessons/1",
+    "action": "Luồng Dashboard → HSK 1 → Bài 01 → học từ",
+    "result": "URL và tiêu đề đúng, giữ bài 1",
+    "evidence": "flow-hsk-to-learn"
+  },
+  {
+    "route": "/lessons/1/learn",
+    "action": "Luồng Dashboard → HSK 1 → Bài 01 → học từ",
+    "result": "URL và tiêu đề đúng, giữ bài 1",
+    "evidence": "flow-hsk-to-learn"
+  },
+  {
+    "route": "/lessons/1",
+    "action": "Browser Back và tải lại trang con",
+    "result": "Quay về Bài 01; reload vẫn có nội dung",
+    "evidence": "flow-hsk-to-learn"
+  },
+  {
+    "route": "/lessons/1/practice",
+    "action": "Chọn nghĩa sai cho 工作",
+    "result": "Có báo Chưa đúng và đáp án; 4 lựa chọn disabled nhưng không tô lựa chọn vừa chọn",
+    "evidence": "practice-wrong-answer"
+  },
+  {
+    "route": "/review/summary",
+    "action": "Tổng kết luyện sai từ 工作",
+    "result": "Không có điểm/đúng-sai; danh sách củng cố vẫn 学习,朋友,谢谢, không có 工作",
+    "evidence": "summary-wrong-word"
+  },
+  {
+    "route": "/teachers",
+    "action": "Luồng giáo viên với ID minh-duc",
+    "result": "Lọc → hồ sơ → tư vấn đúng Thầy Trần Minh Đức; bản lan-anh đã xem, chưa submit",
+    "evidence": "teacher-id-flow"
+  },
+  {
+    "route": "/teachers/lan-anh",
+    "action": "Luồng giáo viên với ID minh-duc",
+    "result": "Lọc → hồ sơ → tư vấn đúng Thầy Trần Minh Đức; bản lan-anh đã xem, chưa submit",
+    "evidence": "teacher-id-flow"
+  },
+  {
+    "route": "/teachers/lan-anh/consultation",
+    "action": "Luồng giáo viên với ID minh-duc",
+    "result": "Lọc → hồ sơ → tư vấn đúng Thầy Trần Minh Đức; bản lan-anh đã xem, chưa submit",
+    "evidence": "teacher-id-flow"
+  },
+  {
+    "route": "/teacher/classes/hsk2-k24",
+    "action": "Tab danh sách học viên mobile",
+    "result": "Bảng có vùng cuộn ngang riêng; cần xem cột cuối bằng cuộn, không tràn trang",
+    "evidence": "teacher-class-students-mobile"
+  },
+  {
+    "route": "/teacher/classes/hsk2-k24",
+    "action": "Tab kho tài liệu",
+    "result": "Nội dung báo chưa có file thực",
+    "evidence": "teacher-class-materials-mobile"
+  },
+  {
+    "route": "/teacher/assignments/4",
+    "action": "Tab audio, ảnh và nhận xét nhanh",
+    "result": "Audio/ảnh báo thiếu file; nhận xét nhanh thêm Tiến bộ vào textarea",
+    "evidence": "teacher-grading-tabs"
+  },
+  {
+    "route": "/teacher/assignments/4",
+    "action": "Gửi nhận xét mẫu",
+    "result": "Báo Chưa gửi phản hồi; không giả thành công",
+    "evidence": "teacher-grading-submit"
+  },
+  {
+    "route": "/profile",
+    "action": "Chỉnh sửa, xem trước, quay lại và chia sẻ",
+    "result": "Các đích đúng; dialog ghi rõ chưa xuất bản; không bấm lưu dữ liệu",
+    "evidence": "profile-preview"
+  },
+  {
+    "route": "/profile/edit",
+    "action": "Chỉnh sửa, xem trước, quay lại và chia sẻ",
+    "result": "Các đích đúng; dialog ghi rõ chưa xuất bản; không bấm lưu dữ liệu",
+    "evidence": "profile-preview"
+  },
+  {
+    "route": "/settings",
+    "action": "Xem xóa tài khoản",
+    "result": "Dialog chỉ có Đóng, xác nhận không xóa dữ liệu thật",
+    "evidence": "settings-delete-preview"
+  },
+  {
+    "route": "/notifications",
+    "action": "Đánh dấu đã đọc rồi lọc Chưa đọc",
+    "result": "Empty state xuất hiện đúng; trạng thái chỉ trong phiên",
+    "evidence": "notifications-empty"
+  },
+  {
+    "route": "/classes",
+    "action": "Tabs hoàn thành và chưa tham gia",
+    "result": "Đổi nội dung K18/empty đúng, lớp K18 có trạng thái chưa khả dụng",
+    "evidence": "classes-empty"
+  },
+  {
+    "route": "/classes/hsk2-k24",
+    "action": "Lớp → tab bài tập → chèn mẫu → kiểm tra",
+    "result": "Đi đúng bài 4; báo cần 80–120 chữ Hán, không nộp thật",
+    "evidence": "assignment-short-validation"
+  },
+  {
+    "route": "/assignments/4",
+    "action": "Lớp → tab bài tập → chèn mẫu → kiểm tra",
+    "result": "Đi đúng bài 4; báo cần 80–120 chữ Hán, không nộp thật",
+    "evidence": "assignment-short-validation"
+  },
+  {
+    "route": "/teacher",
+    "action": "Giảng viên mới → hồ sơ → xem trước",
+    "result": "Đích đúng /teacher/profile, dialog tên Cô Lan Anh",
+    "evidence": "teacher-profile-preview"
+  },
+  {
+    "route": "/teacher/profile",
+    "action": "Giảng viên mới → hồ sơ → xem trước",
+    "result": "Đích đúng /teacher/profile, dialog tên Cô Lan Anh",
+    "evidence": "teacher-profile-preview"
+  },
+  {
+    "route": "/onboarding",
+    "action": "Chọn mục tiêu, chuyển bước 1→2→3",
+    "result": "Nội dung và mục tiêu 30 từ đúng; chưa lưu thiết lập",
+    "evidence": "onboarding-step3"
+  },
+  {
+    "route": "/resources/remember-vocabulary",
+    "action": "Đánh dấu và mục lục",
+    "result": "Đánh dấu chỉ trong phiên; hash #section-3 đúng, mục lục nằm sau bài trên mobile",
+    "evidence": "article-toc-mobile"
+  },
+  {
+    "route": "/about",
+    "action": "Tìm hiểu giáo viên",
+    "result": "Đến đúng danh bạ /teachers"
+  },
+  {
+    "route": "/contact",
+    "action": "Submit biểu mẫu rỗng",
+    "result": "Trinh duyet chan submit vi cac truong required rong; chua thu gui hop le."
+  },
+  {
+    "route": "/login",
+    "action": "Google, hiện mật khẩu, đăng ký",
+    "result": "Google báo chưa cấu hình; input đổi text; route register đúng"
+  },
+  {
+    "route": "/register",
+    "action": "Quay lại đăng nhập",
+    "result": "Đến /login; chưa thử submit tạo tài khoản"
+  },
+  {
+    "route": "/forgot-password",
+    "action": "Link Quên mật khẩu từ login",
+    "result": "Đến /forgot-password; chưa gửi email"
+  },
+  {
+    "route": "/reset-password",
+    "action": "Hết hạn → yêu cầu liên kết mới",
+    "result": "Đến đúng forgot-password; chưa đổi mật khẩu"
+  },
+  {
+    "route": "/progress",
+    "action": "Tab tháng",
+    "result": "Có thông báo tháng chưa có dữ liệu nhưng vẫn hiển thị thống kê tuần",
+    "evidence": "progress-month-tablet"
+  },
+  {
+    "route": "/collection/[id]",
+    "action": "ID không tồn tại",
+    "result": "404 mặc định tiếng Anh, không có link Dashboard/sổ từ",
+    "evidence": "collection_khong-ton-tai-375"
+  },
+  {
+    "route": "/collection/xuexi",
+    "action": "Nghe phát âm",
+    "result": "Đã bấm; UI không báo lỗi trong lần quan sát. Chưa xác minh nghe được âm thanh hoặc chất lượng giọng đọc."
+  },
+  {
+    "route": "/collection/xuexi",
+    "action": "Ôn tập từ này",
+    "result": "Đúng ID xuexi và 1/1 từ; lưu ghi chú chỉ đọc code"
+  },
+  {
+    "route": "/review",
+    "action": "Chọn 3 từ và bắt đầu",
+    "result": "URL limit=3 và 1/3 đúng; chưa hoàn tất cả phiên"
+  }
+]

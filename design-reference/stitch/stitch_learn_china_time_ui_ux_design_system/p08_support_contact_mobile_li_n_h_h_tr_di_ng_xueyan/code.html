@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-bright": "#f5faff", "on-background": "#0a1e28", "primary-fixed": "#c7e7ff", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#5e4200", "surface-container-high": "#d7ebf9", "on-tertiary-fixed": "#271900", "on-tertiary": "#ffffff", "surface-container-lowest": "#ffffff", "outline-variant": "#c0c7ce", "on-primary": "#ffffff", "on-error-container": "#93000a", "on-primary-fixed-variant": "#004c6c", "tertiary-container": "#745100", "inverse-primary": "#93cdf6", "primary-fixed-dim": "#93cdf6", "secondary-fixed-dim": "#82d7af", "error": "#ba1a1a", "secondary-fixed": "#9ef4ca", "background": "#f5faff", "primary": "#004563", "on-secondary-fixed-variant": "#005138", "secondary-container": "#9bf1c7", "on-secondary": "#ffffff", "surface-container": "#ddf1ff", "surface-container-highest": "#d2e5f4", "secondary": "#046c4b", "tertiary-fixed-dim": "#f4be59", "on-secondary-fixed": "#002114", "on-surface-variant": "#40484e", "surface-variant": "#d2e5f4", "surface": "#f5faff", "tertiary-fixed": "#ffdea9", "on-error": "#ffffff", "tertiary": "#563b00", "surface-tint": "#236487", "outline": "#71787e", "on-primary-fixed": "#001e2e", "on-surface": "#0a1e28", "inverse-surface": "#21333e", "inverse-on-surface": "#e3f3ff", "on-secondary-container": "#0f704f", "primary-container": "#185d80", "surface-dim": "#c9ddeb", "on-tertiary-container": "#fcc55f", "on-primary-container": "#9ad5fd", "surface-container-low": "#e9f5ff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "margin-mobile": "1rem", "gutter-mobile": "1rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-xl": "2rem", "space-2xl": "3rem", "margin": "2rem", "space-lg": "1.5rem" }, fontFamily: { "pinyin-display": ["Be Vietnam Pro"], "body-md": ["Be Vietnam Pro"], "body-sm": ["Be Vietnam Pro"], "display-lg-mobile": ["Be Vietnam Pro"], "body-lg": ["Be Vietnam Pro"], "hanzi-hero": ["Noto Sans SC"], "headline-sm": ["Be Vietnam Pro"], "display-lg": ["Be Vietnam Pro"], "hanzi-inline": ["Noto Sans SC"], "headline-lg": ["Be Vietnam Pro"], "headline-lg-mobile": ["Be Vietnam Pro"], "hanzi-card": ["Noto Sans SC"], "label-md": ["Be Vietnam Pro"], "headline-md": ["Be Vietnam Pro"], "label-sm": ["Be Vietnam Pro"] }, fontSize: { "pinyin-display": ["18px", { lineHeight: "24px", letterSpacing: "0.02em", fontWeight: "500" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }], "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }], "display-lg-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }], "hanzi-hero": ["72px", { lineHeight: "84px", fontWeight: "500" }], "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }], "display-lg": ["44px", { lineHeight: "52px", letterSpacing: "-0.02em", fontWeight: "700" }], "hanzi-inline": ["20px", { lineHeight: "28px", fontWeight: "500" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", fontWeight: "600" }], "hanzi-card": ["40px", { lineHeight: "48px", fontWeight: "500" }], "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="logo.jpg" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1Vsh2LAS9uBPlaa3Xs2R0g6GcBsIpGZKk7ZVSkNHpGee_C6USFkNEaArq6SuvHQhj96dYoUCWPmC3RbD9IZnogeDkq9mUHlqLAdQSofXiohdm3NWzM_pPkinLFwgsYC3kAbKBs4fsppC5r3wMJ-IVdSC4rYeeRTDsKKKqiDjCdU0e7Whn3olkAgjfHXqBWaPON2ddVMlYcj6pLuwrWyOcd8GWNgIBMxZJdiwv7aIzLJN7BLlPOG2Kzm-TWviFs-Y5CFf2Ft053Jjg"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight truncate">XUEYAN</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Trang Chủ</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Tìm kiếm" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[24px]">search</span></button><a aria-label="Hồ sơ người dùng" class="w-11 h-11 flex items-center justify-center" data-path="tai-khoan" href="#"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_2px_8px_rgba(32,50,61,0.08)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin-mobile pb-space-2xl space-y-space-lg">
+<!-- Interactive Prototype State Switcher -->
+<section aria-label="Demo State Switcher" class="bg-surface-container-high/60 rounded-xl p-space-sm space-y-space-xs mt-space-sm shadow-sm">
+<div class="flex items-center justify-between px-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">tune</span>
+        Mô phỏng trạng thái UI
+      </span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Bấm để xem phản hồi</span>
+</div>
+<div class="grid grid-cols-5 gap-1 text-center">
+<button class="py-1 px-1 rounded bg-primary text-on-primary font-label-sm text-label-sm transition-all shadow-sm" id="btn-state-normal" onclick="switchState('normal')" type="button">
+        Bình thường
+      </button>
+<button class="py-1 px-1 rounded bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-all" id="btn-state-validation" onclick="switchState('validation')" type="button">
+        Lỗi nhập
+      </button>
+<button class="py-1 px-1 rounded bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-all" id="btn-state-sending" onclick="switchState('sending')" type="button">
+        Đang gửi
+      </button>
+<button class="py-1 px-1 rounded bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-all" id="btn-state-failed" onclick="switchState('failed')" type="button">
+        Gặp lỗi
+      </button>
+<button class="py-1 px-1 rounded bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-all" id="btn-state-success" onclick="switchState('success')" type="button">
+        Hoàn tất
+      </button>
+</div>
+</section>
+<!-- Back Navigation link -->
+<div class="flex items-center">
+<a class="inline-flex items-center gap-1.5 text-primary hover:text-primary-container font-label-md text-label-md py-2 transition-colors group" href="#">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:-translate-x-0.5">arrow_back</span>
+<span>Quay lại Trung tâm trợ giúp</span>
+</a>
+</div>
+<!-- Introductory Banner -->
+<header class="bg-surface-container-low rounded-xl p-space-lg shadow-sm space-y-space-sm relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 opacity-10 pointer-events-none text-primary font-hanzi-hero text-hanzi-hero select-none">
+      学研
+    </div>
+<div class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">support_agent</span>
+<span>Hỗ trợ học viên</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold tracking-tight">
+      Gửi yêu cầu hỗ trợ
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+      Đội ngũ học thuật XUEYAN luôn sẵn sàng lắng nghe và giải đáp mọi vướng mắc trong quá trình học tập của bạn.
+    </p>
+<div class="flex items-center gap-2 pt-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary">mark_email_read</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Hệ thống sẽ phản hồi sớm nhất qua email của bạn.</span>
+</div>
+</header>
+<!-- Main Support Form Container -->
+<div class="space-y-space-md" id="form-container">
+<form class="space-y-space-md" id="support-form" onsubmit="event.preventDefault(); simulateSubmit();">
+<!-- Full Name -->
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="input-fullname">
+          Họ và tên <span class="text-error">*</span>
+</label>
+<div class="relative rounded-xl bg-surface-container-lowest shadow-sm">
+<input class="w-full h-12 px-4 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/50 focus:outline-none focus:bg-surface-container-low transition-colors" id="input-fullname" name="fullname" placeholder="Nhập họ và tên của bạn" required="" type="text" value="Nguyễn Minh Khang"/>
+</div>
+</div>
+<!-- Email Address -->
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="input-email">
+          Email nhận phản hồi <span class="text-error">*</span>
+</label>
+<div class="relative rounded-xl bg-surface-container-lowest shadow-sm">
+<input class="w-full h-12 px-4 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/50 focus:outline-none focus:bg-surface-container-low transition-colors" id="input-email" name="email" placeholder="name@domain.com" required="" type="email" value="minhkhang.academic@xueyan.edu.vn"/>
+</div>
+<!-- Inline Validation message -->
+<p class="hidden font-body-sm text-body-sm text-error flex items-center gap-1.5 pt-0.5" id="err-email">
+<span class="material-symbols-outlined text-[16px]">error</span>
+<span>Vui lòng nhập email hợp lệ</span>
+</p>
+</div>
+<!-- Problem Category -->
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="select-category">
+          Danh mục vấn đề <span class="text-error">*</span>
+</label>
+<div class="relative rounded-xl bg-surface-container-lowest shadow-sm">
+<select class="w-full h-12 pl-4 pr-10 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md appearance-none focus:outline-none focus:bg-surface-container-low transition-colors" id="select-category" name="category">
+<option value="account">Tài khoản &amp; Đăng nhập</option>
+<option selected="" value="hsk">Lộ trình HSK &amp; Giáo trình</option>
+<option value="teacher">Lớp học &amp; Giáo viên bản xứ</option>
+<option value="srs">Hệ thống SRS &amp; Flashcard</option>
+<option value="tech">Lỗi kỹ thuật &amp; Đồng bộ ứng dụng</option>
+<option value="other">Vấn đề khác</option>
+</select>
+<div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[22px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Ticket Subject -->
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="input-subject">
+          Tiêu đề yêu cầu <span class="text-error">*</span>
+</label>
+<div class="relative rounded-xl bg-surface-container-lowest shadow-sm">
+<input class="w-full h-12 px-4 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/50 focus:outline-none focus:bg-surface-container-low transition-colors" id="input-subject" name="subject" placeholder="Tóm tắt ngắn gọn nội dung cần trợ giúp" required="" type="text" value="Không nhận được file nghe bổ trợ HSK 3 - Bài 12"/>
+</div>
+</div>
+<!-- Ticket Details -->
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="input-content">
+          Nội dung chi tiết <span class="text-error">*</span>
+</label>
+<div class="relative rounded-xl bg-surface-container-lowest shadow-sm">
+<textarea class="w-full p-4 rounded-xl bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/50 focus:outline-none focus:bg-surface-container-low transition-colors resize-none leading-relaxed" id="input-content" name="content" placeholder="Mô tả cụ thể khó khăn, thiết bị đang sử dụng hoặc bài học gặp sự cố..." required="" rows="4">Em đã hoàn thành phần ngữ pháp nhưng khi bấm nghe phần bài tập nghe điền từ thì ứng dụng báo lỗi tải âm thanh. Em đã thử kết nối Wi-Fi khác nhưng chưa được.</textarea>
+</div>
+<!-- Inline Validation message -->
+<p class="hidden font-body-sm text-body-sm text-error flex items-center gap-1.5 pt-0.5" id="err-content">
+<span class="material-symbols-outlined text-[16px]">error</span>
+<span>Nội dung không được để trống</span>
+</p>
+</div>
+<!-- Attachment Block -->
+<div class="space-y-space-xs pt-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Tệp đính kèm (không bắt buộc)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1 tệp đã chọn</span>
+</div>
+<!-- File Upload Area -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center gap-space-sm cursor-pointer active:scale-[0.99] transition-transform">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">add_photo_alternate</span>
+</div>
+<div class="min-w-0 flex-1">
+<p class="font-label-md text-label-md text-primary font-semibold">Tải lên hình ảnh hoặc tài liệu minh họa</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Hỗ trợ JPG, PNG, PDF, MP4. Tối đa 15MB/tệp.</p>
+</div>
+</div>
+<!-- Active Attachment Chip -->
+<div class="flex items-center justify-between bg-surface-container-lowest px-3 py-2 rounded-lg shadow-sm" id="file-chip">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0">image</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">anh_chup_man_hinh_bai12.png</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex-shrink-0">(1.8 MB)</span>
+</div>
+<button aria-label="Xóa tệp đính kèm" class="w-7 h-7 flex items-center justify-center rounded-full text-on-surface-variant hover:text-error hover:bg-error-container/30 transition-colors ml-2" onclick="document.getElementById('file-chip').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Action Button (Normal State) -->
+<div class="pt-space-sm" id="btn-submit-container">
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-md active:translate-y-0.5 transition-all" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Gửi yêu cầu hỗ trợ</span>
+</button>
+</div>
+</form>
+</div>
+<!-- STATE: Sending (In Progress) View -->
+<div class="hidden bg-surface-container-lowest rounded-xl p-space-xl shadow-md text-center space-y-space-md" id="state-sending-view">
+<div class="w-16 h-16 rounded-full bg-surface-container-high mx-auto flex items-center justify-center animate-pulse">
+<span class="material-symbols-outlined text-[32px] text-primary animate-spin">progress_activity</span>
+</div>
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">Đang gửi yêu cầu...</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Đang chuyển thông tin tới ban hỗ trợ học thuật XUEYAN.</p>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full w-2/3 animate-[pulse_1s_infinite]"></div>
+</div>
+</div>
+<!-- STATE: Server Error / Retry View -->
+<div class="hidden bg-error-container/40 rounded-xl p-space-lg shadow-sm space-y-space-md" id="state-failed-view">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-error text-on-error flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">wifi_off</span>
+</div>
+<div class="space-y-1 min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-error font-bold">Không thể kết nối máy chủ</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vui lòng kiểm tra kết nối mạng di động hoặc Wi-Fi của bạn và thử lại.</p>
+</div>
+</div>
+<button class="w-full h-11 rounded-xl bg-error text-on-error font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm active:translate-y-0.5 transition-all" onclick="switchState('sending'); setTimeout(() =&gt; switchState('success'), 1200);" type="button">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>Thử gửi lại yêu cầu</span>
+</button>
+</div>
+<!-- STATE: Success Confirmation View -->
+<div class="hidden bg-surface-container-lowest rounded-xl p-space-xl shadow-md text-center space-y-space-md" id="state-success-view">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container mx-auto flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="space-y-space-xs">
+<div class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+        Mã số phiếu: #XY-8924
+      </div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold">
+        Yêu cầu đã gửi thành công!
+      </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Chúng tôi đã tiếp nhận thắc mắc và gửi email xác nhận đến hòm thư <strong class="text-on-surface">minhkhang.academic@xueyan.edu.vn</strong>.
+      </p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-3.5 text-left flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0 mt-0.5">tips_and_updates</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Trong lúc chờ đợi, bạn vẫn có thể tiếp tục luyện tập bộ thẻ từ vựng HSK 3 hoặc ôn luyện ngữ pháp hàng ngày.
+      </p>
+</div>
+<div class="pt-space-xs space-y-space-xs">
+<a class="w-full h-12 rounded-xl bg-secondary text-on-secondary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-sm transition-transform active:translate-y-0.5" href="#" onclick="switchState('normal')">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span>Về Trung tâm trợ giúp</span>
+</a>
+<button class="w-full h-11 rounded-xl bg-surface-container text-primary font-label-md text-label-md flex items-center justify-center transition-colors" onclick="switchState('normal')" type="button">
+        Gửi thêm câu hỏi khác
+      </button>
+</div>
+</div>
+<!-- Quick Help Link Card (FAQ) -->
+<aside class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex items-center justify-between gap-space-sm">
+<div class="space-y-0.5 min-w-0">
+<div class="flex items-center gap-1.5 text-primary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px]">quick_reference_all</span>
+<span>Bạn cần câu trả lời ngay?</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+        Tra cứu hàng trăm hướng dẫn có sẵn trong ngân hàng câu hỏi
+      </p>
+</div>
+<a class="flex-shrink-0 px-3 py-2 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm" href="#">
+<span>Tìm nhanh</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</aside>
+</div>
+<script>
+  function switchState(stateName) {
+    const formContainer = document.getElementById('form-container');
+    const sendingView = document.getElementById('state-sending-view');
+    const failedView = document.getElementById('state-failed-view');
+    const successView = document.getElementById('state-success-view');
+
+    const errEmail = document.getElementById('err-email');
+    const errContent = document.getElementById('err-content');
+    const inputEmail = document.getElementById('input-email');
+    const inputContent = document.getElementById('input-content');
+
+    // Reset views
+    formContainer.classList.remove('hidden');
+    sendingView.classList.add('hidden');
+    failedView.classList.add('hidden');
+    successView.classList.add('hidden');
+
+    errEmail.classList.add('hidden');
+    errContent.classList.add('hidden');
+    inputEmail.classList.remove('bg-error-container/20');
+    inputContent.classList.remove('bg-error-container/20');
+
+    // Update buttons
+    const states = ['normal', 'validation', 'sending', 'failed', 'success'];
+    states.forEach(s => {
+      const btn = document.getElementById('btn-state-' + s);
+      if (s === stateName) {
+        btn.className = 'py-1 px-1 rounded bg-primary text-on-primary font-label-sm text-label-sm shadow-sm transition-all';
+      } else {
+        btn.className = 'py-1 px-1 rounded bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-all';
+      }
+    });
+
+    if (stateName === 'validation') {
+      errEmail.classList.remove('hidden');
+      errContent.classList.remove('hidden');
+      inputEmail.classList.add('bg-error-container/20');
+      inputContent.classList.add('bg-error-container/20');
+      inputEmail.value = 'minhkhang@@sai-dinh-dang';
+      inputContent.value = '';
+    } else if (stateName === 'sending') {
+      formContainer.classList.add('hidden');
+      sendingView.classList.remove('hidden');
+    } else if (stateName === 'failed') {
+      failedView.classList.remove('hidden');
+    } else if (stateName === 'success') {
+      formContainer.classList.add('hidden');
+      successView.classList.remove('hidden');
+    } else {
+      // Normal
+      inputEmail.value = 'minhkhang.academic@xueyan.edu.vn';
+      inputContent.value = 'Em đã hoàn thành phần ngữ pháp nhưng khi bấm nghe phần bài tập nghe điền từ thì ứng dụng báo lỗi tải âm thanh. Em đã thử kết nối Wi-Fi khác nhưng chưa được.';
+    }
+  }
+
+  function simulateSubmit() {
+    switchState('sending');
+    setTimeout(() => {
+      switchState('success');
+    }, 1200);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-1px_12px_rgba(32,50,61,0.05)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="flex-1 flex flex-col items-center justify-center h-full min-w-[44px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="trang-chu" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm tracking-tight">Trang chủ</span></a><a class="flex-1 flex flex-col items-center justify-center h-full min-w-[44px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="lo-trinh" href="#"><span class="material-symbols-outlined text-[24px]">timeline</span><span class="font-label-sm text-label-sm tracking-tight">Lộ trình</span></a><a class="flex-1 flex flex-col items-center justify-center h-full min-w-[44px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="tu-dien" href="#"><span class="material-symbols-outlined text-[24px]">menu_book</span><span class="font-label-sm text-label-sm tracking-tight">Từ điển</span></a><a class="flex-1 flex flex-col items-center justify-center h-full min-w-[44px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="giao-vien" href="#"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-sm text-label-sm tracking-tight">Giáo viên</span></a><a class="flex-1 flex flex-col items-center justify-center h-full min-w-[44px] min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary transition-colors" data-path="tai-khoan" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm tracking-tight">Tài khoản</span></a></div></nav></body></html>

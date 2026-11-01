@@ -1,0 +1,31 @@
+- main:
+  - link "XUEYAN":
+    - /url: /
+  - link "← Trở về trang chủ":
+    - /url: /
+  - complementary:
+    - generic: Không gian học tập · 学言
+    - heading "Học và thường xuyên ôn tập" [level=2]
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Đăng nhập vào XUEYAN" [level=1]
+  - paragraph: Chào mừng bạn quay lại hành trình học tiếng Trung.
+  - button "Tiếp tục với Google"
+  - paragraph: Hoặc đăng nhập bằng email
+  - generic: Email học viên
+  - textbox "Email học viên"
+  - generic: Mật khẩu
+  - textbox "Mật khẩu"
+  - button "Hiện mật khẩu":
+  - generic: Ít nhất 8 ký tự.
+  - checkbox "Ghi nhớ đăng nhập"
+  - text: Ghi nhớ đăng nhập
+  - link "Quên mật khẩu?":
+    - /url: /forgot-password
+  - status
+  - button "Đang xác thực… (xem trước)" [disabled]
+  - status: Trạng thái tải giao diện mẫu, chưa có yêu cầu mạng.
+  - paragraph:
+    - text: Chưa có tài khoản?
+    - link "Đăng ký ngay →":
+      - /url: /register
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.

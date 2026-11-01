@@ -1,3 +1,7 @@
+## Admin và lưu học thật
+
+Đã thêm `/admin`, `/admin/users`, `/admin/words`, `/admin/lessons`, `/admin/teachers`, `/learn`, `/my-learning`. `/login` và `/register` mặc định kết nối backend SQL Server; các route mẫu khác vẫn ghi rõ demo. Khởi chạy API trước: `../backend/Start-Api.ps1`. Hướng dẫn tạo admin và phạm vi: [admin-and-learning.md](../docs/admin-and-learning.md).
+
 # XUEYAN Frontend
 
 Ứng dụng giao diện Next.js nằm trong thư mục `frontend/` ở gốc dự án. Dữ liệu từ vựng HSK được giữ riêng trong `../data/`.
@@ -11,9 +15,11 @@ npm run dev
 
 Dashboard học viên: http://localhost:3000/dashboard
 
-Kiểm tra: `npm run lint`, `npx tsc --noEmit`, `npm run build`.
+Kiểm tra: `npm run lint`, `npm run typecheck`, `npm run build`.
 
-File `dasboard.html` và `logo.jpg` là tài nguyên thiết kế gốc được giữ lại.
+Bộ giao diện Stitch đã được tích hợp thành 38 màn hình responsive. Xem ánh xạ route, checklist và giới hạn backend tại `../docs/ui-migration.md`. Dữ liệu mẫu tách trong `lib/ui-demo-data.ts`. Kiểm tra liên kết khi server đang chạy: `npm run check:routes -- http://localhost:3000`.
+
+File `dashboard.html`, `dasboard.html` và `logo.jpg` là tài nguyên thiết kế gốc được giữ lại.
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 

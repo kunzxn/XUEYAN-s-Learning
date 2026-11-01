@@ -1,0 +1,1130 @@
+[
+  {
+    "route": "/login",
+    "component": "AuthScreen",
+    "files": [
+      "a01_login_desktop_ng_nh_p_h_c_vi_n_xueyan",
+      "a01_login_mobile_ng_nh_p_di_ng_xueyan"
+    ],
+    "headings": [
+      "Đăng nhập vào XUEYAN",
+      "Đăng nhập XUEYAN"
+    ],
+    "states": [
+      "Đang tải",
+      "Chưa có",
+      "Thành công"
+    ]
+  },
+  {
+    "route": "/reset-password",
+    "component": "AuthScreen",
+    "files": [
+      "a04_reset_password_desktop_t_l_i_m_t_kh_u_xueyan",
+      "a04_reset_password_mobile_t_l_i_m_t_kh_u_di_ng_xueyan"
+    ],
+    "headings": [
+      "Đặt lại mật khẩu mới",
+      "Liên kết đã hết hạn",
+      "Đặt lại mật khẩu thành công!",
+      "Đặt lại mật khẩu mới",
+      "Liên kết không còn hiệu lực",
+      "Thành công!"
+    ],
+    "states": [
+      "Thành công",
+      "hết hạn",
+      "Xác nhận"
+    ]
+  },
+  {
+    "route": "/resources/remember-vocabulary",
+    "component": "ArticleScreen",
+    "files": [
+      "c_ch_h_c_t_v_ng_ti_ng_trung_nh_l_u_di_ng_xueyan",
+      "c_ch_h_c_t_v_ng_ti_ng_trung_nh_l_u_xueyan"
+    ],
+    "headings": [
+      "Cách học từ vựng tiếng Trung để nhớ lâu",
+      "1. Cơ chế ghi nhớ chữ Hán đa tầng",
+      "2. Tách nghĩa theo Bộ thủ &amp; Chiết tự",
+      "3. Học theo Cụm từ và Ngữ cảnh",
+      "4. Ứng dụng Lặp lại ngắt quãng (SRS)",
+      "Thử ôn 10 từ hôm nay",
+      "5. 3 sai lầm phổ biến khi học Hán tự",
+      "Chép phạt cơ học 50 lần",
+      "Bỏ qua âm Hán-Việt tương ứng",
+      "Chỉ học từ đơn lập",
+      "6. Kế hoạch 15 phút rèn luyện mỗi ngày",
+      "Bài viết liên quan",
+      "7 quy tắc bút thuận viết chữ Hán đẹp",
+      "Phân biệt trợ từ kết cấu 的, 得 và 地",
+      "Cách học từ vựng tiếng Trung để nhớ lâu",
+      "Luyện tập ngay kiến thức này",
+      "Hiểu đúng về cơ chế ghi nhớ chữ Hán",
+      "Phương pháp 1: Tách nghĩa theo Bộ thủ &amp; Chiết tự",
+      "Phương pháp 2: Học theo Cụm từ và Ngữ cảnh (Chunking)",
+      "Phương pháp 3: Ứng dụng Lặp lại ngắt quãng (Spaced Repetition - SRS)",
+      "Bạn muốn nhớ từ vựng lâu hơn mà không mất công lên lịch?",
+      "Các sai lầm phổ biến người mới học hay mắc phải",
+      "Chỉ viết chép cơ học mà không đọc to phát âm và Pinyin",
+      "Nhồi nhét 50 từ mới/ngày nhưng bỏ quên việc ôn tập sau 24h",
+      "Bỏ qua đối chiếu âm Hán-Việt để liên tưởng nghĩa tiếng Việt",
+      "Lời khuyên thực hành mỗi ngày: Lộ trình 15 phút",
+      "Tài nguyên học thuật liên quan",
+      "Cách nhận diện 50 bộ thủ tiếng Trung thông dụng nhất",
+      "Bí quyết phát âm chuẩn thanh điệu tiếng Trung cho người Việt",
+      "Lộ trình tự học HSK 1 từ con số 0 bài bản trong 30 ngày"
+    ],
+    "states": []
+  },
+  {
+    "route": "/dictionary",
+    "component": "DictionaryScreen",
+    "files": [
+      "d01_dictionary_search_desktop_tra_c_u_t_i_n_h_n_vi_t_xueyan",
+      "d01_dictionary_search_mobile_tra_c_u_t_i_n_h_n_vi_t_di_ng_xueyan"
+    ],
+    "headings": [
+      "Từ Điển Hán - Việt Thông Minh",
+      "Lịch sử tra cứu gần đây",
+      "Chuyên đề Hán tự học thuật",
+      "214 Bộ Thủ Khang Hy (康熙部首)",
+      "Không tìm thấy kết quả phù hợp",
+      "Ghi nhớ chữ Hán vĩnh viễn với Phương pháp Chiết tự kết hợp SRS",
+      "Lưu mục từ “ 学习 ”",
+      "Vẽ tay chữ Hán",
+      "Hệ thống học tập",
+      "Học viên &amp; Giảng viên",
+      "Hỗ trợ &amp; Quy định",
+      "Từ Điển",
+      "Không tìm thấy kết quả",
+      "Lưu vào Sổ từ vựng"
+    ],
+    "states": [
+      "Đang tải",
+      "Không tìm thấy"
+    ]
+  },
+  {
+    "route": "/dashboard",
+    "component": "LearnerDashboard",
+    "files": [
+      "l01_today_dashboard_b_ng_i_u_khi_n_h_c_t_p",
+      "l01_today_dashboard_b_ng_i_u_khi_n_h_c_t_p_xueyan",
+      "l01_today_dashboard_mobile_b_ng_i_u_khi_n_h_c_t_p_di_ng_xueyan"
+    ],
+    "headings": [
+      "Chào buổi sáng, Hùng!",
+      "24 từ vựng cần ôn tập hôm nay",
+      "Lộ trình HSK 1 — Bài 4: Chào hỏi và làm quen",
+      "Chỉ số tiến bộ HSK 1",
+      "Lớp học trực tuyến",
+      "Lớp HSK 1 Luyện Phản Xạ",
+      "Chào Hùng! 🌤️",
+      "Thời gian học trong tuần",
+      "Luyện phát âm &amp; Khẩu ngữ HSK 2: Biến điệu thanh điệu",
+      "Chưa có từ nào đến hạn ôn hôm nay!",
+      "Làm quen Chữ Hán",
+      "Phát âm Pinyin &amp; 4 Thanh",
+      "Nạp 10 từ đầu tiên",
+      "Chào Hùng!",
+      "24 từ đến hạn ôn tập",
+      "Mục tiêu hôm nay",
+      "Đi siêu thị mua sắm (去超市买东西)",
+      "Hoạt động trong tuần",
+      "Chào mừng bạn đến với Xueyan!",
+      "Quy trình học thông minh 3 bước"
+    ],
+    "states": [
+      "Thành công",
+      "Chưa có"
+    ]
+  },
+  {
+    "route": "/lessons/1",
+    "component": "LessonOverview",
+    "files": [
+      "l02_lesson_overview_mobile_t_ng_quan_b_i_h_c_di_ng_xueyan",
+      "l02_lesson_overview_t_ng_quan_b_i_h_c_ch_o_h_i_l_m_quen"
+    ],
+    "headings": [
+      "Lesson Detail",
+      "Bài 01: Chào hỏi &amp; Làm quen",
+      "Lộ trình 3 chặng",
+      "Học từ mới",
+      "Luyện tập",
+      "Tổng kết",
+      "Mục tiêu bài học",
+      "Từ vựng trọng tâm",
+      "Bài 01: Chào hỏi và làm quen 问候与结识",
+      "Lộ trình 3 chặng học tập",
+      "Học từ vựng",
+      "Luyện tập sâu",
+      "Tổng kết &amp; Đánh giá",
+      "Mục tiêu bài học cần đạt",
+      "Từ vựng trọng tâm trong bài",
+      "Nụ cười và ánh mắt trong lần đầu gặp"
+    ],
+    "states": []
+  },
+  {
+    "route": "/lessons/1/learn",
+    "component": "StudySession",
+    "files": [
+      "l03_learn_vocabulary_desktop_h_c_t_v_ng_m_i_xueyan",
+      "l03_learn_vocabulary_mobile_h_c_t_v_ng_m_i_di_ng_xueyan"
+    ],
+    "headings": [
+      "Cảm ơn",
+      "format_quote Ví dụ giao tiếp thực tế",
+      "Chiết tự &amp; Quy tắc bút thuận chữ 谢",
+      "Góc văn hóa &amp; Ứng xử ngôn ngữ",
+      "谢谢"
+    ],
+    "states": []
+  },
+  {
+    "route": "/lessons/1/practice",
+    "component": "PracticeScreen",
+    "files": [
+      "l04_vocabulary_practice_desktop_luy_n_t_p_t_v_ng_xueyan",
+      "l04_vocabulary_practice_mobile_luy_n_t_p_t_v_ng_di_ng_xueyan"
+    ],
+    "headings": [
+      "朋友",
+      "Chọn nghĩa tiếng Việt chính xác:",
+      "Xuất sắc! +10 điểm",
+      "Chưa đúng rồi!"
+    ],
+    "states": []
+  },
+  {
+    "route": "/collection",
+    "component": "CollectionScreen",
+    "files": [
+      "l05_personal_vocabulary_collection_desktop_s_t_v_ng_c_nh_n_xueyan",
+      "l05_personal_vocabulary_collection_mobile_s_t_v_ng_di_ng_xueyan"
+    ],
+    "headings": [
+      "Sổ từ vựng cá nhân",
+      "Phương pháp SRS",
+      "Ưu thế Hán-Việt",
+      "Mục tiêu HSK 2",
+      "Chưa có từ nào trong bộ lọc này",
+      "Tạo bộ từ vựng mới",
+      "Cấu hình &amp; Quản trị bộ từ",
+      "Sổ Từ Vựng",
+      "Sổ từ vựng",
+      "Chưa có từ nào trong bộ này?",
+      "Tạo bộ từ mới",
+      "Xoá bộ \"HSK 1 - 2\"?"
+    ],
+    "states": [
+      "Chưa có",
+      "Xác nhận"
+    ]
+  },
+  {
+    "route": "/collection/xuexi",
+    "component": "WordDetail",
+    "files": [
+      "l05_vocabulary_detail_desktop_chi_ti_t_t_v_ng_xu_x_xueyan",
+      "l05_vocabulary_detail_mobile_chi_ti_t_t_v_ng_xu_x_di_ng_xueyan"
+    ],
+    "headings": [
+      "xuéxí",
+      "Tiến trình ôn tập cá nhân",
+      "Câu ví dụ thực tế",
+      "Từ liên quan &amp; Cụm từ cố định",
+      "Chiết tự &amp; Nguồn gốc chữ Hán",
+      "Chi Tiết Từ Vựng",
+      "Ví dụ minh hoạ",
+      "Từ liên quan &amp; Cụm từ"
+    ],
+    "states": []
+  },
+  {
+    "route": "/classes/hsk2-k24",
+    "component": "ClassDetail",
+    "files": [
+      "l06_class_detail_desktop_chi_ti_t_l_p_h_c_hsk_2_k24_xueyan",
+      "l06_class_detail_mobile_chi_ti_t_l_p_h_c_hsk_2_k24_di_ng_xueyan"
+    ],
+    "headings": [
+      "HSK 2 — Phát Âm Chuẩn &amp; Đàm Thoại Tự Nhiên K24",
+      "Chủ đề: Đi mua sắm &amp; Mặc cả trong siêu thị Trung Quốc (买东西与讨价还价)",
+      "Thông báo từ giảng viên",
+      "Lưu ý bài tập luyện phát âm âm uốn lưỡi (er) &amp; Chuẩn bị đóng vai cho buổi 8",
+      "Tổng kết buổi 7 và bài tập ghi âm nộp trước 18:00 Thứ Năm",
+      "Lộ trình buổi học gần nhất",
+      "Chỉ đường &amp; Phương tiện giao thông (去那儿怎么走)",
+      "Mua sắm &amp; Hỏi giá tiền (这个多少钱)",
+      "Đặt món ăn tại nhà hàng (在饭馆点菜)",
+      "Nhiệm vụ &amp; Bài tập cần hoàn thành",
+      "Bài tập 08: Ghi âm đoạn hội thoại mua hoa quả tại chợ",
+      "Tiến độ của bạn",
+      "Tài liệu nhanh lớp K24",
+      "Cộng đồng &amp; Hỗ trợ học tập",
+      "Lớp Học",
+      "HSK 2 — Phát Âm Chuẩn &amp; Đàm Thoại K24",
+      "Đi mua sắm &amp; Mặc cả",
+      "campaign Thông báo mới từ giảng viên",
+      "Lưu ý bài tập âm uốn lưỡi (er) &amp; Đóng vai buổi 8",
+      "assignment_late Nhiệm vụ cần nộp",
+      "Bài tập 08: Ghi âm đàm thoại mua sắm",
+      "folder_open Tài liệu học tập nhanh",
+      "support_agent Hỗ trợ học vụ &amp; Nhóm lớp"
+    ],
+    "states": [
+      "Lỗi"
+    ]
+  },
+  {
+    "route": "/classes",
+    "component": "ClassList",
+    "files": [
+      "l06_my_classes_desktop_l_p_h_c_c_a_t_i_xueyan",
+      "l06_my_classes_mobile_l_p_h_c_c_a_t_i_di_ng_xueyan"
+    ],
+    "headings": [
+      "Lớp học của tôi",
+      "Lớp học đang diễn ra",
+      "HSK 2 — Phát Âm Chuẩn &amp; Giao Tiếp Phản Xạ K24",
+      "Lớp học đã hoàn thành",
+      "HSK 1 — Nhập Môn Hán Tự &amp; Ngữ Âm Toàn Diện K18",
+      "Tự học theo lộ trình cá nhân?",
+      "Lịch 7 ngày tới",
+      "Nhắc nhở bài tập",
+      "Hỗ trợ &amp; Lớp học",
+      "Lớp Học Của Tôi",
+      "Lớp học của tôi",
+      "HSK 2 — Phát Âm &amp; Giao Tiếp K24",
+      "HSK 2 — Phát Âm Chuẩn &amp; Giao Tiếp Phản Xạ K24",
+      "assignment_turned_in Bài tập cần nộp",
+      "workspace_premium Lớp đã hoàn thành",
+      "Bạn học tập theo hình thức tự học?"
+    ],
+    "states": []
+  },
+  {
+    "route": "/review",
+    "component": "ReviewOverview",
+    "files": [
+      "l08_review_overview_mobile_n_t_p_nh_l_u_h_n",
+      "l08_review_overview_n_t_p_nh_l_u_h_n"
+    ],
+    "headings": [
+      "Ôn tập để nhớ lâu hơn",
+      "Tâm trí thảnh thơi, trí nhớ bền lâu",
+      "Ôn tập để nhớ lâu hơn",
+      "Xem trước danh sách từ trong phiên này",
+      "Tuyệt vời! Bạn không còn từ nào đến hạn ôn tập hôm nay"
+    ],
+    "states": []
+  },
+  {
+    "route": "/review/study",
+    "component": "StudySession",
+    "files": [
+      "l09_flashcard_study_desktop_th_ghi_nh_flashcard_srs_xueyan",
+      "l09_flashcard_study_mobile_th_ghi_nh_flashcard_srs_di_ng_xueyan",
+      "l09_flashcard_study_th_h_c_ghi_nh_srs"
+    ],
+    "headings": [
+      "学习",
+      "学习",
+      "Không thể đồng bộ kết nối máy chủ",
+      "Study Session",
+      "Ôn tập SRS HSK 1 — Phiên ôn sáng",
+      "学习",
+      "Đánh giá mức độ ghi nhớ"
+    ],
+    "states": [
+      "Lỗi",
+      "Mặt trước",
+      "Mặt sau"
+    ]
+  },
+  {
+    "route": "/review/summary",
+    "component": "SessionSummary",
+    "files": [
+      "l10_session_summary_desktop_t_ng_k_t_bu_i_h_c_xueyan",
+      "l10_session_summary_mobile_t_ng_k_t_bu_i_h_c_di_ng_xueyan"
+    ],
+    "headings": [
+      "Bạn đã hoàn thành buổi học!",
+      "Từ vựng cần củng cố thêm",
+      "Thuật toán lặp lại ngắt quãng (SRS)",
+      "Session Summary",
+      "Bạn đã hoàn thành buổi học!",
+      "Chuỗi 5 ngày duy trì thành công",
+      "Từ vựng cần củng cố thêm"
+    ],
+    "states": [
+      "Thành công"
+    ]
+  },
+  {
+    "route": "/profile/edit",
+    "component": "ProfileEditor",
+    "files": [
+      "l11_edit_profile_desktop_ch_nh_s_a_h_s_h_c_vi_n_xueyan",
+      "l11_edit_profile_mobile_ch_nh_s_a_h_s_h_c_vi_n_di_ng_xueyan"
+    ],
+    "headings": [
+      "Chỉnh sửa hồ sơ",
+      "Ảnh đại diện học tập",
+      "Thông tin nhận diện học tập",
+      "Mục đích học tập &amp; Tùy chọn bài học",
+      "Tài khoản &amp; Xác thực an toàn",
+      "Nguyễn Văn Hùng",
+      "Thay đổi chưa được lưu",
+      "Edit Profile",
+      "badge Thông tin nhận diện",
+      "Mục đích &amp; Tùy chọn học tập",
+      "Tài khoản &amp; Định danh"
+    ],
+    "states": [
+      "Thành công",
+      "chưa lưu"
+    ]
+  },
+  {
+    "route": "/progress",
+    "component": "ProgressScreen",
+    "files": [
+      "l11_learning_progress_desktop_ti_n_h_c_t_p_c_nh_n_xueyan",
+      "l11_learning_progress_mobile_ti_n_h_c_t_p_di_ng_xueyan"
+    ],
+    "headings": [
+      "Tiến độ học tập cá nhân",
+      "Cường độ học tập &amp; ôn tập theo ngày",
+      "Chuỗi rèn luyện",
+      "Tiến độ từ vựng theo chuẩn HSK 3.0",
+      "HSK Cấp độ 1",
+      "HSK Cấp độ 2",
+      "HSK Cấp độ 3",
+      "Từ hay quên &amp; nhầm lẫn",
+      "Cột mốc học thuật",
+      "Hành trình vạn dặm bắt đầu từ một bước chân",
+      "Tien Do",
+      "Tiến độ học tập",
+      "Lộ trình HSK",
+      "Cần củng cố gấp",
+      "Tích tiểu thành đại I"
+    ],
+    "states": [
+      "Lỗi"
+    ]
+  },
+  {
+    "route": "/settings",
+    "component": "SettingsScreen",
+    "files": [
+      "l12_learner_settings_desktop_c_i_t_t_i_kho_n_h_c_t_p_xueyan",
+      "l12_learner_settings_mobile_c_i_t_t_i_kho_n_h_c_t_p_di_ng_xueyan"
+    ],
+    "headings": [
+      "Cài đặt &amp; Tùy chọn cá nhân",
+      "Mục tiêu từ vựng mới mỗi ngày",
+      "Hiển thị Pinyin &amp; Tùy chọn Âm thanh",
+      "Nhắc nhở ôn tập &amp; Thông báo",
+      "Khu vực &amp; Múi giờ",
+      "Quyền riêng tư hồ sơ",
+      "Mật khẩu &amp; Bảo mật tài khoản",
+      "Vùng hành động &amp; Đăng xuất",
+      "Xóa tiến độ học tập hoặc Hủy tài khoản XUEYAN",
+      "Xác nhận xóa tài khoản",
+      "Tài Khoản/Cài Đặt",
+      "Cài đặt &amp; Tùy chọn",
+      "Mục tiêu từ vựng mới mỗi ngày",
+      "Pinyin &amp; Âm thanh",
+      "Nhắc nhở ôn tập",
+      "Múi giờ học tập",
+      "Quyền riêng tư hồ sơ",
+      "Mật khẩu &amp; Bảo mật",
+      "Hành động tài khoản",
+      "Đổi mật khẩu"
+    ],
+    "states": [
+      "Thành công",
+      "Xác nhận",
+      "Mặt sau"
+    ]
+  },
+  {
+    "route": "/notifications",
+    "component": "NotificationsScreen",
+    "files": [
+      "l13_notification_center_desktop_trung_t_m_th_ng_b_o_xueyan",
+      "l13_notification_center_mobile_trung_t_m_th_ng_b_o_di_ng_xueyan"
+    ],
+    "headings": [
+      "Thông báo",
+      "Hôm nay",
+      "Nhắc nhở ôn tập Spaced Repetition (SRS)",
+      "Cô Lan Anh đã chấm điểm và nhận xét bài tập của bạn",
+      "Cập nhật lịch học: Lớp Giao tiếp HSK 2 (Ca tối T3-T5)",
+      "Trước đó",
+      "Chúc mừng! Bạn đã hoàn thành 50% mục tiêu HSK 1",
+      "Đăng nhập mới từ thiết bị macOS",
+      "Tài liệu học tập mới: Bảng tổng hợp 50 ngữ pháp HSK 2",
+      "Không có thông báo mới",
+      "Thông Báo",
+      "Hôm nay 3 mới",
+      "Nhắc nhở ôn tập Spaced Repetition",
+      "Đã có nhận xét bài phát âm Bài 2",
+      "Cập nhật phòng học trực tuyến mới",
+      "Trước đó",
+      "Chúc mừng! Hoàn thành 50% HSK 1 🎉",
+      "Đăng nhập mới từ macOS",
+      "Bạn đã xem hết thông báo"
+    ],
+    "states": [
+      "Thành công"
+    ]
+  },
+  {
+    "route": "/assignments/4",
+    "component": "AssignmentScreen",
+    "files": [
+      "l15_assignment_detail_desktop_chi_ti_t_n_p_b_i_t_p_xueyan",
+      "l15_assignment_detail_mobile_chi_ti_t_n_p_b_i_t_p_di_ng_xueyan"
+    ],
+    "headings": [
+      "Bài tập 04: Viết đoạn văn ngắn giới thiệu bản thân &amp; gia đình bằng chữ Hán",
+      "Đề bài &amp; Hướng dẫn chi tiết",
+      "Soạn thảo văn bản nộp bài",
+      "Trạng thái bài nộp",
+      "Nhận xét từ Giảng viên",
+      "Hỏi đáp về bài tập",
+      "Xác nhận nộp bài tập chính thức",
+      "Chi Tiết Bài Tập",
+      "Bài tập 04: Viết đoạn văn ngắn giới thiệu bản thân &amp; gia đình",
+      "Yêu cầu &amp; Mẫu câu",
+      "Khu vực làm bài",
+      "Nhận xét từ Giáo viên",
+      "Xác nhận nộp bài tập?"
+    ],
+    "states": [
+      "Lỗi",
+      "Thành công",
+      "Xác nhận",
+      "Lưu nháp"
+    ]
+  },
+  {
+    "route": "— (asset)",
+    "component": "Brand logo",
+    "files": [
+      "learn_china_time_brand_logo"
+    ],
+    "headings": [],
+    "states": []
+  },
+  {
+    "route": "/onboarding",
+    "component": "OnboardingScreen",
+    "files": [
+      "o01_onboarding_desktop_thi_t_l_p_l_tr_nh_h_c_vi_n_xueyan",
+      "o01_onboarding_mobile_thi_t_l_p_l_tr_nh_di_ng_xueyan"
+    ],
+    "headings": [
+      "Thiết lập nhịp độ học tập XUEYAN",
+      "Bạn muốn nạp bao nhiêu từ mới mỗi ngày?",
+      "Lộ trình HSK 1 Tiêu Chuẩn (150 Từ Hán ngữ cốt lõi &amp; Quy tắc chiết tự)",
+      "Mục đích chính của bạn khi học tiếng Trung là gì?",
+      "Du học &amp; Học thuật",
+      "Thương mại &amp; Xuất nhập khẩu",
+      "Đam mê Hán tự &amp; Văn hóa",
+      "Giao tiếp đời thường",
+      "Trình độ tiếng Trung của bạn hiện tại?",
+      "Chưa từng học",
+      "Biết một ít Pinyin",
+      "Đã có chứng chỉ HSK",
+      "Khung giờ bạn thấy thoải mái nhất để luyện tập?",
+      "Buổi sáng (07:00 - 08:30)",
+      "Giờ nghỉ trưa (12:30 - 13:30)",
+      "Buổi tối (20:00 - 21:30)",
+      "Bạn muốn học bao nhiêu từ mới mỗi ngày?",
+      "HSK 1 &amp; Âm Hán Việt"
+    ],
+    "states": []
+  },
+  {
+    "route": "/",
+    "component": "PublicHome",
+    "files": [
+      "p01_home_desktop_trang_ch_learn_china_time",
+      "p01_home_desktop_trang_ch_xueyan",
+      "p01_home_mobile_trang_ch_xueyan_di_ng"
+    ],
+    "headings": [
+      "Học tiếng Trung mỗi ngày, nhớ lâu từng từ.",
+      "Lộ trình học bài bản theo từng chặng",
+      "Giao tiếp nền tảng",
+      "Hội thoại đời sống",
+      "Diễn đạt đa ngữ cảnh",
+      "Thương mại &amp; Học thuật",
+      "4 bước giúp bạn làm chủ Hán tự thảnh thơi",
+      "Chọn lộ trình mục tiêu",
+      "Học qua bài ngắn 15p",
+      "Ôn tập đúng chu kỳ SRS",
+      "Theo dõi tiến bộ rõ rệt",
+      "Khám phá chiều sâu của mỗi chữ Hán",
+      "Học tiếng Trung thư thái &amp; chuẩn học thuật",
+      "Đối chiếu Hán-Việt",
+      "Sổ từ vựng cá nhân",
+      "Thuật toán nhớ ngắt quãng",
+      "Phản hồi từ giáo viên",
+      "Giáo viên đồng hành tận tâm",
+      "Cô Lan Anh",
+      "Thầy Minh Quân",
+      "Cô Chen Wei (Trần Vy)",
+      "Đồng hành cùng hàng ngàn người học tại Việt Nam",
+      "Câu hỏi thường gặp (FAQ)",
+      "Sẵn sàng chinh phục tiếng Trung từ hôm nay?",
+      "Học tiếng Trung mỗi ngày, nhớ lâu từng từ.",
+      "Lộ trình học theo chuẩn HSK 3.0",
+      "Khởi đầu vững chắc &amp; Phát âm Pinyin",
+      "Giao tiếp độc lập &amp; Đa ngữ cảnh",
+      "Thấu suốt văn bản &amp; Thảo luận sâu",
+      "Học thuật, Thương mại &amp; Biên phiên dịch",
+      "3 bước đơn giản giúp bạn làm chủ chữ Hán",
+      "Khám phá qua gốc Hán - Việt",
+      "Học bài ngắn 15 phút mỗi ngày",
+      "Ôn tập đúng chu kỳ Spaced Repetition",
+      "Trải nghiệm học một từ vựng cùng XUEYAN",
+      "Đội ngũ giáo viên đồng hành",
+      "Cô Lan Anh",
+      "Thầy Minh Quân",
+      "Cô Chen Wei",
+      "Câu hỏi thường gặp",
+      "Người mới bắt đầu chưa biết gì có thể tự học trên XUEYAN không?",
+      "Học theo phương pháp Âm Hán - Việt có giúp ghi nhớ nhanh hơn không?",
+      "Thuật toán lặp lại ngắt quãng (SRS) trên XUEYAN hoạt động như thế nào?",
+      "Tôi có thể tham gia các lớp học trực tiếp với giảng viên không?",
+      "Hành trình vạn dặm khởi đầu từ một nét bút thuần thục.",
+      "Lộ trình HSK",
+      "Cộng đồng &amp; Giáo viên",
+      "Hỗ trợ &amp; Pháp lý",
+      "Học tiếng Trung mỗi ngày, nhớ lâu từng từ.",
+      "Từ người mới đến thành thạo",
+      "Nhập môn &amp; Nền tảng",
+      "Giao tiếp độc lập",
+      "Trung - Cao cấp",
+      "Thông thạo bản ngữ",
+      "3 bước học dựa trên trí nhớ não bộ",
+      "Đi từ gốc Hán-Việt",
+      "Bài ngắn 15 phút",
+      "Ôn tập chu kỳ SRS",
+      "Tra cứu &amp; Ngữ cảnh thực tế",
+      "Đồng hành cùng chuyên gia",
+      "Cô Lan Anh",
+      "Câu hỏi thường gặp",
+      "Bắt đầu hành trình tiếng Trung"
+    ],
+    "states": []
+  },
+  {
+    "route": "/vocabulary",
+    "component": "HskCatalog",
+    "files": [
+      "p02_hsk_catalog_desktop_danh_m_c_l_tr_nh_hsk_xueyan",
+      "p02_hsk_catalog_mobile_danh_m_c_l_tr_nh_hsk_di_ng_xueyan"
+    ],
+    "headings": [
+      "Chọn lộ trình tiếng Trung của bạn",
+      "HSK 1 — Khởi Đầu Nhập Môn &amp; Phát Âm Pinyin",
+      "Chưa biết bắt đầu từ đâu?",
+      "Danh mục 7 cấp độ HSK",
+      "Nhập môn &amp; Nền tảng phát âm",
+      "Hội thoại đời sống thường nhật",
+      "Giao tiếp độc lập &amp; Đa ngữ cảnh",
+      "Trung cấp &amp; Thảo luận sâu",
+      "Cao cấp &amp; Ứng dụng chuyên nghiệp",
+      "Thành thạo &amp; Bậc thầy ngôn ngữ",
+      "Nghiên cứu, Thương mại &amp; Biên phiên dịch",
+      "Lợi thế gốc Hán - Việt",
+      "Thuật toán lặp lại Spaced Repetition",
+      "Chuẩn hóa HSK 3.0 Quốc tế",
+      "Lộ trình HSK",
+      "Cộng đồng &amp; Giáo viên",
+      "Hỗ trợ &amp; Pháp lý",
+      "Chọn lộ trình tiếng Trung của bạn",
+      "HSK 1 — Nhập môn &amp; Phát âm Pinyin",
+      "Chưa biết bắt đầu từ đâu?",
+      "Tất cả các cấp độ HSK",
+      "Nhập môn &amp; Nền tảng phát âm",
+      "Hội thoại đời sống thường nhật",
+      "Giao tiếp độc lập &amp; Đa ngữ cảnh",
+      "Trung cấp &amp; Thảo luận sâu",
+      "Cao cấp &amp; Ứng dụng chuyên nghiệp",
+      "Thành thạo &amp; Bậc thầy ngôn ngữ",
+      "Nghiên cứu, Thương mại &amp; Biên phiên dịch"
+    ],
+    "states": []
+  },
+  {
+    "route": "/vocabulary/hsk-1",
+    "component": "HskDetail",
+    "files": [
+      "p03_hsk1_level_detail_desktop_chi_ti_t_l_tr_nh_hsk_1_xueyan",
+      "p03_hsk1_level_detail_mobile_chi_ti_t_l_tr_nh_hsk_1_di_ng_xueyan"
+    ],
+    "headings": [
+      "HSK 1 — Nhập môn &amp; Nền tảng phát âm Pinyin",
+      "Mục tiêu học thuật hoàn chỉnh sau lộ trình",
+      "Ngữ âm chuẩn xác",
+      "Quy tắc chữ Hán",
+      "Giao tiếp đời sống",
+      "Sẵn sàng HSK 1",
+      "Danh sách bài học theo chuyên đề",
+      "Nền tảng Ngữ âm &amp; Phát âm Pinyin",
+      "Chữ Hán căn bản &amp; Số đếm thường nhật",
+      "Bản thân, Gia đình &amp; Mối quan hệ",
+      "Đời sống, Mua sắm &amp; Không gian",
+      "Sẵn sàng làm chủ tiếng Trung từ bài học hôm nay",
+      "Nhập môn &amp; Nền tảng phát âm Pinyin",
+      "Mục tiêu sau khóa học",
+      "Chương trình bài học",
+      "Sẵn sàng bứt phá HSK 1!"
+    ],
+    "states": []
+  },
+  {
+    "route": "/forgot-password",
+    "component": "AuthScreen",
+    "files": [
+      "p04_forgot_password_desktop_qu_n_m_t_kh_u_xueyan",
+      "p04_forgot_password_mobile_qu_n_m_t_kh_u_di_ng_xueyan"
+    ],
+    "headings": [
+      "温故而知新，可以为师矣。",
+      "Bạn quên mật khẩu?",
+      "Kiểm tra hộp thư điện tử",
+      "Bạn quên mật khẩu?",
+      "Ban Cố Vấn XUEYAN"
+    ],
+    "states": []
+  },
+  {
+    "route": "/register",
+    "component": "AuthScreen",
+    "files": [
+      "p04_register_desktop_ng_k_t_i_kho_n_h_c_vi_n_xueyan",
+      "p04_register_mobile_ng_k_t_i_kho_n_h_c_vi_n_di_ng_xueyan"
+    ],
+    "headings": [
+      "Bắt đầu hành trình tiếng Trung của bạn",
+      "Tạo tài khoản học viên",
+      "Kích hoạt tài khoản học viên",
+      "Các bước tiếp theo:",
+      "Bắt đầu hành trình tiếng Trung của bạn",
+      "Xác thực tài khoản học viên"
+    ],
+    "states": [
+      "Thành công",
+      "Xác nhận"
+    ]
+  },
+  {
+    "route": "/teachers",
+    "component": "TeacherDirectory",
+    "files": [
+      "p05_teacher_directory_desktop_t_m_ng_i_ng_h_nh_c_ng_b_n_xueyan",
+      "p05_teacher_directory_mobile_t_m_ng_i_ng_h_nh_c_ng_b_n_di_ng_xueyan"
+    ],
+    "headings": [
+      "Tìm người đồng hành cùng bạn",
+      "Cô Vũ Lan Anh",
+      "Thầy Trần Minh Đức",
+      "Cô Hoàng Cẩm Tú",
+      "Thầy Vương Tuấn (王俊)",
+      "Cô Lê Mai Phương",
+      "Thầy Đỗ Quốc Bảo",
+      "Không tìm thấy giáo viên phù hợp với bộ lọc đã chọn",
+      "Minh bạch học thuật &amp; Tiêu chuẩn XUEYAN",
+      "Tìm người đồng hành cùng bạn",
+      "Cô Vũ Lan Anh",
+      "Thầy Trần Minh Đức",
+      "Cô Hoàng Cẩm Tú",
+      "Thầy Vương Tuấn (王俊)",
+      "Không có giáo viên phù hợp",
+      "Bộ lọc nâng cao",
+      "Chưa biết chọn giáo viên nào?"
+    ],
+    "states": [
+      "Không tìm thấy",
+      "Lỗi"
+    ]
+  },
+  {
+    "route": "/teachers/lan-anh",
+    "component": "TeacherProfile",
+    "files": [
+      "p05_teacher_profile_desktop_h_s_gi_o_vi_n_c_lan_anh_xueyan",
+      "p05_teacher_profile_h_s_gi_o_vi_n_c_lan_anh",
+      "p05_teacher_profile_mobile_h_s_gi_o_vi_n_c_lan_anh_di_ng_xueyan"
+    ],
+    "headings": [
+      "Cô Nguyễn Lan Anh",
+      "Giới thiệu bản thân",
+      "Phương pháp giảng dạy",
+      "Chuẩn hóa thanh điệu &amp; khẩu hình",
+      "Ngữ cảnh thực tế &amp; ứng dụng ngay",
+      "Đồng bộ hệ thống Flashcard SRS",
+      "Kinh nghiệm &amp; Bằng cấp chuyên môn",
+      "Tài liệu mẫu &amp; Giáo án tham khảo",
+      "Bài 01: Quy tắc biến điệu Thanh 3 trong khẩu ngữ",
+      "Bảng phát âm ngữ âm tương hỗ Việt - Hán",
+      "Lớp học do cô Lan Anh trực tiếp đứng lớp",
+      "Khóa Chinh phục HSK 2 Toàn diện &amp; Phản xạ",
+      "Lớp Chuyên sâu: Phát âm &amp; Ngữ điệu Tự nhiên",
+      "Đặt hẹn trao đổi định hướng",
+      "Đặt hẹn tư vấn 1-1",
+      "Đã ghi nhận yêu cầu thành công",
+      "Cô Lan Anh (Trương Lan Anh • 张兰英)",
+      "Chinh phục tiếng Trung qua lăng kính tư duy Hán – Việt",
+      "Uốn âm &amp; Ngữ điệu",
+      "Cốt truyện Bộ thủ",
+      "20 Phút đầu tiên làm quen chữ Hán không áp lực",
+      "Bằng Cấp &amp; Thành Tựu Giảng Dạy",
+      "Thạc sĩ TCSOL Chính quy",
+      "HSK 6 Tuyệt đối &amp; HSKK",
+      "400+ Học viên Vượt Ải",
+      "Các Lớp Học Đang Mở Đăng Ký",
+      "Luyện phản xạ giao tiếp &amp; Nền tảng phát âm HSK 1-2",
+      "Chiến thuật bứt phá từ vựng &amp; Cấu trúc đề HSK 3-4",
+      "Tài liệu mẫu: “Bảng biến điệu thanh điệu tiếng Trung toàn diện”",
+      "Cảm Nhận Từ Học Viên Khóa Trước",
+      "Đặt Lịch Trò Chuyện Học Tập Cùng Cô Lan Anh",
+      "Đã gửi yêu cầu thành công!",
+      "Cô Lan Anh",
+      "Giới thiệu bản thân",
+      "Phương pháp giảng dạy",
+      "Ngữ âm chuẩn xác (Thanh điệu 1-4)",
+      "Ngữ cảnh đàm thoại thực tế",
+      "Hệ thống Flashcard SRS XUEYAN",
+      "Bằng cấp &amp; Kinh nghiệm",
+      "Tài liệu học mẫu",
+      "Lớp học đang mở tuyển",
+      "Lớp HSK 2 Cấp tốc (Chinh phục 300 từ)",
+      "Lớp Phát âm &amp; Ngữ điệu Bắc Kinh"
+    ],
+    "states": [
+      "Lỗi",
+      "Thành công",
+      "Xác nhận"
+    ]
+  },
+  {
+    "route": "/profile",
+    "component": "StudentProfile",
+    "files": [
+      "p06_student_profile_desktop_h_s_h_c_vi_n_c_nh_n_xueyan",
+      "p06_student_profile_mobile_h_s_h_c_vi_n_di_ng_xueyan"
+    ],
+    "headings": [
+      "Nguyễn Văn Hùng",
+      "Mục tiêu học tập cá nhân",
+      "Lộ trình đang theo học",
+      "Lộ trình HSK 2 Toàn Diện",
+      "Tiếng Trung Thương Mại Cơ Bản",
+      "Lớp học trực tuyến đã đăng ký",
+      "HSK 2 - Khóa Luyện Phát Âm &amp; Đàm Thoại Trực Tuyến K24",
+      "Tổng quan học tập",
+      "Huy hiệu học thuật",
+      "Tùy chọn chia sẻ thẻ",
+      "Nguyễn Văn Hùng (阮文雄)",
+      "Mục tiêu học tập",
+      "Tóm tắt tiến độ",
+      "Lộ trình đang học",
+      "Lớp học trực tuyến",
+      "HSK 2 Phát Âm &amp; Đàm Thoại K24",
+      "Huy hiệu học thuật",
+      "Kiểm soát chia sẻ hồ sơ"
+    ],
+    "states": []
+  },
+  {
+    "route": "/teachers/lan-anh/consultation",
+    "component": "ConsultationScreen",
+    "files": [
+      "p06_teacher_consultation_desktop_ng_k_t_v_n_gi_o_vi_n_xueyan",
+      "p06_teacher_consultation_mobile_ng_k_t_v_n_gi_o_vi_n_di_ng_xueyan"
+    ],
+    "headings": [
+      "Đăng ký tư vấn cùng giáo viên",
+      "Yêu cầu tư vấn đã được gửi thành công!",
+      "Cô Lan Anh",
+      "Dang Ky Tu Van",
+      "Yêu cầu đã được gửi!"
+    ],
+    "states": [
+      "Lỗi",
+      "Thành công",
+      "Xác nhận"
+    ]
+  },
+  {
+    "route": "/about",
+    "component": "AboutScreen",
+    "files": [
+      "p07_about_desktop_gi_i_thi_u_n_n_t_ng_h_c_ti_ng_trung_xueyan",
+      "p07_about_mobile_gi_i_thi_u_n_n_t_ng_xueyan_di_ng"
+    ],
+    "headings": [
+      "Học tiếng Trung có phương pháp, bền vững và thấu suốt",
+      "Thiết kế đo ni đóng giày cho hành trình của bạn",
+      "Người mới bắt đầu",
+      "Người ôn thi HSK",
+      "Người tự học kỷ luật",
+      "Cần đồng hành sư phạm",
+      "Ba trụ cột sư phạm cốt lõi tại XUEYAN",
+      "Tiếp cận từ vựng HSK có cấu trúc",
+      "Ôn tập ngắt quãng khoa học (SRS)",
+      "Đồng hành cùng giáo viên chuyên môn",
+      "Kim chỉ nam trong mọi bài học",
+      "Tính học thuật &amp; Chuẩn xác",
+      "Sự thấu hiểu người học Việt",
+      "Trải nghiệm học tập tĩnh tại &amp; Tập trung",
+      "Tự chủ &amp; Bền bỉ",
+      "Hệ thống cấp độ HSK 1 đến HSK 6",
+      "Đội ngũ Giảng viên Đồng hành",
+      "Sẵn sàng xây dựng nền tảng tiếng Trung vững chắc cùng XUEYAN?",
+      "Học tiếng Trung có phương pháp, bền vững và thấu suốt",
+      "Dành cho ai?",
+      "Phương pháp học cốt lõi",
+      "Từ vựng HSK có cấu trúc",
+      "Ôn tập ngắt quãng SRS",
+      "Giáo viên chuyên môn đồng hành",
+      "Giá trị cốt lõi",
+      "Sẵn sàng nâng bước tiếng Trung?"
+    ],
+    "states": []
+  },
+  {
+    "route": "/resources",
+    "component": "ResourceLibrary",
+    "files": [
+      "p07_resource_library_desktop_th_vi_n_t_i_nguy_n_h_c_thu_t_xueyan",
+      "p07_resource_library_mobile_th_vi_n_t_i_nguy_n_h_c_thu_t_di_ng_xueyan"
+    ],
+    "headings": [
+      "Thư viện Tài nguyên &amp; Hướng dẫn Học thuật XUEYAN",
+      "Lộ trình làm chủ hệ thống thanh điệu và biến điệu Pinyin cho người Việt: Khắc phục triệt để lỗi phát âm thanh 1 và thanh 4",
+      "Ban Học thuật XUEYAN &amp; Cô Lan Anh",
+      "Bài viết mới cập nhật",
+      "Bí quyết phát âm chuẩn các vận mẫu khó: ü, ian, uan và iang không bị lai tạp",
+      "Phân biệt tường tận ba trợ từ kết cấu 的 (de), 地 (de), 得 (de) trong mọi ngữ cảnh",
+      "Phương pháp học 150 từ vựng HSK 1 theo cụm từ và trường từ vựng liên tưởng",
+      "Chiến thuật phân bổ thời gian và mẹo làm bài thi HSK 3 &amp; HSKK trung cấp đạt điểm cao",
+      "Ứng dụng đường cong quên lãng Ebbinghaus và Spaced Repetition vào việc tự ôn tập Hán tự",
+      "Trật tự từ trong câu tiếng Trung: So sánh đối chiếu với ngữ pháp tiếng Việt",
+      "Nhận bản tin Hán ngữ học thuật hàng tuần",
+      "Không tìm thấy bài viết phù hợp với từ khóa \" xyz \"",
+      "Khám phá học tập",
+      "Tài nguyên học viện",
+      "Điều khoản &amp; Pháp lý",
+      "Thư viện Tài nguyên",
+      "Lộ trình làm chủ thanh điệu &amp; biến điệu Pinyin cho người Việt: Sửa triệt để lỗi thanh 1 và thanh 4",
+      "Bài viết mới nhất",
+      "Bí quyết phát âm chuẩn các vận mẫu khó: ü, ian, uan không lai tạp",
+      "Phân biệt ba trợ từ kết cấu 的 (de), 地 (de), 得 (de) dễ hiểu nhất",
+      "Học 150 từ vựng HSK 1 theo cụm từ và trường liên tưởng",
+      "Chiến thuật phân bổ thời gian thi HSK 3 &amp; HSKK trung cấp",
+      "Không tìm thấy kết quả phù hợp"
+    ],
+    "states": [
+      "Đang tải",
+      "Không tìm thấy",
+      "Lỗi"
+    ]
+  },
+  {
+    "route": "/help",
+    "component": "HelpScreen",
+    "files": [
+      "p08_help_center_desktop_trung_t_m_tr_gi_p_xueyan",
+      "p08_help_center_mobile_trung_t_m_tr_gi_p_di_ng_xueyan"
+    ],
+    "headings": [
+      "Chúng tôi có thể giúp gì cho bạn?",
+      "Khám phá theo chủ đề",
+      "Truy cập &amp; Tài khoản",
+      "Phương pháp &amp; Lộ trình",
+      "Hệ thống Ôn tập SRS",
+      "Lớp học &amp; Giáo viên",
+      "Kỹ thuật &amp; Thiết bị",
+      "Câu hỏi thường gặp",
+      "Không tìm thấy kết quả phù hợp với từ khóa của bạn",
+      "Câu hỏi gợi ý liên quan:",
+      "Vẫn chưa tìm thấy câu trả lời bạn cần?",
+      "Học tập &amp; Lộ trình",
+      "Mạng lưới sư phạm",
+      "Hỗ trợ &amp; Pháp lý",
+      "Trung tâm trợ giúp",
+      "Chuyên mục",
+      "Truy cập &amp; Tài khoản",
+      "Lộ trình &amp; Học tập",
+      "Ôn tập Flashcard SRS",
+      "Lớp học &amp; Giáo viên",
+      "Kỹ thuật &amp; Thiết bị",
+      "Câu hỏi thường gặp",
+      "Không tìm thấy kết quả",
+      "Chưa giải quyết được vấn đề?"
+    ],
+    "states": [
+      "Không tìm thấy",
+      "Lỗi",
+      "Xác nhận"
+    ]
+  },
+  {
+    "route": "/contact",
+    "component": "ContactScreen",
+    "files": [
+      "p08_support_contact_desktop_li_n_h_h_tr_xueyan",
+      "p08_support_contact_mobile_li_n_h_h_tr_di_ng_xueyan"
+    ],
+    "headings": [
+      "Gửi yêu cầu hỗ trợ tới ban quản trị XUEYAN",
+      "Không thể gửi yêu cầu lúc này",
+      "Yêu cầu hỗ trợ đã được ghi nhận!",
+      "Trước khi gửi yêu cầu",
+      "Kênh liên hệ trực tiếp khác",
+      "Cam kết bảo mật thông tin",
+      "Học tập",
+      "Tài nguyên",
+      "Về XUEYAN",
+      "Gửi yêu cầu hỗ trợ",
+      "Đang gửi yêu cầu...",
+      "Không thể kết nối máy chủ",
+      "Yêu cầu đã gửi thành công!"
+    ],
+    "states": [
+      "Lỗi",
+      "Thành công",
+      "Xác nhận"
+    ]
+  },
+  {
+    "route": "/teacher",
+    "component": "TeacherDashboard",
+    "files": [
+      "t01_teacher_dashboard_desktop_b_ng_i_u_khi_n_gi_ng_vi_n_xueyan",
+      "t01_teacher_dashboard_mobile_b_ng_i_u_khi_n_gi_ng_vi_n_di_ng_xueyan"
+    ],
+    "headings": [
+      "Xin chào Cô Lan Anh",
+      "Ca Dạy Sắp Diễn Ra",
+      "Buổi 08: Đặt câu với câu chữ 把 (Bǎ) &amp; Luyện bút thuận",
+      "Buổi 14: Luyện đề mô phỏng HSK 3 phần Đọc hiểu",
+      "Bài Tập Chờ Phản Hồi Sư Phạm",
+      "Yêu Cầu Tư Vấn Mới",
+      "Vũ Hải Đăng",
+      "Nguyễn Thị Mai",
+      "Các Lớp Học Đang Phụ Trách",
+      "Hán ngữ Chuẩn HSK 2 K24",
+      "Luyện thi HSK 3 Cấp tốc",
+      "Khẩu ngữ HSK 1 Cơ bản K09",
+      "Bạn chưa có lịch dạy hoặc bài tập cần chấm hôm nay",
+      "Xin chào Cô Lan Anh",
+      "HSK 2 Khóa K24 — Buổi 08",
+      "Bài cần chấm gấp",
+      "Yêu cầu tư vấn mới",
+      "Lớp học phụ trách",
+      "Thảnh thơi đón chào học viên mới"
+    ],
+    "states": [
+      "Chưa có",
+      "Xác nhận"
+    ]
+  },
+  {
+    "route": "/teacher/classes/hsk2-k24",
+    "component": "TeacherClassDetail",
+    "files": [
+      "t02_class_detail_desktop_chi_ti_t_qu_n_l_l_p_h_c_hsk_2_k24_xueyan",
+      "t02_class_detail_mobile_chi_ti_t_qu_n_l_l_p_h_c_hsk_2_k24_di_ng_xueyan"
+    ],
+    "headings": [
+      "HSK 2 Cấp tốc K24 速成二班",
+      "Buổi học sắp tới &amp; Điều hành lớp",
+      "Bài tập lớp &amp; Trạng thái chấm điểm",
+      "Bài tập 07: Luyện viết 15 Hán tự chủ đề Mua sắm &amp; ghi âm ngữ điệu",
+      "Bài tập 06: Hội thoại song ngữ đặt câu với bổ ngữ kết quả (好, 完, 懂)",
+      "Bài tập 08: Đọc hiểu văn bản HSK 2 ngắn &amp; Lựa chọn đáp án đúng",
+      "Tiến độ chi tiết từng Học viên (18)",
+      "Kho Tài liệu &amp; Giáo trình số",
+      "Thông báo lớp học",
+      "Quản Lý Lớp Học",
+      "HSK 2 Cấp tốc K24",
+      "Buổi 15: Ăn uống &amp; Mua sắm (饮食与购物)",
+      "Bài tập &amp; Chấm điểm 6 bài chờ",
+      "Bài tập 07: Viết 15 Hán tự &amp; Ghi âm",
+      "Bài tập 06: Đặt câu bổ ngữ kết quả",
+      "folder_open Tài liệu lớp học (3)",
+      "Danh sách học viên (18 thành viên)",
+      "Nguyễn Văn Hùng",
+      "Lê Hoàng Long",
+      "Trần Thị Mai"
+    ],
+    "states": []
+  },
+  {
+    "route": "/teacher/assignments/4",
+    "component": "AssignmentReview",
+    "files": [
+      "t04_teacher_assignment_review_desktop_ch_m_b_i_nh_n_x_t_s_ph_m_xueyan",
+      "t04_teacher_assignment_review_mobile_ch_m_b_i_nh_n_x_t_di_ng_xueyan"
+    ],
+    "headings": [
+      "Yêu cầu đề bài",
+      "Bài tập 04: Viết giới thiệu bản thân",
+      "Bài làm của học viên",
+      "Đánh giá &amp; Chấm điểm"
+    ],
+    "states": [
+      "Lỗi",
+      "Thành công",
+      "Lưu nháp"
+    ]
+  },
+  {
+    "route": "/teacher/profile",
+    "component": "TeacherProfileEditor",
+    "files": [
+      "t05_teacher_profile_editor_desktop_ch_nh_s_a_h_s_gi_o_vi_n_xueyan",
+      "t05_teacher_profile_editor_mobile_ch_nh_s_a_h_s_gi_o_vi_n_di_ng_xueyan"
+    ],
+    "headings": [
+      "Chỉnh sửa hồ sơ giảng viên",
+      "Ảnh chân dung &amp; Nhận diện sư phạm",
+      "Giới thiệu bản thân &amp; Triết lý giáo dục",
+      "Phương pháp giảng dạy chủ đạo",
+      "Cấp độ đảm nhiệm &amp; Ngôn ngữ giảng dạy",
+      "Kinh nghiệm giảng dạy &amp; Công tác",
+      "Văn bằng &amp; Chứng chỉ học thuật",
+      "Tài liệu giới thiệu &amp; Video bài giảng mẫu",
+      "Thời gian biểu &amp; Khung giờ tư vấn 1:1",
+      "Cô Lan Anh",
+      "Hồ Sơ",
+      "badge Thông tin cá nhân",
+      "psychology Giới thiệu &amp; Phương pháp",
+      "workspace_premium Văn bằng &amp; Chứng chỉ",
+      "Thạc sĩ Giảng dạy tiếng Trung (MTCSOL)",
+      "Chứng chỉ HSK Cấp 6 (285/300)",
+      "Chứng chỉ Giáo viên Quốc tế CTCSOL",
+      "videocam Bài giảng &amp; Lịch tư vấn"
+    ],
+    "states": [
+      "Thành công",
+      "chưa lưu",
+      "Lưu nháp"
+    ]
+  }
+]

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-primary": "#93cdf6", "tertiary-fixed-dim": "#f4be59", "on-tertiary-fixed-variant": "#5e4200", "inverse-surface": "#21333e", "on-secondary-fixed": "#002114", "surface-tint": "#236487", "tertiary": "#563b00", "secondary-fixed-dim": "#82d7af", "on-error": "#ffffff", "primary-container": "#185d80", "inverse-on-surface": "#e3f3ff", "on-surface-variant": "#40484e", "secondary": "#046c4b", "tertiary-container": "#745100", "surface-variant": "#d2e5f4", "on-primary": "#ffffff", "primary-fixed": "#c7e7ff", "secondary-fixed": "#9ef4ca", "primary-fixed-dim": "#93cdf6", "error": "#ba1a1a", "outline-variant": "#c0c7ce", "on-surface": "#0a1e28", "tertiary-fixed": "#ffdea9", "surface": "#f5faff", "surface-container-high": "#d7ebf9", "on-tertiary-fixed": "#271900", "on-primary-container": "#9ad5fd", "primary": "#004563", "on-error-container": "#93000a", "on-tertiary-container": "#fcc55f", "on-primary-fixed": "#001e2e", "on-secondary-fixed-variant": "#005138", "on-tertiary": "#ffffff", "background": "#f5faff", "surface-container-low": "#e9f5ff", "surface-container-highest": "#d2e5f4", "surface-dim": "#c9ddeb", "surface-bright": "#f5faff", "on-primary-fixed-variant": "#004c6c", "error-container": "#ffdad6", "on-background": "#0a1e28", "surface-container": "#ddf1ff", "surface-container-lowest": "#ffffff", "on-secondary": "#ffffff", "secondary-container": "#9bf1c7", "on-secondary-container": "#0f704f", "outline": "#71787e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-2xl": "3rem", "margin-mobile": "1rem", "gutter": "1.5rem", "space-sm": "0.5rem", "space-xl": "2rem", "gutter-mobile": "1rem", "margin": "2rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem" }, "fontFamily": { "display-lg": ["Be Vietnam Pro"], "label-md": ["Be Vietnam Pro"], "label-sm": ["Be Vietnam Pro"], "body-sm": ["Be Vietnam Pro"], "body-lg": ["Be Vietnam Pro"], "hanzi-hero": ["Noto Sans SC"], "headline-lg-mobile": ["Be Vietnam Pro"], "headline-lg": ["Be Vietnam Pro"], "body-md": ["Be Vietnam Pro"], "headline-sm": ["Be Vietnam Pro"], "display-lg-mobile": ["Be Vietnam Pro"], "headline-md": ["Be Vietnam Pro"], "hanzi-inline": ["Noto Sans SC"], "hanzi-card": ["Noto Sans SC"], "pinyin-display": ["Be Vietnam Pro"] }, "fontSize": { "display-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "hanzi-hero": ["72px", { "lineHeight": "84px", "fontWeight": "500" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "hanzi-inline": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "hanzi-card": ["40px", { "lineHeight": "48px", "fontWeight": "500" }], "pinyin-display": ["18px", { "lineHeight": "24px", "letterSpacing": "0.02em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-full"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="logo.jpg" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1Vsh2LAS9uBPlaa3Xs2R0g6GcBsIpGZKk7ZVSkNHpGee_C6USFkNEaArq6SuvHQhj96dYoUCWPmC3RbD9IZnogeDkq9mUHlqLAdQSofXiohdm3NWzM_pPkinLFwgsYC3kAbKBs4fsppC5r3wMJ-IVdSC4rYeeRTDsKKKqiDjCdU0e7Whn3olkAgjfHXqBWaPON2ddVMlYcj6pLuwrWyOcd8GWNgIBMxZJdiwv7aIzLJN7BLlPOG2Kzm-TWviFs-Y5CFf2Ft053Jjg"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-primary tracking-wide uppercase truncate">XUEYAN</span><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Từ Điển</h1></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><a class="min-h-[44px] px-space-md py-space-xs flex items-center justify-center rounded-xl bg-primary-container text-on-primary font-label-md text-label-md transition-colors hover:bg-primary" data-path="dang-nhap" href="#">Đăng nhập</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Demo State Switcher (Floating Segment Control) -->
+<div class="px-gutter-mobile pt-space-sm pb-space-xs overflow-x-auto flex items-center gap-space-xs no-scrollbar">
+<button class="px-space-md py-space-xs rounded-full font-label-sm text-label-sm whitespace-nowrap transition-all shadow-sm bg-primary text-on-primary" id="state-btn-results" onclick="switchDictionaryState('results')">
+      Kết quả
+    </button>
+<button class="px-space-md py-space-xs rounded-full font-label-sm text-label-sm whitespace-nowrap transition-all bg-surface-container text-on-surface-variant hover:text-on-surface" id="state-btn-initial" onclick="switchDictionaryState('initial')">
+      Gợi ý ban đầu
+    </button>
+<button class="px-space-md py-space-xs rounded-full font-label-sm text-label-sm whitespace-nowrap transition-all bg-surface-container text-on-surface-variant hover:text-on-surface" id="state-btn-loading" onclick="switchDictionaryState('loading')">
+      Đang tải
+    </button>
+<button class="px-space-md py-space-xs rounded-full font-label-sm text-label-sm whitespace-nowrap transition-all bg-surface-container text-on-surface-variant hover:text-on-surface" id="state-btn-empty" onclick="switchDictionaryState('empty')">
+      Không có kết quả
+    </button>
+</div>
+<!-- Search Header Area -->
+<div class="px-gutter-mobile pt-space-xs pb-space-sm flex flex-col gap-space-sm">
+<!-- Search Bar -->
+<div class="relative w-full flex items-center">
+<div class="absolute left-3.5 flex items-center justify-center text-primary pointer-events-none">
+<span class="material-symbols-outlined text-[22px]">search</span>
+</div>
+<input class="w-full h-12 pl-11 pr-11 bg-surface-container-lowest rounded-xl font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none shadow-sm transition-all" id="dict-search-input" placeholder="Tìm Hán tự, pinyin hoặc nghĩa tiếng Việt" type="text" value="xue"/>
+<button aria-label="Xóa nội dung tìm kiếm" class="absolute right-3 w-7 h-7 flex items-center justify-center rounded-full bg-surface-variant text-on-surface-variant hover:bg-surface-container-high transition-colors" id="btn-clear-search" onclick="clearSearchInput()" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<!-- Quick Actions Bar -->
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="h-10 px-space-md bg-surface-container-low rounded-xl flex items-center justify-center gap-space-xs text-primary transition-all hover:bg-surface-container active:scale-[0.98]" onclick="openRadicalModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+<span class="font-label-sm text-label-sm">Tra theo Bộ thủ</span>
+</button>
+<button class="h-10 px-space-md bg-surface-container-low rounded-xl flex items-center justify-center gap-space-xs text-on-surface-variant transition-all hover:bg-surface-container active:scale-[0.98]" onclick="showToast('Đang mở 12 từ đã tra gần đây')" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span class="font-label-sm text-label-sm">Lịch sử tra cứu</span>
+</button>
+</div>
+</div>
+<!-- VIEW 1: RESULTS VIEW -->
+<div class="flex flex-col w-full" id="view-results">
+<!-- HSK Filter Chips -->
+<div class="py-space-xs px-gutter-mobile flex items-center gap-space-xs overflow-x-auto no-scrollbar">
+<button class="px-space-md py-1.5 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-primary-container text-on-primary shadow-sm flex items-center gap-1">
+<span>Tất cả</span>
+<span class="text-[11px] opacity-80">(3)</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container flex items-center gap-1">
+<span>HSK 1</span>
+<span class="text-[11px] opacity-80">(3)</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container-lowest text-on-surface-variant opacity-60 flex items-center gap-1">
+<span>HSK 2</span>
+<span class="text-[11px]">(0)</span>
+</button>
+<button class="px-space-md py-1.5 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container">
+        HSK 3
+      </button>
+<button class="px-space-md py-1.5 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container">
+        HSK 4
+      </button>
+<button class="px-space-md py-1.5 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container">
+        HSK 5
+      </button>
+<button class="px-space-md py-1.5 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container">
+        HSK 6
+      </button>
+</div>
+<!-- Results Count Banner -->
+<div class="px-gutter-mobile py-space-xs flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 kết quả phù hợp</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+        Bộ lọc nhanh
+      </span>
+</div>
+<!-- Cards List -->
+<div class="px-gutter-mobile py-space-xs flex flex-col gap-space-md">
+<!-- Card 1: 学习 -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative overflow-hidden transition-all hover:shadow-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-baseline gap-space-sm flex-wrap">
+<span class="font-hanzi-card text-[28px] font-semibold text-primary leading-tight">学习</span>
+<span class="font-pinyin-display text-pinyin-display text-on-surface-variant font-medium">xuéxí</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[11px] font-semibold">
+                HSK 1
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px]">
+                Hán-Việt: Học Tập
+              </span>
+</div>
+</div>
+<!-- Quick Radical Badge -->
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="font-hanzi-inline text-[16px] font-medium">子</span>
+</div>
+</div>
+<!-- Meaning -->
+<div class="bg-surface-container-low rounded-lg px-space-md py-2 flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium leading-relaxed">học; học tập, nghiên cứu</span>
+</div>
+<!-- Example -->
+<div class="px-space-xs flex flex-col gap-1">
+<p class="font-hanzi-inline text-[17px] text-on-surface leading-snug">我每天学习中文。</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-primary-container font-medium">Wǒ měitiān xuéxí Zhōngwén.</span> — Tôi học tiếng Trung mỗi ngày.
+          </p>
+</div>
+<!-- Actions -->
+<div class="pt-space-xs flex items-center justify-between gap-space-sm">
+<button class="h-10 px-space-md rounded-lg bg-surface-container text-primary font-label-md text-label-md flex items-center gap-1.5 transition-transform active:scale-95" onclick="playAudioPronunciation('xuéxí')" type="button">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+<span>Nghe</span>
+</button>
+<button class="h-10 px-space-md rounded-lg bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1.5 transition-transform active:scale-95 shadow-sm" onclick="triggerGuestBookmarkPrompt('学习')" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+<span>Lưu từ</span>
+</button>
+</div>
+</article>
+<!-- Card 2: 朋友 -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative overflow-hidden transition-all hover:shadow-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-baseline gap-space-sm flex-wrap">
+<span class="font-hanzi-card text-[28px] font-semibold text-primary leading-tight">朋友</span>
+<span class="font-pinyin-display text-pinyin-display text-on-surface-variant font-medium">péngyou</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[11px] font-semibold">
+                HSK 1
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px]">
+                Hán-Việt: Bằng Hữu
+              </span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="font-hanzi-inline text-[16px] font-medium">月</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg px-space-md py-2 flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium leading-relaxed">bạn; bạn bè</span>
+</div>
+<div class="px-space-xs flex flex-col gap-1">
+<p class="font-hanzi-inline text-[17px] text-on-surface leading-snug">他是我的好朋友。</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-primary-container font-medium">Tā shì wǒ de hǎo péngyou.</span> — Cậu ấy là bạn tốt của tôi.
+          </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between gap-space-sm">
+<button class="h-10 px-space-md rounded-lg bg-surface-container text-primary font-label-md text-label-md flex items-center gap-1.5 transition-transform active:scale-95" onclick="playAudioPronunciation('péngyou')" type="button">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+<span>Nghe</span>
+</button>
+<button class="h-10 px-space-md rounded-lg bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1.5 transition-transform active:scale-95 shadow-sm" onclick="triggerGuestBookmarkPrompt('朋友')" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+<span>Lưu từ</span>
+</button>
+</div>
+</article>
+<!-- Card 3: 今天 -->
+<article class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative overflow-hidden transition-all hover:shadow-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-baseline gap-space-sm flex-wrap">
+<span class="font-hanzi-card text-[28px] font-semibold text-primary leading-tight">今天</span>
+<span class="font-pinyin-display text-pinyin-display text-on-surface-variant font-medium">jīntiān</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[11px] font-semibold">
+                HSK 1
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[11px]">
+                Hán-Việt: Kim Thiên
+              </span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="font-hanzi-inline text-[16px] font-medium">人</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-lg px-space-md py-2 flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium leading-relaxed">hôm nay; ngày này</span>
+</div>
+<div class="px-space-xs flex flex-col gap-1">
+<p class="font-hanzi-inline text-[17px] text-on-surface leading-snug">今天天气非常好。</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-primary-container font-medium">Jīntiān tiānqì fēicháng hǎo.</span> — Hôm nay thời tiết rất đẹp.
+          </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between gap-space-sm">
+<button class="h-10 px-space-md rounded-lg bg-surface-container text-primary font-label-md text-label-md flex items-center gap-1.5 transition-transform active:scale-95" onclick="playAudioPronunciation('jīntiān')" type="button">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+<span>Nghe</span>
+</button>
+<button class="h-10 px-space-md rounded-lg bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-1.5 transition-transform active:scale-95 shadow-sm" onclick="triggerGuestBookmarkPrompt('今天')" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_add</span>
+<span>Lưu từ</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Pagination Pill Bar -->
+<div class="px-gutter-mobile pt-space-lg pb-space-md flex items-center justify-center">
+<div class="bg-surface-container-lowest px-space-md py-1.5 rounded-full shadow-sm flex items-center gap-space-md">
+<button aria-label="Trang trước" class="w-8 h-8 rounded-full flex items-center justify-center text-outline opacity-40 cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface">Trang 1 / 1</span>
+<button aria-label="Trang sau" class="w-8 h-8 rounded-full flex items-center justify-center text-outline opacity-40 cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- VIEW 2: INITIAL SUGGESTIONS VIEW (Default Hidden) -->
+<div class="hidden flex-col w-full px-gutter-mobile py-space-sm gap-space-lg" id="view-initial">
+<!-- Quick Suggested Keywords -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[16px] text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">trending_up</span>
+          Tìm kiếm phổ biến
+        </span>
+<span class="font-label-sm text-label-sm text-outline">Cập nhật hôm nay</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<button class="px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" onclick="fillSearch('你好')">
+          你好 nǐhǎo
+        </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" onclick="fillSearch('谢谢')">
+          谢谢 xièxie
+        </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" onclick="fillSearch('中国')">
+          中国 Zhōngguó
+        </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" onclick="fillSearch('高兴')">
+          高兴 gāoxìng
+        </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" onclick="fillSearch('再见')">
+          再见 zàijiàn
+        </button>
+</div>
+</div>
+<!-- HSK 1 Core Vocabulary Starters -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[16px] text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">star</span>
+          Từ vựng HSK 1 hay gặp
+        </span>
+<span class="font-label-sm text-label-sm text-primary font-medium cursor-pointer">Xem tất cả 150 từ</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-1 cursor-pointer hover:bg-surface-container-low transition-colors" onclick="fillSearch('水')">
+<div class="flex items-baseline justify-between">
+<span class="font-hanzi-card text-[24px] font-semibold text-primary">水</span>
+<span class="font-pinyin-display text-[14px] text-on-surface-variant">shuǐ</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface line-clamp-1">nước; chất lỏng</span>
+<span class="font-label-sm text-[11px] text-secondary font-medium">HSK 1 • Thủy</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-1 cursor-pointer hover:bg-surface-container-low transition-colors" onclick="fillSearch('吃')">
+<div class="flex items-baseline justify-between">
+<span class="font-hanzi-card text-[24px] font-semibold text-primary">吃</span>
+<span class="font-pinyin-display text-[14px] text-on-surface-variant">chī</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface line-clamp-1">ăn; dùng bữa</span>
+<span class="font-label-sm text-[11px] text-secondary font-medium">HSK 1 • Cật</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-1 cursor-pointer hover:bg-surface-container-low transition-colors" onclick="fillSearch('大')">
+<div class="flex items-baseline justify-between">
+<span class="font-hanzi-card text-[24px] font-semibold text-primary">大</span>
+<span class="font-pinyin-display text-[14px] text-on-surface-variant">dà</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface line-clamp-1">to; lớn; khổng lồ</span>
+<span class="font-label-sm text-[11px] text-secondary font-medium">HSK 1 • Đại</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-1 cursor-pointer hover:bg-surface-container-low transition-colors" onclick="fillSearch('家')">
+<div class="flex items-baseline justify-between">
+<span class="font-hanzi-card text-[24px] font-semibold text-primary">家</span>
+<span class="font-pinyin-display text-[14px] text-on-surface-variant">jiā</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface line-clamp-1">nhà; gia đình</span>
+<span class="font-label-sm text-[11px] text-secondary font-medium">HSK 1 • Gia</span>
+</div>
+</div>
+</div>
+<!-- Editorial Learning Tip Banner -->
+<div class="bg-surface-container rounded-xl p-space-md flex gap-space-sm items-center">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">lightbulb</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Mẹo tra cứu nhanh</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+          Bạn có thể gõ Pinyin có số (ví dụ: <strong class="text-primary font-medium">xue2xi2</strong>) hoặc gõ âm Hán-Việt để tìm ngay Hán tự tương ứng.
+        </span>
+</div>
+</div>
+</div>
+<!-- VIEW 3: LOADING SKELETON (Default Hidden) -->
+<div class="hidden flex-col w-full px-gutter-mobile py-space-sm gap-space-md" id="view-loading">
+<div class="flex items-center justify-between">
+<div class="h-4 w-32 bg-surface-container rounded-full animate-pulse"></div>
+<div class="h-4 w-16 bg-surface-container rounded-full animate-pulse"></div>
+</div>
+<!-- Skeleton Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex justify-between items-start">
+<div class="flex flex-col gap-2">
+<div class="h-8 w-24 bg-surface-container rounded animate-pulse"></div>
+<div class="flex gap-2">
+<div class="h-4 w-12 bg-surface-container rounded-full animate-pulse"></div>
+<div class="h-4 w-28 bg-surface-container rounded-full animate-pulse"></div>
+</div>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container animate-pulse"></div>
+</div>
+<div class="h-10 w-full bg-surface-container-low rounded-lg animate-pulse"></div>
+<div class="h-5 w-3/4 bg-surface-container rounded animate-pulse"></div>
+<div class="flex justify-between pt-2">
+<div class="h-9 w-24 bg-surface-container rounded-lg animate-pulse"></div>
+<div class="h-9 w-24 bg-surface-container rounded-lg animate-pulse"></div>
+</div>
+</div>
+<!-- Skeleton Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex justify-between items-start">
+<div class="flex flex-col gap-2">
+<div class="h-8 w-28 bg-surface-container rounded animate-pulse"></div>
+<div class="flex gap-2">
+<div class="h-4 w-12 bg-surface-container rounded-full animate-pulse"></div>
+<div class="h-4 w-28 bg-surface-container rounded-full animate-pulse"></div>
+</div>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container animate-pulse"></div>
+</div>
+<div class="h-10 w-full bg-surface-container-low rounded-lg animate-pulse"></div>
+<div class="h-5 w-2/3 bg-surface-container rounded animate-pulse"></div>
+<div class="flex justify-between pt-2">
+<div class="h-9 w-24 bg-surface-container rounded-lg animate-pulse"></div>
+<div class="h-9 w-24 bg-surface-container rounded-lg animate-pulse"></div>
+</div>
+</div>
+</div>
+<!-- VIEW 4: NO RESULTS / EMPTY STATE (Default Hidden) -->
+<div class="hidden flex-col items-center justify-center px-gutter-mobile py-space-xl text-center" id="view-empty">
+<div class="w-20 h-20 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[36px]">search_off</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs font-semibold">
+      Không tìm thấy kết quả
+    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mb-space-lg leading-relaxed">
+      Không có từ vựng nào khớp với từ khóa của bạn. Hãy thử kiểm tra dấu thanh pinyin hoặc đổi cách tìm.
+    </p>
+<!-- Suggestions for better search -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md text-left shadow-sm flex flex-col gap-space-sm mb-space-lg">
+<span class="font-label-md text-label-md text-primary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">tips_and_updates</span>
+        Gợi ý tìm kiếm chuẩn xác:
+      </span>
+<ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant pl-1">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary flex-shrink-0 mt-0.5">check_circle</span>
+<span>Sử dụng Pinyin kèm chữ số: ví dụ <strong class="text-on-surface font-medium">ni3hao3</strong></span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary flex-shrink-0 mt-0.5">check_circle</span>
+<span>Tra cứu thông qua phân loại 214 Bộ thủ thông dụng</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary flex-shrink-0 mt-0.5">check_circle</span>
+<span>Tìm bằng nghĩa tiếng Việt cơ bản (ví dụ: "yêu", "ăn", "ngủ")</span>
+</li>
+</ul>
+</div>
+<button class="w-full h-12 bg-primary-container text-on-primary rounded-xl font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-all" onclick="openRadicalModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">grid_view</span>
+<span>Mở bảng 214 Bộ Thủ Khang Hy</span>
+</button>
+</div>
+<!-- RADICAL BOTTOM SHEET / MODAL (Interactive) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex-col justify-end" id="radical-modal">
+<div class="w-full bg-surface-container-lowest rounded-t-2xl max-h-[80vh] flex flex-col shadow-xl">
+<!-- Sheet Handle & Header -->
+<div class="pt-3 pb-2 px-gutter-mobile flex flex-col items-center">
+<div class="w-10 h-1 rounded-full bg-outline-variant mb-3"></div>
+<div class="w-full flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">grid_view</span>
+<span class="font-headline-sm text-[18px] text-on-surface font-semibold">Tra theo Bộ thủ (部首)</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="closeRadicalModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Radical Quick Stroke Count Selector -->
+<div class="px-gutter-mobile py-space-xs flex items-center gap-2 overflow-x-auto no-scrollbar">
+<span class="font-label-sm text-[11px] text-outline uppercase tracking-wider">Số nét:</span>
+<button class="px-2.5 py-1 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm">1 nét</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm">2 nét</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm">3 nét</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm">4 nét</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm">5+ nét</button>
+</div>
+<!-- Radical Grid -->
+<div class="p-gutter-mobile overflow-y-auto grid grid-cols-4 gap-space-sm pb-10">
+<button class="p-2.5 rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-1 hover:bg-surface-container" onclick="selectRadical('一', 'Nhất')">
+<span class="font-hanzi-card text-[24px] text-primary">一</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Nhất (1)</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-1 hover:bg-surface-container" onclick="selectRadical('丨', 'Cổn')">
+<span class="font-hanzi-card text-[24px] text-primary">丨</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Cổn (1)</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-1 hover:bg-surface-container" onclick="selectRadical('丶', 'Chủ')">
+<span class="font-hanzi-card text-[24px] text-primary">丶</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Chủ (1)</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-1 hover:bg-surface-container" onclick="selectRadical('丿', 'Phiệt')">
+<span class="font-hanzi-card text-[24px] text-primary">丿</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Phiệt (1)</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-1 hover:bg-surface-container" onclick="selectRadical('乙', 'Ất')">
+<span class="font-hanzi-card text-[24px] text-primary">乙</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Ất (1)</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-1 hover:bg-surface-container" onclick="selectRadical('亻', 'Nhân đứng')">
+<span class="font-hanzi-card text-[24px] text-primary">亻</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Nhân (2)</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-1 hover:bg-surface-container" onclick="selectRadical('氵', 'Ba chấm thủy')">
+<span class="font-hanzi-card text-[24px] text-primary">氵</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Thủy (3)</span>
+</button>
+<button class="p-2.5 rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-1 hover:bg-surface-container" onclick="selectRadical('口', 'Khẩu')">
+<span class="font-hanzi-card text-[24px] text-primary">口</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Khẩu (3)</span>
+</button>
+</div>
+</div>
+</div>
+<!-- GUEST BOOKMARK LOGIN PROMPT BOTTOM SHEET -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex-col justify-end" id="bookmark-guest-modal">
+<div class="w-full bg-surface-container-lowest rounded-t-3xl p-gutter-mobile pb-8 flex flex-col items-center text-center shadow-2xl relative">
+<div class="w-12 h-1.5 rounded-full bg-outline-variant mb-4"></div>
+<!-- Icon with Gentle Glow -->
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-tertiary mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-1">
+        Lưu vào Sổ từ vựng
+      </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md max-w-xs leading-relaxed">
+        Đăng nhập để lưu từ vựng <span class="font-semibold text-primary" id="prompt-target-word"></span> vào Sổ từ cá nhân và kích hoạt thuật toán ôn tập Spaced Repetition (SRS).
+      </p>
+<!-- Key Value Points -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-sm flex items-center justify-around mb-space-md text-left">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm text-on-surface">Đồng bộ đa thiết bị</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">autorenew</span>
+<span class="font-label-sm text-label-sm text-on-surface">Nhắc ôn thông minh</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="w-full flex flex-col gap-space-sm">
+<a class="w-full h-12 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center shadow-md active:scale-[0.98] transition-all" data-path="dang-nhap" href="#">
+          Đăng nhập ngay
+        </a>
+<button class="w-full h-10 rounded-xl bg-transparent text-on-surface-variant font-label-md text-label-md hover:bg-surface-container transition-colors" onclick="closeGuestBookmarkPrompt()" type="button">
+          Tiếp tục xem tự do
+        </button>
+</div>
+</div>
+</div>
+<!-- Micro Toast Notification Container -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-space-md py-2 rounded-full font-label-sm text-label-sm shadow-lg pointer-events-none opacity-0 transition-opacity duration-300 flex items-center gap-2" id="dict-toast">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span>
+<span id="toast-text">Thông báo</span>
+</div>
+</div>
+<script>
+  function switchDictionaryState(state) {
+    const states = ['results', 'initial', 'loading', 'empty'];
+    states.forEach(s => {
+      const viewEl = document.getElementById('view-' + s);
+      const btnEl = document.getElementById('state-btn-' + s);
+      if (viewEl) {
+        if (s === state) {
+          viewEl.classList.remove('hidden');
+          viewEl.classList.add('flex');
+        } else {
+          viewEl.classList.add('hidden');
+          viewEl.classList.remove('flex');
+        }
+      }
+      if (btnEl) {
+        if (s === state) {
+          btnEl.className = 'px-space-md py-space-xs rounded-full font-label-sm text-label-sm whitespace-nowrap transition-all shadow-sm bg-primary text-on-primary';
+        } else {
+          btnEl.className = 'px-space-md py-space-xs rounded-full font-label-sm text-label-sm whitespace-nowrap transition-all bg-surface-container text-on-surface-variant hover:text-on-surface';
+        }
+      }
+    });
+
+    const searchInput = document.getElementById('dict-search-input');
+    if (state === 'initial') {
+      if (searchInput) searchInput.value = '';
+    } else if (state === 'empty') {
+      if (searchInput) searchInput.value = 'xyz123';
+    } else if (state === 'results') {
+      if (searchInput) searchInput.value = 'xue';
+    }
+  }
+
+  function clearSearchInput() {
+    const input = document.getElementById('dict-search-input');
+    if (input) {
+      input.value = '';
+      input.focus();
+      switchDictionaryState('initial');
+    }
+  }
+
+  function fillSearch(val) {
+    const input = document.getElementById('dict-search-input');
+    if (input) {
+      input.value = val;
+      switchDictionaryState('results');
+      showToast('Đang tra cứu từ "' + val + '"');
+    }
+  }
+
+  function playAudioPronunciation(word) {
+    showToast('Đang phát phát âm: [' + word + ']');
+  }
+
+  function triggerGuestBookmarkPrompt(word) {
+    const modal = document.getElementById('bookmark-guest-modal');
+    const wordTarget = document.getElementById('prompt-target-word');
+    if (wordTarget) wordTarget.innerText = '“' + word + '”';
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+  }
+
+  function closeGuestBookmarkPrompt() {
+    const modal = document.getElementById('bookmark-guest-modal');
+    if (modal) {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  function openRadicalModal() {
+    const modal = document.getElementById('radical-modal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+  }
+
+  function closeRadicalModal() {
+    const modal = document.getElementById('radical-modal');
+    if (modal) {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  function selectRadical(radical, name) {
+    closeRadicalModal();
+    fillSearch(radical);
+    showToast('Bộ ' + radical + ' (' + name + ')');
+  }
+
+  let toastTimer;
+  function showToast(msg) {
+    const toast = document.getElementById('dict-toast');
+    const toastText = document.getElementById('toast-text');
+    if (toast && toastText) {
+      toastText.innerText = msg;
+      toast.classList.remove('opacity-0');
+      toast.classList.add('opacity-100');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0');
+      }, 2200);
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-semibold"><div class="flex items-center justify-around h-16 px-space-xs"><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="trang-chu" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Trang chủ</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="lo-trinh" href="#"><span class="material-symbols-outlined text-[24px]">alt_route</span><span class="font-label-sm text-label-sm">Lộ trình</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="tu-dien" href="#"><span class="material-symbols-outlined text-[24px]">menu_book</span><span class="font-label-sm text-label-sm">Từ điển</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="on-tap" href="#"><span class="material-symbols-outlined text-[24px]">style</span><span class="font-label-sm text-label-sm">Ôn tập</span></a><a class="min-w-[44px] min-h-[44px] flex flex-col items-center justify-center gap-0.5 px-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="tai-khoan" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm">Tài khoản</span></a></div></nav></body></html>

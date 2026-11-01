@@ -1,0 +1,4 @@
+.studyCard{min-height:360px;padding:28px;display:flex;flex-direction:column;gap:18px;align-items:center}
+.ratings{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:sticky;bottom:0;background:var(--surface);padding:16px 0;width:100%}
+.ratings button{min-width:90px}.studyCard h2{margin:0}
+@media(max-width:760px){.studyCard{min-height:0;padding:20px;gap:16px}.ratings{gap:8px}.ratings button{flex:1;min-width:60px;padding:10px}.studyCard p{margin:0}}

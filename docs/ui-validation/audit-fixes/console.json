@@ -1,0 +1,8 @@
+[
+  {
+    "level": "error",
+    "message": "Error: No link element found for chunk /_next/static/chunks/components_ui_ui_module_1wenhq8.css\n    at http://localhost:3105/_next/static/chunks/turbopack-_08bm286._.js:2417:28\n    at new Promise (<anonymous>)\n    at Object.reloadChunk (http://localhost:3105/_next/static/chunks/turbopack-_08bm286._.js:2406:20)\n    at applyChunkListUpdate (http://localhost:3105/_next/static/chunks/turbopack-_08bm286._.js:1940:46)\n    at applyUpdate (http://localhost:3105/_next/static/chunks/turbopack-_08bm286._.js:1914:13)\n    at handleApply (http://localhost:3105/_next/static/chunks/turbopack-_08bm286._.js:1977:17)\n    at triggerUpdate (http://localhost:3105/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js:456:9)\n    at applyAggregatedUpdates (http://localhost:3105/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js:98:9)\n    at http://localhost:3105/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_1mojsay._.js:32:21\n    at processTurbopackMessage (http://localhost:3105/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16436:13)\n    at processMessage (http://localhost:3105/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16051:17)\n    at WebSocket.handleMessage (http://localhost:3105/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16384:52)",
+    "timestamp": "2026-10-23T12:38:07.472Z",
+    "url": "http://localhost:3105/_next/static/chunks/turbopack-_08bm286._.js"
+  }
+]

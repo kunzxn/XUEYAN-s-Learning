@@ -1,0 +1,38 @@
+[
+  {
+    "test": "admin-word-required-fields",
+    "result": "4 fields invalid; first Han field focused"
+  },
+  {
+    "test": "admin-word-create-reload-update",
+    "result": "persisted published 朋友 péngyou; editor restores fields; update reflected"
+  },
+  {
+    "test": "admin-view-user-learning",
+    "result": "search learner; learned 学习 appears with one saved review"
+  },
+  {
+    "test": "lesson-create-mobile",
+    "result": "HSK dropdown from DB; draft lesson created successfully"
+  },
+  {
+    "test": "teacher-create-mobile",
+    "result": "teacher profile saved; no teacher account created"
+  },
+  {
+    "test": "learner-study-and-reload",
+    "result": "two SQL words learned via UI; 学习 and 朋友 remain after reload; counts 2 and 1"
+  },
+  {
+    "test": "learner-admin-route-denied",
+    "result": "admin shell shows no access; admin API already verifies 403"
+  },
+  {
+    "test": "final-mobile-dialog-keyboard",
+    "result": "Tab Han→Pinyin, Shift+Tab returns Han; Escape closes and restores add button"
+  },
+  {
+    "test": "final-mobile-learning",
+    "result": "375px: no horizontal overflow; four rating buttons visible in viewport"
+  }
+]

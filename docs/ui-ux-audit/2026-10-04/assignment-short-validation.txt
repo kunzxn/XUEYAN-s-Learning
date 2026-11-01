@@ -1,0 +1,61 @@
+- button "Open Next.js Dev Tools":
+- alert: "Bài tập 04: Giới thiệu bản thân & Gia đình"
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- banner:
+  - button "Mở menu":
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - link "Thông báo":
+    - /url: /notifications
+- main:
+  - link "← Lớp học HSK 2 – K24":
+    - /url: /classes/hsk2-k24
+  - text: XUEYAN · Học viện Hán ngữ
+  - 'heading "Bài tập 04: Giới thiệu bản thân & Gia đình" [level=1]'
+  - paragraph: Viết 80–120 chữ Hán, có thể bổ sung ghi âm và bài viết tay.
+  - heading "Đề bài & Hướng dẫn chi tiết" [level=2]
+  - list:
+    - listitem: Họ tên, tuổi và quê quán.
+    - listitem: Các thành viên trong gia đình và nghề nghiệp.
+    - listitem: Một hoạt động hoặc sở thích chung.
+  - heading "Mẫu câu gợi ý — bấm để chèn" [level=3]
+  - button "我叫文雄，今年二十二岁。":
+    - generic: 我叫文雄，今年二十二岁。
+  - button "我家有四口人。":
+    - generic: 我家有四口人。
+  - button "爸爸是医生，妈妈是老师。":
+    - generic: 爸爸是医生，妈妈是老师。
+  - generic: Ngữ pháp 40% · Chữ Hán 30% · Vốn từ 20% · Thời gian 10%
+  - heading "Soạn thảo văn bản nộp bài" [level=2]
+  - text: Nội dung bài làm
+  - textbox "Nội dung bài làm 6/120 chữ Hán": 我家有四口人。
+  - generic: 6/120 chữ Hán
+  - text: Tệp đính kèm (chưa tải lên server)
+  - button "Tệp đính kèm (chưa tải lên server)"
+  - button "Lưu nháp trên thiết bị"
+  - button "Kiểm tra & Nộp bài" [active]
+  - status: Bài mẫu cần từ 80 đến 120 chữ Hán để kiểm tra yêu cầu.
+  - heading "Trạng thái bài nộp" [level=2]
+  - generic: Chưa nộp · bản mẫu
+  - paragraph: Chưa có hạn nộp hay trạng thái server. Nội dung bạn nhập chỉ ở trình duyệt này.
+  - heading "Nhận xét từ giảng viên" [level=2]
+  - paragraph: Nhận xét sẽ hiển thị tại đây khi bài được chấm trên hệ thống thực.
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- navigation "Điều hướng nhanh trên di động":
+  - link "Hôm nay":
+    - /url: /dashboard
+    - generic: Hôm nay
+  - link "Lộ trình HSK":
+    - /url: /vocabulary
+    - generic: Lộ trình HSK
+  - link "Ôn tập SRS":
+    - /url: /review
+    - generic: Ôn tập SRS
+  - link "Sổ từ":
+    - /url: /collection
+    - generic: Sổ từ
+  - link "Hồ sơ học viên":
+    - /url: /profile
+    - generic: Hồ sơ học viên

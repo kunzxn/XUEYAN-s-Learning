@@ -1,0 +1,22 @@
+- main:
+  - link "XUEYAN · Thiết lập lộ trình":
+    - /url: /
+  - complementary:
+    - paragraph: 温故知新
+    - heading "Chọn nhịp học phù hợp với bạn" [level=2]
+    - paragraph: Từng bước nhỏ và thói quen đều đặn.
+    - generic: HSK 1 & Âm Hán–Việt
+  - generic: Bước 1/3
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Bạn muốn học bao nhiêu từ mới mỗi ngày?" [level=1]
+  - button "10 từ/ngày"
+  - button "20 từ/ngày" [pressed]
+  - button "30 từ/ngày"
+  - button "50 từ/ngày"
+  - button "Tiếp tục →"
+  - status
+  - link "Bỏ qua thiết lập":
+    - /url: /dashboard
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- button "Open Next.js Dev Tools":
+- alert

@@ -51,7 +51,7 @@ export default function InteractiveVocabulary() {
       return;
     }
     window.dispatchEvent(new Event(savedCardEvent));
-    setFeedback(nextSaved ? "Đã lưu 朋友 vào sổ từ cá nhân." : "Đã xóa 朋友 khỏi sổ từ cá nhân.");
+    setFeedback(nextSaved ? "Đã đánh dấu 朋友 trên thiết bị này; chưa đồng bộ sổ từ trên server." : "Đã bỏ đánh dấu 朋友 trên thiết bị này.");
   }
 
   return (

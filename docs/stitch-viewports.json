@@ -1,0 +1,407 @@
+[
+  {
+    "screen": "a01_login_desktop_ng_nh_p_h_c_vi_n_xueyan",
+    "width": 1600,
+    "height": 1506
+  },
+  {
+    "screen": "a01_login_mobile_ng_nh_p_di_ng_xueyan",
+    "width": 596,
+    "height": 1600
+  },
+  {
+    "screen": "a04_reset_password_desktop_t_l_i_m_t_kh_u_xueyan",
+    "width": 1600,
+    "height": 1404
+  },
+  {
+    "screen": "a04_reset_password_mobile_t_l_i_m_t_kh_u_di_ng_xueyan",
+    "width": 706,
+    "height": 1600
+  },
+  {
+    "screen": "c_ch_h_c_t_v_ng_ti_ng_trung_nh_l_u_di_ng_xueyan",
+    "width": 142,
+    "height": 1600
+  },
+  {
+    "screen": "c_ch_h_c_t_v_ng_ti_ng_trung_nh_l_u_xueyan",
+    "width": 375,
+    "height": 1600
+  },
+  {
+    "screen": "d01_dictionary_search_desktop_tra_c_u_t_i_n_h_n_vi_t_xueyan",
+    "width": 843,
+    "height": 1600
+  },
+  {
+    "screen": "d01_dictionary_search_mobile_tra_c_u_t_i_n_h_n_vi_t_di_ng_xueyan",
+    "width": 472,
+    "height": 1600
+  },
+  {
+    "screen": "l01_today_dashboard_b_ng_i_u_khi_n_h_c_t_p",
+    "width": 1600,
+    "height": 1478
+  },
+  {
+    "screen": "l01_today_dashboard_b_ng_i_u_khi_n_h_c_t_p_xueyan",
+    "width": 1504,
+    "height": 1600
+  },
+  {
+    "screen": "l01_today_dashboard_mobile_b_ng_i_u_khi_n_h_c_t_p_di_ng_xueyan",
+    "width": 453,
+    "height": 1600
+  },
+  {
+    "screen": "l02_lesson_overview_mobile_t_ng_quan_b_i_h_c_di_ng_xueyan",
+    "width": 473,
+    "height": 1600
+  },
+  {
+    "screen": "l02_lesson_overview_t_ng_quan_b_i_h_c_ch_o_h_i_l_m_quen",
+    "width": 883,
+    "height": 1600
+  },
+  {
+    "screen": "l03_learn_vocabulary_desktop_h_c_t_v_ng_m_i_xueyan",
+    "width": 1174,
+    "height": 1600
+  },
+  {
+    "screen": "l03_learn_vocabulary_mobile_h_c_t_v_ng_m_i_di_ng_xueyan",
+    "width": 498,
+    "height": 1600
+  },
+  {
+    "screen": "l04_vocabulary_practice_desktop_luy_n_t_p_t_v_ng_xueyan",
+    "width": 1329,
+    "height": 1600
+  },
+  {
+    "screen": "l04_vocabulary_practice_mobile_luy_n_t_p_t_v_ng_di_ng_xueyan",
+    "width": 577,
+    "height": 1600
+  },
+  {
+    "screen": "l05_personal_vocabulary_collection_desktop_s_t_v_ng_c_nh_n_xueyan",
+    "width": 1099,
+    "height": 1600
+  },
+  {
+    "screen": "l05_personal_vocabulary_collection_mobile_s_t_v_ng_di_ng_xueyan",
+    "width": 483,
+    "height": 1600
+  },
+  {
+    "screen": "l05_vocabulary_detail_desktop_chi_ti_t_t_v_ng_xu_x_xueyan",
+    "width": 800,
+    "height": 1600
+  },
+  {
+    "screen": "l05_vocabulary_detail_mobile_chi_ti_t_t_v_ng_xu_x_di_ng_xueyan",
+    "width": 390,
+    "height": 1600
+  },
+  {
+    "screen": "l06_class_detail_desktop_chi_ti_t_l_p_h_c_hsk_2_k24_xueyan",
+    "width": 880,
+    "height": 1600
+  },
+  {
+    "screen": "l06_class_detail_mobile_chi_ti_t_l_p_h_c_hsk_2_k24_di_ng_xueyan",
+    "width": 335,
+    "height": 1600
+  },
+  {
+    "screen": "l06_my_classes_desktop_l_p_h_c_c_a_t_i_xueyan",
+    "width": 1109,
+    "height": 1600
+  },
+  {
+    "screen": "l06_my_classes_mobile_l_p_h_c_c_a_t_i_di_ng_xueyan",
+    "width": 365,
+    "height": 1600
+  },
+  {
+    "screen": "l08_review_overview_mobile_n_t_p_nh_l_u_h_n",
+    "width": 504,
+    "height": 1600
+  },
+  {
+    "screen": "l08_review_overview_n_t_p_nh_l_u_h_n",
+    "width": 1191,
+    "height": 1600
+  },
+  {
+    "screen": "l09_flashcard_study_desktop_th_ghi_nh_flashcard_srs_xueyan",
+    "width": 1600,
+    "height": 1280
+  },
+  {
+    "screen": "l09_flashcard_study_mobile_th_ghi_nh_flashcard_srs_di_ng_xueyan",
+    "width": 729,
+    "height": 1600
+  },
+  {
+    "screen": "l09_flashcard_study_th_h_c_ghi_nh_srs",
+    "width": 1600,
+    "height": 1280
+  },
+  {
+    "screen": "l10_session_summary_desktop_t_ng_k_t_bu_i_h_c_xueyan",
+    "width": 1320,
+    "height": 1600
+  },
+  {
+    "screen": "l10_session_summary_mobile_t_ng_k_t_bu_i_h_c_di_ng_xueyan",
+    "width": 560,
+    "height": 1600
+  },
+  {
+    "screen": "l11_edit_profile_desktop_ch_nh_s_a_h_s_h_c_vi_n_xueyan",
+    "width": 903,
+    "height": 1600
+  },
+  {
+    "screen": "l11_edit_profile_mobile_ch_nh_s_a_h_s_h_c_vi_n_di_ng_xueyan",
+    "width": 445,
+    "height": 1600
+  },
+  {
+    "screen": "l11_learning_progress_desktop_ti_n_h_c_t_p_c_nh_n_xueyan",
+    "width": 1104,
+    "height": 1600
+  },
+  {
+    "screen": "l11_learning_progress_mobile_ti_n_h_c_t_p_di_ng_xueyan",
+    "width": 352,
+    "height": 1600
+  },
+  {
+    "screen": "l12_learner_settings_desktop_c_i_t_t_i_kho_n_h_c_t_p_xueyan",
+    "width": 519,
+    "height": 1600
+  },
+  {
+    "screen": "l12_learner_settings_mobile_c_i_t_t_i_kho_n_h_c_t_p_di_ng_xueyan",
+    "width": 255,
+    "height": 1600
+  },
+  {
+    "screen": "l13_notification_center_desktop_trung_t_m_th_ng_b_o_xueyan",
+    "width": 1115,
+    "height": 1600
+  },
+  {
+    "screen": "l13_notification_center_mobile_trung_t_m_th_ng_b_o_di_ng_xueyan",
+    "width": 370,
+    "height": 1600
+  },
+  {
+    "screen": "l15_assignment_detail_desktop_chi_ti_t_n_p_b_i_t_p_xueyan",
+    "width": 1012,
+    "height": 1600
+  },
+  {
+    "screen": "l15_assignment_detail_mobile_chi_ti_t_n_p_b_i_t_p_di_ng_xueyan",
+    "width": 306,
+    "height": 1600
+  },
+  {
+    "screen": "learn_china_time_brand_logo",
+    "width": 300,
+    "height": 80
+  },
+  {
+    "screen": "o01_onboarding_desktop_thi_t_l_p_l_tr_nh_h_c_vi_n_xueyan",
+    "width": 1326,
+    "height": 1600
+  },
+  {
+    "screen": "o01_onboarding_mobile_thi_t_l_p_l_tr_nh_di_ng_xueyan",
+    "width": 586,
+    "height": 1600
+  },
+  {
+    "screen": "p01_home_desktop_trang_ch_learn_china_time",
+    "width": 408,
+    "height": 1600
+  },
+  {
+    "screen": "p01_home_desktop_trang_ch_xueyan",
+    "width": 342,
+    "height": 1600
+  },
+  {
+    "screen": "p01_home_mobile_trang_ch_xueyan_di_ng",
+    "width": 133,
+    "height": 1600
+  },
+  {
+    "screen": "p02_hsk_catalog_desktop_danh_m_c_l_tr_nh_hsk_xueyan",
+    "width": 704,
+    "height": 1600
+  },
+  {
+    "screen": "p02_hsk_catalog_mobile_danh_m_c_l_tr_nh_hsk_di_ng_xueyan",
+    "width": 191,
+    "height": 1600
+  },
+  {
+    "screen": "p03_hsk1_level_detail_desktop_chi_ti_t_l_tr_nh_hsk_1_xueyan",
+    "width": 577,
+    "height": 1600
+  },
+  {
+    "screen": "p03_hsk1_level_detail_mobile_chi_ti_t_l_tr_nh_hsk_1_di_ng_xueyan",
+    "width": 297,
+    "height": 1600
+  },
+  {
+    "screen": "p04_forgot_password_desktop_qu_n_m_t_kh_u_xueyan",
+    "width": 1600,
+    "height": 1245
+  },
+  {
+    "screen": "p04_forgot_password_mobile_qu_n_m_t_kh_u_di_ng_xueyan",
+    "width": 706,
+    "height": 1600
+  },
+  {
+    "screen": "p04_register_desktop_ng_k_t_i_kho_n_h_c_vi_n_xueyan",
+    "width": 1600,
+    "height": 1391
+  },
+  {
+    "screen": "p04_register_mobile_ng_k_t_i_kho_n_h_c_vi_n_di_ng_xueyan",
+    "width": 1600,
+    "height": 1280
+  },
+  {
+    "screen": "p05_teacher_directory_desktop_t_m_ng_i_ng_h_nh_c_ng_b_n_xueyan",
+    "width": 1035,
+    "height": 1600
+  },
+  {
+    "screen": "p05_teacher_directory_mobile_t_m_ng_i_ng_h_nh_c_ng_b_n_di_ng_xueyan",
+    "width": 351,
+    "height": 1600
+  },
+  {
+    "screen": "p05_teacher_profile_desktop_h_s_gi_o_vi_n_c_lan_anh_xueyan",
+    "width": 541,
+    "height": 1600
+  },
+  {
+    "screen": "p05_teacher_profile_h_s_gi_o_vi_n_c_lan_anh",
+    "width": 541,
+    "height": 1600
+  },
+  {
+    "screen": "p05_teacher_profile_mobile_h_s_gi_o_vi_n_c_lan_anh_di_ng_xueyan",
+    "width": 214,
+    "height": 1600
+  },
+  {
+    "screen": "p06_student_profile_desktop_h_s_h_c_vi_n_c_nh_n_xueyan",
+    "width": 975,
+    "height": 1600
+  },
+  {
+    "screen": "p06_student_profile_mobile_h_s_h_c_vi_n_di_ng_xueyan",
+    "width": 278,
+    "height": 1600
+  },
+  {
+    "screen": "p06_teacher_consultation_desktop_ng_k_t_v_n_gi_o_vi_n_xueyan",
+    "width": 810,
+    "height": 1600
+  },
+  {
+    "screen": "p06_teacher_consultation_mobile_ng_k_t_v_n_gi_o_vi_n_di_ng_xueyan",
+    "width": 364,
+    "height": 1600
+  },
+  {
+    "screen": "p07_about_desktop_gi_i_thi_u_n_n_t_ng_h_c_ti_ng_trung_xueyan",
+    "width": 615,
+    "height": 1600
+  },
+  {
+    "screen": "p07_about_mobile_gi_i_thi_u_n_n_t_ng_xueyan_di_ng",
+    "width": 217,
+    "height": 1600
+  },
+  {
+    "screen": "p07_resource_library_desktop_th_vi_n_t_i_nguy_n_h_c_thu_t_xueyan",
+    "width": 762,
+    "height": 1600
+  },
+  {
+    "screen": "p07_resource_library_mobile_th_vi_n_t_i_nguy_n_h_c_thu_t_di_ng_xueyan",
+    "width": 309,
+    "height": 1600
+  },
+  {
+    "screen": "p08_help_center_desktop_trung_t_m_tr_gi_p_xueyan",
+    "width": 667,
+    "height": 1600
+  },
+  {
+    "screen": "p08_help_center_mobile_trung_t_m_tr_gi_p_di_ng_xueyan",
+    "width": 313,
+    "height": 1600
+  },
+  {
+    "screen": "p08_support_contact_desktop_li_n_h_h_tr_xueyan",
+    "width": 853,
+    "height": 1600
+  },
+  {
+    "screen": "p08_support_contact_mobile_li_n_h_h_tr_di_ng_xueyan",
+    "width": 412,
+    "height": 1600
+  },
+  {
+    "screen": "t01_teacher_dashboard_desktop_b_ng_i_u_khi_n_gi_ng_vi_n_xueyan",
+    "width": 1095,
+    "height": 1600
+  },
+  {
+    "screen": "t01_teacher_dashboard_mobile_b_ng_i_u_khi_n_gi_ng_vi_n_di_ng_xueyan",
+    "width": 338,
+    "height": 1600
+  },
+  {
+    "screen": "t02_class_detail_desktop_chi_ti_t_qu_n_l_l_p_h_c_hsk_2_k24_xueyan",
+    "width": 710,
+    "height": 1600
+  },
+  {
+    "screen": "t02_class_detail_mobile_chi_ti_t_qu_n_l_l_p_h_c_hsk_2_k24_di_ng_xueyan",
+    "width": 284,
+    "height": 1600
+  },
+  {
+    "screen": "t04_teacher_assignment_review_desktop_ch_m_b_i_nh_n_x_t_s_ph_m_xueyan",
+    "width": 994,
+    "height": 1600
+  },
+  {
+    "screen": "t04_teacher_assignment_review_mobile_ch_m_b_i_nh_n_x_t_di_ng_xueyan",
+    "width": 311,
+    "height": 1600
+  },
+  {
+    "screen": "t05_teacher_profile_editor_desktop_ch_nh_s_a_h_s_gi_o_vi_n_xueyan",
+    "width": 474,
+    "height": 1600
+  },
+  {
+    "screen": "t05_teacher_profile_editor_mobile_ch_nh_s_a_h_s_gi_o_vi_n_di_ng_xueyan",
+    "width": 195,
+    "height": 1600
+  }
+]

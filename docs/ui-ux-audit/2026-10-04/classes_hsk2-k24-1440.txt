@@ -1,0 +1,85 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- complementary "Menu điều hướng":
+  - link "XUEYAN Học viện Hán ngữ":
+    - /url: /
+    - text: XUEYAN
+    - generic: Học viện Hán ngữ
+  - generic: "Mục tiêu: HSK 2 · 68%"
+  - navigation "Điều hướng học viên":
+    - link "Hôm nay":
+      - /url: /dashboard
+      - text: Hôm nay
+    - link "Lộ trình HSK":
+      - /url: /vocabulary
+      - text: Lộ trình HSK
+    - link "Ôn tập SRS":
+      - /url: /review
+      - text: Ôn tập SRS
+    - link "Sổ từ":
+      - /url: /collection
+      - text: Sổ từ
+    - link "Lớp học":
+      - /url: /classes
+      - text: Lớp học
+    - link "Tiến độ":
+      - /url: /progress
+      - text: Tiến độ
+    - link "Hồ sơ học viên":
+      - /url: /profile
+      - text: Hồ sơ học viên
+  - link "Không gian giảng viên (mẫu)":
+    - /url: /teacher
+  - link "Trợ giúp học tập":
+    - /url: /help
+  - link "Cài đặt cá nhân":
+    - /url: /settings
+    - text: Cài đặt cá nhân
+- banner:
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - text: 7 ngày
+  - link "Thông báo":
+    - /url: /notifications
+  - link "Hồ sơ":
+    - /url: /profile
+    - text: H
+- main:
+  - link "← Lớp học của tôi":
+    - /url: /classes
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "HSK 2 — Phát âm chuẩn & Đàm thoại K24" [level=1]
+  - paragraph: Cô Lan Anh · Lớp học trực tuyến theo mẫu Stitch
+  - generic: Lớp đang diễn ra · mẫu
+  - heading "Đi mua sắm & Mặc cả" [level=2]
+  - paragraph: 买东西与讨价还价
+  - paragraph: Buổi 08 · 19:30–21:00
+  - button "Vào lớp trực tuyến (chưa kết nối)"
+  - button "Tổng quan" [pressed]
+  - button "Bài tập"
+  - button "Tài liệu"
+  - heading "Thông báo từ giảng viên" [level=2]
+  - heading "Luyện âm uốn lưỡi & Chuẩn bị đóng vai" [level=3]
+  - paragraph: Ôn câu hỏi giá và lời chào trước buổi học mua sắm. Nội dung mẫu, chưa phải thông báo thực.
+  - heading "Lộ trình buổi học gần nhất" [level=2]
+  - list:
+    - generic: Buổi 7
+    - heading "Chỉ đường & Phương tiện giao thông" [level=3]
+    - button "Mở bài học · chưa khả dụng"
+    - generic: Buổi 8
+    - heading "Mua sắm & Hỏi giá tiền" [level=3]
+    - button "Mở bài học · chưa khả dụng"
+    - generic: Buổi 9
+    - heading "Đặt món ăn tại nhà hàng" [level=3]
+    - button "Mở bài học · chưa khả dụng"
+  - heading "Tiến độ của bạn" [level=2]
+  - paragraph: 8/12 buổi
+  - progressbar "Tiến độ lớp mẫu 67%": 67%
+  - heading "Cộng đồng & Hỗ trợ" [level=2]
+  - paragraph: Trao đổi về phương pháp học hoặc vấn đề lớp học.
+  - link "Liên hệ hỗ trợ":
+    - /url: /contact
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- button "Open Next.js Dev Tools":
+- alert

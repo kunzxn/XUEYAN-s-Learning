@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f5faff;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-dim": "#c9ddeb", "inverse-on-surface": "#e3f3ff", "on-secondary": "#ffffff", "surface-container-high": "#d7ebf9", "on-primary-fixed-variant": "#004c6c", "surface-container-lowest": "#ffffff", "surface-container": "#ddf1ff", "on-primary": "#ffffff", "error-container": "#ffdad6", "outline": "#71787e", "tertiary": "#563b00", "secondary-fixed": "#9ef4ca", "on-primary-fixed": "#001e2e", "on-tertiary-fixed": "#271900", "primary-container": "#185d80", "primary-fixed-dim": "#93cdf6", "on-secondary-fixed-variant": "#005138", "surface-bright": "#f5faff", "surface-container-low": "#e9f5ff", "outline-variant": "#c0c7ce", "on-secondary-container": "#0f704f", "on-surface": "#0a1e28", "on-error-container": "#93000a", "inverse-surface": "#21333e", "surface": "#f5faff", "secondary": "#046c4b", "on-tertiary-fixed-variant": "#5e4200", "on-tertiary-container": "#fcc55f", "on-secondary-fixed": "#002114", "on-tertiary": "#ffffff", "on-background": "#0a1e28", "tertiary-fixed-dim": "#f4be59", "tertiary-fixed": "#ffdea9", "surface-tint": "#236487", "on-primary-container": "#9ad5fd", "secondary-container": "#9bf1c7", "surface-container-highest": "#d2e5f4", "background": "#f5faff", "primary": "#004563", "on-surface-variant": "#40484e", "error": "#ba1a1a", "secondary-fixed-dim": "#82d7af", "tertiary-container": "#745100", "primary-fixed": "#c7e7ff", "inverse-primary": "#93cdf6", "on-error": "#ffffff", "surface-variant": "#d2e5f4" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-2xl": "3rem", "space-xl": "2rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "margin": "2rem" }, fontFamily: { "headline-lg": ["Be Vietnam Pro"], "body-lg": ["Be Vietnam Pro"], "body-md": ["Be Vietnam Pro"], "label-sm": ["Be Vietnam Pro"], "pinyin-display": ["Be Vietnam Pro"], "display-lg-mobile": ["Be Vietnam Pro"], "body-sm": ["Be Vietnam Pro"], "label-md": ["Be Vietnam Pro"], "hanzi-card": ["Noto Sans SC"], "headline-lg-mobile": ["Be Vietnam Pro"], "hanzi-hero": ["Noto Sans SC"], "headline-md": ["Be Vietnam Pro"], "hanzi-inline": ["Noto Sans SC"], "display-lg": ["Be Vietnam Pro"], "headline-sm": ["Be Vietnam Pro"] }, fontSize: { "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "pinyin-display": ["18px", { lineHeight: "24px", letterSpacing: "0.02em", fontWeight: "500" }], "display-lg-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }], "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "hanzi-card": ["40px", { lineHeight: "48px", fontWeight: "500" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", fontWeight: "600" }], "hanzi-hero": ["72px", { lineHeight: "84px", fontWeight: "500" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }], "hanzi-inline": ["20px", { lineHeight: "28px", fontWeight: "500" }], "display-lg": ["44px", { lineHeight: "52px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs min-w-0 flex-1"><button aria-label="Quay lại" class="w-11 h-11 -ml-1.5 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="logo.jpg" class="h-7 w-auto object-contain shrink-0 hidden xs:block" src="https://lh3.googleusercontent.com/aida/AEtjO1Vsh2LAS9uBPlaa3Xs2R0g6GcBsIpGZKk7ZVSkNHpGee_C6USFkNEaArq6SuvHQhj96dYoUCWPmC3RbD9IZnogeDkq9mUHlqLAdQSofXiohdm3NWzM_pPkinLFwgsYC3kAbKBs4fsppC5r3wMJ-IVdSC4rYeeRTDsKKKqiDjCdU0e7Whn3olkAgjfHXqBWaPON2ddVMlYcj6pLuwrWyOcd8GWNgIBMxZJdiwv7aIzLJN7BLlPOG2Kzm-TWviFs-Y5CFf2Ft053Jjg"/><div class="flex flex-col min-w-0 pr-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface truncate">Chấm &amp; Nhận Xét Bài Tập</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">XUEYAN • Không gian giảng viên</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Thông báo bài nộp" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error"></span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XYdNwqHAB7XhdabYfepPVMJiQYbcZ-hP4Do0cM9FMfMEf3F2eGFCiJjg0IEMBRo9TkF164-uOpXRq676Oik--YH3zKDTl31xVsRwGKJy3WAjYY_E9jolpdQaXclYvRllT2P0Zfz602KxZmLuzwcZvtxwj9rlkysH3kxwm26IFcrVHpTq1yuv7qufoMq2z36w-31NpFGRQDrgEcbxZ3e4CFHHOPxFol6gYV_uwVNxheZDiE9tfzifM9Srw"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full">
+<!-- Toast feedback message (Hidden by default, triggered by JS) -->
+<div class="fixed top-20 left-4 right-4 z-50 transform -translate-y-6 opacity-0 pointer-events-none transition-all duration-300 flex items-center gap-space-sm px-4 py-3 rounded-xl bg-primary text-on-primary shadow-xl" id="toastNotification">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">check_circle</span>
+<span class="font-label-md text-label-md text-on-primary flex-1" id="toastMessage">Bản nháp đã được lưu an toàn.</span>
+</div>
+<!-- Sub-header & Assignment Scope Bar -->
+<div class="px-gutter-mobile pt-space-sm pb-space-xs bg-surface flex flex-col gap-space-xs">
+<div class="flex items-center justify-between gap-space-xs">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-primary-container text-on-primary text-[11px] font-semibold shrink-0">4</span>
+<h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Bài tập 04: Viết giới thiệu bản thân</h1>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-on-primary-fixed-variant font-label-sm text-label-sm shrink-0">
+        HSK 2 • K24
+      </span>
+</div>
+<!-- UI State Simulation Pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto py-1 scrollbar-none">
+<span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap shrink-0">Xem trạng thái:</span>
+<button class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-primary text-on-primary whitespace-nowrap transition-all shadow-sm" id="btnStateNormal" onclick="setSimState('normal')">Bình thường</button>
+<button class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high whitespace-nowrap transition-all" id="btnStateSaving" onclick="setSimState('saving')">Lưu nháp</button>
+<button class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high whitespace-nowrap transition-all" id="btnStateSending" onclick="setSimState('sending')">Đang gửi</button>
+<button class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high whitespace-nowrap transition-all" id="btnStateError" onclick="setSimState('error')">Lỗi mạng</button>
+<button class="px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high whitespace-nowrap transition-all" id="btnStateSuccess" onclick="setSimState('success')">Thành công</button>
+</div>
+</div>
+<!-- Main Body Form & Content -->
+<div class="px-gutter-mobile space-y-space-md pb-28 pt-space-xs">
+<!-- SECTION 1: Student Metadata Card -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center font-headline-sm text-headline-sm text-on-primary-fixed">
+            KM
+          </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Nguyễn Minh Khang</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-[10px]">HV-84920</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Nộp 14:32 (12/10) • Lần 2</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Đúng hạn
+        </span>
+</div>
+<!-- Collapsible prompt accordion -->
+<div class="rounded-lg bg-surface-container-low p-3 flex flex-col gap-1.5">
+<div class="flex items-center justify-between cursor-pointer" onclick="document.getElementById('promptDetails').classList.toggle('hidden')">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">assignment</span>
+            Yêu cầu: Đoạn văn 80-120 chữ Hán giới thiệu tuổi, quê quán, sở thích...
+          </span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">expand_more</span>
+</div>
+<div class="hidden text-body-sm font-body-sm text-on-surface-variant pt-2 border-t-0 space-y-1" id="promptDetails">
+<p>• Dùng mẫu câu: 我是... / 我学习... / 我喜欢...</p>
+<p>• Ghi âm phát âm lưu loát, rõ dấu thanh 1 &amp; thanh 4.</p>
+<p>• Viết tay trên vở ô mễ (Mễ tự cách) để rèn bút thuận.</p>
+</div>
+</div>
+</div>
+<!-- SECTION 3: Prior Feedback Alert (Stacked high for immediate instructor reference) -->
+<div class="p-3.5 rounded-xl bg-surface-container flex items-start gap-2.5 shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">history_edu</span>
+<div class="flex flex-col gap-0.5 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Nhận xét lần 1 (10/10) • 75/100 điểm</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">done_all</span> Đã sửa ở lần 2
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          "Cần sửa thanh điệu chữ <strong class="text-on-surface font-hanzi-inline">难</strong> (thanh 4) và căn nét chữ <strong class="text-on-surface font-hanzi-inline">越</strong> trong ô mễ. Đã hoàn thiện cải thiện ở bài nộp mới."
+        </p>
+</div>
+</div>
+<!-- SECTION 2: Student Submission Interactive Card -->
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Bài làm của học viên</h2>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">verified</span> Hán ngữ 88 chữ
+        </span>
+</div>
+<!-- Segmented View Controller -->
+<div class="flex p-1 bg-surface-container rounded-lg">
+<button class="flex-1 py-1.5 px-2 rounded-md font-label-sm text-label-sm text-center bg-surface-container-lowest text-primary font-semibold shadow-sm transition-all" id="tabHanzi" onclick="switchTab('hanzi')">
+          Văn bản chữ Hán
+        </button>
+<button class="flex-1 py-1.5 px-2 rounded-md font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all" id="tabAudio" onclick="switchTab('audio')">
+          Ghi âm (01:15)
+        </button>
+<button class="flex-1 py-1.5 px-2 rounded-md font-label-sm text-label-sm text-center text-on-surface-variant hover:text-on-surface transition-all" id="tabHandwriting" onclick="switchTab('handwriting')">
+          Ảnh viết tay
+        </button>
+</div>
+<!-- Tab Content 1: Chinese Text with Pinyin (Default) -->
+<div class="flex flex-col gap-3" id="contentHanzi">
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-2.5">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wide">HSK 2 Reading Canvas</span>
+<button class="font-label-sm text-label-sm text-primary flex items-center gap-1 hover:underline" onclick="togglePinyin(this)">
+<span class="material-symbols-outlined text-[16px]">translate</span> Ẩn/Hiện Pinyin
+            </button>
+</div>
+<div class="font-hanzi-inline text-[18px] leading-[32px] text-on-surface tracking-normal select-text space-y-2">
+<ruby class="ruby-block">
+              你好！<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">Nǐ hǎo!</rt>
+</ruby>
+<ruby class="ruby-block">
+              我叫<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">wǒ jiào</rt>
+</ruby>
+<ruby class="ruby-block">
+              阮明康。<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">Ruǎn Míngkāng.</rt>
+</ruby>
+<ruby class="ruby-block">
+              我是<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">Wǒ shì</rt>
+</ruby>
+<ruby class="ruby-block bg-secondary-fixed/40 rounded px-0.5">
+              越南人，<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">Yuènán rén,</rt>
+</ruby>
+<ruby class="ruby-block">
+              住在<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">zhù zài</rt>
+</ruby>
+<ruby class="ruby-block">
+              河内。<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">Hénèi.</rt>
+</ruby>
+<ruby class="ruby-block">
+              今年<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">Jīnnián</rt>
+</ruby>
+<ruby class="ruby-block">
+              我二十二岁。<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">wǒ èrshí'èr suì.</rt>
+</ruby>
+<ruby class="ruby-block">
+              我是<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">Wǒ shì</rt>
+</ruby>
+<ruby class="ruby-block">
+              河内国家大学<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">Hénèi Guójiā Dàxué</rt>
+</ruby>
+<ruby class="ruby-block">
+              的学生。<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">de xuéshēng.</rt>
+</ruby>
+<ruby class="ruby-block">
+              我学习汉语<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">Wǒ xuéxí Hànyǔ</rt>
+</ruby>
+<ruby class="ruby-block">
+              两个月了。<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">liǎng gè yuè le.</rt>
+</ruby>
+<ruby class="ruby-block">
+              我喜欢<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">Wǒ xǐhuan</rt>
+</ruby>
+<ruby class="ruby-block">
+              听中国音乐<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">tīng Zhōngguó yīnyuè</rt>
+</ruby>
+<ruby class="ruby-block">
+              和看书。<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">hé kànshū.</rt>
+</ruby>
+<ruby class="ruby-block bg-primary-fixed/40 rounded px-0.5">
+              汉语不太难，<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">Hànyǔ bù tài nán,</rt>
+</ruby>
+<ruby class="ruby-block">
+              汉字很有意思。<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">hànzì hěn yǒu yìsi.</rt>
+</ruby>
+<ruby class="ruby-block">
+              很高兴认识<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">Hěn gāoxìng rènshí</rt>
+</ruby>
+<ruby class="ruby-block">
+              老师和大家！<rt class="pinyin-text text-[12px] text-outline font-pinyin-display leading-none">lǎoshī hé dàjiā!</rt>
+</ruby>
+</div>
+</div>
+</div>
+<!-- Tab Content 2: Audio Player Component (Visible on tab click) -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-3" id="contentAudio">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-medium flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">record_voice_over</span>
+            Bản ghi âm phát âm học viên
+          </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Tốc độ chuẩn</span>
+</div>
+<div class="flex items-center gap-3">
+<button aria-label="Phát ghi âm" class="w-11 h-11 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md active:scale-95 transition-transform shrink-0" onclick="toggleAudioPlay(this)">
+<span class="material-symbols-outlined text-[24px]">play_arrow</span>
+</button>
+<div class="flex-1 flex flex-col gap-1">
+<div class="w-full bg-surface-dim h-2 rounded-full overflow-hidden relative cursor-pointer">
+<div class="bg-primary h-full w-[42%] rounded-full transition-all" id="audioProgressBar"></div>
+</div>
+<div class="flex justify-between items-center text-label-sm font-label-sm text-on-surface-variant">
+<span>00:31</span>
+<span>01:15</span>
+</div>
+</div>
+<button class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors" onclick="cycleAudioRate(this)">
+            1.0x
+          </button>
+</div>
+</div>
+<!-- Tab Content 3: Handwriting Submission Preview -->
+<div class="flex flex-col gap-2" id="contentHandwriting">
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container flex items-center justify-center group cursor-pointer" onclick="toggleLightbox()">
+<img class="w-full h-full object-cover" data-alt="A clean student Chinese homework notebook page showing neat Chinese characters handwritten in pencil on rice-grid Mizi ge paper squares with corrections in soft red ink, shot from directly above in warm soft daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyk4858O9ekp9fFW7GITJMByEj_TlKX_Q2Kd7TKTSlFN3B0R1BjA30EY80UWSd_dZEfRFtlRVTK0sVm9wC7gLeYTBIYbi2rm97Wjza3C0qZGx8THVab2vkgfxHub_WSSfD6OLhLG52mVHSWmJKqrgM8HLFcWmDr_G7ukOoB20FMufP9TTXW7RZ_2BfJ4mWW_1PWPmXYNjKZIoVwDIpkjch6i3CM8zR0g4Jy2s5ilauXDbKWzBIeyJc"/>
+<div class="absolute inset-0 bg-inverse-surface/30 flex items-center justify-center opacity-90 group-hover:opacity-100 transition-opacity">
+<div class="px-3 py-1.5 rounded-full bg-surface-container-lowest/90 backdrop-blur text-on-surface font-label-sm text-label-sm flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">zoom_in</span> Chạm phóng to (2 ảnh)
+            </div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: Teacher Grading & Feedback Form -->
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Đánh giá &amp; Chấm điểm</h2>
+</div>
+<div class="flex items-center gap-1 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-secondary">cloud_done</span>
+<span id="saveStatusText">Đã lưu tự động 15:04</span>
+</div>
+</div>
+<!-- Main Score Input Block -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between gap-4">
+<div class="flex items-baseline gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium" for="scoreInput">Tổng điểm:</label>
+<div class="flex items-center">
+<input class="w-16 h-11 text-center font-display-lg-mobile text-display-lg-mobile font-bold text-primary bg-surface-container-lowest rounded-lg focus:outline-none shadow-sm" id="scoreInput" max="100" min="0" oninput="calculateGrade(this.value)" type="number" value="92"/>
+<span class="font-headline-md text-headline-md text-on-surface-variant ml-1.5">/100</span>
+</div>
+</div>
+<div class="px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold flex items-center gap-1 shadow-sm" id="gradeBadge">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+          Xuất sắc (A)
+        </div>
+</div>
+<!-- Quick Rubric Criteria Sliders / Steps -->
+<div class="space-y-3 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Tiêu chí chi tiết</span>
+<!-- Criteria 1 -->
+<div class="flex items-center justify-between gap-3 text-body-sm font-body-sm">
+<span class="text-on-surface">Ngữ pháp &amp; Cấu trúc câu</span>
+<div class="flex items-center gap-2">
+<div class="w-24 bg-surface-dim h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[95%]"></div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold min-w-[42px] text-right">38/40</span>
+</div>
+</div>
+<!-- Criteria 2 -->
+<div class="flex items-center justify-between gap-3 text-body-sm font-body-sm">
+<span class="text-on-surface">Bút thuận &amp; Chữ Hán</span>
+<div class="flex items-center gap-2">
+<div class="w-24 bg-surface-dim h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[93%]"></div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold min-w-[42px] text-right">28/30</span>
+</div>
+</div>
+<!-- Criteria 3 -->
+<div class="flex items-center justify-between gap-3 text-body-sm font-body-sm">
+<span class="text-on-surface">Phát âm &amp; Thanh điệu</span>
+<div class="flex items-center gap-2">
+<div class="w-24 bg-surface-dim h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[86%]"></div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold min-w-[42px] text-right">26/30</span>
+</div>
+</div>
+</div>
+<!-- Quick Praise Praise Chips -->
+<div class="pt-2 flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">Lời khen nhanh (chạm để chèn):</label>
+<div class="flex flex-wrap gap-1.5">
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm active:scale-95 transition-all" onclick="insertPraise('Tiến bộ vượt bậc! ✨ ')" type="button">
+            + Tiến bộ ✨
+          </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm active:scale-95 transition-all" onclick="insertPraise('Phát âm thanh 4 rất dứt khoát! 🎙️ ')" type="button">
+            + Phát âm chuẩn 🎙️
+          </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-sm text-label-sm active:scale-95 transition-all" onclick="insertPraise('Nét chữ ô mễ đều đẹp, đúng quy tắc bút thuận! ✍️ ')" type="button">
+            + Nét chữ đẹp ✍️
+          </button>
+</div>
+</div>
+<!-- Teacher Feedback Textarea -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between" for="feedbackArea">
+<span>Nhận xét sư phạm chi tiết:</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm font-normal">Tối thiểu 30 chữ</span>
+</label>
+<div class="rounded-xl bg-surface-container-low p-2.5 flex flex-col gap-2">
+<textarea class="w-full bg-transparent text-on-surface font-body-md text-body-md focus:outline-none resize-none leading-relaxed" id="feedbackArea" placeholder="Ghi nhận xét và dặn dò ôn luyện cho học viên..." rows="4">Chào Minh Khang, bản nộp lần 2 của em tiến bộ rất rõ rệt! Ngữ pháp chuẩn xác, chữ "难" (nán) đã phát âm dứt khoát đúng thanh 4, nét chữ mễ rất đều đặn và sạch sẽ. Cố gắng phát huy ở bài tập tới nhé!</textarea>
+<div class="flex items-center justify-between pt-2">
+<!-- Voice Feedback Recorder Anchor -->
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" id="voiceRecordBtn" onclick="toggleVoiceRecording()" type="button">
+<span class="material-symbols-outlined text-[18px] text-error">mic</span>
+<span id="voiceRecordLabel">Đã ghi: 0:42</span>
+</button>
+<button class="w-7 h-7 rounded-full text-on-surface-variant hover:text-error flex items-center justify-center transition-colors" onclick="clearVoiceRecord()" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="charCounter">178 ký tự</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 5: Floating Persistent Bottom Action Bar (390px mobile friendly) -->
+<div class="fixed bottom-0 inset-x-0 z-40 bg-surface/95 backdrop-blur-md pb-safe pt-2 px-gutter-mobile shadow-[0_-4px_16px_rgba(0,0,0,0.06)] flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<!-- Save Draft Button -->
+<button aria-label="Lưu bản nháp" class="h-12 px-3.5 rounded-xl bg-surface-container hover:bg-surface-container-high text-primary flex items-center justify-center gap-1.5 font-label-md text-label-md active:scale-95 transition-all shrink-0" onclick="saveDraftAction()">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span class="hidden xs:inline">Lưu nháp</span>
+</button>
+<!-- Primary Send Grading CTA -->
+<button class="flex-1 h-12 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-all" id="mainSubmitBtn" onclick="submitGradingAction()">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span id="mainBtnText">Gửi phản hồi cho học viên</span>
+</button>
+</div>
+<div class="flex items-center justify-center gap-1 pb-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">flash_on</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant text-center">Học viên nhận thông báo và bảng điểm ngay lập tức</span>
+</div>
+</div>
+<!-- Image Lightbox Modal (For handwriting) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/80 backdrop-blur-sm hidden flex-col p-4 justify-center items-center" id="imageLightbox" onclick="toggleLightbox()">
+<div class="relative max-w-sm w-full bg-surface-container-lowest rounded-xl overflow-hidden shadow-2xl p-2" onclick="event.stopPropagation()">
+<div class="flex items-center justify-between pb-2 px-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Ảnh tập viết nét Hán: Bài 04</span>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface" onclick="toggleLightbox()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<img class="w-full h-80 object-contain rounded-lg bg-surface" data-alt="High resolution detailed macro photo of Chinese characters written with calligraphy pen on rice grid notebook paper showing stroke orders and radical balance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBrM_YtSeItI8Yjkqiej-sPMQ4WfKRmKrD73iu6whNLG8VJKq2sPCcJoJBMKeSiql7ceEo20J6mn9yfRQr1-GHmok0HA1x58rfypAHkdZcBWgXpvCGA0s4Zpsvg7WJmgouY0pxamHgD1rFbBvmSwdjYLQW7bx7W98JzEm1afnBIeVdpMoEvgD2XACj_Py3Eo4Bx8i3lCbiW6zvFlHQvrZ9m_FOqetlXheqyY-OESxBS0jE9iINnVvD"/>
+<div class="pt-2 text-center text-label-sm font-label-sm text-on-surface-variant">
+        Chạm hai lần để phóng to chi tiết nét bút
+      </div>
+</div>
+</div>
+</div>
+<script>
+  // UI Simulation state switcher
+  function setSimState(state) {
+    const states = ['Normal', 'Saving', 'Sending', 'Error', 'Success'];
+    states.forEach(s => {
+      const btn = document.getElementById('btnState' + s);
+      if (btn) {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+      }
+    });
+
+    const activeBtn = document.getElementById('btnState' + state.charAt(0).toUpperCase() + state.slice(1));
+    if (activeBtn) {
+      activeBtn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      activeBtn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    }
+
+    const saveText = document.getElementById('saveStatusText');
+    const mainBtnText = document.getElementById('mainBtnText');
+    const mainBtn = document.getElementById('mainSubmitBtn');
+
+    if (state === 'normal') {
+      saveText.textContent = 'Đã lưu tự động 15:04';
+      mainBtnText.textContent = 'Gửi phản hồi cho học viên';
+      mainBtn.disabled = false;
+      showToast('Đang ở chế độ xem thông thường.');
+    } else if (state === 'saving') {
+      saveText.textContent = 'Đang đồng bộ máy chủ...';
+      showToast('Đang sao lưu nội dung nhận xét...');
+    } else if (state === 'sending') {
+      mainBtnText.textContent = 'Đang truyền gửi bài...';
+      showToast('Đang gửi thông báo điểm tới học viên...');
+    } else if (state === 'error') {
+      saveText.textContent = 'Lỗi kết nối máy chủ!';
+      showToast('Cảnh báo: Mạng chập chờn. Dữ liệu đã lưu tạm offline!');
+    } else if (state === 'success') {
+      mainBtnText.textContent = '✓ Đã hoàn tất chấm điểm';
+      showToast('Hoàn tất! Bài chấm đã vào sổ điểm học phần.');
+    }
+  }
+
+  // Toast Notification helper
+  function showToast(message) {
+    const toast = document.getElementById('toastNotification');
+    const msg = document.getElementById('toastMessage');
+    msg.textContent = message;
+    toast.classList.remove('-translate-y-6', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.add('-translate-y-6', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 2800);
+  }
+
+  // Segmented submission tabs toggle
+  function switchTab(tab) {
+    const tabHanzi = document.getElementById('tabHanzi');
+    const tabAudio = document.getElementById('tabAudio');
+    const tabHandwriting = document.getElementById('tabHandwriting');
+
+    const contentHanzi = document.getElementById('contentHanzi');
+    const contentAudio = document.getElementById('contentAudio');
+    const contentHandwriting = document.getElementById('contentHandwriting');
+
+    const tabs = [tabHanzi, tabAudio, tabHandwriting];
+    tabs.forEach(t => {
+      t.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+      t.classList.add('text-on-surface-variant');
+    });
+
+    contentHanzi.classList.add('hidden');
+    contentAudio.classList.add('hidden');
+    contentHandwriting.classList.add('hidden');
+
+    if (tab === 'hanzi') {
+      tabHanzi.classList.add('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+      tabHanzi.classList.remove('text-on-surface-variant');
+      contentHanzi.classList.remove('hidden');
+    } else if (tab === 'audio') {
+      tabAudio.classList.add('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+      tabAudio.classList.remove('text-on-surface-variant');
+      contentAudio.classList.remove('hidden');
+    } else if (tab === 'handwriting') {
+      tabHandwriting.classList.add('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+      tabHandwriting.classList.remove('text-on-surface-variant');
+      contentHandwriting.classList.remove('hidden');
+    }
+  }
+
+  // Toggle Pinyin Ruby visibility
+  let pinyinVisible = true;
+  function togglePinyin(button) {
+    pinyinVisible = !pinyinVisible;
+    const rts = document.querySelectorAll('.pinyin-text');
+    rts.forEach(el => {
+      el.style.display = pinyinVisible ? '' : 'none';
+    });
+    button.innerHTML = pinyinVisible 
+      ? '<span class="material-symbols-outlined text-[16px]">translate</span> Ẩn Pinyin' 
+      : '<span class="material-symbols-outlined text-[16px]">translate</span> Hiện Pinyin';
+  }
+
+  // Audio Play Simulation
+  let isPlaying = false;
+  function toggleAudioPlay(btn) {
+    isPlaying = !isPlaying;
+    const icon = btn.querySelector('.material-symbols-outlined');
+    icon.textContent = isPlaying ? 'pause' : 'play_arrow';
+    showToast(isPlaying ? 'Đang phát bản ghi âm của Minh Khang' : 'Tạm dừng ghi âm');
+  }
+
+  function cycleAudioRate(btn) {
+    const rates = ['1.0x', '1.25x', '1.5x'];
+    let current = btn.textContent.trim();
+    let nextIdx = (rates.indexOf(current) + 1) % rates.length;
+    btn.textContent = rates[nextIdx];
+  }
+
+  // Lightbox toggle
+  function toggleLightbox() {
+    const lb = document.getElementById('imageLightbox');
+    lb.classList.toggle('hidden');
+    lb.classList.toggle('flex');
+  }
+
+  // Automatic Grading calculation
+  function calculateGrade(val) {
+    const score = parseInt(val) || 0;
+    const badge = document.getElementById('gradeBadge');
+    if (score >= 90) {
+      badge.textContent = 'Xuất sắc (A)';
+      badge.className = 'px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold flex items-center gap-1 shadow-sm';
+    } else if (score >= 80) {
+      badge.textContent = 'Khá giỏi (B)';
+      badge.className = 'px-3 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-semibold flex items-center gap-1 shadow-sm';
+    } else if (score >= 65) {
+      badge.textContent = 'Đạt yêu cầu (C)';
+      badge.className = 'px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-semibold flex items-center gap-1 shadow-sm';
+    } else {
+      badge.textContent = 'Cần làm lại (D)';
+      badge.className = 'px-3 py-1.5 rounded-full bg-error-container text-on-error-container font-label-md text-label-md font-semibold flex items-center gap-1 shadow-sm';
+    }
+  }
+
+  // Quick Praise Chips Inserter
+  function insertPraise(text) {
+    const textarea = document.getElementById('feedbackArea');
+    textarea.value = textarea.value ? textarea.value + ' ' + text : text;
+    document.getElementById('charCounter').textContent = textarea.value.length + ' ký tự';
+    textarea.focus();
+  }
+
+  // Voice record simulation
+  function toggleVoiceRecording() {
+    showToast('Đang mở mic ghi âm nhận xét...');
+  }
+  function clearVoiceRecord() {
+    document.getElementById('voiceRecordLabel').textContent = 'Chưa có ghi âm';
+    showToast('Đã xóa ghi âm lời dặn');
+  }
+
+  function saveDraftAction() {
+    setSimState('saving');
+    setTimeout(() => {
+      setSimState('normal');
+      showToast('Đã lưu thành công bản nháp lúc 15:10!');
+    }, 800);
+  }
+
+  function submitGradingAction() {
+    setSimState('sending');
+    setTimeout(() => {
+      setSimState('success');
+      showToast('🎉 Đã hoàn tất và gửi nhận xét đến học viên!');
+    }, 1000);
+  }
+
+  // Character Counter listener
+  const textarea = document.getElementById('feedbackArea');
+  if (textarea) {
+    textarea.addEventListener('input', function() {
+      document.getElementById('charCounter').textContent = this.value.length + ' ký tự';
+    });
+  }
+</script></main></body></html>

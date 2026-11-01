@@ -1,0 +1,125 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- complementary "Menu điều hướng":
+  - link "XUEYAN Học viện Hán ngữ":
+    - /url: /
+    - text: XUEYAN
+    - generic: Học viện Hán ngữ
+  - generic: "Mục tiêu: HSK 2 · 68%"
+  - navigation "Điều hướng học viên":
+    - link "Hôm nay":
+      - /url: /dashboard
+      - text: Hôm nay
+    - link "Lộ trình HSK":
+      - /url: /vocabulary
+      - text: Lộ trình HSK
+    - link "Ôn tập SRS":
+      - /url: /review
+      - text: Ôn tập SRS
+    - link "Sổ từ":
+      - /url: /collection
+      - text: Sổ từ
+    - link "Lớp học":
+      - /url: /classes
+      - text: Lớp học
+    - link "Tiến độ":
+      - /url: /progress
+      - text: Tiến độ
+    - link "Hồ sơ học viên":
+      - /url: /profile
+      - text: Hồ sơ học viên
+  - link "Không gian giảng viên (mẫu)":
+    - /url: /teacher
+  - link "Trợ giúp học tập":
+    - /url: /help
+  - link "Cài đặt cá nhân":
+    - /url: /settings
+    - text: Cài đặt cá nhân
+- banner:
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - text: 7 ngày
+  - link "Thông báo":
+    - /url: /notifications
+  - link "Hồ sơ":
+    - /url: /profile
+    - text: H
+- main:
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Chào Hùng! ☀️" [level=1]
+  - paragraph: Hôm nay là thời điểm lý tưởng để củng cố trí nhớ dài hạn. Tiếp tục nhịp học của bạn từng bước nhỏ.
+  - generic "Trạng thái dữ liệu mẫu":
+    - button "Đang học" [pressed]
+    - button "Học viên mới"
+    - button "Không có từ đến hạn"
+  - generic: Cần ôn hôm nay · Ưu tiên cao
+  - generic: 8–10 phút
+  - strong: "24"
+  - heading "từ đến hạn ôn tập SRS" [level=2]
+  - paragraph: "Hệ thống lặp lại ngắt quãng: 14 từ HSK 3 và 10 từ HSK 2 đã học trong tuần."
+  - generic: 明 míng · Minh
+  - generic: 谢 xiè · Tạ
+  - generic: 学 xué · Học
+  - generic: 朋 péng · Bằng
+  - link "Bắt đầu ôn tập 24 từ →":
+    - /url: /review
+  - heading "Mục tiêu từ mới" [level=2]
+  - generic: 60% đạt
+  - generic "12 trên 20 từ": 12/20
+  - strong: 12 từ
+  - paragraph: Cần nạp thêm 8 từ
+  - progressbar "Mục tiêu từ mới 60%": 60%
+  - paragraph: Cần nạp thêm 8 từ
+  - link "Nạp tiếp (+8 từ)":
+    - /url: /lessons/1/learn
+  - heading "Chuỗi liên tục" [level=2]
+  - generic: "Kỷ lục: 14 ngày"
+  - paragraph:
+    - text: 7 ngày
+  - text: T2
+  - text: T3
+  - text: T4
+  - text: T5
+  - text: T6
+  - text: T7
+  - text: CN
+  - paragraph: Duy trì học mỗi ngày để giữ chuỗi.
+  - heading "Tiếp tục bài học dở dang" [level=2]
+  - generic: HSK 2
+  - heading "Đi siêu thị mua sắm" [level=3]
+  - paragraph: 去超市买东西
+  - progressbar "Bài học hoàn thành 75%": 75%
+  - paragraph: "Ngữ pháp ✓ · Bài khóa ✓ · Đang chờ: luyện nghe phản xạ"
+  - button "Tiếp tục bài học → · chưa khả dụng"
+  - heading "Thời gian học trong tuần" [level=2]
+  - paragraph: Tổng cộng 4,8 giờ · Tăng 18% so với tuần trước (mẫu)
+  - generic "Hoạt động học tập mẫu theo ngày":
+    - generic: 8 từ
+    - text: T2
+    - generic: 12 từ
+    - text: T3
+    - generic: 6 từ
+    - text: T4
+    - generic: 18 từ
+    - text: T5
+    - generic: 15 từ
+    - text: T6
+    - generic: 11 từ
+    - text: T7
+    - generic: 14 từ
+    - text: CN
+  - generic: Buổi học tiếp theo
+  - heading "Luyện phát âm & Khẩu ngữ HSK 2" [level=2]
+  - paragraph: Cô Lan Anh · Biến điệu thanh điệu
+  - paragraph: 19:30–20:30 · Lớp HSK 2 – K24
+  - link "Xem thông tin lớp":
+    - /url: /classes/hsk2-k24
+  - text: Gốc Hán–Việt mỗi ngày
+  - paragraph: 学
+  - paragraph: xué · Học
+  - paragraph: Liên tưởng với học sinh 学生 (xuésheng), trường học 学校 (xuéxiào), tự học 自学 (zìxué).
+  - link "Khám phá chữ Hán":
+    - /url: /collection/xuexi
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- button "Open Next.js Dev Tools":

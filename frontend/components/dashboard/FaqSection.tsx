@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import styles from "@/app/dashboard/dashboard.module.css";
@@ -59,7 +60,7 @@ export default function FaqSection() {
             );
           })}
         </div>
-        <p className={styles.faqSupport}>Bạn còn câu hỏi chuyên sâu khác? <a href="/teachers">Trò chuyện với cố vấn học vụ</a></p>
+        <p className={styles.faqSupport}>Bạn còn câu hỏi chuyên sâu khác? <Link href="/teachers">Trò chuyện với cố vấn học vụ</Link></p>
       </div>
     </section>
   );

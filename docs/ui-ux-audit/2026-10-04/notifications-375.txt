@@ -1,0 +1,101 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- link "XUEYAN Học viện Hán ngữ":
+  - /url: /
+  - text: XUEYAN
+  - generic: Học viện Hán ngữ
+- link "Hôm nay":
+  - /url: /dashboard
+  - text: Hôm nay
+- link "Lộ trình HSK":
+  - /url: /vocabulary
+  - text: Lộ trình HSK
+- link "Ôn tập SRS":
+  - /url: /review
+  - text: Ôn tập SRS
+- link "Sổ từ":
+  - /url: /collection
+  - text: Sổ từ
+- link "Lớp học":
+  - /url: /classes
+  - text: Lớp học
+- link "Tiến độ":
+  - /url: /progress
+  - text: Tiến độ
+- link "Hồ sơ học viên":
+  - /url: /profile
+  - text: Hồ sơ học viên
+- link "Không gian giảng viên (mẫu)":
+  - /url: /teacher
+- link "Trợ giúp học tập":
+  - /url: /help
+- link "Cài đặt cá nhân":
+  - /url: /settings
+  - text: Cài đặt cá nhân
+- banner:
+  - button "Mở menu":
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - link "Thông báo":
+    - /url: /notifications
+- main:
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Thông báo" [level=1]
+  - paragraph: Nhắc nhở học tập, lớp học và tài khoản — dữ liệu mẫu.
+  - button "Đánh dấu đã đọc trong phiên"
+  - button "Tất cả" [pressed]
+  - button "Chưa đọc"
+  - button "Học tập"
+  - button "Lớp học"
+  - button "Tài khoản"
+  - list:
+    - generic: Mẫu chưa đọc
+    - heading "Nhắc nhở ôn tập Spaced Repetition" [level=3]
+    - paragraph: 24 từ đến hạn trong bản dữ liệu mẫu.
+    - link "Xem chi tiết →":
+      - /url: /review
+    - button "Đã đọc"
+    - generic: Mẫu chưa đọc
+    - heading "Nhận xét bài tập của Cô Lan Anh" [level=3]
+    - paragraph: Xem nơi hiển thị kết quả và phản hồi sư phạm.
+    - link "Xem chi tiết →":
+      - /url: /assignments/4
+    - button "Đã đọc"
+    - generic: Mẫu chưa đọc
+    - heading "Cập nhật lịch lớp HSK 2" [level=3]
+    - paragraph: Tham khảo lịch học mẫu và tài liệu của lớp.
+    - link "Xem chi tiết →":
+      - /url: /classes/hsk2-k24
+    - button "Đã đọc"
+    - generic: Mẫu chưa đọc
+    - heading "Chúc mừng cột mốc học tập" [level=3]
+    - paragraph: Thống kê trong bản thiết kế minh họa.
+    - link "Xem chi tiết →":
+      - /url: /progress
+    - button "Đã đọc"
+    - generic: Mẫu chưa đọc
+    - heading "Thông tin bảo mật tài khoản" [level=3]
+    - paragraph: Tùy chọn bảo mật cần dịch vụ xác thực.
+    - link "Xem chi tiết →":
+      - /url: /settings
+    - button "Đã đọc"
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- navigation "Điều hướng nhanh trên di động":
+  - link "Hôm nay":
+    - /url: /dashboard
+    - generic: Hôm nay
+  - link "Lộ trình HSK":
+    - /url: /vocabulary
+    - generic: Lộ trình HSK
+  - link "Ôn tập SRS":
+    - /url: /review
+    - generic: Ôn tập SRS
+  - link "Sổ từ":
+    - /url: /collection
+    - generic: Sổ từ
+  - link "Hồ sơ học viên":
+    - /url: /profile
+    - generic: Hồ sơ học viên
+- button "Open Next.js Dev Tools":
+- alert

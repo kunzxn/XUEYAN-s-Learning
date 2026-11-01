@@ -15,17 +15,17 @@ export default function DashboardHero({
         <div className={styles.heroCopy}>
           <div className={styles.methodBadge}>
             <span className={styles.liveDot} aria-hidden="true" />
-            Phương pháp lặp lại ngắt quãng (SRS) tối ưu cho người Việt
+            Học từ mới · Ôn đúng lúc
           </div>
           <h1>
             Học tiếng Trung mỗi ngày, <em>nhớ lâu từng từ.</em>
           </h1>
           <p className={styles.heroDescription}>
-            Kết hợp hệ thống phân tích gốc Hán - Việt, thuật toán Spaced Repetition thông minh và sự đồng hành của giảng viên chuyên môn giúp bạn nắm vững HSK một cách bền bỉ và thư thái.
+            Khám phá từ vựng HSK, luyện phát âm và ôn tập theo nhịp của bạn.
           </p>
           <div className={styles.heroActions}>
             <button type="button" className={styles.primaryButton} onClick={onStartLearning}>
-              Bắt đầu học <ArrowRight size={18} aria-hidden="true" />
+              Học thử Bài 01 <ArrowRight size={18} aria-hidden="true" />
             </button>
             <a className={styles.secondaryButton} href="#lo-trinh">Khám phá lộ trình</a>
           </div>
@@ -35,7 +35,7 @@ export default function DashboardHero({
             <span><AlarmClockCheck size={19} aria-hidden="true" />15 phút mỗi ngày</span>
           </div>
         </div>
-        <VocabularySpotlight onOpenReview={onOpenReview} />
+        <div><p className={styles.heroDescription}>Phiên học minh họa · Chưa phải tiến độ của bạn.</p><VocabularySpotlight onOpenReview={onOpenReview} /></div>
       </div>
     </section>
   );

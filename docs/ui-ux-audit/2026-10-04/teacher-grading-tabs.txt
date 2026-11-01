@@ -1,0 +1,61 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- banner:
+  - button "Mở menu":
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - link "Thông báo":
+    - /url: /notifications
+- main:
+  - link "← Lớp HSK 2 – K24":
+    - /url: /teacher/classes/hsk2-k24
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Chấm & Nhận xét bài tập 04" [level=1]
+  - paragraph: Viết giới thiệu bản thân · Nguyễn Minh Khang · Bản nộp mẫu
+  - heading "Yêu cầu bài tập" [level=2]
+  - paragraph: Viết 80–120 chữ Hán giới thiệu tuổi, quê quán, học tập và sở thích. Thực hành Pinyin và ghi âm phát âm.
+  - generic: Lần 2 · dữ liệu mẫu
+  - heading "Bài làm của học viên" [level=2]
+  - button "Văn bản chữ Hán"
+  - button "Ghi âm"
+  - button "Ảnh viết tay" [pressed]
+  - paragraph: Bản thiết kế có ảnh bài viết tay, nhưng bộ xuất chưa cung cấp file bài nộp thực. Chưa thể phát hoặc phóng to.
+  - heading "Lịch sử đánh giá" [level=2]
+  - paragraph: "Mẫu lần 1 · 75/100: chú ý nét chữ và thanh điệu."
+  - heading "Đánh giá & Chấm điểm" [level=2]
+  - text: Tổng điểm (0–100)
+  - spinbutton "Tổng điểm (0–100)": "92"
+  - progressbar "Điểm mẫu 92/100": 92%
+  - list:
+    - listitem: Ngữ pháp & Từ vựng · 40đ
+    - listitem: Chữ Hán & Bộ thủ · 30đ
+    - listitem: Phát âm & Thanh điệu · 30đ
+  - heading "Nhận xét sư phạm chi tiết" [level=2]
+  - button "+ Tiến bộ" [active]
+  - button "+ Phát âm chuẩn"
+  - button "+ Nét chữ đẹp"
+  - text: Lời nhận xét
+  - textbox "Lời nhận xét": Chào Minh Khang, hãy chú ý thanh điệu và cách dùng cấu trúc giới thiệu bản thân. Tiến bộ.
+  - button "Lưu nháp trên thiết bị"
+  - button "Kiểm tra & Gửi (chưa kết nối)"
+  - status
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- navigation "Điều hướng nhanh trên di động":
+  - link "Tổng quan":
+    - /url: /teacher
+    - generic: Tổng quan
+  - link "Lớp học":
+    - /url: /teacher/classes/hsk2-k24
+    - generic: Lớp học
+  - link "Bài cần chấm":
+    - /url: /teacher/assignments/4
+    - generic: Bài cần chấm
+  - button "Yêu cầu tư vấn · chưa khả dụng":
+    - generic: Yêu cầu tư vấn
+    - text: · chưa khả dụng
+  - link "Hồ sơ sư phạm":
+    - /url: /teacher/profile
+    - generic: Hồ sơ sư phạm
+- button "Open Next.js Dev Tools":
+- alert

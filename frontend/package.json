@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "check:routes": "node scripts/check-routes.mjs",
+    "check:navigation": "node scripts/audit-navigation.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.49.0",

@@ -1,0 +1,119 @@
+- banner:
+  - link "Đến nội dung chính":
+    - /url: "#dashboard-main"
+  - link "XUEYAN, trang chủ":
+    - /url: /
+    - strong: XUEYAN
+    - generic: Học viện tiếng Trung
+  - button "Bắt đầu học"
+  - link "Mở hồ sơ học viên":
+    - /url: /profile
+  - button "Mở menu":
+- main:
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Chọn lộ trình tiếng Trung của bạn" [level=1]
+  - paragraph: Mỗi lộ trình được phân nhóm theo cấp độ, tập trung phát triển phản xạ qua gốc Hán–Việt và lặp lại ngắt quãng.
+  - generic: Lộ trình đang học · dữ liệu mẫu
+  - heading "HSK 1 — Khởi đầu nhập môn & Phát âm Pinyin" [level=2]
+  - paragraph: 18/24 bài học · 75%
+  - progressbar "HSK 1 75%": 75%
+  - link "Tiếp tục học →":
+    - /url: /vocabulary/hsk-1
+  - heading "Chưa biết bắt đầu từ đâu?" [level=2]
+  - paragraph: Thiết lập mục tiêu học tập và chọn nhịp học phù hợp.
+  - link "Gợi ý lộ trình":
+    - /url: /onboarding
+  - heading "Danh mục 7 cấp độ HSK" [level=2]
+  - text: Nhóm cấp độ
+  - combobox "Nhóm cấp độ":
+    - option "Tất cả" [selected]
+    - option "HSK 1–3"
+    - option "HSK 4–9"
+  - generic: HSK 1
+  - generic: Đang học
+  - heading "Nhập môn & Nền tảng phát âm" [level=2]
+  - paragraph: Sơ cấp I
+  - paragraph: Phát âm chuẩn Pinyin · Chữ Hán căn bản · Chào hỏi & làm quen
+  - link "24 bài học · Xem lộ trình →":
+    - /url: /vocabulary/hsk-1
+  - generic: HSK 2
+  - generic: Khám phá
+  - heading "Hội thoại đời sống thường nhật" [level=2]
+  - paragraph: Sơ cấp II
+  - paragraph: Ngữ pháp có liên động · Ăn uống & nơi chốn · Đoạn văn ngắn
+  - link "30 bài học · Xem lộ trình →":
+    - /url: /vocabulary/hsk-2
+  - generic: HSK 3
+  - generic: Khám phá
+  - heading "Giao tiếp độc lập & Đa ngữ cảnh" [level=2]
+  - paragraph: Tiền trung cấp
+  - paragraph: Liên từ phức hợp · So sánh nâng cao · Phản xạ giao tiếp
+  - link "36 bài học · Xem lộ trình →":
+    - /url: /vocabulary/hsk-3
+  - generic: HSK 4
+  - generic: Khám phá
+  - heading "Trung cấp & Thảo luận sâu" [level=2]
+  - paragraph: Trung cấp
+  - paragraph: Âm Hán–Việt mở rộng · Thành ngữ cơ bản · Đọc lướt & nắm ý
+  - link "40 bài học · Xem lộ trình →":
+    - /url: /vocabulary/hsk-4
+  - generic: HSK 5
+  - generic: Khám phá
+  - heading "Cao cấp & Ứng dụng chuyên nghiệp" [level=2]
+  - paragraph: Cao cấp I
+  - paragraph: Văn phong trang trọng · Phân tích ngữ cảnh · Kỹ năng viết nghị luận
+  - link "48 bài học · Xem lộ trình →":
+    - /url: /vocabulary/hsk-5
+  - generic: HSK 6
+  - generic: Khám phá
+  - heading "Thành thạo & Bậc thầy ngôn ngữ" [level=2]
+  - paragraph: Cao cấp II
+  - paragraph: Cấu trúc ngữ pháp cao cấp · Hán tự chuyên sâu · Biên dịch diễn ngôn
+  - link "48 bài học · Xem lộ trình →":
+    - /url: /vocabulary/hsk-6
+  - generic: HSK 7-9
+  - generic: Khám phá
+  - heading "Nghiên cứu, Thương mại & Biên phiên dịch" [level=2]
+  - paragraph: Chuyên sâu học thuật
+  - paragraph: Dịch thuật văn bản · Giao tiếp học thuật · Nghiên cứu Hán học
+  - link "60 bài học · Xem lộ trình →":
+    - /url: /vocabulary/hsk-7-9
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- contentinfo:
+  - link "XUEYAN":
+    - /url: /
+    - strong: XUEYAN
+  - paragraph: XUEYAN - Nền tảng học tiếng Trung dành cho người Việt, kết hợp tri thức Hán - Việt với phương pháp lặp lại ngắt quãng.
+  - generic: HSK 1 - HSK 6+
+  - generic: Âm Hán Việt
+  - heading "Lộ trình HSK" [level=2]
+  - link "HSK 1 - Nhập môn":
+    - /url: /vocabulary/hsk-1
+  - link "HSK 2 - Giao tiếp cơ bản":
+    - /url: /vocabulary/hsk-2
+  - link "HSK 3 - Củng cố từ vựng":
+    - /url: /vocabulary/hsk-3
+  - link "HSK 4 - Diễn đạt chuyên sâu":
+    - /url: /vocabulary/hsk-4
+  - link "HSK 5 & 6 - Nâng cao":
+    - /url: /vocabulary
+  - heading "Cộng đồng & Giáo viên" [level=2]
+  - link "Đội ngũ giảng viên":
+    - /url: /teachers
+  - link "Lớp học trực tuyến":
+    - /url: /classes
+  - link "Chia sẻ kinh nghiệm":
+    - /url: /resources
+  - link "Đồng hành học tập":
+    - /url: /teachers/lan-anh/consultation
+  - heading "Hỗ trợ & Pháp lý" [level=2]
+  - link "Trung tâm trợ giúp":
+    - /url: /help
+  - generic: Điều khoản dịch vụ (chưa có nội dung)
+  - generic: Chính sách bảo mật (chưa có nội dung)
+  - link "Liên hệ cố vấn":
+    - /url: /contact
+  - generic: © 2026 XUEYAN Hán Học. Bảo lưu mọi quyền.
+  - generic: Nền tảng Hán ngữ dành cho người Việt
+- button "Open Next.js Dev Tools":
+- alert

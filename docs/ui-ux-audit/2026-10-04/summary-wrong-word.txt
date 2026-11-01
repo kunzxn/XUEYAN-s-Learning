@@ -1,0 +1,54 @@
+- button "Open Next.js Dev Tools":
+- alert: Tổng kết buổi học
+- banner:
+  - link "Thoát phiên học":
+    - /url: /lessons/1
+    - text: Thoát phiên học
+  - heading "Tổng kết buổi học" [level=1]
+  - progressbar "Tiến độ phiên học"
+  - link "Cài đặt phiên học":
+    - /url: /settings
+- main:
+  - heading "Tổng kết phiên học mẫu" [level=2]
+  - paragraph: Mỗi lần chủ động nhớ lại là một bước củng cố kiến thức.
+  - paragraph: "1"
+  - paragraph: Từ trong bộ phiên mẫu
+  - paragraph: 15 phút
+  - paragraph: Nhịp học đề xuất
+  - paragraph: 20 từ
+  - paragraph: Mục tiêu mỗi ngày
+  - heading "Từ vựng cần củng cố thêm" [level=2]
+  - paragraph: Danh sách minh họa; chưa có kết quả thống kê hay lịch SRS từ backend.
+  - list:
+    - link "学习 xuéxí":
+      - /url: /collection/xuexi
+      - strong: 学习
+      - text: xuéxí
+    - paragraph: Học tập · HỌC TẬP
+    - button "Nghe phát âm 学习":
+      - text: Nghe phát âm
+    - status
+    - link "朋友 péngyou":
+      - /url: /collection/pengyou
+      - strong: 朋友
+      - text: péngyou
+    - paragraph: Bạn bè · BẰNG HỮU
+    - button "Nghe phát âm 朋友":
+      - text: Nghe phát âm
+    - status
+    - link "谢谢 xièxie":
+      - /url: /collection/xiexie
+      - strong: 谢谢
+      - text: xièxie
+    - paragraph: Cảm ơn · TẠ TẠ
+    - button "Nghe phát âm 谢谢":
+      - text: Nghe phát âm
+    - status
+  - link "Về Dashboard":
+    - /url: /dashboard
+  - link "Ôn lại bộ mẫu":
+    - /url: /lessons/1/learn
+    - text: Ôn lại bộ mẫu
+  - link "Về bài học 01":
+    - /url: /lessons/1
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.

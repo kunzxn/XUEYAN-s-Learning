@@ -1,0 +1,144 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- link "XUEYAN Học viện Hán ngữ":
+  - /url: /
+  - text: XUEYAN
+  - generic: Học viện Hán ngữ
+- link "Hôm nay":
+  - /url: /dashboard
+  - text: Hôm nay
+- link "Lộ trình HSK":
+  - /url: /vocabulary
+  - text: Lộ trình HSK
+- link "Ôn tập SRS":
+  - /url: /review
+  - text: Ôn tập SRS
+- link "Sổ từ":
+  - /url: /collection
+  - text: Sổ từ
+- link "Lớp học":
+  - /url: /classes
+  - text: Lớp học
+- link "Tiến độ":
+  - /url: /progress
+  - text: Tiến độ
+- link "Hồ sơ học viên":
+  - /url: /profile
+  - text: Hồ sơ học viên
+- link "Không gian giảng viên (mẫu)":
+  - /url: /teacher
+- link "Trợ giúp học tập":
+  - /url: /help
+- link "Cài đặt cá nhân":
+  - /url: /settings
+  - text: Cài đặt cá nhân
+- banner:
+  - button "Mở menu":
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - link "Thông báo":
+    - /url: /notifications
+- main:
+  - link "← Lộ trình HSK 1":
+    - /url: /vocabulary/hsk-1
+  - text: XUEYAN · Học viện Hán ngữ
+  - 'heading "Bài 01: Chào hỏi & Làm quen" [level=1]'
+  - paragraph: 问候与结识 · Bắt đầu cuộc trò chuyện đầu tiên bằng tiếng Trung.
+  - generic: HSK 1 · 15 phút · 6 từ mẫu
+  - heading "你好，很高兴认识你。" [level=2]
+  - paragraph: Nǐ hǎo, hěn gāoxìng rènshi nǐ.
+  - link "Bắt đầu học từ vựng →":
+    - /url: /lessons/1/learn
+  - heading "Lộ trình 3 chặng học tập" [level=2]
+  - generic: "01"
+  - heading "Học từ mới" [level=2]
+  - paragraph: Học từng bước, kiểm tra và củng cố kiến thức.
+  - link "Mở chặng này":
+    - /url: /lessons/1/learn
+  - generic: "02"
+  - heading "Luyện tập sâu" [level=2]
+  - paragraph: Học từng bước, kiểm tra và củng cố kiến thức.
+  - link "Mở chặng này":
+    - /url: /lessons/1/practice
+  - generic: "03"
+  - heading "Tổng kết & Đánh giá" [level=2]
+  - paragraph: Học từng bước, kiểm tra và củng cố kiến thức.
+  - link "Mở chặng này":
+    - /url: /review/summary?source=lesson-1
+  - heading "Từ vựng trọng tâm" [level=2]
+  - list:
+    - link "学习 xuéxí":
+      - /url: /collection/xuexi
+      - strong: 学习
+      - text: xuéxí
+    - paragraph: Học tập · HỌC TẬP
+    - button "Nghe phát âm 学习":
+      - text: Nghe phát âm
+    - status
+    - link "朋友 péngyou":
+      - /url: /collection/pengyou
+      - strong: 朋友
+      - text: péngyou
+    - paragraph: Bạn bè · BẰNG HỮU
+    - button "Nghe phát âm 朋友":
+      - text: Nghe phát âm
+    - status
+    - link "谢谢 xièxie":
+      - /url: /collection/xiexie
+      - strong: 谢谢
+      - text: xièxie
+    - paragraph: Cảm ơn · TẠ TẠ
+    - button "Nghe phát âm 谢谢":
+      - text: Nghe phát âm
+    - status
+    - link "工作 gōngzuò":
+      - /url: /collection/gongzuo
+      - strong: 工作
+      - text: gōngzuò
+    - paragraph: Công việc · CÔNG TÁC
+    - button "Nghe phát âm 工作":
+      - text: Nghe phát âm
+    - status
+    - link "时间 shíjiān":
+      - /url: /collection/shijian
+      - strong: 时间
+      - text: shíjiān
+    - paragraph: Thời gian · THỜI GIAN
+    - button "Nghe phát âm 时间":
+      - text: Nghe phát âm
+    - status
+    - link "你好 nǐ hǎo":
+      - /url: /collection/nihao
+      - strong: 你好
+      - text: nǐ hǎo
+    - paragraph: Xin chào · NHĨ HẢO
+    - button "Nghe phát âm 你好":
+      - text: Nghe phát âm
+    - status
+  - heading "Mục tiêu bài học" [level=2]
+  - list:
+    - listitem: Chào hỏi và giới thiệu bản thân.
+    - listitem: Đọc đúng Pinyin và thanh điệu.
+    - listitem: Sử dụng lời cảm ơn phù hợp.
+  - heading "Góc văn hóa" [level=3]
+  - paragraph: Lời chào lịch sự tạo khởi đầu thân thiện cho mỗi cuộc trò chuyện.
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- navigation "Điều hướng nhanh trên di động":
+  - link "Hôm nay":
+    - /url: /dashboard
+    - generic: Hôm nay
+  - link "Lộ trình HSK":
+    - /url: /vocabulary
+    - generic: Lộ trình HSK
+  - link "Ôn tập SRS":
+    - /url: /review
+    - generic: Ôn tập SRS
+  - link "Sổ từ":
+    - /url: /collection
+    - generic: Sổ từ
+  - link "Hồ sơ học viên":
+    - /url: /profile
+    - generic: Hồ sơ học viên
+- button "Open Next.js Dev Tools":
+- alert

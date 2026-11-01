@@ -1,0 +1,342 @@
+{
+  "base": "http://127.0.0.1:3105",
+  "checkedAt": "2026-10-23T12:40:36.700Z",
+  "routes": [
+    {
+      "route": "/resources/remember-vocabulary",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/lessons/1",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/login",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/dictionary",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/reset-password",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/dashboard",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/lessons/1/learn",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/collection",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/classes/hsk2-k24",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/classes",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/lessons/1/practice",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/collection/xuexi",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/profile/edit",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/progress",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/settings",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/review/summary",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/review",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/review/study",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/notifications",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/onboarding",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/assignments/4",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/vocabulary",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/vocabulary/hsk-1",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/profile",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/teachers",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/forgot-password",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/register",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/teachers/lan-anh",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/teachers/lan-anh/consultation",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/resources",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/help",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/contact",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/teacher",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/teacher/classes/hsk2-k24",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/teacher/assignments/4",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/teacher/profile",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/review/study?limit=3",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/review/study?word=pengyou",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/lessons/1/practice?word=pengyou",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/review/summary?source=lesson-1&count=1&word=pengyou",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/my-learning",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/review/summary?source=lesson-1",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/vocabulary/hsk-2",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/vocabulary/hsk-3",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/vocabulary/hsk-4",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/collection/pengyou",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/lessons/1/practice?word=xuexi",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/collection/xiexie",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/collection/shijian",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/collection/gongzuo",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/collection/nihao",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/account/register",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/review/study?word=xuexi",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/review/study?limit=6",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/vocabulary/hsk-6",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/teachers/minh-duc",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/teachers/cam-tu",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/vocabulary/hsk-5",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/account/login",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/vocabulary/hsk-7-9",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/teachers/vuong-tuan",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/teachers/mai-phuong",
+      "status": 200,
+      "hasMain": true
+    },
+    {
+      "route": "/teachers/quoc-bao",
+      "status": 200,
+      "hasMain": true
+    }
+  ],
+  "negativeRoutes": [
+    "/collection/not-a-word",
+    "/teachers/not-a-teacher",
+    "/vocabulary/hsk-99",
+    "/teachers/not-a-teacher/consultation",
+    "/review/study?word=not-a-word",
+    "/review/study?limit=0",
+    "/lessons/1/practice?word=not-a-word",
+    "/review/summary?source=bad&count=99"
+  ],
+  "result": "PASS"
+}

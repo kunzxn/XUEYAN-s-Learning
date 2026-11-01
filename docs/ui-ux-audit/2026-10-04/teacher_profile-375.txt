@@ -1,0 +1,110 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- link "XUEYAN Không gian giảng viên":
+  - /url: /
+  - text: XUEYAN
+  - generic: Không gian giảng viên
+- link "Tổng quan":
+  - /url: /teacher
+  - text: Tổng quan
+- link "Lớp học":
+  - /url: /teacher/classes/hsk2-k24
+  - text: Lớp học
+- link "Bài cần chấm":
+  - /url: /teacher/assignments/4
+  - text: Bài cần chấm
+- button "Yêu cầu tư vấn · chưa khả dụng":
+  - text: Yêu cầu tư vấn · chưa khả dụng
+- link "Hồ sơ sư phạm":
+  - /url: /teacher/profile
+  - text: Hồ sơ sư phạm
+- link "Chế độ học viên":
+  - /url: /dashboard
+- link "Trợ giúp học tập":
+  - /url: /help
+- link "Cài đặt cá nhân":
+  - /url: /settings
+  - text: Cài đặt cá nhân
+- banner:
+  - button "Mở menu":
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - link "Thông báo":
+    - /url: /notifications
+- main:
+  - link "← Quay lại":
+    - /url: /teacher
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Chỉnh sửa hồ sơ giảng viên" [level=1]
+  - paragraph: Thông tin nhận diện, mục tiêu và tùy chọn học tập.
+  - heading "01 · Thông tin nhận diện" [level=2]
+  - generic: C
+  - text: Chọn ảnh xem trước
+  - button "Chọn ảnh xem trước JPG, PNG · Chưa có dịch vụ tải ảnh"
+  - generic: JPG, PNG · Chưa có dịch vụ tải ảnh
+  - generic: Tên hiển thị
+  - textbox "Tên hiển thị": Cô Lan Anh
+  - text: Tiêu đề chuyên môn
+  - textbox "Tiêu đề chuyên môn": Thạc sĩ Hán ngữ đối ngoại
+  - text: Giới thiệu
+  - textbox "Giới thiệu": Giảng dạy Hán ngữ qua chiết tự và thực hành ngữ cảnh.
+  - heading "02 · Phương pháp & Cấp độ giảng dạy" [level=2]
+  - text: Phương pháp chủ đạo
+  - combobox "Phương pháp chủ đạo":
+    - option "Chiết tự & Hán–Việt" [selected]
+    - option "Thương mại"
+    - option "Luyện thi HSK"
+  - text: Cấp độ HSK
+  - combobox "Cấp độ HSK":
+    - option "HSK 2" [selected]
+    - option "HSK 3"
+    - option "HSK 4–6"
+  - checkbox "Hiển thị Pinyin" [checked]
+  - text: Hiển thị Pinyin
+  - heading "03 · Văn bằng & Chứng chỉ học thuật" [level=2]
+  - paragraph: Minh chứng mẫu, chưa xác minh bởi hệ thống.
+  - list:
+    - listitem: Thạc sĩ Giáo dục Hán ngữ quốc tế · BLCU
+    - listitem: HSK 6 · 285/300 (mẫu)
+    - listitem: CTCSOL · Chờ kiểm duyệt minh chứng
+  - text: Chọn minh chứng
+  - button "Chọn minh chứng Không tải lên server trong bản mẫu."
+  - generic: Không tải lên server trong bản mẫu.
+  - heading "04 · Bài giảng & Lịch tư vấn" [level=2]
+  - text: Liên kết video bài giảng
+  - textbox "Liên kết video bài giảng":
+    - /placeholder: https://…
+  - text: Khung giờ tư vấn
+  - textbox "Khung giờ tư vấn": Thứ 2, 4, 6 · 19:30–21:00
+  - heading "05 · Tài khoản & Xác thực" [level=2]
+  - paragraph: Địa chỉ email và định danh chỉ được thay đổi qua dịch vụ xác thực.
+  - link "Cài đặt tài khoản":
+    - /url: /settings
+  - button "Lưu nháp trên thiết bị"
+  - button "Xem trước"
+  - status
+  - heading "Xem trước hồ sơ" [level=2]
+  - generic: C
+  - heading "Cô Lan Anh" [level=3]
+  - paragraph: Giảng dạy Hán ngữ qua chiết tự và thực hành ngữ cảnh.
+  - generic: Giảng viên mẫu
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- navigation "Điều hướng nhanh trên di động":
+  - link "Tổng quan":
+    - /url: /teacher
+    - generic: Tổng quan
+  - link "Lớp học":
+    - /url: /teacher/classes/hsk2-k24
+    - generic: Lớp học
+  - link "Bài cần chấm":
+    - /url: /teacher/assignments/4
+    - generic: Bài cần chấm
+  - button "Yêu cầu tư vấn · chưa khả dụng":
+    - generic: Yêu cầu tư vấn
+    - text: · chưa khả dụng
+  - link "Hồ sơ sư phạm":
+    - /url: /teacher/profile
+    - generic: Hồ sơ sư phạm
+- button "Open Next.js Dev Tools":
+- alert

@@ -1592,3 +1592,10 @@
 .skipLink:focus { transform: translateY(0); }
 @media (max-width: 360px) { .brandCopy small { display: none; } .brandLogo { width: 28px; height: 28px; } }
 @media (prefers-reduced-motion: reduce) { .page *, .page *::before, .page *::after, .siteFooter * { transition: none !important; animation: none !important; } }
+
+.mainNav a[aria-current="page"] { color: var(--primary); font-weight: 700; text-decoration: underline; text-underline-offset: 6px; }
+
+@media (min-width:801px) { .mainNav .mobileLogin { display:none; } }
+
+/* Keep authenticated display names from crowding header navigation. */
+.loginLink{max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}

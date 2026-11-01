@@ -1,0 +1,106 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- link "XUEYAN Học viện Hán ngữ":
+  - /url: /
+  - text: XUEYAN
+  - generic: Học viện Hán ngữ
+- link "Hôm nay":
+  - /url: /dashboard
+  - text: Hôm nay
+- link "Lộ trình HSK":
+  - /url: /vocabulary
+  - text: Lộ trình HSK
+- link "Ôn tập SRS":
+  - /url: /review
+  - text: Ôn tập SRS
+- link "Sổ từ":
+  - /url: /collection
+  - text: Sổ từ
+- link "Lớp học":
+  - /url: /classes
+  - text: Lớp học
+- link "Tiến độ":
+  - /url: /progress
+  - text: Tiến độ
+- link "Hồ sơ học viên":
+  - /url: /profile
+  - text: Hồ sơ học viên
+- link "Không gian giảng viên (mẫu)":
+  - /url: /teacher
+- link "Trợ giúp học tập":
+  - /url: /help
+- link "Cài đặt cá nhân":
+  - /url: /settings
+  - text: Cài đặt cá nhân
+- banner:
+  - button "Mở menu":
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - link "Thông báo":
+    - /url: /notifications
+- main:
+  - link "← Sổ từ vựng":
+    - /url: /collection
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Chi tiết từ vựng" [level=1]
+  - generic: HSK 1
+  - button "Nghe phát âm 学习":
+    - text: Nghe phát âm
+  - status
+  - paragraph: 学习
+  - paragraph: xuéxí
+  - heading "Học tập" [level=2]
+  - generic: "Âm Hán–Việt: HỌC TẬP"
+  - link "Ôn tập từ này":
+    - /url: /review/study?word=xuexi
+  - heading "Câu ví dụ thực tế" [level=2]
+  - paragraph: 我每天学习中文。
+  - paragraph: Wǒ měitiān xuéxí Zhōngwén.
+  - paragraph: Tôi học tiếng Trung mỗi ngày.
+  - heading "Từ liên quan" [level=3]
+  - list:
+    - link "朋友 péngyou":
+      - /url: /collection/pengyou
+      - strong: 朋友
+      - text: péngyou
+    - paragraph: Bạn bè · BẰNG HỮU
+    - button "Nghe phát âm 朋友":
+      - text: Nghe phát âm
+    - status
+    - link "谢谢 xièxie":
+      - /url: /collection/xiexie
+      - strong: 谢谢
+      - text: xièxie
+    - paragraph: Cảm ơn · TẠ TẠ
+    - button "Nghe phát âm 谢谢":
+      - text: Nghe phát âm
+    - status
+  - heading "Tiến trình ôn tập cá nhân" [level=2]
+  - generic: Mẫu ghi nhớ 80%
+  - progressbar "Mức độ ghi nhớ mẫu 80%": 80%
+  - paragraph: Lịch nhắc ôn cần tích hợp hệ thống SRS.
+  - heading "Ghi chú cá nhân" [level=2]
+  - text: Ghi chú
+  - textbox "Ghi chú"
+  - button "Lưu trên thiết bị"
+  - status
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- navigation "Điều hướng nhanh trên di động":
+  - link "Hôm nay":
+    - /url: /dashboard
+    - generic: Hôm nay
+  - link "Lộ trình HSK":
+    - /url: /vocabulary
+    - generic: Lộ trình HSK
+  - link "Ôn tập SRS":
+    - /url: /review
+    - generic: Ôn tập SRS
+  - link "Sổ từ":
+    - /url: /collection
+    - generic: Sổ từ
+  - link "Hồ sơ học viên":
+    - /url: /profile
+    - generic: Hồ sơ học viên
+- button "Open Next.js Dev Tools":
+- alert

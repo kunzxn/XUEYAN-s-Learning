@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-23",
+  "source": "Browser actions observed during this remediation; concise manual log",
+  "checks": [
+    {
+      "ux": "UX02",
+      "action": "Hide Pinyin while lesson answer is open",
+      "result": "Pinyin word/example absent in AX and DOM; meaning remains"
+    },
+    {
+      "ux": "UX05",
+      "action": "Rate 1 of 3, exit to summary, reload",
+      "result": "1/3 and 33%, early exit"
+    },
+    {
+      "ux": "UX05",
+      "action": "Wrong answer for gongzuo in single-word practice",
+      "result": "0 points, only gongzuo needs reinforcement"
+    },
+    {
+      "ux": "UX06",
+      "action": "Complete review via numeric keys 3,1,4 while rating button focused",
+      "result": "3/3, pengyou is the only weak word"
+    },
+    {
+      "ux": "UX06",
+      "action": "Space on Reveal answer button at tablet width",
+      "result": "Answer opens once, ratings visible"
+    },
+    {
+      "ux": "UX03",
+      "action": "Duplicate normalized name, whitespace, valid separate test name",
+      "result": "Field errors preserve value, then valid set created in memory"
+    },
+    {
+      "ux": "UX04",
+      "action": "Open home mobile menu",
+      "result": "Login link to /login is present"
+    },
+    {
+      "ux": "UX15",
+      "action": "Open drawer after final transition fix; Shift+Tab, Tab, Escape",
+      "result": "Initial close button focus, wraps to last/back, restores opener; background inert then released"
+    },
+    {
+      "ux": "UX10",
+      "action": "Submit empty contact, correct all five fields, submit",
+      "result": "Five field errors/focus first, then preserved values and honest service-unavailable notice"
+    },
+    {
+      "ux": "UX18",
+      "action": "Filter resource library by Pinyin",
+      "result": "Stable glyph 声"
+    },
+    {
+      "ux": "UX21",
+      "action": "Open invalid collection ID",
+      "result": "Vietnamese 404 with collection/home links"
+    }
+  ]
+}

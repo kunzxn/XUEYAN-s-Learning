@@ -1,0 +1,92 @@
+- banner:
+  - link "Đến nội dung chính":
+    - /url: "#dashboard-main"
+  - link "XUEYAN, trang chủ":
+    - /url: /
+    - strong: XUEYAN
+    - generic: Học viện tiếng Trung
+  - navigation "Điều hướng chính":
+    - link "Lộ trình HSK":
+      - /url: /vocabulary
+    - link "Từ điển":
+      - /url: /dictionary
+    - link "Giáo viên":
+      - /url: /teachers
+    - link "Tài nguyên":
+      - /url: /resources
+  - link "Đăng nhập":
+    - /url: /login
+  - button "Bắt đầu học"
+  - link "Mở hồ sơ học viên":
+    - /url: /profile
+- main:
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Học tiếng Trung có phương pháp, bền vững và thấu suốt" [level=1]
+  - paragraph: XUEYAN — không gian học Hán ngữ có cấu trúc dành cho người Việt.
+  - paragraph: 格物致知
+  - heading "Khám phá chữ Hán, xây nền tảng vững vàng" [level=2]
+  - generic: Hán–Việt
+  - generic: Ngữ cảnh
+  - generic: Ôn tập chủ động
+  - heading "Thiết kế cho hành trình của bạn" [level=2]
+  - heading "Người mới bắt đầu" [level=3]
+  - paragraph: Lộ trình rõ ràng, nhịp học phù hợp và công cụ thực hành tập trung.
+  - heading "Người ôn thi HSK" [level=3]
+  - paragraph: Lộ trình rõ ràng, nhịp học phù hợp và công cụ thực hành tập trung.
+  - heading "Người tự học kỷ luật" [level=3]
+  - paragraph: Lộ trình rõ ràng, nhịp học phù hợp và công cụ thực hành tập trung.
+  - heading "Đồng hành sư phạm" [level=3]
+  - paragraph: Lộ trình rõ ràng, nhịp học phù hợp và công cụ thực hành tập trung.
+  - heading "Ba trụ cột sư phạm" [level=2]
+  - paragraph: 理
+  - heading "Từ vựng có cấu trúc" [level=2]
+  - paragraph: Kết hợp chữ Hán, Pinyin, âm Hán–Việt và câu ví dụ.
+  - paragraph: 忆
+  - heading "Ôn tập ngắt quãng" [level=2]
+  - paragraph: Chủ động nhớ lại từ đã học, luyện thói quen đều đặn.
+  - paragraph: 道
+  - heading "Đồng hành chuyên môn" [level=2]
+  - paragraph: Học cùng giáo viên qua phương pháp và phản hồi theo ngữ cảnh.
+  - heading "Khám phá cây kiến thức HSK" [level=2]
+  - link "Xem lộ trình":
+    - /url: /vocabulary
+  - heading "Đội ngũ giảng viên đồng hành" [level=2]
+  - link "Tìm hiểu giáo viên":
+    - /url: /teachers
+- contentinfo:
+  - link "XUEYAN":
+    - /url: /
+    - strong: XUEYAN
+  - paragraph: XUEYAN - Nền tảng học tiếng Trung dành cho người Việt, kết hợp tri thức Hán - Việt với phương pháp lặp lại ngắt quãng.
+  - generic: HSK 1 - HSK 6+
+  - generic: Âm Hán Việt
+  - heading "Lộ trình HSK" [level=2]
+  - link "HSK 1 - Nhập môn":
+    - /url: /vocabulary/hsk-1
+  - link "HSK 2 - Giao tiếp cơ bản":
+    - /url: /vocabulary/hsk-2
+  - link "HSK 3 - Củng cố từ vựng":
+    - /url: /vocabulary/hsk-3
+  - link "HSK 4 - Diễn đạt chuyên sâu":
+    - /url: /vocabulary/hsk-4
+  - link "HSK 5 & 6 - Nâng cao":
+    - /url: /vocabulary
+  - heading "Cộng đồng & Giáo viên" [level=2]
+  - link "Đội ngũ giảng viên":
+    - /url: /teachers
+  - link "Lớp học trực tuyến":
+    - /url: /classes
+  - link "Chia sẻ kinh nghiệm":
+    - /url: /resources
+  - link "Đồng hành học tập":
+    - /url: /teachers/lan-anh/consultation
+  - heading "Hỗ trợ & Pháp lý" [level=2]
+  - link "Trung tâm trợ giúp":
+    - /url: /help
+  - generic: Điều khoản dịch vụ (chưa có nội dung)
+  - generic: Chính sách bảo mật (chưa có nội dung)
+  - link "Liên hệ cố vấn":
+    - /url: /contact
+  - generic: © 2026 XUEYAN Hán Học. Bảo lưu mọi quyền.
+  - generic: Nền tảng Hán ngữ dành cho người Việt
+- button "Open Next.js Dev Tools":

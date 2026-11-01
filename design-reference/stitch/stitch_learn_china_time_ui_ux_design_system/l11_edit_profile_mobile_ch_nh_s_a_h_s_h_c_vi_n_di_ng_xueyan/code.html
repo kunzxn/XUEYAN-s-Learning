@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-container": "#9bf1c7", "primary": "#004563", "on-primary": "#ffffff", "surface-container-low": "#e9f5ff", "inverse-primary": "#93cdf6", "outline-variant": "#c0c7ce", "on-tertiary-fixed": "#271900", "on-secondary": "#ffffff", "on-primary-container": "#9ad5fd", "tertiary": "#563b00", "surface-dim": "#c9ddeb", "on-primary-fixed": "#001e2e", "on-error-container": "#93000a", "tertiary-container": "#745100", "secondary": "#046c4b", "primary-container": "#185d80", "error": "#ba1a1a", "on-surface": "#0a1e28", "primary-fixed-dim": "#93cdf6", "on-surface-variant": "#40484e", "surface-tint": "#236487", "on-background": "#0a1e28", "on-secondary-fixed": "#002114", "background": "#f5faff", "outline": "#71787e", "on-tertiary-container": "#fcc55f", "secondary-fixed-dim": "#82d7af", "surface-container-highest": "#d2e5f4", "surface": "#f5faff", "inverse-on-surface": "#e3f3ff", "on-tertiary": "#ffffff", "primary-fixed": "#c7e7ff", "on-secondary-container": "#0f704f", "error-container": "#ffdad6", "tertiary-fixed": "#ffdea9", "on-tertiary-fixed-variant": "#5e4200", "on-primary-fixed-variant": "#004c6c", "on-error": "#ffffff", "secondary-fixed": "#9ef4ca", "surface-container-high": "#d7ebf9", "inverse-surface": "#21333e", "surface-variant": "#d2e5f4", "surface-container": "#ddf1ff", "on-secondary-fixed-variant": "#005138", "surface-container-lowest": "#ffffff", "surface-bright": "#f5faff", "tertiary-fixed-dim": "#f4be59" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-xs": "0.25rem", "space-2xl": "3rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "margin": "2rem", "space-sm": "0.5rem", "space-md": "1rem" }, fontFamily: { "pinyin-display": ["Be Vietnam Pro"], "display-lg": ["Be Vietnam Pro"], "hanzi-hero": ["Noto Sans SC"], "body-sm": ["Be Vietnam Pro"], "label-md": ["Be Vietnam Pro"], "headline-md": ["Be Vietnam Pro"], "headline-lg-mobile": ["Be Vietnam Pro"], "display-lg-mobile": ["Be Vietnam Pro"], "label-sm": ["Be Vietnam Pro"], "body-md": ["Be Vietnam Pro"], "headline-sm": ["Be Vietnam Pro"], "headline-lg": ["Be Vietnam Pro"], "hanzi-card": ["Noto Sans SC"], "body-lg": ["Be Vietnam Pro"], "hanzi-inline": ["Noto Sans SC"] }, fontSize: { "pinyin-display": ["18px", { lineHeight: "24px", letterSpacing: "0.02em", fontWeight: "500" }], "display-lg": ["44px", { lineHeight: "52px", letterSpacing: "-0.02em", fontWeight: "700" }], "hanzi-hero": ["72px", { lineHeight: "84px", fontWeight: "500" }], "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }], "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", fontWeight: "600" }], "display-lg-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }], "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }], "hanzi-card": ["40px", { lineHeight: "48px", fontWeight: "500" }], "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }], "hanzi-inline": ["20px", { lineHeight: "28px", fontWeight: "500" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="logo.jpg" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vsh2LAS9uBPlaa3Xs2R0g6GcBsIpGZKk7ZVSkNHpGee_C6USFkNEaArq6SuvHQhj96dYoUCWPmC3RbD9IZnogeDkq9mUHlqLAdQSofXiohdm3NWzM_pPkinLFwgsYC3kAbKBs4fsppC5r3wMJ-IVdSC4rYeeRTDsKKKqiDjCdU0e7Whn3olkAgjfHXqBWaPON2ddVMlYcj6pLuwrWyOcd8GWNgIBMxZJdiwv7aIzLJN7BLlPOG2Kzm-TWviFs-Y5CFf2Ft053Jjg"/><button class="min-w-[44px] min-h-[44px] flex items-center gap-space-xs text-on-surface-variant hover:text-primary transition-colors focus:outline-none" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back</span><span class="font-label-md text-label-md">Quay lại hồ sơ</span></button></div><div class="flex items-center gap-space-sm"><h1 class="font-headline-sm text-headline-sm text-primary font-semibold tracking-tight">Edit Profile</h1><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WExU2vlwf7wNywyoHaaKFB-F8BryiE08_7j_K51ImKDU_N8dMJiQvwwh8z6iEa7qGb_cXE3SnFCub-WYBMNoECriBXU1r72NgKUORpsMyQUtVcwUgL0tjxOGVuqCP3kD3mAohdmVkNQL_J1_LydeSkv-PXJfTY-nSRG2PUoCTdwpxt7ur19vHq9X_oFz_8sdOp5CFQLSb5i7EkhEzQFlLN2s7cetd2y9Io9UhZ7-G6aW0wxcMr5V0Y86o"/></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle In-App Success Toast (Auto-dismiss simulation) -->
+<div class="mx-margin-mobile mt-space-sm mb-space-xs p-space-sm rounded-xl bg-secondary text-on-secondary shadow-md flex items-center justify-between transition-all duration-300" id="successToast">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-md text-label-md">Đã lưu thay đổi thành công.</span>
+</div>
+<button class="min-w-[32px] min-h-[32px] flex items-center justify-center text-on-secondary opacity-80 hover:opacity-100 focus:outline-none" onclick="document.getElementById('successToast').style.display='none'">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Screen Sub-Header Action Row -->
+<div class="px-gutter-mobile py-space-xs flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">person_edit</span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wider uppercase text-primary">Thông tin học viên</span>
+</div>
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-error transition-colors min-h-[44px] flex items-center px-space-xs" onclick="confirmReset()" type="button">
+      Hủy
+    </button>
+</div>
+<form class="flex flex-col gap-space-md px-gutter-mobile pb-28" id="profileForm" onsubmit="event.preventDefault(); showSavedToast();">
+<!-- 1. AVATAR UPLOAD CARD -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col items-center text-center">
+<div class="relative mb-space-sm">
+<div class="w-24 h-24 rounded-full overflow-hidden shadow-md bg-surface-container-high p-0.5">
+<img alt="Ảnh đại diện học viên" class="w-full h-full object-cover rounded-full" id="avatarPreview" src="https://lh3.googleusercontent.com/aida/AEtjO1WExU2vlwf7wNywyoHaaKFB-F8BryiE08_7j_K51ImKDU_N8dMJiQvwwh8z6iEa7qGb_cXE3SnFCub-WYBMNoECriBXU1r72NgKUORpsMyQUtVcwUgL0tjxOGVuqCP3kD3mAohdmVkNQL_J1_LydeSkv-PXJfTY-nSRG2PUoCTdwpxt7ur19vHq9X_oFz_8sdOp5CFQLSb5i7EkhEzQFlLN2s7cetd2y9Io9UhZ7-G6aW0wxcMr5V0Y86o"/>
+</div>
+<button class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-primary text-on-primary shadow-md flex items-center justify-center hover:bg-primary-container transition-transform active:scale-95" onclick="document.getElementById('avatarFileInput').click()" title="Thay ảnh" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</button>
+<input accept="image/*" class="hidden" id="avatarFileInput" onchange="previewNewAvatar(event)" type="file"/>
+</div>
+<div class="flex items-center gap-space-sm mb-space-xs">
+<button class="h-10 px-space-md rounded-xl bg-surface-container-low text-primary font-label-md text-label-md flex items-center gap-space-xs hover:bg-surface-container transition-colors active:scale-98" onclick="document.getElementById('avatarFileInput').click()" type="button">
+<span class="material-symbols-outlined text-[18px]">upload</span>
+          Đổi ảnh đại diện
+        </button>
+<button class="h-10 px-space-sm rounded-xl text-error font-label-md text-label-md flex items-center gap-space-xs hover:bg-error-container/20 transition-colors" onclick="removeAvatar()" type="button">
+<span class="material-symbols-outlined text-[18px]">delete_outline</span>
+          Gỡ ảnh
+        </button>
+</div>
+<p class="font-label-sm text-label-sm text-outline">
+        Tối đa 3MB (JPG, PNG). Tỉ lệ vuông 1:1.
+      </p>
+</div>
+<!-- 2. THÔNG TIN NHẬN DIỆN (IDENTITY) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b pb-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-primary flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">badge</span>
+          Thông tin nhận diện
+        </h2>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full font-medium">HSK 2</span>
+</div>
+<!-- Display Name Input -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="displayName">
+            Tên hiển thị <span class="text-error">*</span>
+</label>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Hợp lệ
+          </span>
+</div>
+<div class="relative flex items-center">
+<input class="w-full h-12 px-space-md pr-10 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none shadow-sm transition-all" id="displayName" oninput="markChanged()" placeholder="Nhập họ và tên..." required="" type="text" value="Nguyễn Văn Hùng"/>
+<span class="material-symbols-outlined absolute right-3 text-secondary text-[20px]">verified</span>
+</div>
+</div>
+<!-- Bio / Intro Textarea -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="userBio">
+            Giới thiệu ngắn
+          </label>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="charCounter">118/250</span>
+</div>
+<textarea class="w-full p-space-md rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none shadow-sm transition-all resize-none" id="userBio" maxlength="250" oninput="updateCharCount(this); markChanged();" placeholder="Chia sẻ lý do bạn học Hán ngữ hoặc mục tiêu cá nhân..." rows="3">Học viên HSK 2 đam mê văn hóa trà đạo và tiếng Trung giao tiếp. Mục tiêu nắm vững 500 từ vựng và tự tin đặt món ăn.</textarea>
+</div>
+</div>
+<!-- 3. MỤC ĐÍCH & TÙY CHỌN HỌC TẬP -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs border-b pb-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">tune</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Mục đích &amp; Tùy chọn học tập</h2>
+</div>
+<!-- Mục đích học Chips -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Mục đích học chính</label>
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="goal-chip h-11 px-2 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm flex flex-col items-center justify-center text-center shadow-sm transition-all active:scale-95" data-selected="true" onclick="selectGoal(this, 'Giao tiếp &amp; Du lịch')" type="button">
+<span class="truncate w-full font-semibold">Giao tiếp &amp; Du lịch</span>
+</button>
+<button class="goal-chip h-11 px-2 rounded-xl bg-surface-container-low text-on-surface font-label-sm text-label-sm flex flex-col items-center justify-center text-center hover:bg-surface-container transition-all active:scale-95" data-selected="false" onclick="selectGoal(this, 'Thi HSK')" type="button">
+<span class="truncate w-full font-medium">Thi HSK</span>
+</button>
+<button class="goal-chip h-11 px-2 rounded-xl bg-surface-container-low text-on-surface font-label-sm text-label-sm flex flex-col items-center justify-center text-center hover:bg-surface-container transition-all active:scale-95" data-selected="false" onclick="selectGoal(this, 'Công việc')" type="button">
+<span class="truncate w-full font-medium">Công việc</span>
+</button>
+</div>
+</div>
+<!-- Định dạng chữ Toggle -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Bộ chữ Hán ưa thích</label>
+<div class="grid grid-cols-2 gap-space-xs p-1 bg-surface-container-low rounded-xl">
+<button class="py-2.5 px-space-sm rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-semibold shadow-sm flex items-center justify-center gap-space-xs transition-all" id="btnJianti" onclick="toggleHanziStyle('jianti')" type="button">
+<span class="font-hanzi-inline text-hanzi-inline text-primary">简体</span>
+<span>Giản thể</span>
+</button>
+<button class="py-2.5 px-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-space-xs transition-all" id="btnFanti" onclick="toggleHanziStyle('fanti')" type="button">
+<span class="font-hanzi-inline text-hanzi-inline">繁體</span>
+<span>Phồn thể</span>
+</button>
+</div>
+</div>
+<!-- Hiển thị Pinyin Switch Toggle -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Hiển thị phiên âm Pinyin</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Luôn kèm thanh điệu trên flashcard</span>
+</div>
+<button aria-pressed="true" class="w-12 h-7 bg-primary rounded-full relative p-0.5 transition-colors focus:outline-none" id="pinyinToggle" onclick="toggleSwitch(this)" type="button">
+<span class="w-6 h-6 bg-on-primary rounded-full shadow-md block transform translate-x-5 transition-transform" id="pinyinKnob"></span>
+</button>
+</div>
+<!-- Giờ nhắc ôn tập -->
+<div class="flex items-center justify-between pt-space-xs border-t">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-tertiary">notifications_active</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Giờ nhắc ôn tập</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Spaced Repetition hàng ngày</span>
+</div>
+</div>
+<div class="relative">
+<select class="h-10 pl-space-sm pr-7 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md font-semibold appearance-none focus:outline-none cursor-pointer" id="reminderTime" onchange="markChanged()">
+<option value="19:00">19:00</option>
+<option selected="" value="20:00">20:00</option>
+<option value="21:00">21:00</option>
+<option value="22:00">22:00</option>
+</select>
+<span class="material-symbols-outlined absolute right-1.5 top-2.5 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- 4. TÀI KHOẢN & BẢO MẬT -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-primary">lock</span>
+<h3 class="font-label-md text-label-md font-semibold">Tài khoản &amp; Định danh</h3>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Email tài khoản</span>
+<span class="font-body-md text-body-md font-medium text-on-surface">hung.nguyen24@gmail.com</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]" title="Chỉ đọc">lock_outline</span>
+</div>
+<a class="inline-flex items-center justify-between text-primary font-label-md text-label-md py-1 px-space-xs hover:text-primary-container transition-colors" href="#security-settings">
+<span>Đổi email hoặc mật khẩu trong Cài đặt bảo mật</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Visual scholarly milestone badge -->
+<div class="flex items-center justify-center gap-space-xs py-space-xs text-outline">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span class="font-label-sm text-label-sm">XUEYAN Hán Ngữ Học Xá • Đồng bộ đám mây</span>
+</div>
+</form>
+<!-- UNSAVED CHANGES ALERT BOTTOM-SHEET BANNER -->
+<div class="fixed bottom-20 left-0 right-0 z-40 px-margin-mobile transition-all duration-300 transform translate-y-32 opacity-0 pointer-events-none" id="unsavedBanner">
+<div class="bg-inverse-surface text-inverse-on-surface rounded-xl p-space-sm shadow-xl flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0 pr-space-xs">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px] shrink-0">info</span>
+<span class="font-label-sm text-label-sm truncate">Bạn có thay đổi chưa lưu.</span>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="px-space-xs py-1 rounded text-inverse-on-surface font-label-sm text-label-sm hover:underline" onclick="dismissUnsaved()" type="button">
+          Bỏ qua
+        </button>
+<button class="px-space-sm py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold hover:bg-secondary-fixed-dim transition-colors" onclick="submitForm()" type="button">
+          Giữ lại
+        </button>
+</div>
+</div>
+</div>
+<!-- 5. STICKY BOTTOM ACTION BAR -->
+<div class="fixed bottom-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md pb-safe pt-space-xs px-gutter-mobile shadow-[0_-4px_16px_rgba(0,0,0,0.06)]">
+<div class="h-16 flex items-center gap-space-sm max-w-[390px] mx-auto">
+<button class="h-12 flex-1 rounded-xl bg-surface-container-high text-primary font-label-md text-label-md font-semibold hover:bg-surface-container-highest transition-colors active:scale-98 flex items-center justify-center" onclick="confirmReset()" type="button">
+        Hủy
+      </button>
+<button class="h-12 flex-[2] rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-md hover:bg-primary-container transition-all active:scale-98 flex items-center justify-center gap-space-xs" onclick="submitForm()" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+        Lưu thay đổi
+      </button>
+</div>
+</div>
+</div>
+<script>
+  let hasUnsavedChanges = false;
+
+  function markChanged() {
+    if (!hasUnsavedChanges) {
+      hasUnsavedChanges = true;
+      showUnsavedBanner();
+    }
+  }
+
+  function updateCharCount(textarea) {
+    const counter = document.getElementById('charCounter');
+    counter.textContent = textarea.value.length + '/250';
+  }
+
+  function selectGoal(button, goalName) {
+    document.querySelectorAll('.goal-chip').forEach(chip => {
+      chip.classList.remove('bg-primary', 'text-on-primary', 'font-semibold');
+      chip.classList.add('bg-surface-container-low', 'text-on-surface', 'font-medium');
+      chip.setAttribute('data-selected', 'false');
+    });
+    button.classList.remove('bg-surface-container-low', 'text-on-surface', 'font-medium');
+    button.classList.add('bg-primary', 'text-on-primary', 'font-semibold');
+    button.setAttribute('data-selected', 'true');
+    markChanged();
+  }
+
+  function toggleHanziStyle(style) {
+    const btnJ = document.getElementById('btnJianti');
+    const btnF = document.getElementById('btnFanti');
+    if (style === 'jianti') {
+      btnJ.className = 'py-2.5 px-space-sm rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-semibold shadow-sm flex items-center justify-center gap-space-xs transition-all';
+      btnF.className = 'py-2.5 px-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-space-xs transition-all';
+    } else {
+      btnF.className = 'py-2.5 px-space-sm rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-semibold shadow-sm flex items-center justify-center gap-space-xs transition-all';
+      btnJ.className = 'py-2.5 px-space-sm rounded-lg text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-space-xs transition-all';
+    }
+    markChanged();
+  }
+
+  function toggleSwitch(btn) {
+    const isChecked = btn.getAttribute('aria-pressed') === 'true';
+    const knob = document.getElementById('pinyinKnob');
+    if (isChecked) {
+      btn.setAttribute('aria-pressed', 'false');
+      btn.classList.remove('bg-primary');
+      btn.classList.add('bg-outline-variant');
+      knob.classList.remove('translate-x-5');
+      knob.classList.add('translate-x-0.5');
+    } else {
+      btn.setAttribute('aria-pressed', 'true');
+      btn.classList.add('bg-primary');
+      btn.classList.remove('bg-outline-variant');
+      knob.classList.add('translate-x-5');
+      knob.classList.remove('translate-x-0.5');
+    }
+    markChanged();
+  }
+
+  function previewNewAvatar(event) {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        document.getElementById('avatarPreview').src = e.target.result;
+        markChanged();
+      };
+      reader.readAsDataURL(file);
+    }
+  }
+
+  function removeAvatar() {
+    const confirmed = confirm('Bạn có chắc muốn gỡ ảnh đại diện hiện tại?');
+    if (confirmed) {
+      document.getElementById('avatarPreview').src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="%23d2e5f4" width="100" height="100"/><text fill="%23004563" font-family="sans-serif" font-size="36" x="50%" y="55%" text-anchor="middle" dominant-baseline="middle">NVH</text></svg>';
+      markChanged();
+    }
+  }
+
+  function showUnsavedBanner() {
+    const banner = document.getElementById('unsavedBanner');
+    banner.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+    banner.classList.add('translate-y-0', 'opacity-100');
+  }
+
+  function dismissUnsaved() {
+    const banner = document.getElementById('unsavedBanner');
+    banner.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+    banner.classList.remove('translate-y-0', 'opacity-100');
+    hasUnsavedChanges = false;
+  }
+
+  function submitForm() {
+    dismissUnsaved();
+    showSavedToast();
+  }
+
+  function showSavedToast() {
+    const toast = document.getElementById('successToast');
+    toast.style.display = 'flex';
+    toast.classList.remove('opacity-0', '-translate-y-2');
+    setTimeout(() => {
+      toast.classList.add('opacity-0', '-translate-y-2');
+      setTimeout(() => { toast.style.display = 'none'; }, 300);
+    }, 3500);
+  }
+
+  function confirmReset() {
+    if (hasUnsavedChanges) {
+      if (confirm('Bỏ qua các chỉnh sửa và quay lại?')) {
+        dismissUnsaved();
+        window.history.back();
+      }
+    } else {
+      window.history.back();
+    }
+  }
+</script></main></body></html>

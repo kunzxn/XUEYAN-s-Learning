@@ -1,0 +1,29 @@
+- main:
+  - link "XUEYAN":
+    - /url: /
+  - link "← Trở về trang chủ":
+    - /url: /
+  - complementary:
+    - generic: Không gian học tập · 学言
+    - heading "Học và thường xuyên ôn tập" [level=2]
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Tạo tài khoản học viên" [level=1]
+  - paragraph: Tiếp tục hành trình Hán ngữ cùng XUEYAN.
+  - generic: Họ và tên
+  - textbox "Họ và tên"
+  - generic: Email học viên
+  - textbox "Email học viên"
+  - generic: Mật khẩu
+  - textbox "Mật khẩu"
+  - button "Hiện mật khẩu":
+  - generic: Ít nhất 8 ký tự.
+  - text: Xác nhận mật khẩu
+  - textbox "Xác nhận mật khẩu"
+  - status
+  - button "Đăng ký"
+  - paragraph:
+    - link "Quay lại đăng nhập →":
+      - /url: /login
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- button "Open Next.js Dev Tools":
+- alert

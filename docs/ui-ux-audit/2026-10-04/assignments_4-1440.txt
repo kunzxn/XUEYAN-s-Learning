@@ -1,0 +1,83 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- complementary "Menu điều hướng":
+  - link "XUEYAN Học viện Hán ngữ":
+    - /url: /
+    - text: XUEYAN
+    - generic: Học viện Hán ngữ
+  - generic: "Mục tiêu: HSK 2 · 68%"
+  - navigation "Điều hướng học viên":
+    - link "Hôm nay":
+      - /url: /dashboard
+      - text: Hôm nay
+    - link "Lộ trình HSK":
+      - /url: /vocabulary
+      - text: Lộ trình HSK
+    - link "Ôn tập SRS":
+      - /url: /review
+      - text: Ôn tập SRS
+    - link "Sổ từ":
+      - /url: /collection
+      - text: Sổ từ
+    - link "Lớp học":
+      - /url: /classes
+      - text: Lớp học
+    - link "Tiến độ":
+      - /url: /progress
+      - text: Tiến độ
+    - link "Hồ sơ học viên":
+      - /url: /profile
+      - text: Hồ sơ học viên
+  - link "Không gian giảng viên (mẫu)":
+    - /url: /teacher
+  - link "Trợ giúp học tập":
+    - /url: /help
+  - link "Cài đặt cá nhân":
+    - /url: /settings
+    - text: Cài đặt cá nhân
+- banner:
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - text: 7 ngày
+  - link "Thông báo":
+    - /url: /notifications
+  - link "Hồ sơ":
+    - /url: /profile
+    - text: H
+- main:
+  - link "← Lớp học HSK 2 – K24":
+    - /url: /classes/hsk2-k24
+  - text: XUEYAN · Học viện Hán ngữ
+  - 'heading "Bài tập 04: Giới thiệu bản thân & Gia đình" [level=1]'
+  - paragraph: Viết 80–120 chữ Hán, có thể bổ sung ghi âm và bài viết tay.
+  - heading "Đề bài & Hướng dẫn chi tiết" [level=2]
+  - list:
+    - listitem: Họ tên, tuổi và quê quán.
+    - listitem: Các thành viên trong gia đình và nghề nghiệp.
+    - listitem: Một hoạt động hoặc sở thích chung.
+  - heading "Mẫu câu gợi ý — bấm để chèn" [level=3]
+  - button "我叫文雄，今年二十二岁。":
+    - generic: 我叫文雄，今年二十二岁。
+  - button "我家有四口人。":
+    - generic: 我家有四口人。
+  - button "爸爸是医生，妈妈是老师。":
+    - generic: 爸爸是医生，妈妈是老师。
+  - generic: Ngữ pháp 40% · Chữ Hán 30% · Vốn từ 20% · Thời gian 10%
+  - heading "Soạn thảo văn bản nộp bài" [level=2]
+  - text: Nội dung bài làm
+  - textbox "Nội dung bài làm 0/120 chữ Hán"
+  - generic: 0/120 chữ Hán
+  - text: Tệp đính kèm (chưa tải lên server)
+  - button "Tệp đính kèm (chưa tải lên server)"
+  - button "Lưu nháp trên thiết bị"
+  - button "Kiểm tra & Nộp bài"
+  - status
+  - heading "Trạng thái bài nộp" [level=2]
+  - generic: Chưa nộp · bản mẫu
+  - paragraph: Chưa có hạn nộp hay trạng thái server. Nội dung bạn nhập chỉ ở trình duyệt này.
+  - heading "Nhận xét từ giảng viên" [level=2]
+  - paragraph: Nhận xét sẽ hiển thị tại đây khi bài được chấm trên hệ thống thực.
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- button "Open Next.js Dev Tools":
+- alert

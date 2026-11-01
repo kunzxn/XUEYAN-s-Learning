@@ -1,0 +1,110 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- link "XUEYAN Không gian giảng viên":
+  - /url: /
+  - text: XUEYAN
+  - generic: Không gian giảng viên
+- link "Tổng quan":
+  - /url: /teacher
+  - text: Tổng quan
+- link "Lớp học":
+  - /url: /teacher/classes/hsk2-k24
+  - text: Lớp học
+- link "Bài cần chấm":
+  - /url: /teacher/assignments/4
+  - text: Bài cần chấm
+- button "Yêu cầu tư vấn · chưa khả dụng":
+  - text: Yêu cầu tư vấn · chưa khả dụng
+- link "Hồ sơ sư phạm":
+  - /url: /teacher/profile
+  - text: Hồ sơ sư phạm
+- link "Chế độ học viên":
+  - /url: /dashboard
+- link "Trợ giúp học tập":
+  - /url: /help
+- link "Cài đặt cá nhân":
+  - /url: /settings
+  - text: Cài đặt cá nhân
+- banner:
+  - button "Mở menu":
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - link "Thông báo":
+    - /url: /notifications
+- main:
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Xin chào Cô Lan Anh" [level=1]
+  - paragraph: Hôm nay có 2 ca trực tuyến và 5 bài thực hành cần nhận xét (mẫu).
+  - button "Xem giảng viên mới"
+  - paragraph: Buổi dạy hôm nay
+  - paragraph: "2"
+  - paragraph: Bài tập chờ chấm
+  - paragraph: "5"
+  - paragraph: Tư vấn chờ duyệt
+  - paragraph: "2"
+  - paragraph: Lớp phụ trách
+  - paragraph: "3"
+  - heading "Ca dạy sắp diễn ra" [level=2]
+  - generic: HSK 2 Khóa K24 · Buổi 08
+  - heading "Đặt câu với câu chữ 把 & Luyện bút thuận" [level=2]
+  - paragraph: 19:30–21:00 · 16 học viên (mẫu)
+  - paragraph: "Giáo án: Cấu trúc câu chữ 把"
+  - paragraph: Tài liệu và phòng học chưa kết nối.
+  - link "Quản lý buổi học":
+    - /url: /teacher/classes/hsk2-k24
+    - text: Quản lý buổi học
+  - generic: Ca tiếp theo
+  - heading "Luyện đề mô phỏng HSK 3" [level=2]
+  - paragraph: 20:00–21:30 · Buổi 14
+  - button "Xem lớp · chưa khả dụng"
+  - heading "Bài tập chờ phản hồi sư phạm" [level=2]
+  - list:
+    - strong: Nguyễn Minh Khang
+    - paragraph: Bài 04 · Giới thiệu bản thân
+    - link "Chấm & Ghi nhận xét":
+      - /url: /teacher/assignments/4
+    - strong: Lê Hoàng Yến
+    - paragraph: Bài 04 · Giới thiệu bản thân
+    - button "Chấm & Ghi nhận xét · chưa khả dụng"
+    - strong: Nguyễn Đăng Khoa
+    - paragraph: Bài 04 · Giới thiệu bản thân
+    - button "Chấm & Ghi nhận xét · chưa khả dụng"
+  - heading "Yêu cầu tư vấn mẫu" [level=2]
+  - heading "Định hướng HSK 4" [level=3]
+  - paragraph: Trao đổi mục tiêu và cách luyện phát âm.
+  - button "Xem yêu cầu tư vấn · chưa khả dụng"
+  - paragraph: Chưa có quản lý lịch hẹn thực.
+  - heading "Các lớp đang phụ trách" [level=2]
+  - generic: HSK 2 – K24
+  - heading "Hán ngữ chuẩn HSK 2" [level=2]
+  - progressbar "HSK 2 – K24": 33%
+  - link "Vào quản lý lớp":
+    - /url: /teacher/classes/hsk2-k24
+  - generic: HSK 3 – K12
+  - heading "Giao tiếp & Luyện thi" [level=2]
+  - progressbar "HSK 3 – K12": 45%
+  - button "Vào quản lý lớp · chưa khả dụng"
+  - generic: Khẩu ngữ – K09
+  - heading "Giao tiếp & Luyện thi" [level=2]
+  - progressbar "Khẩu ngữ – K09": 57%
+  - button "Vào quản lý lớp · chưa khả dụng"
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- navigation "Điều hướng nhanh trên di động":
+  - link "Tổng quan":
+    - /url: /teacher
+    - generic: Tổng quan
+  - link "Lớp học":
+    - /url: /teacher/classes/hsk2-k24
+    - generic: Lớp học
+  - link "Bài cần chấm":
+    - /url: /teacher/assignments/4
+    - generic: Bài cần chấm
+  - button "Yêu cầu tư vấn · chưa khả dụng":
+    - generic: Yêu cầu tư vấn
+    - text: · chưa khả dụng
+  - link "Hồ sơ sư phạm":
+    - /url: /teacher/profile
+    - generic: Hồ sơ sư phạm
+- button "Open Next.js Dev Tools":
+- alert

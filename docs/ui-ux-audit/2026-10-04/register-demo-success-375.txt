@@ -1,0 +1,20 @@
+- main:
+  - link "XUEYAN":
+    - /url: /
+  - link "← Trở về trang chủ":
+    - /url: /
+  - complementary:
+    - generic: Không gian học tập · 学言
+    - heading "Học và thường xuyên ôn tập" [level=2]
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Tạo tài khoản học viên" [level=1]
+  - paragraph: Tiếp tục hành trình Hán ngữ cùng XUEYAN.
+  - heading "Kích hoạt tài khoản học viên" [level=2]
+  - paragraph: Xem trước giao diện thành công từ Stitch. Chưa tạo tài khoản, đổi mật khẩu hoặc gửi email.
+  - button "Quay lại biểu mẫu"
+  - paragraph:
+    - link "Quay lại đăng nhập →":
+      - /url: /login
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- button "Open Next.js Dev Tools":
+- alert

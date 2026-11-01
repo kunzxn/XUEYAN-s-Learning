@@ -1,0 +1,128 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- link "XUEYAN Học viện Hán ngữ":
+  - /url: /
+  - text: XUEYAN
+  - generic: Học viện Hán ngữ
+- link "Hôm nay":
+  - /url: /dashboard
+  - text: Hôm nay
+- link "Lộ trình HSK":
+  - /url: /vocabulary
+  - text: Lộ trình HSK
+- link "Ôn tập SRS":
+  - /url: /review
+  - text: Ôn tập SRS
+- link "Sổ từ":
+  - /url: /collection
+  - text: Sổ từ
+- link "Lớp học":
+  - /url: /classes
+  - text: Lớp học
+- link "Tiến độ":
+  - /url: /progress
+  - text: Tiến độ
+- link "Hồ sơ học viên":
+  - /url: /profile
+  - text: Hồ sơ học viên
+- link "Không gian giảng viên (mẫu)":
+  - /url: /teacher
+- link "Trợ giúp học tập":
+  - /url: /help
+- link "Cài đặt cá nhân":
+  - /url: /settings
+  - text: Cài đặt cá nhân
+- banner:
+  - button "Mở menu":
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - link "Thông báo":
+    - /url: /notifications
+- main:
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Sổ từ vựng cá nhân" [level=1]
+  - paragraph: Sắp xếp từ theo chủ đề và ôn tập chủ động.
+  - button "+ Tạo bộ từ mới"
+  - button "Tất cả" [pressed]
+  - button "HSK 1–2"
+  - button "Từ cần củng cố"
+  - text: Tìm trong sổ từ
+  - textbox "Tìm trong sổ từ":
+    - /placeholder: Chữ Hán, Pinyin, nghĩa tiếng Việt
+  - text: Cấp độ
+  - combobox "Cấp độ":
+    - option "Tất cả cấp độ" [selected]
+    - option "HSK 1"
+    - option "HSK 2"
+  - heading "Tất cả" [level=2]
+  - generic: 6 từ mẫu
+  - list:
+    - link "学习 xuéxí":
+      - /url: /collection/xuexi
+      - strong: 学习
+      - text: xuéxí
+    - paragraph: Học tập · HỌC TẬP
+    - button "Nghe phát âm 学习":
+      - text: Nghe phát âm
+    - status
+    - link "朋友 péngyou":
+      - /url: /collection/pengyou
+      - strong: 朋友
+      - text: péngyou
+    - paragraph: Bạn bè · BẰNG HỮU
+    - button "Nghe phát âm 朋友":
+      - text: Nghe phát âm
+    - status
+    - link "谢谢 xièxie":
+      - /url: /collection/xiexie
+      - strong: 谢谢
+      - text: xièxie
+    - paragraph: Cảm ơn · TẠ TẠ
+    - button "Nghe phát âm 谢谢":
+      - text: Nghe phát âm
+    - status
+    - link "工作 gōngzuò":
+      - /url: /collection/gongzuo
+      - strong: 工作
+      - text: gōngzuò
+    - paragraph: Công việc · CÔNG TÁC
+    - button "Nghe phát âm 工作":
+      - text: Nghe phát âm
+    - status
+    - link "时间 shíjiān":
+      - /url: /collection/shijian
+      - strong: 时间
+      - text: shíjiān
+    - paragraph: Thời gian · THỜI GIAN
+    - button "Nghe phát âm 时间":
+      - text: Nghe phát âm
+    - status
+    - link "你好 nǐ hǎo":
+      - /url: /collection/nihao
+      - strong: 你好
+      - text: nǐ hǎo
+    - paragraph: Xin chào · NHĨ HẢO
+    - button "Nghe phát âm 你好":
+      - text: Nghe phát âm
+    - status
+  - status
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- navigation "Điều hướng nhanh trên di động":
+  - link "Hôm nay":
+    - /url: /dashboard
+    - generic: Hôm nay
+  - link "Lộ trình HSK":
+    - /url: /vocabulary
+    - generic: Lộ trình HSK
+  - link "Ôn tập SRS":
+    - /url: /review
+    - generic: Ôn tập SRS
+  - link "Sổ từ":
+    - /url: /collection
+    - generic: Sổ từ
+  - link "Hồ sơ học viên":
+    - /url: /profile
+    - generic: Hồ sơ học viên
+- button "Open Next.js Dev Tools":
+- alert

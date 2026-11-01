@@ -1,0 +1,76 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- banner:
+  - button "Mở menu":
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - link "Thông báo":
+    - /url: /notifications
+- main:
+  - link "← Quay lại":
+    - /url: /profile
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Chỉnh sửa hồ sơ học viên" [level=1]
+  - paragraph: Thông tin nhận diện, mục tiêu và tùy chọn học tập.
+  - heading "01 · Thông tin nhận diện" [level=2]
+  - generic: "N"
+  - text: Chọn ảnh xem trước
+  - button "Chọn ảnh xem trước JPG, PNG · Chưa có dịch vụ tải ảnh"
+  - generic: JPG, PNG · Chưa có dịch vụ tải ảnh
+  - generic: Tên hiển thị
+  - textbox "Tên hiển thị": Nguyễn Văn Hùng
+  - text: Tên tiếng Trung
+  - textbox "Tên tiếng Trung": 阮文雄
+  - text: Giới thiệu
+  - textbox "Giới thiệu": Đang học tiếng Trung để giao tiếp và làm việc.
+  - heading "02 · Mục đích & Tùy chọn học tập" [level=2]
+  - text: Mục tiêu học tập
+  - combobox "Mục tiêu học tập":
+    - option "Giao tiếp đời thường" [selected]
+    - option "Thương mại"
+    - option "Luyện thi HSK"
+  - text: Cấp độ HSK
+  - combobox "Cấp độ HSK":
+    - option "HSK 2" [selected]
+    - option "HSK 3"
+    - option "HSK 4–6"
+  - checkbox "Hiển thị Pinyin" [checked]
+  - text: Hiển thị Pinyin
+  - heading "03 · Tài khoản & Xác thực" [level=2]
+  - paragraph: Địa chỉ email và định danh chỉ được thay đổi qua dịch vụ xác thực.
+  - link "Cài đặt tài khoản":
+    - /url: /settings
+  - button "Lưu nháp trên thiết bị"
+  - button "Xem trước"
+  - status
+  - heading "Xem trước hồ sơ" [level=2]
+  - generic: "N"
+  - heading "Nguyễn Văn Hùng" [level=3]
+  - paragraph: Đang học tiếng Trung để giao tiếp và làm việc.
+  - generic: Học viên mẫu
+  - dialog "Hồ sơ xem trước":
+    - heading "Hồ sơ xem trước" [level=2]
+    - button "Đóng hộp thoại" [active]:
+    - heading "Nguyễn Văn Hùng" [level=3]
+    - paragraph: Đang học tiếng Trung để giao tiếp và làm việc.
+    - paragraph: Bản nháp; chưa xuất bản hoặc cập nhật server.
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- navigation "Điều hướng nhanh trên di động":
+  - link "Hôm nay":
+    - /url: /dashboard
+    - generic: Hôm nay
+  - link "Lộ trình HSK":
+    - /url: /vocabulary
+    - generic: Lộ trình HSK
+  - link "Ôn tập SRS":
+    - /url: /review
+    - generic: Ôn tập SRS
+  - link "Sổ từ":
+    - /url: /collection
+    - generic: Sổ từ
+  - link "Hồ sơ học viên":
+    - /url: /profile
+    - generic: Hồ sơ học viên
+- button "Open Next.js Dev Tools":
+- alert

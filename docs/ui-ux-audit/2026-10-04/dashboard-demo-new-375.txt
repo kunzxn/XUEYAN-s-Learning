@@ -1,0 +1,50 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- banner:
+  - button "Mở menu":
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - link "Thông báo":
+    - /url: /notifications
+- main:
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Chào Hùng! ☀️" [level=1]
+  - paragraph: Hôm nay là thời điểm lý tưởng để củng cố trí nhớ dài hạn. Tiếp tục nhịp học của bạn từng bước nhỏ.
+  - generic "Trạng thái dữ liệu mẫu":
+    - button "Đang học"
+    - button "Học viên mới" [pressed]
+    - button "Không có từ đến hạn"
+  - text: 学
+  - heading "Chào mừng bạn đến với XUEYAN!" [level=2]
+  - paragraph: Thiết lập mục tiêu và làm quen với chữ Hán, Pinyin, rồi học 10 từ đầu tiên.
+  - link "Thiết lập lộ trình":
+    - /url: /onboarding
+  - generic: Bước 1
+  - heading "Làm quen chữ Hán" [level=2]
+  - button "Bắt đầu · chưa khả dụng"
+  - generic: Bước 2
+  - heading "Pinyin & 4 thanh điệu" [level=2]
+  - button "Bắt đầu · chưa khả dụng"
+  - generic: Bước 3
+  - heading "Nạp từ đầu tiên" [level=2]
+  - link "Bắt đầu":
+    - /url: /lessons/1
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- navigation "Điều hướng nhanh trên di động":
+  - link "Hôm nay":
+    - /url: /dashboard
+    - generic: Hôm nay
+  - link "Lộ trình HSK":
+    - /url: /vocabulary
+    - generic: Lộ trình HSK
+  - link "Ôn tập SRS":
+    - /url: /review
+    - generic: Ôn tập SRS
+  - link "Sổ từ":
+    - /url: /collection
+    - generic: Sổ từ
+  - link "Hồ sơ học viên":
+    - /url: /profile
+    - generic: Hồ sơ học viên
+- button "Open Next.js Dev Tools":

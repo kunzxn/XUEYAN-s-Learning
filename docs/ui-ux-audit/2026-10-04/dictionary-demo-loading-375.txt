@@ -1,0 +1,68 @@
+- banner:
+  - link "Đến nội dung chính":
+    - /url: "#dashboard-main"
+  - link "XUEYAN, trang chủ":
+    - /url: /
+    - strong: XUEYAN
+    - generic: Học viện tiếng Trung
+  - button "Bắt đầu học"
+  - link "Mở hồ sơ học viên":
+    - /url: /profile
+  - button "Mở menu":
+- main:
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Từ điển Hán–Việt thông minh" [level=1]
+  - paragraph: Tra cứu chữ Hán, Pinyin, âm Hán–Việt và ví dụ thực tế.
+  - text: Tìm từ trong bộ mẫu
+  - textbox "Tìm từ trong bộ mẫu":
+    - /placeholder: 学习, xue2xi2, học tập…
+  - text: Cấp độ
+  - combobox "Cấp độ":
+    - option "Tất cả" [selected]
+    - option "HSK 1"
+    - option "HSK 2"
+  - button "Tra theo bộ thủ"
+  - status: Đang tải kết quả mẫu…
+  - heading "Gợi ý tìm kiếm" [level=2]
+  - button "学习 xuéxí"
+  - button "朋友 péngyou"
+  - button "谢谢 xièxie"
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- contentinfo:
+  - link "XUEYAN":
+    - /url: /
+    - strong: XUEYAN
+  - paragraph: XUEYAN - Nền tảng học tiếng Trung dành cho người Việt, kết hợp tri thức Hán - Việt với phương pháp lặp lại ngắt quãng.
+  - generic: HSK 1 - HSK 6+
+  - generic: Âm Hán Việt
+  - heading "Lộ trình HSK" [level=2]
+  - link "HSK 1 - Nhập môn":
+    - /url: /vocabulary/hsk-1
+  - link "HSK 2 - Giao tiếp cơ bản":
+    - /url: /vocabulary/hsk-2
+  - link "HSK 3 - Củng cố từ vựng":
+    - /url: /vocabulary/hsk-3
+  - link "HSK 4 - Diễn đạt chuyên sâu":
+    - /url: /vocabulary/hsk-4
+  - link "HSK 5 & 6 - Nâng cao":
+    - /url: /vocabulary
+  - heading "Cộng đồng & Giáo viên" [level=2]
+  - link "Đội ngũ giảng viên":
+    - /url: /teachers
+  - link "Lớp học trực tuyến":
+    - /url: /classes
+  - link "Chia sẻ kinh nghiệm":
+    - /url: /resources
+  - link "Đồng hành học tập":
+    - /url: /teachers/lan-anh/consultation
+  - heading "Hỗ trợ & Pháp lý" [level=2]
+  - link "Trung tâm trợ giúp":
+    - /url: /help
+  - generic: Điều khoản dịch vụ (chưa có nội dung)
+  - generic: Chính sách bảo mật (chưa có nội dung)
+  - link "Liên hệ cố vấn":
+    - /url: /contact
+  - generic: © 2026 XUEYAN Hán Học. Bảo lưu mọi quyền.
+  - generic: Nền tảng Hán ngữ dành cho người Việt
+- button "Open Next.js Dev Tools":
+- alert

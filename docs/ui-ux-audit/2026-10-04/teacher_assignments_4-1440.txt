@@ -1,0 +1,83 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- complementary "Menu điều hướng":
+  - link "XUEYAN Không gian giảng viên":
+    - /url: /
+    - text: XUEYAN
+    - generic: Không gian giảng viên
+  - generic: Không gian sư phạm
+  - navigation "Điều hướng giảng viên":
+    - link "Tổng quan":
+      - /url: /teacher
+      - text: Tổng quan
+    - link "Lớp học":
+      - /url: /teacher/classes/hsk2-k24
+      - text: Lớp học
+    - link "Bài cần chấm":
+      - /url: /teacher/assignments/4
+      - text: Bài cần chấm
+    - button "Yêu cầu tư vấn · chưa khả dụng":
+      - text: Yêu cầu tư vấn · chưa khả dụng
+    - link "Hồ sơ sư phạm":
+      - /url: /teacher/profile
+      - text: Hồ sơ sư phạm
+  - link "Chế độ học viên":
+    - /url: /dashboard
+  - link "Trợ giúp học tập":
+    - /url: /help
+  - link "Cài đặt cá nhân":
+    - /url: /settings
+    - text: Cài đặt cá nhân
+- banner:
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - text: 7 ngày
+  - link "Thông báo":
+    - /url: /notifications
+  - link "Hồ sơ":
+    - /url: /teacher/profile
+    - text: LA
+- main:
+  - link "← Lớp HSK 2 – K24":
+    - /url: /teacher/classes/hsk2-k24
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Chấm & Nhận xét bài tập 04" [level=1]
+  - paragraph: Viết giới thiệu bản thân · Nguyễn Minh Khang · Bản nộp mẫu
+  - heading "Yêu cầu bài tập" [level=2]
+  - paragraph: Viết 80–120 chữ Hán giới thiệu tuổi, quê quán, học tập và sở thích. Thực hành Pinyin và ghi âm phát âm.
+  - generic: Lần 2 · dữ liệu mẫu
+  - heading "Bài làm của học viên" [level=2]
+  - button "Văn bản chữ Hán" [pressed]
+  - button "Ghi âm"
+  - button "Ảnh viết tay"
+  - button "Ẩn/Hiện Pinyin" [pressed]
+  - paragraph: 你好！我叫阮明康。
+  - paragraph: Nǐ hǎo! Wǒ jiào Ruǎn Míngkāng.
+  - paragraph: 我是越南人，住在河内。
+  - paragraph: Wǒ shì Yuènán rén, zhù zài Hénèi.
+  - paragraph: 我学习汉语两个月了。
+  - paragraph: Wǒ xuéxí Hànyǔ liǎng gè yuè le.
+  - paragraph: 我喜欢听中国音乐和看书。
+  - paragraph: Wǒ xǐhuan tīng Zhōngguó yīnyuè hé kàn shū.
+  - heading "Lịch sử đánh giá" [level=2]
+  - paragraph: "Mẫu lần 1 · 75/100: chú ý nét chữ và thanh điệu."
+  - heading "Đánh giá & Chấm điểm" [level=2]
+  - text: Tổng điểm (0–100)
+  - spinbutton "Tổng điểm (0–100)": "92"
+  - progressbar "Điểm mẫu 92/100": 92%
+  - list:
+    - listitem: Ngữ pháp & Từ vựng · 40đ
+    - listitem: Chữ Hán & Bộ thủ · 30đ
+    - listitem: Phát âm & Thanh điệu · 30đ
+  - heading "Nhận xét sư phạm chi tiết" [level=2]
+  - button "+ Tiến bộ"
+  - button "+ Phát âm chuẩn"
+  - button "+ Nét chữ đẹp"
+  - text: Lời nhận xét
+  - textbox "Lời nhận xét": Chào Minh Khang, hãy chú ý thanh điệu và cách dùng cấu trúc giới thiệu bản thân.
+  - button "Lưu nháp trên thiết bị"
+  - button "Kiểm tra & Gửi (chưa kết nối)"
+  - status
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- button "Open Next.js Dev Tools":

@@ -1,54 +1,7 @@
-:root {
-  --background: #f5faff;
-  --surface: #ffffff;
-  --surface-strong: #ddf1ff;
-  --surface-muted: #e9f5ff;
-  --surface-high: #d7ebf9;
-  --primary: #004563;
-  --primary-hover: #185d80;
-  --primary-strong: #185d80;
-  --primary-soft: #e9f5ff;
-  --primary-fixed: #c7e7ff;
-  --secondary: #046c4b;
-  --success: #046c4b;
-  --success-soft: #9bf1c7;
-  --success-on-soft: #005138;
-  --warning: #745100;
-  --warning-soft: #ffdea9;
-  --warning-on-soft: #563b00;
-  --danger: #ba1a1a;
-  --danger-soft: #ffdad6;
-  --info: #185d80;
-  --accent: #f4be59;
-  --text: #0a1e28;
-  --text-soft: #40484e;
-  --muted: #71787e;
-  --font-mono: ui-monospace, SFMono-Regular, Consolas, monospace;
-  --border: #c0c7ce;
-  --primary-rgb: 0, 69, 99;
-  --success-rgb: 4, 108, 75;
-  --warning-rgb: 116, 81, 0;
-  --surface-rgb: 255, 255, 255;
-  --ink-rgb: 10, 30, 40;
-  --white-rgb: 255, 255, 255;
-  --chart-secondary: #7cb1c6;
-  --chart-tertiary: #78b8d0;
-  --focus-ring: rgba(35, 100, 135, 0.28);
-  --shadow: 0 18px 40px rgba(10, 30, 40, 0.08);
-  --shadow-sm: 0 8px 18px rgba(10, 30, 40, 0.04);
-  --shadow-overlay: 0 28px 60px rgba(10, 30, 40, 0.18);
-  --radius-lg: 16px;
-  --radius-md: 12px;
-  --radius-sm: 8px;
-  --radius-xl: 20px;
-  --space-1: 4px;
-  --space-2: 8px;
-  --space-3: 12px;
-  --space-4: 16px;
-  --space-6: 24px;
-  --space-8: 32px;
-  --space-12: 48px;
-  --space-16: 64px;
+@import "../styles/tokens.css";
+
+[lang="zh-Hans"], [lang="zh-CN"] {
+  font-family: var(--font-zh), sans-serif;
 }
 
 html {
@@ -87,7 +40,7 @@ select {
 
 button,
 a {
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 a {

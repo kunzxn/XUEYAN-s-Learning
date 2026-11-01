@@ -1,6 +1,6 @@
 # XUEYAN Design System
 
-Shared visual tokens live in `frontend/app/globals.css` under `:root`. Use these variables instead of adding page-level color literals.
+Shared visual tokens live in `frontend/styles/tokens.css` under `:root`, imported by `frontend/app/globals.css`. Use these variables instead of adding page-level color literals.
 
 ## Color
 
@@ -19,7 +19,7 @@ Shared visual tokens live in `frontend/app/globals.css` under `:root`. Use these
 | Warning | `--warning` | `#745100` |
 | Danger | `--danger` | `#BA1A1A` |
 | Info | `--info` | `#185D80` |
-| Focus ring | `--focus-ring` | `rgba(35, 100, 135, 0.28)` |
+| Focus ring | `--focus-ring` | ``#185D80`` |
 | Chart accents | `--chart-secondary`, `--chart-tertiary` | `#7CB1C6`, `#78B8D0` |
 
 Use semantic foreground tokens (`--success-on-soft`, `--warning-on-soft`) on tinted status surfaces. The primary foreground is white. Keep text/background contrast readable; do not use opacity to mute body copy.
@@ -43,4 +43,4 @@ Use `--space-1` through `--space-16` (4, 8, 12, 16, 24, 32, 48, 64px). Standard 
 - **Navigation:** prefer Next.js `Link`; the mobile menu exposes `aria-expanded`, closes with Escape, and returns focus to its trigger.
 - **Dialogs and disclosures:** use semantic buttons, keyboard focus management, and `aria-expanded`/`aria-controls` for expandable content.
 
-The Stitch reference is `frontend/dasboard.html` (the filename is intentionally retained as provided). Its dashboard implementation is `/dashboard`; other routes share the root tokens without changing their structure.
+The canonical style reference is `frontend/dashboard.html`; the original `frontend/dasboard.html` is retained. The public reference maps to `/`, and learner Dashboard Stitch layouts map to `/dashboard`. Shared components are in `frontend/components/ui/`; page layouts use scoped CSS Modules. Full source inventory and route mapping are in `docs/ui-migration.md`.

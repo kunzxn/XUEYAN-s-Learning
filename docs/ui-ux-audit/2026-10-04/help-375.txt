@@ -1,0 +1,79 @@
+- banner:
+  - link "Đến nội dung chính":
+    - /url: "#dashboard-main"
+  - link "XUEYAN, trang chủ":
+    - /url: /
+    - strong: XUEYAN
+    - generic: Học viện tiếng Trung
+  - button "Bắt đầu học"
+  - link "Mở hồ sơ học viên":
+    - /url: /profile
+  - button "Mở menu":
+- main:
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Chúng tôi có thể giúp gì cho bạn?" [level=1]
+  - paragraph: Hướng dẫn tài khoản, lộ trình học tập, Flashcard và lớp học.
+  - text: Tìm câu trả lời
+  - textbox "Tìm câu trả lời":
+    - /placeholder: Đổi mật khẩu, SRS, âm thanh…
+  - heading "Khám phá theo chủ đề" [level=2]
+  - heading "Truy cập & Tài khoản" [level=2]
+  - link "Xem hướng dẫn →":
+    - /url: /settings
+  - heading "Phương pháp & Lộ trình" [level=2]
+  - link "Xem hướng dẫn →":
+    - /url: /vocabulary
+  - heading "Hệ thống ôn tập SRS" [level=2]
+  - link "Xem hướng dẫn →":
+    - /url: /review
+  - heading "Lớp học & Giáo viên" [level=2]
+  - link "Xem hướng dẫn →":
+    - /url: /classes
+  - heading "Kỹ thuật & Thiết bị" [level=2]
+  - link "Xem hướng dẫn →":
+    - /url: /contact
+  - heading "Câu hỏi thường gặp" [level=2]
+  - generic "Làm thế nào để đặt lại mật khẩu?"
+  - generic "Ôn tập SRS hoạt động như thế nào?"
+  - generic "Tại sao không nghe được phát âm?"
+  - generic "Làm sao gửi bài tập cho giáo viên?"
+  - link "Cần thêm trợ giúp? Liên hệ hỗ trợ":
+    - /url: /contact
+- contentinfo:
+  - link "XUEYAN":
+    - /url: /
+    - strong: XUEYAN
+  - paragraph: XUEYAN - Nền tảng học tiếng Trung dành cho người Việt, kết hợp tri thức Hán - Việt với phương pháp lặp lại ngắt quãng.
+  - generic: HSK 1 - HSK 6+
+  - generic: Âm Hán Việt
+  - heading "Lộ trình HSK" [level=2]
+  - link "HSK 1 - Nhập môn":
+    - /url: /vocabulary/hsk-1
+  - link "HSK 2 - Giao tiếp cơ bản":
+    - /url: /vocabulary/hsk-2
+  - link "HSK 3 - Củng cố từ vựng":
+    - /url: /vocabulary/hsk-3
+  - link "HSK 4 - Diễn đạt chuyên sâu":
+    - /url: /vocabulary/hsk-4
+  - link "HSK 5 & 6 - Nâng cao":
+    - /url: /vocabulary
+  - heading "Cộng đồng & Giáo viên" [level=2]
+  - link "Đội ngũ giảng viên":
+    - /url: /teachers
+  - link "Lớp học trực tuyến":
+    - /url: /classes
+  - link "Chia sẻ kinh nghiệm":
+    - /url: /resources
+  - link "Đồng hành học tập":
+    - /url: /teachers/lan-anh/consultation
+  - heading "Hỗ trợ & Pháp lý" [level=2]
+  - link "Trung tâm trợ giúp":
+    - /url: /help
+  - generic: Điều khoản dịch vụ (chưa có nội dung)
+  - generic: Chính sách bảo mật (chưa có nội dung)
+  - link "Liên hệ cố vấn":
+    - /url: /contact
+  - generic: © 2026 XUEYAN Hán Học. Bảo lưu mọi quyền.
+  - generic: Nền tảng Hán ngữ dành cho người Việt
+- button "Open Next.js Dev Tools":
+- alert

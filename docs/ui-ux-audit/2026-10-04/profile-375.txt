@@ -1,0 +1,114 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- link "XUEYAN Học viện Hán ngữ":
+  - /url: /
+  - text: XUEYAN
+  - generic: Học viện Hán ngữ
+- link "Hôm nay":
+  - /url: /dashboard
+  - text: Hôm nay
+- link "Lộ trình HSK":
+  - /url: /vocabulary
+  - text: Lộ trình HSK
+- link "Ôn tập SRS":
+  - /url: /review
+  - text: Ôn tập SRS
+- link "Sổ từ":
+  - /url: /collection
+  - text: Sổ từ
+- link "Lớp học":
+  - /url: /classes
+  - text: Lớp học
+- link "Tiến độ":
+  - /url: /progress
+  - text: Tiến độ
+- link "Hồ sơ học viên":
+  - /url: /profile
+  - text: Hồ sơ học viên
+- link "Không gian giảng viên (mẫu)":
+  - /url: /teacher
+- link "Trợ giúp học tập":
+  - /url: /help
+- link "Cài đặt cá nhân":
+  - /url: /settings
+  - text: Cài đặt cá nhân
+- banner:
+  - button "Mở menu":
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - link "Thông báo":
+    - /url: /notifications
+- main:
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Hồ sơ học viên" [level=1]
+  - paragraph: Hành trình học Hán ngữ của bạn.
+  - generic: H
+  - heading "Nguyễn Văn Hùng" [level=2]
+  - paragraph: 阮文雄 · Xióng
+  - paragraph: Mục tiêu HSK 3 · Giao tiếp hằng ngày
+  - link "Chỉnh sửa hồ sơ":
+    - /url: /profile/edit
+  - button "Tùy chọn chia sẻ"
+  - generic: Hồ sơ riêng tư · dữ liệu mẫu
+  - heading "Mục tiêu học tập cá nhân" [level=2]:
+    - text: Mục tiêu học tập cá nhân
+  - heading "Đạt chứng chỉ HSK 3" [level=3]
+  - paragraph: Giao tiếp đời sống và công việc. Duy trì 20 phút ôn tập mỗi ngày.
+  - progressbar "Tiến độ từ vựng": 78%
+  - paragraph: 248/320 từ mục tiêu (mẫu)
+  - heading "Lộ trình đang theo học" [level=2]
+  - generic: Chính khóa
+  - heading "Lộ trình HSK 2 toàn diện" [level=2]
+  - progressbar "Lộ trình HSK 2 toàn diện": 65%
+  - link "Xem lộ trình":
+    - /url: /vocabulary/hsk-2
+  - generic: Chuyên đề
+  - heading "Tiếng Trung thương mại cơ bản" [level=2]
+  - progressbar "Tiếng Trung thương mại cơ bản": 25%
+  - button "Xem lộ trình · chưa khả dụng"
+  - heading "Lớp học trực tuyến đã đăng ký" [level=2]
+  - generic: Mẫu lớp đang hoạt động
+  - heading "HSK 2 — Luyện phát âm & Đàm thoại K24" [level=3]
+  - paragraph: Cô Lan Anh · Thứ Ba & Thứ Năm · 19:30–21:00
+  - link "Xem lớp học":
+    - /url: /classes/hsk2-k24
+  - heading "Tổng quan học tập" [level=2]
+  - text: Từ đã học
+  - paragraph: "248"
+  - text: Giờ tích lũy
+  - paragraph: 46,5
+  - text: Ghi nhớ SRS
+  - paragraph: 89,2%
+  - text: Chuỗi liên tục
+  - paragraph: 7 ngày
+  - link "Chi tiết tiến độ":
+    - /url: /progress
+  - heading "Huy hiệu học thuật" [level=2]
+  - paragraph: Mọt sách HSK 1
+  - generic: Mẫu huy hiệu
+  - paragraph: Kỷ luật thép
+  - generic: Mẫu huy hiệu
+  - paragraph: Trí nhớ bền bỉ
+  - generic: Mẫu huy hiệu
+  - paragraph: Bút nghiên tinh tấn
+  - generic: Mẫu huy hiệu
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- navigation "Điều hướng nhanh trên di động":
+  - link "Hôm nay":
+    - /url: /dashboard
+    - generic: Hôm nay
+  - link "Lộ trình HSK":
+    - /url: /vocabulary
+    - generic: Lộ trình HSK
+  - link "Ôn tập SRS":
+    - /url: /review
+    - generic: Ôn tập SRS
+  - link "Sổ từ":
+    - /url: /collection
+    - generic: Sổ từ
+  - link "Hồ sơ học viên":
+    - /url: /profile
+    - generic: Hồ sơ học viên
+- button "Open Next.js Dev Tools":
+- alert

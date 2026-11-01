@@ -1,0 +1,155 @@
+- banner:
+  - link "Đến nội dung chính":
+    - /url: "#dashboard-main"
+  - link "XUEYAN, trang chủ":
+    - /url: /
+    - strong: XUEYAN
+    - generic: Học viện tiếng Trung
+  - navigation "Điều hướng chính":
+    - link "Lộ trình HSK":
+      - /url: /vocabulary
+    - link "Từ điển":
+      - /url: /dictionary
+    - link "Giáo viên":
+      - /url: /teachers
+    - link "Tài nguyên":
+      - /url: /resources
+  - link "Đăng nhập":
+    - /url: /login
+  - button "Bắt đầu học"
+  - link "Mở hồ sơ học viên":
+    - /url: /profile
+- main:
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Từ điển Hán–Việt thông minh" [level=1]
+  - paragraph: Tra cứu chữ Hán, Pinyin, âm Hán–Việt và ví dụ thực tế.
+  - text: Tìm từ trong bộ mẫu
+  - textbox "Tìm từ trong bộ mẫu":
+    - /placeholder: 学习, xue2xi2, học tập…
+  - text: Cấp độ
+  - combobox "Cấp độ":
+    - option "Tất cả" [selected]
+    - option "HSK 1"
+    - option "HSK 2"
+  - button "Tra theo bộ thủ"
+  - generic: 6 kết quả trong bộ dữ liệu mẫu
+  - link "学习 xuéxí":
+    - /url: /collection/xuexi
+    - strong: 学习
+    - text: xuéxí
+  - generic: HSK 1
+  - generic: "Hán–Việt: HỌC TẬP"
+  - button "Nghe phát âm 学习":
+    - text: Nghe phát âm
+  - status
+  - button "Lưu từ"
+  - paragraph: Học tập
+  - paragraph: 我每天学习中文。
+  - paragraph: Wǒ měitiān xuéxí Zhōngwén. · Tôi học tiếng Trung mỗi ngày.
+  - link "朋友 péngyou":
+    - /url: /collection/pengyou
+    - strong: 朋友
+    - text: péngyou
+  - generic: HSK 1
+  - generic: "Hán–Việt: BẰNG HỮU"
+  - button "Nghe phát âm 朋友":
+    - text: Nghe phát âm
+  - status
+  - button "Lưu từ"
+  - paragraph: Bạn bè
+  - paragraph: 他们是我的好朋友。
+  - paragraph: Tāmen shì wǒ de hǎo péngyou. · Họ là những người bạn tốt của tôi.
+  - link "谢谢 xièxie":
+    - /url: /collection/xiexie
+    - strong: 谢谢
+    - text: xièxie
+  - generic: HSK 1
+  - generic: "Hán–Việt: TẠ TẠ"
+  - button "Nghe phát âm 谢谢":
+    - text: Nghe phát âm
+  - status
+  - button "Lưu từ"
+  - paragraph: Cảm ơn
+  - paragraph: 谢谢你的帮助。
+  - paragraph: Xièxie nǐ de bāngzhù. · Cảm ơn sự giúp đỡ của bạn.
+  - link "工作 gōngzuò":
+    - /url: /collection/gongzuo
+    - strong: 工作
+    - text: gōngzuò
+  - generic: HSK 2
+  - generic: "Hán–Việt: CÔNG TÁC"
+  - button "Nghe phát âm 工作":
+    - text: Nghe phát âm
+  - status
+  - button "Lưu từ"
+  - paragraph: Công việc
+  - paragraph: 我在这里工作。
+  - paragraph: Wǒ zài zhèlǐ gōngzuò. · Tôi làm việc ở đây.
+  - link "时间 shíjiān":
+    - /url: /collection/shijian
+    - strong: 时间
+    - text: shíjiān
+  - generic: HSK 2
+  - generic: "Hán–Việt: THỜI GIAN"
+  - button "Nghe phát âm 时间":
+    - text: Nghe phát âm
+  - status
+  - button "Lưu từ"
+  - paragraph: Thời gian
+  - paragraph: 你有时间吗？
+  - paragraph: Nǐ yǒu shíjiān ma? · Bạn có thời gian không?
+  - link "你好 nǐ hǎo":
+    - /url: /collection/nihao
+    - strong: 你好
+    - text: nǐ hǎo
+  - generic: HSK 1
+  - generic: "Hán–Việt: NHĨ HẢO"
+  - button "Nghe phát âm 你好":
+    - text: Nghe phát âm
+  - status
+  - button "Lưu từ"
+  - paragraph: Xin chào
+  - paragraph: 你好，很高兴认识你。
+  - paragraph: Nǐ hǎo, hěn gāoxìng rènshi nǐ. · Xin chào, rất vui được làm quen với bạn.
+  - heading "Gợi ý tìm kiếm" [level=2]
+  - button "学习 xuéxí"
+  - button "朋友 péngyou"
+  - button "谢谢 xièxie"
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- contentinfo:
+  - link "XUEYAN":
+    - /url: /
+    - strong: XUEYAN
+  - paragraph: XUEYAN - Nền tảng học tiếng Trung dành cho người Việt, kết hợp tri thức Hán - Việt với phương pháp lặp lại ngắt quãng.
+  - generic: HSK 1 - HSK 6+
+  - generic: Âm Hán Việt
+  - heading "Lộ trình HSK" [level=2]
+  - link "HSK 1 - Nhập môn":
+    - /url: /vocabulary/hsk-1
+  - link "HSK 2 - Giao tiếp cơ bản":
+    - /url: /vocabulary/hsk-2
+  - link "HSK 3 - Củng cố từ vựng":
+    - /url: /vocabulary/hsk-3
+  - link "HSK 4 - Diễn đạt chuyên sâu":
+    - /url: /vocabulary/hsk-4
+  - link "HSK 5 & 6 - Nâng cao":
+    - /url: /vocabulary
+  - heading "Cộng đồng & Giáo viên" [level=2]
+  - link "Đội ngũ giảng viên":
+    - /url: /teachers
+  - link "Lớp học trực tuyến":
+    - /url: /classes
+  - link "Chia sẻ kinh nghiệm":
+    - /url: /resources
+  - link "Đồng hành học tập":
+    - /url: /teachers/lan-anh/consultation
+  - heading "Hỗ trợ & Pháp lý" [level=2]
+  - link "Trung tâm trợ giúp":
+    - /url: /help
+  - generic: Điều khoản dịch vụ (chưa có nội dung)
+  - generic: Chính sách bảo mật (chưa có nội dung)
+  - link "Liên hệ cố vấn":
+    - /url: /contact
+  - generic: © 2026 XUEYAN Hán Học. Bảo lưu mọi quyền.
+  - generic: Nền tảng Hán ngữ dành cho người Việt
+- button "Open Next.js Dev Tools":

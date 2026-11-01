@@ -1,0 +1,51 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- banner:
+  - button "Mở menu":
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - link "Thông báo":
+    - /url: /notifications
+- main:
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Sổ từ vựng cá nhân" [level=1]
+  - paragraph: Sắp xếp từ theo chủ đề và ôn tập chủ động.
+  - button "+ Tạo bộ từ mới"
+  - button "Tất cả" [pressed]
+  - button "HSK 1–2"
+  - button "Từ cần củng cố"
+  - text: Tìm trong sổ từ
+  - textbox "Tìm trong sổ từ" [active]:
+    - /placeholder: Chữ Hán, Pinyin, nghĩa tiếng Việt
+    - text: xuexi
+  - text: Cấp độ
+  - combobox "Cấp độ":
+    - option "Tất cả cấp độ" [selected]
+    - option "HSK 1"
+    - option "HSK 2"
+  - text: 学
+  - heading "Chưa có từ nào trong bộ lọc này" [level=2]
+  - paragraph: Thử thay đổi cấp độ, từ khóa hoặc tra cứu để khám phá thêm từ.
+  - link "Tra từ":
+    - /url: /dictionary
+  - status
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- navigation "Điều hướng nhanh trên di động":
+  - link "Hôm nay":
+    - /url: /dashboard
+    - generic: Hôm nay
+  - link "Lộ trình HSK":
+    - /url: /vocabulary
+    - generic: Lộ trình HSK
+  - link "Ôn tập SRS":
+    - /url: /review
+    - generic: Ôn tập SRS
+  - link "Sổ từ":
+    - /url: /collection
+    - generic: Sổ từ
+  - link "Hồ sơ học viên":
+    - /url: /profile
+    - generic: Hồ sơ học viên
+- button "Open Next.js Dev Tools":
+- alert

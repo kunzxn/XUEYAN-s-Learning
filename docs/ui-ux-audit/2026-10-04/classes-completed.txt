@@ -1,0 +1,49 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- banner:
+  - button "Mở menu":
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - link "Thông báo":
+    - /url: /notifications
+- main:
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Lớp học của tôi" [level=1]
+  - paragraph: Lịch học, tài liệu và nhiệm vụ trong lớp trực tuyến.
+  - button "Đang học"
+  - button "Đã hoàn thành" [active] [pressed]
+  - button "Chưa tham gia"
+  - generic: Đã hoàn thành · mẫu
+  - heading "HSK 1 — Nhập môn Hán tự & Ngữ âm K18" [level=2]
+  - paragraph: Cô Lan Anh · Thứ Ba & Thứ Năm · 19:30–21:00
+  - progressbar "Tiến độ lớp mẫu": 100%
+  - button "Xem lớp học · chưa khả dụng"
+  - heading "Lịch 7 ngày tới" [level=2]
+  - list:
+    - strong: Thứ Ba · 19:30
+    - paragraph: Phát âm & Biến điệu
+    - strong: Thứ Năm · 19:30
+    - paragraph: Hội thoại mua sắm
+    - strong: Cuối tuần
+    - paragraph: Ôn tập chủ động SRS
+  - paragraph: Lịch minh họa, chưa có buổi học được đặt thực.
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- navigation "Điều hướng nhanh trên di động":
+  - link "Hôm nay":
+    - /url: /dashboard
+    - generic: Hôm nay
+  - link "Lộ trình HSK":
+    - /url: /vocabulary
+    - generic: Lộ trình HSK
+  - link "Ôn tập SRS":
+    - /url: /review
+    - generic: Ôn tập SRS
+  - link "Sổ từ":
+    - /url: /collection
+    - generic: Sổ từ
+  - link "Hồ sơ học viên":
+    - /url: /profile
+    - generic: Hồ sơ học viên
+- button "Open Next.js Dev Tools":
+- alert

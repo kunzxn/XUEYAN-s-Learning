@@ -14,9 +14,19 @@ __pycache__/
 !.env.sample
 *.pem
 *.key
+*.pfx
+*.p12
 .aws/
+.vercel/
 
 # Editor, OS and debug files
 .DS_Store
 Thumbs.db
 *.log
+.vs/
+artifacts/
+
+# .NET API output and private local test credentials
+backend/**/bin/
+backend/**/obj/
+backend/.local/

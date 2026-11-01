@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>XUEYAN - Học Hán Ngữ Bài Bản</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-container": "#185d80", "secondary": "#046c4b", "surface-container": "#ddf1ff", "on-secondary-fixed": "#002114", "secondary-fixed": "#9ef4ca", "on-tertiary-fixed": "#271900", "on-primary": "#ffffff", "surface-container-low": "#e9f5ff", "error": "#ba1a1a", "surface-dim": "#c9ddeb", "surface-container-high": "#d7ebf9", "on-primary-fixed-variant": "#004c6c", "on-tertiary-fixed-variant": "#5e4200", "on-background": "#0a1e28", "on-surface": "#0a1e28", "primary": "#004563", "background": "#f5faff", "secondary-fixed-dim": "#82d7af", "inverse-primary": "#93cdf6", "on-error-container": "#93000a", "on-secondary-fixed-variant": "#005138", "surface-bright": "#f5faff", "surface-container-highest": "#d2e5f4", "on-error": "#ffffff", "tertiary-fixed-dim": "#f4be59", "on-secondary-container": "#0f704f", "surface-variant": "#d2e5f4", "on-tertiary-container": "#fcc55f", "on-primary-container": "#9ad5fd", "on-tertiary": "#ffffff", "inverse-on-surface": "#e3f3ff", "primary-fixed-dim": "#93cdf6", "primary-fixed": "#c7e7ff", "outline-variant": "#c0c7ce", "tertiary-fixed": "#ffdea9", "secondary-container": "#9bf1c7", "on-secondary": "#ffffff", "on-surface-variant": "#40484e", "outline": "#71787e", "tertiary": "#563b00", "tertiary-container": "#745100", "surface-container-lowest": "#ffffff", "surface-tint": "#236487", "error-container": "#ffdad6", "on-primary-fixed": "#001e2e", "surface": "#f5faff", "inverse-surface": "#21333e" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-mobile": "1rem", "space-md": "1rem", "space-lg": "1.5rem", "margin": "2rem", "space-2xl": "3rem", "space-xs": "0.25rem", "space-xl": "2rem", "space-sm": "0.5rem", "gutter": "1.5rem", "gutter-mobile": "1rem" }, "fontFamily": { "display-lg": [ "Be Vietnam Pro" ], "headline-lg": [ "Be Vietnam Pro" ], "label-md": [ "Be Vietnam Pro" ], "headline-sm": [ "Be Vietnam Pro" ], "body-lg": [ "Be Vietnam Pro" ], "label-sm": [ "Be Vietnam Pro" ], "hanzi-card": [ "Noto Sans SC" ], "headline-md": [ "Be Vietnam Pro" ], "pinyin-display": [ "Be Vietnam Pro" ], "hanzi-inline": [ "Noto Sans SC" ], "hanzi-hero": [ "Noto Sans SC" ], "body-sm": [ "Be Vietnam Pro" ], "body-md": [ "Be Vietnam Pro" ], "display-lg-mobile": [ "Be Vietnam Pro" ], "headline-lg-mobile": [ "Be Vietnam Pro" ] }, "fontSize": { "display-lg": [ "44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "label-sm": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "hanzi-card": [ "40px", { "lineHeight": "48px", "fontWeight": "500" } ], "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ], "pinyin-display": [ "18px", { "lineHeight": "24px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "hanzi-inline": [ "20px", { "lineHeight": "28px", "fontWeight": "500" } ], "hanzi-hero": [ "72px", { "lineHeight": "84px", "fontWeight": "500" } ], "body-sm": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "body-md": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "display-lg-mobile": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ] } } } }</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1200px] mx-auto px-gutter flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm focus:outline-none" data-path="trang-chu" href="#"><img alt="logo.jpg" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vsh2LAS9uBPlaa3Xs2R0g6GcBsIpGZKk7ZVSkNHpGee_C6USFkNEaArq6SuvHQhj96dYoUCWPmC3RbD9IZnogeDkq9mUHlqLAdQSofXiohdm3NWzM_pPkinLFwgsYC3kAbKBs4fsppC5r3wMJ-IVdSC4rYeeRTDsKKKqiDjCdU0e7Whn3olkAgjfHXqBWaPON2ddVMlYcj6pLuwrWyOcd8GWNgIBMxZJdiwv7aIzLJN7BLlPOG2Kzm-TWviFs-Y5CFf2Ft053Jjg"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">XUEYAN</span></a><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-surface-container text-primary font-label-md text-label-md"><a class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="lo-trinh-hsk" href="#">Lộ trình HSK</a><a class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="tu-dien" href="#">Từ điển</a><a class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="giao-vien" href="#">Giáo viên</a><a aria-current="page" class="px-space-md py-space-sm rounded-lg transition-all bg-surface-container text-primary font-label-md text-label-md" data-path="tai-nguyen" href="#">Tài nguyên</a><a class="px-space-md py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="gioi-thieu" href="#">Giới thiệu</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center bg-surface-container-low hover:bg-surface-container transition-colors rounded-xl px-space-md py-space-xs cursor-pointer gap-space-sm"><span class="material-symbols-outlined text-outline text-[20px]">search</span><span class="font-body-sm text-body-sm text-on-surface-variant">Tìm Hán tự, Pinyin...</span><kbd class="bg-surface-container-lowest font-label-sm text-label-sm text-outline px-space-xs py-0.5 rounded shadow-sm">⌘K</kbd></div><div class="flex items-center gap-space-sm"><a class="px-space-md py-space-sm rounded-xl font-label-md text-label-md text-primary hover:bg-surface-container-low hover:text-on-surface transition-all" data-path="dang-nhap" href="#">Đăng nhập</a><a class="px-space-lg py-space-sm rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-[0_2px_4px_rgba(0,69,99,0.15)] hover:bg-primary-container transition-all flex items-center gap-space-xs" data-path="bat-dau-hoc" href="#"><span>Bắt đầu học</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="flex-1 pt-20 w-full max-w-[1200px] mx-auto px-gutter"><div class="flex flex-col w-full">
+<!-- Article Header & Meta Area -->
+<div class="w-full bg-surface-container-lowest/60 backdrop-blur-sm shadow-sm">
+<div class="max-w-[1200px] mx-auto px-gutter py-space-xl">
+<!-- Breadcrumbs -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm mb-space-md">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+          Trang chủ
+        </a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Tài nguyên</a>
+<span class="text-outline-variant">/</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Phương pháp học</span>
+<span class="text-outline-variant">/</span>
+<span class="text-primary truncate font-medium max-w-xs md:max-w-md">Cách học từ vựng tiếng Trung để nhớ lâu</span>
+</nav>
+<!-- Category Pill -->
+<div class="mb-space-md flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container text-primary font-semibold">
+<span class="material-symbols-outlined text-[15px]">menu_book</span>
+          Phương pháp học
+        </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container/50 text-secondary">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+          Tâm lý học thần kinh
+        </span>
+</div>
+<!-- Main Headline & Subtitle -->
+<h1 class="font-display-lg text-display-lg text-primary tracking-tight max-w-4xl mb-space-md">
+        Cách học từ vựng tiếng Trung để nhớ lâu
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed mb-space-lg">
+        Kết hợp phân tích bộ thủ, ngữ cảnh thực tế và nguyên lý lặp lại ngắt quãng (SRS) để chuyển hóa từ vựng ngắn hạn thành phản xạ giao tiếp tự nhiên.
+      </p>
+<!-- Meta Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-md bg-surface-container-low/40 rounded-xl px-space-md py-space-sm">
+<div class="flex flex-wrap items-center gap-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-xs shadow-sm">
+              XY
+            </div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Ban biên tập Học thuật XUEYAN</p>
+<p class="font-label-sm text-label-sm text-outline">Đơn vị chuẩn hóa khảo thí HSK 3.0</p>
+</div>
+</div>
+<div class="h-4 w-px bg-surface-container-highest hidden sm:block"></div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">event</span>
+<span>Cập nhật: 15/05/2025</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
+<span>~6 phút đọc kỹ</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container transition-all font-label-md text-label-md shadow-sm" id="save-note-btn">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+<span>Lưu sổ tay</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container transition-all font-label-md text-label-md shadow-sm" id="share-article-btn">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Chia sẻ</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Grid Content Area: 2 Columns -->
+<div class="max-w-[1200px] mx-auto px-gutter py-space-2xl grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- LEFT SIDEBAR: Table of Contents & Sticky Tooling (col-span-4) -->
+<aside class="hidden lg:block lg:col-span-4">
+<div class="sticky top-28 space-y-space-lg">
+<!-- Table of Contents Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">format_list_bulleted</span>
+              Mục lục bài viết
+            </span>
+<span class="font-label-sm text-label-sm text-outline">6 phần</span>
+</div>
+<nav class="space-y-1 font-body-sm text-body-sm" id="toc-nav">
+<a class="toc-link block px-space-sm py-2 rounded-lg text-primary font-medium bg-surface-container transition-colors" href="#co-che-ghi-nho">
+              1. Cơ chế não bộ &amp; Chữ Hán
+            </a>
+<a class="toc-link block px-space-sm py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="#phuong-phap-bo-thu">
+              2. Tách nghĩa theo Bộ thủ &amp; Chiết tự
+            </a>
+<a class="toc-link block px-space-sm py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="#phuong-phap-ngu-canh">
+              3. Học theo Cụm từ và Ngữ cảnh
+            </a>
+<a class="toc-link block px-space-sm py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="#phuong-phap-srs">
+              4. Ứng dụng Lặp lại ngắt quãng (SRS)
+            </a>
+<a class="toc-link block px-space-sm py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="#sai-lam-pho-bien">
+              5. Sai lầm phổ biến người mới
+            </a>
+<a class="toc-link block px-space-sm py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" href="#thuc-hanh-moi-ngay">
+              6. Lịch thực hành 15 phút/ngày
+            </a>
+</nav>
+</div>
+<!-- Interactive Contextual Widget -->
+<div class="bg-gradient-to-br from-surface-container-lowest to-surface-container-low rounded-xl p-space-lg shadow-md relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 text-primary/5 select-none pointer-events-none">
+<span class="font-hanzi-hero text-[120px] leading-none">学</span>
+</div>
+<div class="relative z-10">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm mb-space-sm">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+              Thực hành liền tay
+            </div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-space-xs">
+              Luyện tập ngay kiến thức này
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Áp dụng hệ thống flashcard thông minh SRS với <strong class="text-on-surface">150 từ vựng HSK 1 nền tảng</strong> để thẩm thấu sâu hôm nay.
+            </p>
+<a class="w-full inline-flex items-center justify-center gap-space-xs px-space-lg py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container transition-all" href="#">
+<span>Thử ôn bằng flashcard</span>
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+</a>
+</div>
+</div>
+<!-- Sino-Vietnamese Quick Lookup Tool Mini -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">translate</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Tra nhanh Âm Hán Việt</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            Tiếng Việt có hơn 60% từ đồng âm tự nhiên với Hán ngữ. Tra cứu ngay:
+          </p>
+<div class="flex gap-2">
+<input class="w-full bg-surface-container-low px-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container" placeholder="Nhập chữ Hán (ví dụ: 学, 明)..." type="text"/>
+<button class="bg-surface-container text-primary font-label-sm text-label-sm px-3 rounded-lg hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">search</span>
+</button>
+</div>
+</div>
+</div>
+</aside>
+<!-- RIGHT / MAIN EDITORIAL COLUMN (col-span-8) -->
+<article class="lg:col-span-8 space-y-space-2xl min-w-0">
+<!-- Editorial Hero Image Card -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<div class="relative w-full aspect-[16/9] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="A clean, serene academic study desk bathed in soft natural morning sunlight. On a warm wooden table sits a slim laptop showing Chinese character flashcards with Pinyin, an open fountain-pen paper notebook with handwritten calligraphy notes, traditional Chinese ink brushes neatly hung on a small stand, a warm ceramic cup of green tea, and green houseplants in the background. The lighting is calm, intellectual, and inviting, reflecting calm scholarly focus in shades of deep blue, soft warm wood, and jade green." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMMdBa43zbjeuxHJIfKa0qcJxWF7dTZMK1zSYgcPa3FSZz4qfSjWWAjiTpujxhZtct24JN8SrcVzWliiT8AvpYkDfKf-HIatNzxBOC6AFEDdKqalCIo42wl4H7mltHig8cxHv9ARHhlY9PxHqYfNjTjU8NguIs97xEPoraWK6ctFsA3kf2_kFBSURQVZb8xtZt65wdrRKrqa9s8KUR_jcnx_f89uH90nc31r2avcsPC_uHCu-nvRhb"/>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-background/90 via-background/40 to-transparent p-space-md">
+<p class="font-body-sm text-body-sm text-on-surface italic flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">photo_camera</span>
+              Học chữ Hán qua ghi chép cấu trúc bộ thủ kết hợp ngữ cảnh câu thực tế tại bàn học tối giản.
+            </p>
+</div>
+</div>
+</div>
+<!-- SECTION 1 -->
+<section class="scroll-mt-28 space-y-space-md" id="co-che-ghi-nho">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold font-display-lg text-base">01</span>
+<h2 class="font-headline-md text-headline-md text-primary">
+            Hiểu đúng về cơ chế ghi nhớ chữ Hán
+          </h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+          Rất nhiều người học tiếng Trung bắt đầu với phương pháp viết đi viết lại một chữ 50 đến 100 lần vào giấy kẻ ô. Tuy nhiên, chỉ sau 3 đến 5 ngày, khi đối diện lại mặt chữ đó trong một văn bản thực tế, phần lớn người học đều rơi vào trạng thái <em class="text-primary font-medium">"trông rất quen nhưng không nhớ nghĩa lẫn cách đọc"</em>.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Hiện tượng này giải thích được bằng <strong>Đường cong quên lãng Ebbinghaus (Ebbinghaus Forgetting Curve)</strong>: Việc chép tay thụ động chỉ tác động đến trí nhớ cảm giác và trí nhớ ngắn hạn. Não bộ không được thử thách để kích hoạt quá trình hồi tưởng (Active Recall), dẫn tới việc thông tin bị phân rã hơn 70% sau 24 giờ đầu tiên.
+        </p>
+<!-- Scholarly Callout Quote -->
+<div class="bg-surface-container-low rounded-xl p-space-lg relative overflow-hidden">
+<div class="flex gap-space-md">
+<span class="material-symbols-outlined text-primary text-3xl shrink-0 opacity-70">format_quote</span>
+<div class="space-y-space-xs">
+<blockquote class="font-body-lg text-body-lg text-primary italic font-medium leading-relaxed">
+                "Hán tự là văn tự biểu ý (ideogram), không thể ghi nhớ hiệu quả nếu chỉ học vẹt từng nét rời rạc mà không nắm được 'linh hồn' của các bộ thủ cấu thành và câu chuyện văn hóa phía sau."
+              </blockquote>
+<p class="font-label-sm text-label-sm text-outline">
+                — Viện Ngôn ngữ học Đông Á &amp; Bộ phận Khảo thí XUEYAN
+              </p>
+</div>
+</div>
+</div>
+<!-- Memory Mechanism Diagram Inline SVG -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-sm">
+<p class="font-label-md text-label-md text-primary font-bold uppercase tracking-wider">
+            Sơ đồ chu trình xử lý thông tin Hán tự của não bộ
+          </p>
+<div class="w-full overflow-x-auto py-2">
+<svg class="w-full max-w-xl mx-auto h-28" fill="none" viewbox="0 0 600 110" xmlns="http://www.w3.org/2000/svg">
+<!-- Step 1 -->
+<rect fill="#E9F5FF" height="80" rx="12" width="160" x="10" y="15"></rect>
+<text fill="#004563" font-family="Be Vietnam Pro" font-size="13" font-weight="600" text-anchor="middle" x="90" y="45">Mã hóa hình tượng</text>
+<text fill="#40484E" font-family="Be Vietnam Pro" font-size="11" text-anchor="middle" x="90" y="68">Tách bộ thủ / Chiết tự</text>
+<!-- Arrow 1 -->
+<path d="M178 55 H206 M200 49 L208 55 L200 61" stroke="#004563" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<!-- Step 2 -->
+<rect fill="#DDF1FF" height="80" rx="12" width="160" x="216" y="15"></rect>
+<text fill="#004563" font-family="Be Vietnam Pro" font-size="13" font-weight="600" text-anchor="middle" x="296" y="45">Liên kết âm - nghĩa</text>
+<text fill="#40484E" font-family="Be Vietnam Pro" font-size="11" text-anchor="middle" x="296" y="68">Âm Hán-Việt &amp; Pinyin</text>
+<!-- Arrow 2 -->
+<path d="M384 55 H412 M406 49 L414 55 L406 61" stroke="#004563" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<!-- Step 3 -->
+<rect fill="#9BF1C7" height="80" rx="12" width="168" x="422" y="15"></rect>
+<text fill="#002114" font-family="Be Vietnam Pro" font-size="13" font-weight="700" text-anchor="middle" x="506" y="45">Khắc sâu trí nhớ dài hạn</text>
+<text fill="#0F704F" font-family="Be Vietnam Pro" font-size="11" text-anchor="middle" x="506" y="68">Kích hoạt SRS ngắt quãng</text>
+</svg>
+</div>
+</div>
+</section>
+<!-- SECTION 2 -->
+<section class="scroll-mt-28 space-y-space-md" id="phuong-phap-bo-thu">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold font-display-lg text-base">02</span>
+<h2 class="font-headline-md text-headline-md text-primary">
+            Phương pháp 1: Tách nghĩa theo Bộ thủ &amp; Chiết tự
+          </h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+          Tiếng Trung có 214 bộ thủ, nhưng chỉ cần làm chủ khoảng <strong>50 đến 80 bộ thủ cốt lõi</strong>, bạn đã có thể giải mã được hơn 85% chữ Hán sơ và trung cấp. Bộ thủ đóng vai trò như các "viên gạch Lego" ghép nối logic, giúp não bộ hình thành câu chuyện trực quan thay vì nhớ từng nét vạch ngẫu nhiên.
+        </p>
+<!-- Chinese Etymology Interactive Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<!-- Example Card 1: 休 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-hanzi-card text-hanzi-card text-primary font-bold">休</span>
+<div>
+<span class="font-pinyin-display text-pinyin-display text-primary font-semibold">xiū</span>
+<p class="font-label-sm text-label-sm text-secondary font-medium">Hán-Việt: HƯU</p>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+                Nghỉ ngơi
+              </span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md space-y-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="font-hanzi-inline text-hanzi-inline text-primary font-bold">亻</span>
+<span class="text-on-surface">Bộ Nhân đứng (người đang đứng)</span>
+</div>
+<div class="text-center font-bold text-outline">+</div>
+<div class="flex items-center gap-2">
+<span class="font-hanzi-inline text-hanzi-inline text-primary font-bold">木</span>
+<span class="text-on-surface">Bộ Mộc (cái cây, bóng mát cây)</span>
+</div>
+<p class="pt-2 text-primary font-medium italic leading-relaxed">
+                👉 Triết lý chiết tự: Con người (亻) sau giờ lao động mệt nhọc tựa lưng vào gốc cây (木) để thở và an dưỡng — chính là chữ <strong>Hưu (休)</strong> trong "hưu trí", "nghỉ ngơi".
+              </p>
+</div>
+</div>
+<!-- Example Card 2: 明 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between mb-space-sm">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-hanzi-card text-hanzi-card text-primary font-bold">明</span>
+<div>
+<span class="font-pinyin-display text-pinyin-display text-primary font-semibold">míng</span>
+<p class="font-label-sm text-label-sm text-secondary font-medium">Hán-Việt: MINH</p>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+                Sáng tỏ, rõ ràng
+              </span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-md space-y-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="font-hanzi-inline text-hanzi-inline text-primary font-bold">日</span>
+<span class="text-on-surface">Bộ Nhật (mặt trời ban ngày)</span>
+</div>
+<div class="text-center font-bold text-outline">+</div>
+<div class="flex items-center gap-2">
+<span class="font-hanzi-inline text-hanzi-inline text-primary font-bold">月</span>
+<span class="text-on-surface">Bộ Nguyệt (mặt trăng ban đêm)</span>
+</div>
+<p class="pt-2 text-primary font-medium italic leading-relaxed">
+                👉 Triết lý chiết tự: Khi ánh sáng mặt trời (日) và ánh sáng trăng rằm (月) cùng hội tụ, vạn vật không còn tăm tối mà trở nên <strong>Minh (明)</strong> — rực rỡ, thông suốt.
+              </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3 -->
+<section class="scroll-mt-28 space-y-space-md" id="phuong-phap-ngu-canh">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold font-display-lg text-base">03</span>
+<h2 class="font-headline-md text-headline-md text-primary">
+            Phương pháp 2: Học theo Cụm từ và Ngữ cảnh (Chunking)
+          </h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+          Đừng bao giờ học từng chữ đơn lẻ tách rời. Não người ghi nhớ ngôn ngữ thông qua sự liên kết mạch lạc (collocations). Khi bạn học một từ mới, hãy luôn gắn liền nó với: <em>Cụm từ hay đi kèm</em>, <em>Ngữ pháp thực dụng</em> và <em>1 câu ví dụ chân thực</em>.
+        </p>
+<!-- Chunking Demonstration Interactive Component -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm bg-surface-container-low/50 px-space-md py-space-sm rounded-lg">
+<div class="flex items-center gap-space-md">
+<span class="font-hanzi-card text-3xl text-primary font-bold">学习</span>
+<div>
+<span class="font-pinyin-display text-pinyin-display text-primary font-semibold">xuéxí</span>
+<span class="ml-2 font-label-sm text-label-sm text-outline-variant font-normal">|</span>
+<span class="ml-2 font-label-sm text-label-sm text-on-surface-variant font-medium">Động từ / Danh từ: Học tập, rèn luyện</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-1 text-primary text-label-sm font-label-sm bg-surface-container hover:bg-primary hover:text-on-primary px-3 py-1.5 rounded-lg transition-colors">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+              Phát âm chuẩn
+            </button>
+</div>
+<!-- Sentences -->
+<div class="space-y-space-sm pt-space-xs">
+<!-- Sentence 1 -->
+<div class="p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors group">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-hanzi-inline text-hanzi-inline text-on-surface font-medium group-hover:text-primary transition-colors">
+                    我每天都在<mark class="bg-secondary-container/60 text-on-secondary-fixed rounded px-1 text-inherit">学</mark>中文。
+                  </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mt-0.5">
+                    Wǒ měitiān dōu zài xué Zhōngwén.
+                  </p>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">
+                    Tôi học tiếng Trung mỗi ngày.
+                  </p>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-lowest text-outline text-xs">
+                  Cơ bản HSK 1
+                </span>
+</div>
+</div>
+<!-- Sentence 2 -->
+<div class="p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors group">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-hanzi-inline text-hanzi-inline text-on-surface font-medium group-hover:text-primary transition-colors">
+                    良好的<mark class="bg-secondary-container/60 text-on-secondary-fixed rounded px-1 text-inherit">学习</mark>习惯对考试非常重要。
+                  </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic mt-0.5">
+                    Liánghǎo de xuéxí xíguàn duì kǎoshì fēicháng zhòngyào.
+                  </p>
+<p class="font-body-sm text-body-sm text-on-surface mt-1">
+                    Thói quen học tập tốt cực kỳ quan trọng đối với kỳ thi.
+                  </p>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-lowest text-outline text-xs">
+                  Trung cấp HSK 3
+                </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4 -->
+<section class="scroll-mt-28 space-y-space-md" id="phuong-phap-srs">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold font-display-lg text-base">04</span>
+<h2 class="font-headline-md text-headline-md text-primary">
+            Phương pháp 3: Ứng dụng Lặp lại ngắt quãng (Spaced Repetition - SRS)
+          </h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+          Nếu ôn tập từ vựng quá sớm khi ký ức còn tươi mới, não bộ sẽ không nỗ lực và không tạo ra các rãnh liên kết tế bào thần kinh mới (synapses). Ngược lại, nếu ôn quá muộn, ký ức đã biến mất hoàn toàn và bạn phải học lại từ số 0.
+        </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Khoảnh khắc vàng để ôn tập là <strong>ngay tại thời điểm bạn chuẩn bị quên</strong>. Thuật toán Spaced Repetition (SRS) tính toán chu kỳ giãn cách lý tưởng: 1 ngày → 3 ngày → 7 ngày → 14 ngày → 30 ngày. Khi vượt qua mốc 30 ngày mà vẫn nhận diện được, từ vựng đó chính thức gia nhập kho lưu trữ ký ức vĩnh viễn (Long-term Memory).
+        </p>
+<!-- In-Stream CTA Banner -->
+<div class="bg-gradient-to-r from-primary to-primary-container text-on-primary rounded-2xl p-space-xl shadow-lg relative overflow-hidden my-space-lg">
+<div class="max-w-xl space-y-space-sm relative z-10">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[15px]">auto_awesome</span>
+              Trí thông minh nhân tạo XUEYAN SRS
+            </span>
+<h3 class="font-headline-md text-headline-md text-on-primary">
+              Bạn muốn nhớ từ vựng lâu hơn mà không mất công lên lịch?
+            </h3>
+<p class="font-body-md text-body-md text-primary-fixed leading-relaxed">
+              Hệ sinh thái XUEYAN tự động hóa chu kỳ ôn tập. Thẻ từ vựng chỉ xuất hiện đúng vào ngày não bộ của bạn có dấu hiệu lãng quên.
+            </p>
+<div class="pt-space-xs">
+<a class="inline-flex items-center gap-2 px-space-lg py-3 rounded-xl bg-surface-container-lowest text-primary font-label-md text-label-md hover:bg-surface-container transition-all shadow-sm" href="#">
+<span>Thử ôn bằng flashcard ngay</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="absolute -right-8 -bottom-8 opacity-10 pointer-events-none select-none">
+<span class="material-symbols-outlined text-[240px]">psychology</span>
+</div>
+</div>
+</section>
+<!-- SECTION 5 -->
+<section class="scroll-mt-28 space-y-space-md" id="sai-lam-pho-bien">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold font-display-lg text-base">05</span>
+<h2 class="font-headline-md text-headline-md text-primary">
+            Các sai lầm phổ biến người mới học hay mắc phải
+          </h2>
+</div>
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Error 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-lg bg-error-container text-on-error-container flex items-center justify-center shrink-0 font-bold">
+              ✕
+            </div>
+<div class="space-y-1">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Chỉ viết chép cơ học mà không đọc to phát âm và Pinyin</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Khi bạn không kết hợp tai nghe và cơ miệng, bạn chỉ đang ghi nhớ hình vẽ chứ không phải ngôn ngữ giao tiếp. Điều này dẫn đến chứng "câm điếc tiếng Trung" — đọc hiểu nhưng không thể nghe nói.
+              </p>
+</div>
+</div>
+<!-- Error 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-lg bg-error-container text-on-error-container flex items-center justify-center shrink-0 font-bold">
+              ✕
+            </div>
+<div class="space-y-1">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Nhồi nhét 50 từ mới/ngày nhưng bỏ quên việc ôn tập sau 24h</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Học nhiều từ mới tạo ra ảo giác tiến bộ (Illusion of Competence). Hãy tuân thủ nguyên tắc vàng: 20% thời gian nạp từ mới, 80% thời gian cho việc củng cố và phản xạ với từ đã học.
+              </p>
+</div>
+</div>
+<!-- Error 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-start gap-space-md">
+<div class="w-8 h-8 rounded-lg bg-error-container text-on-error-container flex items-center justify-center shrink-0 font-bold">
+              ✕
+            </div>
+<div class="space-y-1">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">Bỏ qua đối chiếu âm Hán-Việt để liên tưởng nghĩa tiếng Việt</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Người Việt có lợi thế to lớn nhất thế giới khi học tiếng Trung nhờ kho tàng Hán-Việt tương đồng. Ví dụ: 国家 (guójiā - Quốc gia), 经济 (jīngjì - Kinh tế), 幸福 (xìngfú - Hạnh phúc). Bỏ qua âm Hán-Việt là lãng phí một nửa sức mạnh học tập.
+              </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6 -->
+<section class="scroll-mt-28 space-y-space-md" id="thuc-hanh-moi-ngay">
+<div class="flex items-center gap-space-sm text-primary">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-bold font-display-lg text-base">06</span>
+<h2 class="font-headline-md text-headline-md text-primary">
+            Lời khuyên thực hành mỗi ngày: Lộ trình 15 phút
+          </h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+          Độ bền và tính liên tục quan trọng hơn việc học dồn cuối tuần. Chỉ cần 15 phút kỷ luật mỗi sáng hoặc tối trước khi ngủ:
+        </p>
+<!-- Daily 15m Schedule Timeline -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm space-y-space-md">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between">
+<div>
+<span class="px-2 py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold">5 Phút đầu</span>
+<h5 class="font-label-md text-label-md text-primary font-bold mt-2">Ôn tập thẻ SRS hôm qua</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Lướt qua các từ sắp rơi vào vùng quên lãng. Không nạp từ mới vội.</p>
+</div>
+<div class="pt-3 text-secondary font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                Tái củng cố trí nhớ
+              </div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between">
+<div>
+<span class="px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold">7 Phút giữa</span>
+<h5 class="font-label-md text-label-md text-primary font-bold mt-2">Nạp 5-7 từ mới theo bộ thủ</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Xem chiết tự, liên tưởng âm Hán-Việt và đọc to 1 câu ví dụ mẫu.</p>
+</div>
+<div class="pt-3 text-secondary font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+                Mã hóa sâu
+              </div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col justify-between">
+<div>
+<span class="px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary font-label-sm text-label-sm font-semibold">3 Phút cuối</span>
+<h5 class="font-label-md text-label-md text-primary font-bold mt-2">Tập viết 1 câu hoàn chỉnh</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tự đặt một câu kể về ngày hôm nay của chính bạn có dùng từ mới.</p>
+</div>
+<div class="pt-3 text-secondary font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+                Tạo phản xạ chủ động
+              </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tags & Feedback Engagement Strip -->
+<div class="bg-surface-container-low/60 rounded-xl p-space-lg space-y-space-md">
+<!-- Tags -->
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-sm text-label-sm text-outline font-semibold uppercase tracking-wider mr-2">Chủ đề:</span>
+<a class="px-3 py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm hover:bg-surface-container transition-colors" href="#">#PhuongPhapHoc</a>
+<a class="px-3 py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm hover:bg-surface-container transition-colors" href="#">#TuVungTiengTrung</a>
+<a class="px-3 py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm hover:bg-surface-container transition-colors" href="#">#SRS</a>
+<a class="px-3 py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm hover:bg-surface-container transition-colors" href="#">#HSK</a>
+<a class="px-3 py-1 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm hover:bg-surface-container transition-colors" href="#">#HocBoThu</a>
+</div>
+<!-- Feedback Widget -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-sm bg-surface-container-lowest px-space-md py-space-sm rounded-lg">
+<span class="font-label-md text-label-md text-on-surface font-medium">
+            Bài viết này có hữu ích cho hành trình học của bạn không?
+          </span>
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-secondary-container hover:text-on-secondary-container transition-all font-label-sm text-label-sm" id="feedback-helpful-btn">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+<span>Rất hữu ích (184)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all font-label-sm text-label-sm" id="feedback-suggest-btn">
+<span class="material-symbols-outlined text-[16px]">chat_bubble_outline</span>
+<span>Cần bổ sung thêm</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- Bottom Section: Related Academic Resources -->
+<section class="w-full bg-surface-container-low/40 py-space-2xl">
+<div class="max-w-[1200px] mx-auto px-gutter space-y-space-lg">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Đọc tiếp theo</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-1">Tài nguyên học thuật liên quan</h2>
+</div>
+<a class="hidden sm:inline-flex items-center gap-1 font-label-md text-label-md text-primary hover:underline" href="#">
+          Xem tất cả bài viết
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Card 1 -->
+<a class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between" href="#">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A macro photo of an authentic Chinese calligraphy book resting open on an ebony wood desk, displaying classical radical characters like Water, Fire, Wood, and Sun hand-drawn with traditional ink and horsehair brush." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCstmL1HWdwRwgvwrsY8ucj9y58BcAsl6aoqMy7-_iLikx-ui8SBX_URxrQhUzsCoFAIsQk-3WMOPekvWC7PQ4NTMGKiLSqe0r3UCyj9moqEzXItTv6A_kxUSSAni1YSp98f3MoRiriOBKHHQnjbL3nDbaLEkfVnXuz6ExSEzLTEqfNdnhxfrC156_aYj8zpQtDHtY44zpuUEMAXByxoEPZm1K7iwoXpJyVdqlkHf9IprQlFphd1Y16"/>
+<div class="absolute top-3 left-3 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">
+              Bộ thủ cốt lõi
+            </div>
+</div>
+<div class="p-space-md space-y-space-xs flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-outline mb-1">
+<span class="material-symbols-outlined text-[15px]">timer</span>
+                10 phút đọc
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+                Cách nhận diện 50 bộ thủ tiếng Trung thông dụng nhất
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+                Bảng phân tích quy tắc hình thành và biến thể chữ viết của các bộ Nhân, Thủy, Hỏa, Mộc, Tâm.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center text-primary font-label-sm text-label-sm font-medium gap-1">
+<span>Đọc bài nghiên cứu</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Card 2 -->
+<a class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between" href="#">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist graphic illustration of soundwaves and tone pitch diagrams for Chinese pinyin, highlighting tones 1 through 4 with serene indigo and jade accents on a soft cream background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHvrBZKXaT_X0ayISfZwuS01YlAqDdGq8drEqNTwm9TTDIp-tUQH2561ykG1LFqa2UJJ4zOnKErNuJdYD6vdVuL5MddbhPoQQPxMGv3rFXesyTMpUjwcKaxLuhyTOs-lWm4HygkpDXKErIcKYEkYZ06VWwe2X4C66cRQ0m-RC13Not34-inwpJa_lP0_IrO0AuVMupeqFqjFh1xtV8BtG1hVFNxyXlmbf9AUaQebupdE2OhnRBAqEt"/>
+<div class="absolute top-3 left-3 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">
+              Ngữ âm &amp; Pinyin
+            </div>
+</div>
+<div class="p-space-md space-y-space-xs flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-outline mb-1">
+<span class="material-symbols-outlined text-[15px]">timer</span>
+                8 phút đọc
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+                Bí quyết phát âm chuẩn thanh điệu tiếng Trung cho người Việt
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+                Giải pháp khắc phục nhầm lẫn giữa thanh 1 (thanh ngang) và thanh 4 (thanh rơi dứt khoát).
+              </p>
+</div>
+<div class="pt-space-sm flex items-center text-primary font-label-sm text-label-sm font-medium gap-1">
+<span>Đọc bài nghiên cứu</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Card 3 -->
+<a class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col justify-between" href="#">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A structured study calendar and daily habit tracker for HSK 1 learning, laid out cleanly alongside an academic syllabus notebook, fine-tip pen, and HSK test guide book." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfk52EV_meyyy9mRxzEfTAPoxIj16XJN0E8c3tdy4QaC3HskJLazsAItwWv3AwPoLz9_KpP-7UFdABdbpyZrMk89fhPpim4mT-q-PITpMoIswiAr_xZZizn2x3yZdaHtX36Uieq1OR_U6eV1WnZqQmNLbgwj4ff05qoNJ6D1100DHwcaSTCEn68F5vRC7GB-tXjwPP9i_dKMQso8nsVGwR7t9O-bQOB2h7VAE585QjE9gv9QOs1bj2"/>
+<div class="absolute top-3 left-3 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm font-semibold">
+              Khảo thí HSK 3.0
+            </div>
+</div>
+<div class="p-space-md space-y-space-xs flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-outline mb-1">
+<span class="material-symbols-outlined text-[15px]">timer</span>
+                12 phút đọc
+              </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+                Lộ trình tự học HSK 1 từ con số 0 bài bản trong 30 ngày
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+                Phân bổ lịch học hàng ngày, danh mục 150 từ vựng cốt lõi và 45 điểm ngữ pháp không thể bỏ qua.
+              </p>
+</div>
+<div class="pt-space-sm flex items-center text-primary font-label-sm text-label-sm font-medium gap-1">
+<span>Đọc bài nghiên cứu</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</section>
+</div>
+<script>
+  (function() {
+    // Simple active link tracker on scroll
+    const sections = document.querySelectorAll('article section[id]');
+    const tocLinks = document.querySelectorAll('.toc-link');
+
+    window.addEventListener('scroll', function() {
+      let currentSectionId = '';
+      sections.forEach(function(sec) {
+        const top = sec.offsetTop - 140;
+        if (window.scrollY >= top) {
+          currentSectionId = sec.getAttribute('id');
+        }
+      });
+
+      if (currentSectionId) {
+        tocLinks.forEach(function(link) {
+          const href = link.getAttribute('href').replace('#', '');
+          if (href === currentSectionId) {
+            link.classList.add('bg-surface-container', 'text-primary', 'font-medium');
+            link.classList.remove('text-on-surface-variant');
+          } else {
+            link.classList.remove('bg-surface-container', 'text-primary', 'font-medium');
+            link.classList.add('text-on-surface-variant');
+          }
+        });
+      }
+    });
+
+    // Save note notification toggle
+    const saveBtn = document.getElementById('save-note-btn');
+    if (saveBtn) {
+      saveBtn.addEventListener('click', function() {
+        const icon = saveBtn.querySelector('.material-symbols-outlined');
+        const text = saveBtn.querySelector('span:last-child');
+        if (text.textContent === 'Lưu sổ tay') {
+          text.textContent = 'Đã lưu sổ tay';
+          icon.textContent = 'bookmark';
+          icon.style.fontVariationSettings = "'FILL' 1";
+          saveBtn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+        } else {
+          text.textContent = 'Lưu sổ tay';
+          icon.textContent = 'bookmark_border';
+          icon.style.fontVariationSettings = "'FILL' 0";
+          saveBtn.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+        }
+      });
+    }
+
+    // Feedback button interaction
+    const feedbackHelpful = document.getElementById('feedback-helpful-btn');
+    if (feedbackHelpful) {
+      feedbackHelpful.addEventListener('click', function() {
+        feedbackHelpful.classList.remove('bg-surface-container-low', 'text-primary');
+        feedbackHelpful.classList.add('bg-secondary', 'text-on-secondary');
+        feedbackHelpful.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span><span>Cảm ơn phản hồi! (185)</span>';
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-low mt-space-2xl"><div class="max-w-[1200px] mx-auto px-gutter py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="logo.jpg" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vsh2LAS9uBPlaa3Xs2R0g6GcBsIpGZKk7ZVSkNHpGee_C6USFkNEaArq6SuvHQhj96dYoUCWPmC3RbD9IZnogeDkq9mUHlqLAdQSofXiohdm3NWzM_pPkinLFwgsYC3kAbKBs4fsppC5r3wMJ-IVdSC4rYeeRTDsKKKqiDjCdU0e7Whn3olkAgjfHXqBWaPON2ddVMlYcj6pLuwrWyOcd8GWNgIBMxZJdiwv7aIzLJN7BLlPOG2Kzm-TWviFs-Y5CFf2Ft053Jjg"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">XUEYAN</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Hệ thống học Hán ngữ chuẩn hoá theo phương pháp tư duy ngữ hệ Hán - Việt, kết hợp công nghệ lặp lại ngắt quãng khoa học.</p><div class="flex items-center gap-space-xs pt-space-xs"><span class="inline-flex items-center px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container">HSK 1 - HSK 6</span><span class="inline-flex items-center px-space-sm py-0.5 rounded-full font-label-sm text-label-sm bg-surface-container text-primary">Khảo thí Quốc Tế</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-on-surface font-semibold uppercase tracking-wider">Lộ trình &amp; Học tập</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="lo-trinh-hsk" href="#">Lộ trình HSK 3.0</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="lo-trinh-hsk" href="#">Luyện bộ thủ &amp; Thứ tự nét</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="lo-trinh-hsk" href="#">Ôn tập Spaced Repetition</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="tu-dien" href="#">Từ điển Hán Việt</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-on-surface font-semibold uppercase tracking-wider">Tài nguyên bài viết</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="tai-nguyen" href="#">Bài viết học thuật</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="tai-nguyen" href="#">Mẹo nhớ chữ Hán qua chiết tự</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="tai-nguyen" href="#">Ngữ pháp tinh giản</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="tai-nguyen" href="#">Đề thi thử trực tuyến</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-on-surface font-semibold uppercase tracking-wider">Học viện &amp; Hỗ trợ</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="giao-vien" href="#">Đội ngũ giáo viên</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="gioi-thieu" href="#">Về Xueyan</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="tro-giup" href="#">Trung tâm trợ giúp</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="dieu-khoan" href="#">Chính sách bảo mật</a></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 XUEYAN. Nền tảng học Hán ngữ bài bản cho người Việt.</p><div class="flex items-center gap-space-lg"><span class="font-body-sm text-body-sm text-outline">Hà Nội • Bắc Kinh • TP. Hồ Chí Minh</span></div></div></div></footer></body></html>

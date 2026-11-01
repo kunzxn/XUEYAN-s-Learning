@@ -1,0 +1,91 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- complementary "Menu điều hướng":
+  - link "XUEYAN Học viện Hán ngữ":
+    - /url: /
+    - text: XUEYAN
+    - generic: Học viện Hán ngữ
+  - generic: "Mục tiêu: HSK 2 · 68%"
+  - navigation "Điều hướng học viên":
+    - link "Hôm nay":
+      - /url: /dashboard
+      - text: Hôm nay
+    - link "Lộ trình HSK":
+      - /url: /vocabulary
+      - text: Lộ trình HSK
+    - link "Ôn tập SRS":
+      - /url: /review
+      - text: Ôn tập SRS
+    - link "Sổ từ":
+      - /url: /collection
+      - text: Sổ từ
+    - link "Lớp học":
+      - /url: /classes
+      - text: Lớp học
+    - link "Tiến độ":
+      - /url: /progress
+      - text: Tiến độ
+    - link "Hồ sơ học viên":
+      - /url: /profile
+      - text: Hồ sơ học viên
+  - link "Không gian giảng viên (mẫu)":
+    - /url: /teacher
+  - link "Trợ giúp học tập":
+    - /url: /help
+  - link "Cài đặt cá nhân":
+    - /url: /settings
+    - text: Cài đặt cá nhân
+- banner:
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - text: 7 ngày
+  - link "Thông báo":
+    - /url: /notifications
+  - link "Hồ sơ":
+    - /url: /profile
+    - text: H
+- main:
+  - link "← Quay lại":
+    - /url: /profile
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Chỉnh sửa hồ sơ học viên" [level=1]
+  - paragraph: Thông tin nhận diện, mục tiêu và tùy chọn học tập.
+  - heading "01 · Thông tin nhận diện" [level=2]
+  - generic: "N"
+  - text: Chọn ảnh xem trước
+  - button "Chọn ảnh xem trước JPG, PNG · Chưa có dịch vụ tải ảnh"
+  - generic: JPG, PNG · Chưa có dịch vụ tải ảnh
+  - generic: Tên hiển thị
+  - textbox "Tên hiển thị": Nguyễn Văn Hùng
+  - text: Tên tiếng Trung
+  - textbox "Tên tiếng Trung": 阮文雄
+  - text: Giới thiệu
+  - textbox "Giới thiệu": Đang học tiếng Trung để giao tiếp và làm việc.
+  - heading "02 · Mục đích & Tùy chọn học tập" [level=2]
+  - text: Mục tiêu học tập
+  - combobox "Mục tiêu học tập":
+    - option "Giao tiếp đời thường" [selected]
+    - option "Thương mại"
+    - option "Luyện thi HSK"
+  - text: Cấp độ HSK
+  - combobox "Cấp độ HSK":
+    - option "HSK 2" [selected]
+    - option "HSK 3"
+    - option "HSK 4–6"
+  - checkbox "Hiển thị Pinyin" [checked]
+  - text: Hiển thị Pinyin
+  - heading "03 · Tài khoản & Xác thực" [level=2]
+  - paragraph: Địa chỉ email và định danh chỉ được thay đổi qua dịch vụ xác thực.
+  - link "Cài đặt tài khoản":
+    - /url: /settings
+  - button "Lưu nháp trên thiết bị"
+  - button "Xem trước"
+  - status
+  - heading "Xem trước hồ sơ" [level=2]
+  - generic: "N"
+  - heading "Nguyễn Văn Hùng" [level=3]
+  - paragraph: Đang học tiếng Trung để giao tiếp và làm việc.
+  - generic: Học viên mẫu
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- button "Open Next.js Dev Tools":

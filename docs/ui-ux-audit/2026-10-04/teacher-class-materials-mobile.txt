@@ -1,0 +1,50 @@
+- link "Đến nội dung chính":
+  - /url: "#workspace-main"
+- banner:
+  - button "Mở menu":
+  - link "Tra chữ Hán, Pinyin, Hán–Việt…":
+    - /url: /dictionary
+    - text: Tra chữ Hán, Pinyin, Hán–Việt…
+  - link "Thông báo":
+    - /url: /notifications
+- main:
+  - link "← Không gian giảng viên":
+    - /url: /teacher
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "HSK 2 Cấp tốc K24" [level=1]
+  - paragraph: Ứng dụng giao tiếp & Ôn luyện chứng chỉ · T3–T5 · 19:30–21:00
+  - button "+ Tạo bài tập mới"
+  - button "Tải tài liệu"
+  - button "Gửi thông báo"
+  - paragraph: Tiến độ bài giảng
+  - paragraph: 14/24
+  - paragraph: Bài tập cần chấm
+  - paragraph: "6"
+  - paragraph: Chuyên cần
+  - paragraph: 94,2%
+  - button "Lịch trình & Buổi học"
+  - button "Bài tập & Chấm bài"
+  - button "Danh sách học viên"
+  - button "Kho tài liệu" [active] [pressed]
+  - heading "Kho tài liệu số" [level=2]
+  - paragraph: PDF, audio và bảng Hán tự trong thiết kế chưa có file đính kèm thực.
+  - button "Thêm tài liệu"
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- navigation "Điều hướng nhanh trên di động":
+  - link "Tổng quan":
+    - /url: /teacher
+    - generic: Tổng quan
+  - link "Lớp học":
+    - /url: /teacher/classes/hsk2-k24
+    - generic: Lớp học
+  - link "Bài cần chấm":
+    - /url: /teacher/assignments/4
+    - generic: Bài cần chấm
+  - button "Yêu cầu tư vấn · chưa khả dụng":
+    - generic: Yêu cầu tư vấn
+    - text: · chưa khả dụng
+  - link "Hồ sơ sư phạm":
+    - /url: /teacher/profile
+    - generic: Hồ sơ sư phạm
+- button "Open Next.js Dev Tools":
+- alert

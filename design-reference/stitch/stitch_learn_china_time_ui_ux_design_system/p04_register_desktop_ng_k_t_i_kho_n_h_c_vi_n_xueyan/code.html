@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P04_Register_Desktop — Đăng Ký Tài Khoản Học Viên XUEYAN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Be Vietnam Pro"', 'sans-serif'],
+            chinese: ['"Noto Sans SC"', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              DEFAULT: '#185D80',
+              hover: '#134B68',
+              surface: '#EAF3F8',
+              subtle: '#F0F7FB',
+            },
+            ivory: '#FAFAF7',
+            charcoal: '#20323D',
+            slate: '#5B6D7A',
+            borderLight: '#E2E8EC',
+            jade: '#1F7A58',
+            gold: '#C49332',
+          },
+          boxShadow: {
+            subtle: '0 8px 30px rgba(24, 93, 128, 0.06)',
+            card: '0 12px 36px rgba(32, 50, 61, 0.08)',
+          },
+          borderRadius: {
+            card: '16px',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-ivory text-charcoal font-sans min-h-screen flex flex-col justify-between antialiased selection:bg-primary/20 selection:text-primary">
+
+  <!-- Top Minimal Utility Bar (Return to home & brand link) -->
+  <header class="w-full px-6 lg:px-12 py-5 flex items-center justify-between border-b border-borderLight/60 bg-white/70 backdrop-blur-md sticky top-0 z-30">
+    <a href="#" class="flex items-center gap-3 transition-opacity hover:opacity-80 group">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdl2_NtTr3-6eVACJ_k6lWKfzMXQ6R6LKHNkjGdivPubzZfvrOD1hGO97uCnJQhr2uCjU58xG0xbpKmxhWN1YuHz_xmHo2p7L12IYPTrEM6Y0lgo58N9XDxgZaBtZV3Bt9CvLO41PSEH3fEB7A1SVD08_jCIjO5XkzzW8LbBzwllTmKrkOJ2LKv0AUnfsB3pO5d6KrHqa4_WUEt9cuSHRAqZMX9zpgl2l7vsExLoB8PaJn5SKG-H4RFaf9jWD9zd9oZA" alt="XUEYAN Logo" class="h-10 w-auto object-contain">
+      <div class="flex flex-col">
+        <span class="text-xs uppercase tracking-widest text-slate font-medium">Học Viện Hán Ngữ</span>
+      </div>
+    </a>
+    
+    <div class="flex items-center gap-4">
+      <span class="text-sm text-slate hidden sm:inline">Đã có tài khoản?</span>
+      <a href="#" class="text-sm font-semibold text-primary hover:text-primary-hover px-3.5 py-1.5 rounded-lg hover:bg-primary-surface transition-colors flex items-center gap-1.5">
+        <span>Đăng nhập</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </a>
+      <a href="#" class="text-sm text-slate hover:text-charcoal flex items-center gap-1 pl-3 border-l border-borderLight transition-colors" title="Trở về Trang chủ">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+        <span class="hidden md:inline">Về trang chủ</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Container: Balanced 2-Column Desktop Layout -->
+  <main class="flex-1 flex items-center justify-center p-6 lg:p-12">
+    <div class="w-full max-w-6xl bg-white rounded-2xl shadow-card border border-borderLight overflow-hidden grid grid-cols-1 lg:grid-cols-12 min-h-[640px]">
+      
+      <!-- Left Column: Editorial & Brand Motivation (5 cols) -->
+      <div class="lg:col-span-5 bg-gradient-to-br from-[#185D80] via-[#1A6489] to-[#0E3E56] text-white p-8 lg:p-12 flex flex-col justify-between relative overflow-hidden">
+        <!-- Subtle decorative calligraphy watermark -->
+        <div class="absolute -right-8 -bottom-12 opacity-10 select-none pointer-events-none font-chinese text-[180px] font-bold leading-none">
+          学研
+        </div>
+        <div class="absolute -top-16 -left-16 w-64 h-64 bg-white/5 rounded-full blur-2xl pointer-events-none"></div>
+
+        <!-- Top content -->
+        <div class="relative z-10">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-medium tracking-wide text-primary-surface mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Hành trình Hán ngữ thông minh
+          </div>
+          <h2 class="text-2xl lg:text-3xl font-bold tracking-tight text-white leading-snug">
+            Bắt đầu hành trình tiếng Trung của bạn
+          </h2>
+          <p class="mt-3 text-sm text-blue-100/90 leading-relaxed font-normal">
+            Ghi nhớ chữ Hán tự nhiên qua gốc âm Hán - Việt, rèn phát âm chuẩn thanh điệu và ứng dụng thuật toán lặp lại ngắt quãng (SRS) mỗi ngày.
+          </p>
+
+          <!-- Interactive Learning Value Card preview -->
+          <div class="mt-8 bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/15 shadow-inner">
+            <div class="flex items-center justify-between mb-3 pb-2 border-b border-white/10 text-xs text-blue-100">
+              <span class="font-medium">Chữ Hán khởi đầu của bạn</span>
+              <span class="bg-white/20 px-2 py-0.5 rounded text-[11px] font-mono">HSK 1 • Cơ bản</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 rounded-lg bg-white text-primary flex items-center justify-center font-chinese text-3xl font-bold shadow-md">
+                启
+              </div>
+              <div class="flex-1">
+                <div class="text-sm font-semibold tracking-wide text-white">qǐ • KHỞI</div>
+                <div class="text-xs text-blue-100 mt-0.5">Khởi đầu, mở lối tri thức mới</div>
+                <div class="mt-2 flex items-center gap-2 text-[11px] text-emerald-300 font-medium">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Sẵn sàng đồng hành cùng 30,000+ từ vựng</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Benefits checklist -->
+        <div class="relative z-10 mt-8 pt-6 border-t border-white/15 space-y-3 text-xs text-blue-100">
+          <div class="flex items-center gap-2.5">
+            <div class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-300 flex items-center justify-center flex-shrink-0">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <span>Đồng bộ tiến độ học liền mạch trên mọi thiết bị</span>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <div class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-300 flex items-center justify-center flex-shrink-0">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <span>Kho từ điển Hán - Việt & tra cứu bộ thủ miễn phí trọn đời</span>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <div class="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-300 flex items-center justify-center flex-shrink-0">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <span>Kiểm tra phát âm Pinyin cùng đội ngũ giảng viên sư phạm</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Registration Form & State Display (7 cols) -->
+      <div class="lg:col-span-7 p-8 lg:p-12 flex flex-col justify-center bg-white relative">
+
+        <!-- Tab to toggle between Active Form & Account-Created State demo for reviewer -->
+        <div class="flex items-center justify-end mb-4">
+          <div class="inline-flex p-1 bg-ivory rounded-lg border border-borderLight text-xs">
+            <button id="btnTabForm" onclick="showFormState()" class="px-3 py-1 rounded font-medium transition-all bg-white text-primary shadow-sm">Form đăng ký</button>
+            <button id="btnTabSuccess" onclick="showSuccessState()" class="px-3 py-1 rounded font-medium transition-all text-slate hover:text-charcoal">Trạng thái đã tạo</button>
+          </div>
+        </div>
+
+        <!-- FORM STATE CONTAINER -->
+        <div id="stateForm" class="space-y-6">
+          <div>
+            <h1 class="text-2xl font-bold text-charcoal tracking-tight">Tạo tài khoản học viên</h1>
+            <p class="text-sm text-slate mt-1">Gia nhập cộng đồng người học tiếng Trung khoa học cùng XUEYAN.</p>
+          </div>
+
+          <!-- Quick Social Login (Google separated as requested) -->
+          <button type="button" class="w-full flex items-center justify-center gap-3 py-2.5 px-4 rounded-xl border border-borderLight hover:border-slate/40 bg-white hover:bg-slate-50 text-sm font-medium text-charcoal transition-all shadow-sm group">
+            <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+              <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.76-2.1-6.7-4.93H1.28v3.15C3.29 21.36 7.37 24 12 24z"/>
+              <path fill="#FBBC05" d="M5.3 14.27c-.24-.72-.38-1.49-.38-2.27s.14-1.55.38-2.27V6.58H1.28C.46 8.2.01 10.05.01 12s.45 3.8 1.27 5.42l4.02-3.15z"/>
+              <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.37 0 3.29 2.64 1.28 6.58l4.02 3.15c.94-2.83 3.58-4.98 6.7-4.98z"/>
+            </svg>
+            <span>Đăng ký nhanh bằng tài khoản Google</span>
+          </button>
+
+          <!-- Divider -->
+          <div class="relative flex items-center justify-center">
+            <div class="border-t border-borderLight w-full"></div>
+            <span class="bg-white px-3 text-xs text-slate uppercase tracking-wider font-medium">hoặc đăng ký bằng email</span>
+          </div>
+
+          <!-- Main Input Fields (display name, email, password, password confirmation) -->
+          <form class="space-y-4" onsubmit="event.preventDefault(); showSuccessState();">
+            
+            <!-- 1. Display Name -->
+            <div>
+              <label for="displayName" class="block text-xs font-semibold text-charcoal mb-1.5">
+                Tên hiển thị học viên <span class="text-red-500">*</span>
+              </label>
+              <div class="relative">
+                <input type="text" id="displayName" value="Minh Hoàng" required
+                  placeholder="Ví dụ: Minh Hoàng, Lan Chi..."
+                  class="w-full px-3.5 py-2.5 rounded-xl border border-jade bg-white text-sm text-charcoal placeholder-slate/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all">
+                <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-jade">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                </div>
+              </div>
+              <p class="text-[11px] text-jade mt-1 flex items-center gap-1 font-medium">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Tên hiển thị hợp lệ trên chứng chỉ học tập
+              </p>
+            </div>
+
+            <!-- 2. Email Address -->
+            <div>
+              <label for="email" class="block text-xs font-semibold text-charcoal mb-1.5">
+                Địa chỉ email <span class="text-red-500">*</span>
+              </label>
+              <div class="relative">
+                <input type="email" id="email" value="minh.hoang@example.com" required
+                  placeholder="nhap.email@cuaban.com"
+                  class="w-full px-3.5 py-2.5 rounded-xl border border-jade bg-white text-sm text-charcoal placeholder-slate/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all">
+                <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none text-jade">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                </div>
+              </div>
+              <p class="text-[11px] text-slate mt-1">Dùng để xác thực tài khoản và lưu trữ tiến trình thi thử HSK.</p>
+            </div>
+
+            <!-- 3. Password with visibility & concise requirements -->
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <label for="password" class="block text-xs font-semibold text-charcoal">
+                  Mật khẩu <span class="text-red-500">*</span>
+                </label>
+                <span class="text-[11px] font-medium text-jade">Độ mạnh: Khá an toàn</span>
+              </div>
+              <div class="relative">
+                <input type="text" id="password" value="Xueyan@2025" required
+                  placeholder="Tối thiểu 8 ký tự"
+                  class="w-full pl-3.5 pr-10 py-2.5 rounded-xl border border-jade bg-white text-sm text-charcoal placeholder-slate/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all">
+                <button type="button" class="absolute inset-y-0 right-0 pr-3 flex items-center text-slate hover:text-charcoal" title="Ẩn/hiện mật khẩu">
+                  <!-- Eye Icon open -->
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                </button>
+              </div>
+
+              <!-- Password Requirements Pills -->
+              <div class="mt-2 grid grid-cols-3 gap-1.5 text-[11px]">
+                <div class="flex items-center gap-1 text-jade">
+                  <svg class="w-3 h-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Từ 8 ký tự</span>
+                </div>
+                <div class="flex items-center gap-1 text-jade">
+                  <svg class="w-3 h-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Chữ & số</span>
+                </div>
+                <div class="flex items-center gap-1 text-jade">
+                  <svg class="w-3 h-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                  <span>Ký tự đặc biệt</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Password Confirmation with Match Validation -->
+            <div>
+              <label for="passwordConfirm" class="block text-xs font-semibold text-charcoal mb-1.5">
+                Xác nhận mật khẩu <span class="text-red-500">*</span>
+              </label>
+              <div class="relative">
+                <input type="password" id="passwordConfirm" value="Xueyan@2025" required
+                  placeholder="Nhập lại mật khẩu vừa tạo"
+                  class="w-full pl-3.5 pr-10 py-2.5 rounded-xl border border-jade bg-white text-sm text-charcoal placeholder-slate/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all">
+                <button type="button" class="absolute inset-y-0 right-0 pr-3 flex items-center text-slate hover:text-charcoal" title="Ẩn/hiện mật khẩu">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18"/></svg>
+                </button>
+              </div>
+              <p class="text-[11px] text-jade mt-1 flex items-center gap-1 font-medium">
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Mật khẩu khớp nhau hoàn toàn
+              </p>
+            </div>
+
+            <!-- Terms & Privacy Checkbox -->
+            <div class="pt-1">
+              <label class="flex items-start gap-2.5 text-xs text-slate cursor-pointer">
+                <input type="checkbox" checked required class="mt-0.5 w-4 h-4 text-primary rounded border-borderLight focus:ring-primary">
+                <span>Tôi đồng ý với <a href="#" class="font-medium text-primary hover:underline">Điều khoản dịch vụ</a> và <a href="#" class="font-medium text-primary hover:underline">Chính sách bảo mật</a> học tập của XUEYAN.</span>
+              </label>
+            </div>
+
+            <!-- Primary CTA Button: "Tạo tài khoản" -->
+            <button type="submit" class="w-full mt-2 py-3 px-5 rounded-xl bg-primary hover:bg-primary-hover text-white font-semibold text-sm shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 group">
+              <span>Tạo tài khoản</span>
+              <svg class="w-4 h-4 transform group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </button>
+          </form>
+
+          <!-- Footer Switch to Login -->
+          <div class="text-center pt-2 text-xs text-slate">
+            Đã có tài khoản học viên?
+            <a href="#" class="font-semibold text-primary hover:text-primary-hover hover:underline ml-1">Đăng nhập ngay</a>
+          </div>
+        </div>
+
+        <!-- ACCOUNT-CREATED SUCCESS STATE CONTAINER (Explains Email-Verification Step) -->
+        <div id="stateSuccess" class="hidden space-y-6 text-center py-4">
+          <div class="w-16 h-16 rounded-2xl bg-emerald-50 text-jade border border-emerald-100 flex items-center justify-center mx-auto shadow-sm">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+          </div>
+
+          <div>
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-semibold text-jade mb-2">
+              <span>Đăng ký thành công</span>
+            </div>
+            <h2 class="text-2xl font-bold text-charcoal tracking-tight">Kích hoạt tài khoản học viên</h2>
+            <p class="text-sm text-slate mt-2 max-w-md mx-auto leading-relaxed">
+              Chúng tôi đã gửi email kích hoạt kèm liên kết xác thực an toàn tới địa chỉ:
+            </p>
+            <div class="mt-3 inline-block px-4 py-2 bg-primary-subtle border border-primary-surface rounded-xl font-semibold text-primary text-sm">
+              minh.hoang@example.com
+            </div>
+          </div>
+
+          <!-- Step-by-step guidance card -->
+          <div class="bg-ivory rounded-xl p-5 border border-borderLight text-left space-y-3.5 max-w-md mx-auto">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-charcoal">Các bước tiếp theo:</h4>
+            
+            <div class="flex items-start gap-3 text-xs">
+              <div class="w-5 h-5 rounded-full bg-primary text-white flex items-center justify-center font-bold text-[11px] flex-shrink-0 mt-0.5">1</div>
+              <p class="text-slate"><strong class="text-charcoal">Mở hộp thư đến</strong> của bạn và tìm thư gửi từ <em>ban-dao-tao@xueyan.edu.vn</em>.</p>
+            </div>
+
+            <div class="flex items-start gap-3 text-xs">
+              <div class="w-5 h-5 rounded-full bg-primary text-white flex items-center justify-center font-bold text-[11px] flex-shrink-0 mt-0.5">2</div>
+              <p class="text-slate">Nhấp vào nút <strong class="text-charcoal">“Xác nhận tài khoản”</strong> trong thư (liên kết có hiệu lực trong 24 giờ).</p>
+            </div>
+
+            <div class="flex items-start gap-3 text-xs">
+              <div class="w-5 h-5 rounded-full bg-primary text-white flex items-center justify-center font-bold text-[11px] flex-shrink-0 mt-0.5">3</div>
+              <p class="text-slate">Bắt đầu ngay bài học đầu tiên của <strong class="text-charcoal">Lộ trình HSK 1</strong> với đầy đủ tính năng tra cứu.</p>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="space-y-3 max-w-md mx-auto">
+            <a href="#" class="w-full py-3 px-5 rounded-xl bg-primary hover:bg-primary-hover text-white font-semibold text-sm shadow-md transition-all inline-flex items-center justify-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <span>Mở ứng dụng hộp thư Email</span>
+            </a>
+
+            <div class="flex items-center justify-between text-xs pt-1 px-1 text-slate">
+              <span>Chưa nhận được thư?</span>
+              <button type="button" class="text-primary font-semibold hover:underline">Gửi lại email kích hoạt (58s)</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Minimal Trust & Security Footer -->
+  <footer class="w-full px-6 py-4 border-t border-borderLight/60 bg-white/50 text-center text-xs text-slate flex flex-col sm:flex-row items-center justify-between gap-3 max-w-6xl mx-auto">
+    <div class="flex items-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-jade"></span>
+      <span>Hệ thống bảo mật dữ liệu học tập chuẩn mã hóa 256-bit</span>
+    </div>
+    <div class="flex items-center gap-4 text-[11px]">
+      <a href="#" class="hover:text-charcoal">Quy chế đào tạo</a>
+      <a href="#" class="hover:text-charcoal">Điều khoản bảo mật</a>
+      <a href="#" class="hover:text-charcoal">Trợ giúp học viên: 1900 6868</a>
+    </div>
+  </footer>
+
+  <script>
+    function showFormState() {
+      document.getElementById('stateForm').classList.remove('hidden');
+      document.getElementById('stateSuccess').classList.add('hidden');
+      document.getElementById('btnTabForm').className = "px-3 py-1 rounded font-medium transition-all bg-white text-primary shadow-sm";
+      document.getElementById('btnTabSuccess').className = "px-3 py-1 rounded font-medium transition-all text-slate hover:text-charcoal";
+    }
+
+    function showSuccessState() {
+      document.getElementById('stateForm').classList.add('hidden');
+      document.getElementById('stateSuccess').classList.remove('hidden');
+      document.getElementById('btnTabSuccess').className = "px-3 py-1 rounded font-medium transition-all bg-white text-primary shadow-sm";
+      document.getElementById('btnTabForm').className = "px-3 py-1 rounded font-medium transition-all text-slate hover:text-charcoal";
+    }
+  </script>
+</body>
+</html>

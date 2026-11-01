@@ -1,0 +1,98 @@
+- banner:
+  - link "Đến nội dung chính":
+    - /url: "#dashboard-main"
+  - link "XUEYAN, trang chủ":
+    - /url: /
+    - strong: XUEYAN
+    - generic: Học viện tiếng Trung
+  - button "Bắt đầu học"
+  - link "Mở hồ sơ học viên":
+    - /url: /profile
+  - button "Mở menu":
+- main:
+  - link "← Tài nguyên / Phương pháp học":
+    - /url: /resources
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Cách học từ vựng tiếng Trung để nhớ lâu" [level=1]
+  - paragraph: Kết hợp bộ thủ, ngữ cảnh thực tế và ôn tập ngắt quãng.
+  - generic: Ban biên tập XUEYAN · Bài viết tham khảo
+  - button "Đã đánh dấu" [pressed]
+  - status: Đã đánh dấu trong phiên này, chưa lưu server.
+  - article:
+    - heading "1. Cơ chế ghi nhớ chữ Hán đa tầng" [level=2]
+    - paragraph: Gắn hình thể chữ với âm đọc và ý nghĩa. Đọc to Pinyin, quan sát cấu trúc, rồi nhớ lại mà không nhìn đáp án.
+    - heading "2. Tách nghĩa theo bộ thủ & Chiết tự" [level=2]
+    - paragraph: Liên tưởng 休 (xiū, nghỉ ngơi) với người 亻 bên cây 木; 明 (míng, sáng) với 日 và 月. Các liên tưởng giúp học tập, không thay thế nghiên cứu từ nguyên.
+    - heading "3. Học theo cụm từ & Ngữ cảnh" [level=2]
+    - paragraph: Học mỗi từ cùng một câu ví dụ. Tự đặt một câu liên quan đến công việc hoặc cuộc sống để luyện cách dùng.
+    - paragraph: 我每天学习中文。
+    - paragraph: Wǒ měitiān xuéxí Zhōngwén.
+    - paragraph: Tôi học tiếng Trung mỗi ngày.
+    - button "Nghe phát âm 我每天学习中文。":
+      - text: Nghe phát âm
+    - status
+    - heading "4. Ứng dụng lặp lại ngắt quãng" [level=2]
+    - paragraph: Ôn lại kiến thức sau những khoảng nghỉ. Chủ động nhớ trước khi xem đáp án và đánh giá trung thực mức độ ghi nhớ.
+    - link "Thử ôn bằng Flashcard":
+      - /url: /review/study
+    - heading "5. Ba sai lầm thường gặp" [level=2]
+    - paragraph: Chép chữ mà không đọc; học quá nhiều từ nhưng bỏ ôn tập; học từ rời khỏi câu. Điều chỉnh nhịp học theo khả năng của bạn.
+    - heading "6. Kế hoạch thực hành 15 phút" [level=2]
+    - paragraph: 5 phút ôn từ cũ; 5 phút học từ mới; 5 phút đọc ví dụ và tự đặt câu. Giữ nhịp học đều đặn.
+  - complementary:
+    - heading "Mục lục bài viết" [level=2]
+    - list:
+      - link "Cơ chế ghi nhớ chữ Hán đa tầng":
+        - /url: "#section-1"
+      - link "Tách nghĩa theo bộ thủ & Chiết tự":
+        - /url: "#section-2"
+      - link "Học theo cụm từ & Ngữ cảnh":
+        - /url: "#section-3"
+      - link "Ứng dụng lặp lại ngắt quãng":
+        - /url: "#section-4"
+      - link "Ba sai lầm thường gặp":
+        - /url: "#section-5"
+      - link "Kế hoạch thực hành 15 phút":
+        - /url: "#section-6"
+    - heading "Luyện tập ngay kiến thức này" [level=2]
+    - paragraph: Thử nhớ lại một từ trước khi lật thẻ.
+    - link "Luyện Flashcard":
+      - /url: /review/study
+- contentinfo:
+  - link "XUEYAN":
+    - /url: /
+    - strong: XUEYAN
+  - paragraph: XUEYAN - Nền tảng học tiếng Trung dành cho người Việt, kết hợp tri thức Hán - Việt với phương pháp lặp lại ngắt quãng.
+  - generic: HSK 1 - HSK 6+
+  - generic: Âm Hán Việt
+  - heading "Lộ trình HSK" [level=2]
+  - link "HSK 1 - Nhập môn":
+    - /url: /vocabulary/hsk-1
+  - link "HSK 2 - Giao tiếp cơ bản":
+    - /url: /vocabulary/hsk-2
+  - link "HSK 3 - Củng cố từ vựng":
+    - /url: /vocabulary/hsk-3
+  - link "HSK 4 - Diễn đạt chuyên sâu":
+    - /url: /vocabulary/hsk-4
+  - link "HSK 5 & 6 - Nâng cao":
+    - /url: /vocabulary
+  - heading "Cộng đồng & Giáo viên" [level=2]
+  - link "Đội ngũ giảng viên":
+    - /url: /teachers
+  - link "Lớp học trực tuyến":
+    - /url: /classes
+  - link "Chia sẻ kinh nghiệm":
+    - /url: /resources
+  - link "Đồng hành học tập":
+    - /url: /teachers/lan-anh/consultation
+  - heading "Hỗ trợ & Pháp lý" [level=2]
+  - link "Trung tâm trợ giúp":
+    - /url: /help
+  - generic: Điều khoản dịch vụ (chưa có nội dung)
+  - generic: Chính sách bảo mật (chưa có nội dung)
+  - link "Liên hệ cố vấn":
+    - /url: /contact
+  - generic: © 2026 XUEYAN Hán Học. Bảo lưu mọi quyền.
+  - generic: Nền tảng Hán ngữ dành cho người Việt
+- button "Open Next.js Dev Tools":
+- alert

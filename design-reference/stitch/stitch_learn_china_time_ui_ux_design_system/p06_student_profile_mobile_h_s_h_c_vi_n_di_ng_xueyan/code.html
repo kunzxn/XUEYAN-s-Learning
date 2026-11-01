@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-container": "#745100", "on-primary-fixed": "#001e2e", "surface-tint": "#236487", "tertiary": "#563b00", "surface-dim": "#c9ddeb", "secondary-container": "#9bf1c7", "secondary": "#046c4b", "surface-container-high": "#d7ebf9", "on-surface-variant": "#40484e", "error-container": "#ffdad6", "secondary-fixed": "#9ef4ca", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#5e4200", "on-secondary-container": "#0f704f", "on-background": "#0a1e28", "primary": "#004563", "surface-container-highest": "#d2e5f4", "background": "#f5faff", "surface-variant": "#d2e5f4", "inverse-surface": "#21333e", "on-tertiary-container": "#fcc55f", "on-error-container": "#93000a", "surface-container": "#ddf1ff", "primary-fixed": "#c7e7ff", "inverse-primary": "#93cdf6", "outline-variant": "#c0c7ce", "secondary-fixed-dim": "#82d7af", "error": "#ba1a1a", "on-tertiary": "#ffffff", "on-tertiary-fixed": "#271900", "tertiary-fixed-dim": "#f4be59", "tertiary-fixed": "#ffdea9", "on-surface": "#0a1e28", "surface-container-lowest": "#ffffff", "primary-container": "#185d80", "on-secondary-fixed": "#002114", "on-primary-container": "#9ad5fd", "outline": "#71787e", "primary-fixed-dim": "#93cdf6", "surface-bright": "#f5faff", "inverse-on-surface": "#e3f3ff", "on-primary": "#ffffff", "on-primary-fixed-variant": "#004c6c", "on-error": "#ffffff", "surface": "#f5faff", "surface-container-low": "#e9f5ff", "on-secondary-fixed-variant": "#005138" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "space-2xl": "3rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "margin-mobile": "1rem", "gutter": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem", "space-xl": "2rem", "margin": "2rem" }, "fontFamily": { "body-md": ["Be Vietnam Pro"], "headline-lg-mobile": ["Be Vietnam Pro"], "hanzi-hero": ["Noto Sans SC"], "headline-md": ["Be Vietnam Pro"], "label-sm": ["Be Vietnam Pro"], "body-lg": ["Be Vietnam Pro"], "hanzi-inline": ["Noto Sans SC"], "pinyin-display": ["Be Vietnam Pro"], "display-lg": ["Be Vietnam Pro"], "label-md": ["Be Vietnam Pro"], "hanzi-card": ["Noto Sans SC"], "body-sm": ["Be Vietnam Pro"], "headline-sm": ["Be Vietnam Pro"], "display-lg-mobile": ["Be Vietnam Pro"], "headline-lg": ["Be Vietnam Pro"] }, "fontSize": { "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "hanzi-hero": ["72px", { "lineHeight": "84px", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "hanzi-inline": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "pinyin-display": ["18px", { "lineHeight": "24px", "letterSpacing": "0.02em", "fontWeight": "500" }], "display-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "hanzi-card": ["40px", { "lineHeight": "48px", "fontWeight": "500" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(32,50,61,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="logo.jpg" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vsh2LAS9uBPlaa3Xs2R0g6GcBsIpGZKk7ZVSkNHpGee_C6USFkNEaArq6SuvHQhj96dYoUCWPmC3RbD9IZnogeDkq9mUHlqLAdQSofXiohdm3NWzM_pPkinLFwgsYC3kAbKBs4fsppC5r3wMJ-IVdSC4rYeeRTDsKKKqiDjCdU0e7Whn3olkAgjfHXqBWaPON2ddVMlYcj6pLuwrWyOcd8GWNgIBMxZJdiwv7aIzLJN7BLlPOG2Kzm-TWviFs-Y5CFf2Ft053Jjg"/><div class="flex flex-col"><span class="font-label-md text-label-md text-primary tracking-tight leading-tight">XUEYAN</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium leading-tight">Profile</span></div></div><div class="flex items-center gap-space-sm"><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed/40 text-on-tertiary-fixed shadow-[0_1px_4px_rgba(86,59,0,0.06)]"><span class="text-sm select-none">🔥</span><span class="font-label-sm text-label-sm font-semibold tracking-wide">12</span></div><div class="relative flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_2px_6px_rgba(0,69,99,0.15)]" src="https://lh3.googleusercontent.com/aida/AEtjO1WExU2vlwf7wNywyoHaaKFB-F8BryiE08_7j_K51ImKDU_N8dMJiQvwwh8z6iEa7qGb_cXE3SnFCub-WYBMNoECriBXU1r72NgKUORpsMyQUtVcwUgL0tjxOGVuqCP3kD3mAohdmVkNQL_J1_LydeSkv-PXJfTY-nSRG2PUoCTdwpxt7ur19vHq9X_oFz_8sdOp5CFQLSb5i7EkhEzQFlLN2s7cetd2y9Io9UhZ7-G6aW0wxcMr5V0Y86o"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full">
+<!-- Mobile Profile Identity Card (Serene Scholar Hero) -->
+<section class="relative px-gutter-mobile pt-space-md pb-space-lg overflow-hidden">
+<!-- Calligraphic Subtle Watermark & Ambient Ink Layer -->
+<div class="absolute inset-0 bg-gradient-to-b from-surface-container-high/60 via-surface-container/30 to-transparent pointer-events-none"></div>
+<div class="absolute top-2 right-4 text-primary/5 select-none pointer-events-none font-hanzi-hero text-[110px] leading-none opacity-40">学</div>
+<div class="relative flex flex-col items-center text-center">
+<!-- Avatar with Scholarly Level Badge -->
+<div class="relative mb-3">
+<div class="w-20 h-20 rounded-full shadow-[0_4px_16px_rgba(0,69,99,0.14)] p-0.5 bg-surface-container-lowest flex items-center justify-center">
+<img alt="Học viên Nguyễn Văn Hùng" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida/AEtjO1WExU2vlwf7wNywyoHaaKFB-F8BryiE08_7j_K51ImKDU_N8dMJiQvwwh8z6iEa7qGb_cXE3SnFCub-WYBMNoECriBXU1r72NgKUORpsMyQUtVcwUgL0tjxOGVuqCP3kD3mAohdmVkNQL_J1_LydeSkv-PXJfTY-nSRG2PUoCTdwpxt7ur19vHq9X_oFz_8sdOp5CFQLSb5i7EkhEzQFlLN2s7cetd2y9Io9UhZ7-G6aW0wxcMr5V0Y86o"/>
+</div>
+<span class="absolute -bottom-1 -right-1 px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-[11px] shadow-sm tracking-wide">
+          HSK 2
+        </span>
+</div>
+<!-- Learner Name & Chinese Characters -->
+<h1 class="font-headline-sm text-headline-sm text-on-surface mb-1 flex items-center justify-center gap-1.5">
+        Nguyễn Văn Hùng
+        <span class="font-hanzi-inline text-primary-container font-medium text-[17px]">(阮文雄)</span>
+</h1>
+<!-- Bio / Aspiration -->
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[320px] leading-snug mb-2.5">
+        Mục tiêu HSK 3 trong năm 2024 • Đam mê tiếng Trung thương mại &amp; văn hóa.
+      </p>
+<!-- Privacy Status Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant shadow-[0_1px_3px_rgba(0,69,99,0.04)] mb-4">
+<span class="material-symbols-outlined text-[15px] text-primary">lock</span>
+<span class="font-label-sm text-label-sm">Hồ sơ riêng tư cá nhân</span>
+</div>
+<!-- Action Buttons Stack -->
+<div class="w-full flex flex-col gap-2">
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-[0_2px_8px_rgba(0,69,99,0.2)] active:scale-[0.99] transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>Chỉnh sửa hồ sơ</span>
+</button>
+<button class="w-full h-11 rounded-xl bg-surface-container text-primary font-label-md text-label-md flex items-center justify-center gap-2 active:bg-surface-container-high transition-colors" id="shareConfigTrigger" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Cài đặt chia sẻ công khai</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Stacked Sections Container -->
+<div class="px-gutter-mobile flex flex-col gap-space-md">
+<!-- Section 1: Thẻ Mục tiêu học tập (Learning Goals Card) -->
+<section class="rounded-xl bg-surface-container-lowest p-space-md shadow-[0_2px_10px_rgba(32,50,61,0.04)]">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[19px]">flag</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-[16px] leading-tight text-on-surface">Mục tiêu học tập</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lộ trình cá nhân hóa</span>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-[11px] font-semibold">Đang tiến bước</span>
+</div>
+<!-- Goal Detail -->
+<div class="p-3 rounded-lg bg-surface-container-low mb-3">
+<div class="flex items-baseline justify-between mb-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">HSK 3 trước 12/2024</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">64% (420/600 từ)</span>
+</div>
+<!-- Segmented Emerald Progress Bar -->
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 64%"></div>
+</div>
+</div>
+<!-- Schedule Routine & Streak -->
+<div class="flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-2 min-w-0 pr-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">schedule</span>
+<span class="font-body-sm text-body-sm truncate">20 phút ôn tập hàng ngày lúc 20:30 tối</span>
+</div>
+<div class="shrink-0 flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span>🔥</span>
+<span>12 ngày</span>
+</div>
+</div>
+</section>
+<!-- Section 2: Tóm tắt tiến độ (Progress Summary Grid 2x2) -->
+<section class="rounded-xl bg-surface-container-lowest p-space-md shadow-[0_2px_10px_rgba(32,50,61,0.04)]">
+<div class="flex items-center gap-2 mb-3">
+<span class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[19px]">insights</span>
+</span>
+<h2 class="font-headline-sm text-[16px] text-on-surface">Tóm tắt tiến độ</h2>
+</div>
+<!-- 2x2 Stat Grid -->
+<div class="grid grid-cols-2 gap-2.5 mb-3">
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<div class="flex items-center gap-1.5 text-on-surface-variant mb-1">
+<span class="material-symbols-outlined text-[17px] text-primary">menu_book</span>
+<span class="font-label-sm text-label-sm">Từ đã nắm</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">384 <span class="font-label-sm text-label-sm text-on-surface-variant font-normal">từ</span></span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<div class="flex items-center gap-1.5 text-on-surface-variant mb-1">
+<span class="material-symbols-outlined text-[17px] text-primary">hourglass_bottom</span>
+<span class="font-label-sm text-label-sm">Giờ học tích lũy</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">46.5 <span class="font-label-sm text-label-sm text-on-surface-variant font-normal">giờ</span></span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<div class="flex items-center gap-1.5 text-on-surface-variant mb-1">
+<span class="material-symbols-outlined text-[17px] text-secondary">memory</span>
+<span class="font-label-sm text-label-sm">Độ nhớ SRS</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary">89.2%</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<div class="flex items-center gap-1.5 text-on-surface-variant mb-1">
+<span class="material-symbols-outlined text-[17px] text-tertiary">local_fire_department</span>
+<span class="font-label-sm text-label-sm">Chuỗi liên tục</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-tertiary">12 <span class="font-label-sm text-label-sm text-on-surface-variant font-normal">ngày</span></span>
+</div>
+</div>
+<!-- Privacy Note -->
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-[12px] bg-surface-container/50 px-2.5 py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-[15px] text-outline">verified_user</span>
+<span>Email và lịch sử học tập chi tiết được bảo mật riêng tư.</span>
+</div>
+</section>
+<!-- Section 3: Lộ trình đang học (Current Pathways) -->
+<section class="rounded-xl bg-surface-container-lowest p-space-md shadow-[0_2px_10px_rgba(32,50,61,0.04)]">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[19px]">route</span>
+</span>
+<h2 class="font-headline-sm text-[16px] text-on-surface">Lộ trình đang học</h2>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">2 chương trình</span>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Pathway Card 1 -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[11px] font-semibold">HSK 2</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Khóa Học HSK 2 Toàn Diện</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">65%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 65%"></div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[13px]">Đã hoàn thành Bài 14/20</span>
+<button class="h-8 px-3.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1 active:scale-95 transition-transform" type="button">
+<span>Học tiếp</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Pathway Card 2 -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[11px] font-semibold">Chuyên đề</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Tiếng Trung Thương Mại</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">25%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-tertiary-container rounded-full" style="width: 25%"></div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[13px]">Bài 3: Giao tiếp văn phòng</span>
+<button class="h-8 px-3 rounded-lg bg-surface-container text-primary font-label-sm text-label-sm flex items-center gap-1 active:bg-surface-container-high transition-colors" type="button">
+<span>Xem bài</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Lớp học trực tuyến (Enrolled Classes) -->
+<section class="rounded-xl bg-surface-container-lowest p-space-md shadow-[0_2px_10px_rgba(32,50,61,0.04)]">
+<div class="flex items-center gap-2 mb-3">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[19px]">co_present</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-[16px] leading-tight text-on-surface">Lớp học trực tuyến</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Giảng viên hướng dẫn trực tiếp</span>
+</div>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-container-low flex flex-col gap-3">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h3 class="font-label-md text-label-md text-on-surface font-semibold leading-snug">
+              HSK 2 Phát Âm &amp; Đàm Thoại K24
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[13px] mt-0.5">
+              Cùng Cô Lan Anh (Thạc sĩ Ngôn ngữ Bắc Kinh)
+            </p>
+</div>
+<span class="shrink-0 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] font-semibold">
+            Đang diễn ra
+          </span>
+</div>
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm text-[13px]">
+<span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span>
+<span>Thứ 3, Thứ 5 hàng tuần (19:30 - 21:00)</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm text-[13px]">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>Tiến độ khóa: 8 / 12 buổi hoàn thành</span>
+</div>
+</div>
+<button class="w-full h-10 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm active:scale-[0.99] transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+<span>Chi tiết lớp học &amp; phòng Zoom</span>
+</button>
+</div>
+</section>
+<!-- Section 5: Huy hiệu đạt được (Selected Achievements) -->
+<section class="rounded-xl bg-surface-container-lowest p-space-md shadow-[0_2px_10px_rgba(32,50,61,0.04)]">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[19px]">military_tech</span>
+</span>
+<h2 class="font-headline-sm text-[16px] text-on-surface">Huy hiệu học thuật</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 danh hiệu</span>
+</div>
+<!-- Horizontal Scrollable Badges List -->
+<div class="flex gap-3 overflow-x-auto pb-1 -mx-1 px-1">
+<!-- Badge 1 -->
+<div class="shrink-0 w-28 p-3 rounded-lg bg-surface-container-low flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center mb-1.5 shadow-sm text-primary">
+<span class="material-symbols-outlined text-[24px]">auto_stories</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight mb-0.5">Mọt Sách HSK 1</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">150 từ vựng</span>
+</div>
+<!-- Badge 2 -->
+<div class="shrink-0 w-28 p-3 rounded-lg bg-surface-container-low flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center mb-1.5 shadow-sm text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[24px]">whatshot</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight mb-0.5">Kỷ Luật Thép</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">10 ngày streak</span>
+</div>
+<!-- Badge 3 -->
+<div class="shrink-0 w-28 p-3 rounded-lg bg-surface-container-low flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center mb-1.5 shadow-sm text-secondary">
+<span class="material-symbols-outlined text-[24px]">psychology</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight mb-0.5">Trí Nhớ Bền Bỉ</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">85%+ SRS</span>
+</div>
+<!-- Badge 4 -->
+<div class="shrink-0 w-28 p-3 rounded-lg bg-surface-container-low flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-1.5 shadow-sm text-primary">
+<span class="material-symbols-outlined text-[24px]">draw</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold leading-tight mb-0.5">Bút Nghiên</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">500 nét đúng</span>
+</div>
+</div>
+</section>
+<!-- Section 6: Tùy chọn chia sẻ có kiểm soát (Field-selection Sharing) -->
+<section class="rounded-xl bg-surface-container-lowest p-space-md shadow-[0_2px_10px_rgba(32,50,61,0.04)] mb-space-md">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[19px]">tune</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-[16px] leading-tight text-on-surface">Kiểm soát chia sẻ hồ sơ</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tùy biến dữ liệu hiển thị thẻ công khai</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[13px] mb-3">
+        Bật những thông tin bạn muốn người khác nhìn thấy khi chia sẻ đường link hồ sơ học thuật:
+      </p>
+<div class="flex flex-col gap-2">
+<!-- Toggle Item 1 -->
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low cursor-pointer select-none">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">emoji_events</span>
+<span class="font-label-md text-label-md text-on-surface">Cấp bậc &amp; Mục tiêu HSK</span>
+</div>
+<input checked="" class="profile-toggle w-5 h-5 accent-[#004563] cursor-pointer" type="checkbox"/>
+</label>
+<!-- Toggle Item 2 -->
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low cursor-pointer select-none">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">local_fire_department</span>
+<span class="font-label-md text-label-md text-on-surface">Chuỗi ngày học liên tục (Streak)</span>
+</div>
+<input checked="" class="profile-toggle w-5 h-5 accent-[#004563] cursor-pointer" type="checkbox"/>
+</label>
+<!-- Toggle Item 3 -->
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low cursor-pointer select-none">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">military_tech</span>
+<span class="font-label-md text-label-md text-on-surface">Huy hiệu học thuật</span>
+</div>
+<input checked="" class="profile-toggle w-5 h-5 accent-[#004563] cursor-pointer" type="checkbox"/>
+</label>
+<!-- Toggle Item 4 -->
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low cursor-pointer select-none">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">history_edu</span>
+<span class="font-label-md text-label-md text-on-surface">Tổng số từ vựng nắm vững</span>
+</div>
+<input class="profile-toggle w-5 h-5 accent-[#004563] cursor-pointer" type="checkbox"/>
+</label>
+</div>
+<!-- Quick Feedback Toast Container -->
+<div class="mt-3 hidden py-2 px-3 rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm flex items-center justify-center gap-1.5 transition-all" id="saveFeedback">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Đã cập nhật cài đặt quyền riêng tư</span>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Ensure the bottom nav highlights the Profile tab accurately
+  (function initProfileNav() {
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+      if (link.getAttribute('data-path') === 'profile') {
+        link.classList.remove('text-on-surface-variant');
+        link.classList.add('text-primary', 'font-semibold');
+      } else {
+        link.classList.remove('text-primary', 'font-semibold');
+        link.classList.add('text-on-surface-variant');
+      }
+    });
+
+    // Interactive Toggle Feedback
+    const toggles = document.querySelectorAll('.profile-toggle');
+    const toast = document.getElementById('saveFeedback');
+    let toastTimeout;
+
+    toggles.forEach(toggle => {
+      toggle.addEventListener('change', () => {
+        if (toast) {
+          toast.classList.remove('hidden');
+          clearTimeout(toastTimeout);
+          toastTimeout = setTimeout(() => {
+            toast.classList.add('hidden');
+          }, 2400);
+        }
+      });
+    });
+
+    // Share Modal / Prompt simulation
+    const shareBtn = document.getElementById('shareConfigTrigger');
+    if (shareBtn) {
+      shareBtn.addEventListener('click', () => {
+        if (navigator.share) {
+          navigator.share({
+            title: 'Hồ sơ học tập Hùng - Xueyan',
+            text: 'Theo dõi hành trình chinh phục HSK cùng tôi trên Xueyan!',
+            url: window.location.href,
+          }).catch(() => {});
+        } else {
+          if (toast) {
+            toast.innerHTML = '<span class="material-symbols-outlined text-[16px]">content_copy</span><span>Đã sao chép liên kết chia sẻ an toàn</span>';
+            toast.classList.remove('hidden');
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+              toast.classList.add('hidden');
+            }, 2500);
+          }
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(32,50,61,0.05)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">today</span><span class="font-label-sm text-label-sm mt-0.5">Hôm nay</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant transition-colors" data-path="pathways" href="#"><span class="material-symbols-outlined text-[22px]">route</span><span class="font-label-sm text-label-sm mt-0.5">Lộ trình</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant transition-colors" data-path="review" href="#"><span class="material-symbols-outlined text-[22px]">neurology</span><span class="font-label-sm text-label-sm mt-0.5">Ôn tập</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 text-on-surface-variant transition-colors" data-path="vocabulary" href="#"><span class="material-symbols-outlined text-[22px]">menu_book</span><span class="font-label-sm text-label-sm mt-0.5">Sổ từ</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-h-[44px] py-1 transition-colors text-primary font-semibold" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-sm text-label-sm mt-0.5">Hồ sơ</span></a></div></nav></body></html>

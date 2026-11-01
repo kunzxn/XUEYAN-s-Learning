@@ -1,0 +1,185 @@
+[
+  {
+    "test": "collection-duplicate-normalized",
+    "result": "pass: field error, focus, preserved input, aria-invalid/describedby"
+  },
+  {
+    "test": "collection-whitespace-keyboard",
+    "result": "pass: error and focus, Tab/Shift+Tab, Enter validates, Escape closes and restores trigger focus"
+  },
+  {
+    "test": "word-a-save-reload",
+    "result": "Đợt 1 · từ 学习 · xuéxí · A"
+  },
+  {
+    "test": "word-two-ids-reopen",
+    "result": "A restored separately after saving B"
+  },
+  {
+    "test": "student-profile-all-fields-reload",
+    "result": [
+      {
+        "value": "Học viên thử A"
+      },
+      {
+        "value": "学言"
+      },
+      {
+        "value": "Bản nháp kiểm thử riêng · tiếng Việt và Pinyin xuéxí."
+      },
+      {
+        "value": "Luyện thi HSK"
+      },
+      {
+        "value": "HSK 3"
+      },
+      {
+        "checked": false,
+        "value": "on"
+      }
+    ]
+  },
+  {
+    "test": "teacher-profile-all-fields-reload",
+    "result": [
+      {
+        "value": "Giáo viên thử A"
+      },
+      {
+        "value": "Giảng viên kiểm thử"
+      },
+      {
+        "value": "Giới thiệu thử riêng giáo viên."
+      },
+      {
+        "value": "Thương mại"
+      },
+      {
+        "value": "HSK 4–6"
+      },
+      {
+        "checked": false,
+        "value": "on"
+      },
+      {
+        "value": "https://example.com/bai-giang-thu"
+      },
+      {
+        "value": "Thứ 7 · 09:00–10:00"
+      }
+    ]
+  },
+  {
+    "test": "profile-id-and-role-isolation",
+    "result": "teacher A and student A restored separately; student B keeps default"
+  },
+  {
+    "test": "settings-all-fields-including-time-reload",
+    "result": [
+      {
+        "value": "30"
+      },
+      {
+        "checked": false,
+        "value": "on"
+      },
+      {
+        "checked": false,
+        "value": "on"
+      },
+      {
+        "checked": false,
+        "value": "on"
+      },
+      {
+        "value": "20:30"
+      },
+      {
+        "value": "Asia/Shanghai (GMT+8)"
+      },
+      {
+        "value": "Công khai (xem trước)"
+      }
+    ],
+    "note": "Initial time restoration failed (20:30); fixed and passed settings-time-retest (07:45)."
+  },
+  {
+    "test": "settings-time-retest",
+    "result": "07:45"
+  },
+  {
+    "test": "onboarding-goal-purpose-time-reopen",
+    "result": "30; Du học & Học thuật; Buổi sáng · 07:00–08:30; save navigates dashboard?demo=new"
+  },
+  {
+    "test": "assignment-draft-reload-validation-retry",
+    "result": "short draft restored; field error focused; corrected 90 Han opens preview, no server submission"
+  },
+  {
+    "test": "assignment-second-id",
+    "result": "empty B; A not reused"
+  },
+  {
+    "test": "grading-grade-comment-reload",
+    "result": [
+      "84",
+      "Nhận xét kiểm thử riêng: chú ý thanh điệu của từ 学习 · xuéxí."
+    ]
+  },
+  {
+    "test": "grading-two-errors-correct-resubmit",
+    "result": "Vietnamese field errors; grade focused; values kept; correction clears errors, service-unavailable status only"
+  },
+  {
+    "test": "grading-second-id",
+    "result": "B default 92, does not load A=84"
+  },
+  {
+    "test": "broken-json-browser",
+    "result": "no crash; empty fallback and warning; no automatic save"
+  },
+  {
+    "test": "unsupported-schema-browser",
+    "result": "no crash; warning, unsupported draft not rendered"
+  },
+  {
+    "test": "blocked-localstorage-browser",
+    "result": "no crash on read; failed write reports failure; entered text remains; no success claim"
+  },
+  {
+    "test": "register-three-errors-correct-resubmit",
+    "result": "required/email/mismatch field errors; first field focused; values preserved; corrected form shows only authentication-service-unavailable, no account created"
+  },
+  {
+    "test": "contact-multiple-required",
+    "result": "5 field errors; first input focused with describedby"
+  },
+  {
+    "test": "consultation-required",
+    "result": "4 field errors; first select focused with describedby"
+  },
+  {
+    "test": "mobile-375-dialog-focus-wrap",
+    "result": "Initial boundary focus escaped to BODY; fixed in Dialog, see mobile-dialog-focus-wrap-retest."
+  },
+  {
+    "test": "mobile-dialog-focus-wrap-retest",
+    "result": "pass after explicit trap: Shift+Tab close→submit, Tab submit→close; Enter field error focus"
+  },
+  {
+    "test": "grading-unfinished-blank-score-draft",
+    "result": "blank score and comment save/reload; submit required error focused; no NaN or console warning"
+  },
+  {
+    "test": "final-shared-field-contact-retry",
+    "result": "labels remain separate from errors; five errors associated; corrected form accepted locally, service unavailable, no request sent"
+  },
+  {
+    "test": "final-auth-confirmation-field",
+    "result": "confirmPassword focused; label stays Xác nhận mật khẩu; error only in description"
+  },
+  {
+    "test": "collection-valid-name",
+    "result": "trim/collapse spaces: Bộ thử Đợt 1 created and selected; dialog closes; remains session preview"
+  }
+]

@@ -1,0 +1,99 @@
+- banner:
+  - link "Đến nội dung chính":
+    - /url: "#dashboard-main"
+  - link "XUEYAN, trang chủ":
+    - /url: /
+    - strong: XUEYAN
+    - generic: Học viện tiếng Trung
+  - navigation "Điều hướng chính":
+    - link "Lộ trình HSK":
+      - /url: /vocabulary
+    - link "Từ điển":
+      - /url: /dictionary
+    - link "Giáo viên":
+      - /url: /teachers
+    - link "Tài nguyên":
+      - /url: /resources
+  - link "Đăng nhập":
+    - /url: /login
+  - button "Bắt đầu học"
+  - link "Mở hồ sơ học viên":
+    - /url: /profile
+- main:
+  - link "← Trung tâm trợ giúp":
+    - /url: /help
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Gửi yêu cầu hỗ trợ tới XUEYAN" [level=1]
+  - paragraph: Thắc mắc về tài khoản, học tập, lớp học hoặc vấn đề kỹ thuật.
+  - generic: Họ và tên
+  - textbox "Họ và tên"
+  - generic: Email nhận phản hồi
+  - textbox "Email nhận phản hồi"
+  - text: Danh mục vấn đề
+  - combobox "Danh mục vấn đề":
+    - option "Chọn danh mục phù hợp" [disabled] [selected]
+    - option "Tài khoản & Bảo mật"
+    - option "Nội dung học HSK"
+    - option "Lớp học & Giáo viên"
+    - option "Flashcard & Sổ từ"
+    - option "Lỗi kỹ thuật"
+    - option "Ý kiến đóng góp"
+  - text: Tiêu đề
+  - textbox "Tiêu đề"
+  - text: Nội dung chi tiết
+  - textbox "Nội dung chi tiết"
+  - text: Tệp đính kèm
+  - button "Tệp đính kèm Chỉ chọn tệp trên giao diện; chưa tải lên server."
+  - generic: Chỉ chọn tệp trên giao diện; chưa tải lên server.
+  - button "Kiểm tra & Gửi yêu cầu"
+  - button "Làm lại"
+  - status: Biểu mẫu xem trước — chưa có kênh gửi thực.
+  - heading "Trước khi gửi yêu cầu" [level=2]
+  - list:
+    - link "Quên mật khẩu →":
+      - /url: /forgot-password
+    - link "Không nghe được phát âm →":
+      - /url: /help
+    - link "Thông tin lớp học →":
+      - /url: /classes
+  - heading "Kênh hỗ trợ" [level=2]
+  - paragraph: Hotline, email và địa chỉ văn phòng trong Stitch là nội dung mẫu, chưa xác nhận là kênh thực. Cần cấu hình thông tin liên hệ trước khi phát hành.
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- contentinfo:
+  - link "XUEYAN":
+    - /url: /
+    - strong: XUEYAN
+  - paragraph: XUEYAN - Nền tảng học tiếng Trung dành cho người Việt, kết hợp tri thức Hán - Việt với phương pháp lặp lại ngắt quãng.
+  - generic: HSK 1 - HSK 6+
+  - generic: Âm Hán Việt
+  - heading "Lộ trình HSK" [level=2]
+  - link "HSK 1 - Nhập môn":
+    - /url: /vocabulary/hsk-1
+  - link "HSK 2 - Giao tiếp cơ bản":
+    - /url: /vocabulary/hsk-2
+  - link "HSK 3 - Củng cố từ vựng":
+    - /url: /vocabulary/hsk-3
+  - link "HSK 4 - Diễn đạt chuyên sâu":
+    - /url: /vocabulary/hsk-4
+  - link "HSK 5 & 6 - Nâng cao":
+    - /url: /vocabulary
+  - heading "Cộng đồng & Giáo viên" [level=2]
+  - link "Đội ngũ giảng viên":
+    - /url: /teachers
+  - link "Lớp học trực tuyến":
+    - /url: /classes
+  - link "Chia sẻ kinh nghiệm":
+    - /url: /resources
+  - link "Đồng hành học tập":
+    - /url: /teachers/lan-anh/consultation
+  - heading "Hỗ trợ & Pháp lý" [level=2]
+  - link "Trung tâm trợ giúp":
+    - /url: /help
+  - generic: Điều khoản dịch vụ (chưa có nội dung)
+  - generic: Chính sách bảo mật (chưa có nội dung)
+  - link "Liên hệ cố vấn":
+    - /url: /contact
+  - generic: © 2026 XUEYAN Hán Học. Bảo lưu mọi quyền.
+  - generic: Nền tảng Hán ngữ dành cho người Việt
+- button "Open Next.js Dev Tools":
+- alert

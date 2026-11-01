@@ -27,7 +27,7 @@ export default function VocabularySpotlight({ onOpenReview }: { onOpenReview: ()
     <article className={styles.flashcard}>
       <div className={styles.flashcardHeader}>
         <div className={styles.flashcardMeta}>
-          <span className={styles.cardTag}>HSK 3 · Từ vựng</span>
+          <span className={styles.cardTag}>Từ vựng minh họa</span>
           <span className={styles.cardCounter}>Thẻ #0248</span>
         </div>
         <button type="button" className={styles.soundButton} onClick={speakWord} aria-label="Phát âm từ vựng">
@@ -54,7 +54,7 @@ export default function VocabularySpotlight({ onOpenReview }: { onOpenReview: ()
       </div>
 
       <div className={styles.memoryFooter}>
-        <span>{statsData[2].value} từ đến hạn ôn hôm nay</span>
+        <span>{statsData[2].value} từ đến hạn · số liệu mẫu</span>
         <button type="button" className={styles.reviewLink} onClick={onOpenReview}>
           Ôn tập <ArrowRight size={15} aria-hidden="true" />
         </button>

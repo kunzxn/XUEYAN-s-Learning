@@ -1,0 +1,87 @@
+- banner:
+  - link "Đến nội dung chính":
+    - /url: "#dashboard-main"
+  - link "XUEYAN, trang chủ":
+    - /url: /
+    - strong: XUEYAN
+    - generic: Học viện tiếng Trung
+  - button "Bắt đầu học"
+  - link "Mở hồ sơ học viên":
+    - /url: /profile
+  - button "Mở menu":
+- main:
+  - link "← Danh bạ giáo viên":
+    - /url: /teachers
+  - generic: Hồ sơ sư phạm mẫu
+  - generic: MĐ
+  - heading "Thầy Trần Minh Đức" [level=1]
+  - paragraph: Chuyên gia HSK cao cấp
+  - paragraph: Hệ thống hóa cấu trúc ngữ pháp và phương pháp tư duy Hán văn.
+  - generic: HSK 5–6
+  - generic: Tiếng Việt & Tiếng Trung
+  - link "Đăng ký tư vấn":
+    - /url: /teachers/minh-duc/consultation
+  - heading "Giới thiệu bản thân" [level=2]
+  - paragraph: Học tiếng Trung là hành trình khám phá cấu trúc chữ Hán, ngữ âm và văn hóa. Tôi đồng hành cùng người học qua phân tích Hán–Việt và thực hành giao tiếp từng bước.
+  - paragraph: Thông tin giới thiệu theo bản thiết kế mẫu, chưa phải hồ sơ đã xác thực.
+  - heading "Phương pháp giảng dạy" [level=2]
+  - list:
+    - heading "Chuẩn hóa thanh điệu & Khẩu hình" [level=3]
+    - paragraph: Đối chiếu ngữ âm Việt–Hán để luyện phát âm rõ ràng.
+    - heading "Ngữ cảnh thực tế & Ứng dụng" [level=3]
+    - paragraph: Học theo cụm từ, hội thoại và tình huống đời sống.
+    - heading "Flashcard & Ôn tập ngắt quãng" [level=3]
+    - paragraph: Chủ động nhớ lại từ đã học và củng cố thường xuyên.
+  - heading "Kinh nghiệm & Bằng cấp chuyên môn" [level=2]
+  - generic: Chưa đối soát dữ liệu thực
+  - list:
+    - listitem: Giảng dạy tiếng Trung cho người Việt
+    - listitem: Hán ngữ đối ngoại & Ngữ âm ứng dụng
+    - listitem: Minh chứng học thuật sẽ hiển thị khi được kiểm duyệt
+  - heading "Tài liệu mẫu & Giáo án tham khảo" [level=2]
+  - paragraph: "Bài 01: Biến điệu thanh 3 trong khẩu ngữ."
+  - link "Khám phá tài nguyên":
+    - /url: /resources
+  - heading "Khung giờ tư vấn" [level=2]
+  - paragraph: Các buổi tối trong tuần
+  - paragraph: 20–30 phút · Trực tuyến 1–1 (thiết kế mẫu)
+  - link "Xem biểu mẫu tư vấn":
+    - /url: /teachers/minh-duc/consultation
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- contentinfo:
+  - link "XUEYAN":
+    - /url: /
+    - strong: XUEYAN
+  - paragraph: XUEYAN - Nền tảng học tiếng Trung dành cho người Việt, kết hợp tri thức Hán - Việt với phương pháp lặp lại ngắt quãng.
+  - generic: HSK 1 - HSK 6+
+  - generic: Âm Hán Việt
+  - heading "Lộ trình HSK" [level=2]
+  - link "HSK 1 - Nhập môn":
+    - /url: /vocabulary/hsk-1
+  - link "HSK 2 - Giao tiếp cơ bản":
+    - /url: /vocabulary/hsk-2
+  - link "HSK 3 - Củng cố từ vựng":
+    - /url: /vocabulary/hsk-3
+  - link "HSK 4 - Diễn đạt chuyên sâu":
+    - /url: /vocabulary/hsk-4
+  - link "HSK 5 & 6 - Nâng cao":
+    - /url: /vocabulary
+  - heading "Cộng đồng & Giáo viên" [level=2]
+  - link "Đội ngũ giảng viên":
+    - /url: /teachers
+  - link "Lớp học trực tuyến":
+    - /url: /classes
+  - link "Chia sẻ kinh nghiệm":
+    - /url: /resources
+  - link "Đồng hành học tập":
+    - /url: /teachers/lan-anh/consultation
+  - heading "Hỗ trợ & Pháp lý" [level=2]
+  - link "Trung tâm trợ giúp":
+    - /url: /help
+  - generic: Điều khoản dịch vụ (chưa có nội dung)
+  - generic: Chính sách bảo mật (chưa có nội dung)
+  - link "Liên hệ cố vấn":
+    - /url: /contact
+  - generic: © 2026 XUEYAN Hán Học. Bảo lưu mọi quyền.
+  - generic: Nền tảng Hán ngữ dành cho người Việt
+- button "Open Next.js Dev Tools":

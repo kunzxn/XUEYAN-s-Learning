@@ -1,0 +1,115 @@
+- banner:
+  - link "Đến nội dung chính":
+    - /url: "#dashboard-main"
+  - link "XUEYAN, trang chủ":
+    - /url: /
+    - strong: XUEYAN
+    - generic: Học viện tiếng Trung
+  - navigation "Điều hướng chính":
+    - link "Lộ trình HSK":
+      - /url: /vocabulary
+    - link "Từ điển":
+      - /url: /dictionary
+    - link "Giáo viên":
+      - /url: /teachers
+    - link "Tài nguyên":
+      - /url: /resources
+  - link "Đăng nhập":
+    - /url: /login
+  - button "Bắt đầu học"
+  - link "Mở hồ sơ học viên":
+    - /url: /profile
+- main:
+  - link "← Hồ sơ giáo viên":
+    - /url: /teachers/lan-anh
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Đăng ký tư vấn cùng giáo viên" [level=1]
+  - paragraph: Trao đổi về lộ trình, phương pháp học và mục tiêu tiếng Trung.
+  - heading "01 · Trình độ Hán ngữ hiện tại" [level=2]
+  - text: Trình độ
+  - combobox "Trình độ":
+    - option "Chọn trình độ" [disabled] [selected]
+    - option "Chưa từng học"
+    - option "HSK 1–2"
+    - option "HSK 3–4"
+    - option "Nền tảng giao tiếp"
+  - heading "02 · Mục tiêu trọng tâm" [level=2]
+  - checkbox "Luyện thi HSK"
+  - text: Luyện thi HSK
+  - checkbox "Giao tiếp công việc"
+  - text: Giao tiếp công việc
+  - checkbox "Sửa phát âm & Thanh điệu"
+  - text: Sửa phát âm & Thanh điệu
+  - checkbox "Lộ trình cho người bận rộn"
+  - text: Lộ trình cho người bận rộn
+  - heading "03 · Thời gian mong muốn" [level=2]
+  - text: Ngày phù hợp
+  - combobox "Ngày phù hợp":
+    - option "Trong tuần" [selected]
+    - option "Cuối tuần"
+    - option "Linh hoạt"
+  - text: Khung giờ
+  - combobox "Khung giờ":
+    - option "Buổi tối · 19:30–21:30" [selected]
+    - option "Buổi sáng · 08:30–11:30"
+    - option "Buổi chiều · 14:00–17:30"
+  - paragraph: "Múi giờ: GMT+7"
+  - heading "04 · Thông tin liên hệ" [level=2]
+  - text: Họ và tên
+  - textbox "Họ và tên"
+  - text: Email
+  - textbox "Email"
+  - text: Điện thoại hoặc Zalo
+  - textbox "Điện thoại hoặc Zalo"
+  - text: Lời nhắn
+  - textbox "Lời nhắn"
+  - button "Kiểm tra yêu cầu tư vấn (chưa gửi)"
+  - status
+  - generic: LA
+  - heading "Cô Vũ Lan Anh" [level=2]
+  - generic: HSK 1–4
+  - paragraph: Phân tích cặn kẽ gốc rễ Hán–Việt, hướng dẫn sửa lỗi phát âm và thanh điệu.
+  - heading "Bạn sẽ nhận được gì?" [level=3]
+  - list:
+    - listitem: Định hướng lộ trình học
+    - listitem: Trao đổi về phát âm và chữ Hán
+    - listitem: Chọn lịch học phù hợp
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- contentinfo:
+  - link "XUEYAN":
+    - /url: /
+    - strong: XUEYAN
+  - paragraph: XUEYAN - Nền tảng học tiếng Trung dành cho người Việt, kết hợp tri thức Hán - Việt với phương pháp lặp lại ngắt quãng.
+  - generic: HSK 1 - HSK 6+
+  - generic: Âm Hán Việt
+  - heading "Lộ trình HSK" [level=2]
+  - link "HSK 1 - Nhập môn":
+    - /url: /vocabulary/hsk-1
+  - link "HSK 2 - Giao tiếp cơ bản":
+    - /url: /vocabulary/hsk-2
+  - link "HSK 3 - Củng cố từ vựng":
+    - /url: /vocabulary/hsk-3
+  - link "HSK 4 - Diễn đạt chuyên sâu":
+    - /url: /vocabulary/hsk-4
+  - link "HSK 5 & 6 - Nâng cao":
+    - /url: /vocabulary
+  - heading "Cộng đồng & Giáo viên" [level=2]
+  - link "Đội ngũ giảng viên":
+    - /url: /teachers
+  - link "Lớp học trực tuyến":
+    - /url: /classes
+  - link "Chia sẻ kinh nghiệm":
+    - /url: /resources
+  - link "Đồng hành học tập":
+    - /url: /teachers/lan-anh/consultation
+  - heading "Hỗ trợ & Pháp lý" [level=2]
+  - link "Trung tâm trợ giúp":
+    - /url: /help
+  - generic: Điều khoản dịch vụ (chưa có nội dung)
+  - generic: Chính sách bảo mật (chưa có nội dung)
+  - link "Liên hệ cố vấn":
+    - /url: /contact
+  - generic: © 2026 XUEYAN Hán Học. Bảo lưu mọi quyền.
+  - generic: Nền tảng Hán ngữ dành cho người Việt
+- button "Open Next.js Dev Tools":
+- alert

@@ -1,0 +1,235 @@
+- banner:
+  - link "Đến nội dung chính":
+    - /url: "#dashboard-main"
+  - link "XUEYAN, trang chủ":
+    - /url: /
+    - strong: XUEYAN
+    - generic: Học viện tiếng Trung
+  - navigation "Điều hướng chính":
+    - link "Lộ trình HSK":
+      - /url: /vocabulary
+    - link "Từ điển":
+      - /url: /dictionary
+    - link "Giáo viên":
+      - /url: /teachers
+    - link "Tài nguyên":
+      - /url: /resources
+  - button "Bắt đầu học"
+  - link "Mở hồ sơ học viên":
+    - /url: /profile
+  - button "Đóng menu" [expanded] [active]:
+- main:
+  - generic: Phương pháp lặp lại ngắt quãng (SRS) tối ưu cho người Việt
+  - heading "Học tiếng Trung mỗi ngày, nhớ lâu từng từ." [level=1]:
+    - text: Học tiếng Trung mỗi ngày,
+    - emphasis: nhớ lâu từng từ.
+  - paragraph: Kết hợp hệ thống phân tích gốc Hán - Việt, thuật toán Spaced Repetition thông minh và sự đồng hành của giảng viên chuyên môn giúp bạn nắm vững HSK một cách bền bỉ và thư thái.
+  - button "Bắt đầu học":
+    - text: Bắt đầu học
+  - link "Khám phá lộ trình":
+    - /url: "#lo-trinh"
+  - text: Chuẩn khung HSK 3.0
+  - text: Ngữ nguyên Hán - Việt
+  - text: 15 phút mỗi ngày
+  - article:
+    - generic: HSK 3 · Từ vựng
+    - generic: "Thẻ #0248"
+    - button "Phát âm từ vựng":
+    - generic: 学习
+    - strong: xuéxí
+    - generic: ·
+    - generic: "Âm HV: HỌC TẬP"
+    - generic: Ý nghĩa ngữ căn
+    - paragraph: Học; học tập; lĩnh hội tri thức qua thời gian.
+    - generic: 我每天学习中文。
+    - generic: Wǒ měitiān xuéxí Zhōngwén. · Tôi học tiếng Trung mỗi ngày.
+    - generic: 24 từ đến hạn ôn hôm nay
+    - button "Ôn tập":
+      - text: Ôn tập
+    - status
+  - generic: Lộ trình học chuẩn hóa
+  - heading "Lộ trình học theo chuẩn HSK 3.0" [level=2]
+  - paragraph: Thiết kế mạch lạc từ sơ cấp đến cao cấp, tập trung phản xạ tự nhiên và hiểu sâu ngữ nghĩa thông qua ngữ nguyên Hán - Việt.
+  - link "Toàn bộ 6 cấp độ chuyên sâu":
+    - /url: /vocabulary
+    - text: Toàn bộ 6 cấp độ chuyên sâu
+  - article:
+    - generic: HSK 1 - 2
+    - generic: 8 - 12 tuần
+    - heading "Khởi đầu vững chắc & Phát âm Pinyin" [level=3]
+    - paragraph: Nắm vững 300 - 500 từ vựng cốt lõi, hoàn thiện chuẩn hóa bảng chữ cái ngữ âm và mẫu câu giao tiếp căn bản.
+    - list:
+      - text: Chuẩn 21 thanh mẫu, 36 vận mẫu
+      - text: 100 bộ thủ chữ Hán thông dụng
+    - link "Xem chi tiết":
+      - /url: /vocabulary/hsk-1
+  - article:
+    - generic: HSK 3
+    - generic: 12 - 16 tuần
+    - heading "Giao tiếp độc lập & Đa ngữ cảnh" [level=3]
+    - paragraph: 600 từ vựng mở rộng, tự tin trò chuyện công việc, du lịch, mua sắm và sinh hoạt đời sống hàng ngày.
+    - list:
+      - text: Cấu trúc ngữ pháp liên kết câu
+      - text: Viết đoạn văn ngắn 100 chữ
+    - link "Xem chi tiết":
+      - /url: /vocabulary/hsk-3
+  - article:
+    - generic: HSK 4 - 5
+    - generic: 24 - 32 tuần
+    - heading "Thấu suốt văn bản & Thảo luận sâu" [level=3]
+    - paragraph: 1200+ từ vựng, đọc hiểu tin tức, bài luận, phản xạ nghe nói chuyên nghiệp và diễn đạt ý niệm trừu tượng.
+    - list:
+      - text: Kỹ năng đọc lướt & bắt ý chính
+      - text: Viết bài luận nghị luận xã hội
+    - link "Xem chi tiết":
+      - /url: /vocabulary/hsk-4
+  - article:
+    - generic: HSK 6 & 7-9
+    - generic: Chuyên sâu
+    - heading "Học thuật, Thương mại & Biên phiên dịch" [level=3]
+    - paragraph: Chinh phục chữ Hán cao cấp, dịch thuật, văn bản học thuật và tìm hiểu chiều sâu văn hóa truyền thống Á Đông.
+    - list:
+      - text: Hán ngữ thương mại & đàm phán
+      - text: Nền tảng thi tuyển học bổng
+    - link "Xem chi tiết":
+      - /url: /vocabulary/hsk-6
+  - generic: Phương pháp luận
+  - heading "3 bước đơn giản giúp bạn làm chủ chữ Hán" [level=2]
+  - paragraph: Không nhồi nhét, không học vẹt. Phương pháp kết hợp ghi nhớ chủ động với lịch ôn tập đều đặn.
+  - article:
+    - generic: "01"
+    - heading "Khám phá qua gốc Hán - Việt" [level=3]
+    - paragraph: Tận dụng nét tương đồng ngữ nghĩa giữa tiếng Việt và tiếng Hán để hiểu cội nguồn từng chữ, thay vì ghi nhớ máy móc.
+    - text: Phân tích hình thanh & hội ý
+  - article:
+    - generic: "02"
+    - heading "Học bài ngắn 15 phút mỗi ngày" [level=3]
+    - paragraph: Bài học cô đọng gồm phát âm chuẩn, thứ tự nét viết tương tác và ứng dụng ngay vào ngữ cảnh giao tiếp đời sống.
+    - text: Luyện nét Mễ tự cách
+  - article:
+    - generic: "03"
+    - heading "Ôn tập đúng chu kỳ Spaced Repetition" [level=3]
+    - paragraph: Lịch ôn tập nhắc lại từ vựng theo từng phiên để củng cố trí nhớ và duy trì nhịp học đều đặn.
+    - text: Theo dõi tiến độ ghi nhớ
+  - generic: Tương tác trực quan
+  - heading "Trải nghiệm học một từ vựng cùng XUEYAN" [level=2]
+  - paragraph: Khám phá nghĩa và ngữ cảnh của một từ qua thẻ ghi nhớ.
+  - article:
+    - generic: 友
+    - strong: 朋友
+    - generic: péngyou
+    - generic: "Âm Hán Việt: BẰNG HỮU"
+    - button "Nghe phát âm chuẩn":
+      - text: Nghe phát âm chuẩn
+    - generic: Giải nghĩa từ
+    - paragraph:
+      - strong: Bạn bè, người bạn đồng hành.
+      - text: Gợi nhớ mối liên kết và sự sẻ chia giữa những người bạn.
+    - generic: Ngữ cảnh đàm thoại
+    - paragraph: 他们是我的好朋友。
+    - paragraph:
+      - text: Tāmen shì wǒ de hǎo péngyou.
+      - text: Họ là những người bạn tốt của tôi.
+    - button "Thử lật thẻ ghi nhớ":
+      - text: Thử lật thẻ ghi nhớ
+    - button "Lưu vào sổ từ cá nhân":
+      - text: Lưu vào sổ từ cá nhân
+    - generic: "Mục tiêu: ghi nhớ sau 4 chu kỳ"
+    - status
+  - generic: Chuyên môn học thuật
+  - heading "Đội ngũ giáo viên đồng hành" [level=2]
+  - paragraph: Tập trung vào sư phạm tiếng Trung, phát âm và sự đồng hành trong từng bài học.
+  - link "Tất cả giáo viên":
+    - /url: /teachers
+    - text: Tất cả giáo viên
+  - article:
+    - img "Đại diện Cô Lan Anh": LA
+    - generic: Thạc sĩ TCSOL
+    - heading "Cô Lan Anh" [level=3]
+    - generic: HSK 6
+    - paragraph: Đại học Sư phạm Bắc Kinh
+    - paragraph: Đồng hành cùng người học khám phá Hán ngữ qua ngữ âm tiếng Việt và xây dựng phản xạ giao tiếp tự nhiên.
+    - link "Xem hồ sơ giáo viên":
+      - /url: /teachers/lan-anh
+  - article:
+    - img "Thầy Minh Quân trong không gian học tập"
+    - generic: Cử nhân Sư phạm
+    - heading "Thầy Minh Quân" [level=3]
+    - generic: Chuyên sâu Bộ thủ
+    - paragraph: Khoa Trung văn, Đại học Sư phạm Hà Nội
+    - paragraph: Hướng dẫn cấu trúc chữ Hán và quy luật chuyển dịch ngữ âm Hán - Việt để hỗ trợ ghi nhớ từ vựng.
+    - button "Xem hồ sơ giáo viên · chưa khả dụng"
+  - article:
+    - img "Cô Chen Wei, giảng viên tiếng Trung"
+    - generic: Giảng viên bản ngữ
+    - heading "Cô Chen Wei" [level=3]
+    - generic: Phát âm chuẩn
+    - paragraph: Đại học Ngôn ngữ Bắc Kinh
+    - paragraph: Hỗ trợ luyện phát âm, ngữ điệu thanh điệu và thực hành hội thoại tiếng Trung theo ngữ cảnh.
+    - button "Xem hồ sơ giáo viên · chưa khả dụng"
+  - generic: Giải đáp băn khoăn
+  - heading "Câu hỏi thường gặp" [level=2]
+  - paragraph: Những thông tin giúp bạn bắt đầu hành trình học tiếng Trung cùng XUEYAN.
+  - article:
+    - heading "Người mới bắt đầu chưa biết gì có thể tự học trên XUEYAN không?" [level=3]:
+      - button "Người mới bắt đầu chưa biết gì có thể tự học trên XUEYAN không?":
+        - text: Người mới bắt đầu chưa biết gì có thể tự học trên XUEYAN không?
+  - article:
+    - heading "Học theo phương pháp Âm Hán - Việt có giúp ghi nhớ nhanh hơn không?" [level=3]:
+      - button "Học theo phương pháp Âm Hán - Việt có giúp ghi nhớ nhanh hơn không?":
+        - text: Học theo phương pháp Âm Hán - Việt có giúp ghi nhớ nhanh hơn không?
+  - article:
+    - heading "Thuật toán lặp lại ngắt quãng (SRS) trên XUEYAN hoạt động như thế nào?" [level=3]:
+      - button "Thuật toán lặp lại ngắt quãng (SRS) trên XUEYAN hoạt động như thế nào?":
+        - text: Thuật toán lặp lại ngắt quãng (SRS) trên XUEYAN hoạt động như thế nào?
+  - article:
+    - heading "Tôi có thể tham gia các lớp học trực tiếp với giảng viên không?" [level=3]:
+      - button "Tôi có thể tham gia các lớp học trực tiếp với giảng viên không?":
+        - text: Tôi có thể tham gia các lớp học trực tiếp với giảng viên không?
+  - paragraph:
+    - text: Bạn còn câu hỏi chuyên sâu khác?
+    - link "Trò chuyện với cố vấn học vụ":
+      - /url: /teachers
+  - generic: 言
+  - text: Bắt đầu hôm nay
+  - heading "Hành trình vạn dặm khởi đầu từ một nét bút thuần thục." [level=2]
+  - paragraph: Tiếp tục bài học hiện tại và cảm nhận nhịp học tiếng Trung khoa học, vừa sức.
+  - button "Tiếp tục bài học"
+- contentinfo:
+  - link "XUEYAN":
+    - /url: /
+    - strong: XUEYAN
+  - paragraph: XUEYAN - Nền tảng học tiếng Trung dành cho người Việt, kết hợp tri thức Hán - Việt với phương pháp lặp lại ngắt quãng.
+  - generic: HSK 1 - HSK 6+
+  - generic: Âm Hán Việt
+  - heading "Lộ trình HSK" [level=2]
+  - link "HSK 1 - Nhập môn":
+    - /url: /vocabulary/hsk-1
+  - link "HSK 2 - Giao tiếp cơ bản":
+    - /url: /vocabulary/hsk-2
+  - link "HSK 3 - Củng cố từ vựng":
+    - /url: /vocabulary/hsk-3
+  - link "HSK 4 - Diễn đạt chuyên sâu":
+    - /url: /vocabulary/hsk-4
+  - link "HSK 5 & 6 - Nâng cao":
+    - /url: /vocabulary
+  - heading "Cộng đồng & Giáo viên" [level=2]
+  - link "Đội ngũ giảng viên":
+    - /url: /teachers
+  - link "Lớp học trực tuyến":
+    - /url: /classes
+  - link "Chia sẻ kinh nghiệm":
+    - /url: /resources
+  - link "Đồng hành học tập":
+    - /url: /teachers/lan-anh/consultation
+  - heading "Hỗ trợ & Pháp lý" [level=2]
+  - link "Trung tâm trợ giúp":
+    - /url: /help
+  - generic: Điều khoản dịch vụ (chưa có nội dung)
+  - generic: Chính sách bảo mật (chưa có nội dung)
+  - link "Liên hệ cố vấn":
+    - /url: /contact
+  - generic: © 2026 XUEYAN Hán Học. Bảo lưu mọi quyền.
+  - generic: Nền tảng Hán ngữ dành cho người Việt
+- button "Open Next.js Dev Tools":
+- alert

@@ -1,0 +1,25 @@
+"use client";
+import Link from "next/link";
+import {useEffect,useState} from "react";
+import {ArrowLeft,ArrowRight,BookOpen,ChevronLeft,ChevronRight,Search} from "lucide-react";
+import {api} from "@/lib/api-client";
+import {PublicLayout} from "@/components/ui/Layouts";
+import {AudioButton,Button,Card,Input,PageTitle,s} from "@/components/ui/Primitives";
+import styles from "./hsk.module.css";
+export type CatalogWord={id:number;simplified:string;pinyin:string;meaningVi:string|null;meaningEn:string|null;hanViet?:string};
+export type WordPage={items:CatalogWord[];total:number;page:number;pageSize:number};
+type Level={code:string;title:string;wordCount:number};
+
+export function HskCatalog(){
+ const [levels,setLevels]=useState<Level[]>([]);const [error,setError]=useState("");const [loading,setLoading]=useState(true);const [retry,setRetry]=useState(0);
+ useEffect(()=>{let active=true;api<Level[]>("catalog/levels").then(data=>{if(active){setLevels(data);setError("");}}).catch(e=>{if(active)setError(e.message);}).finally(()=>{if(active)setLoading(false);});return()=>{active=false;};},[retry]);
+ return <PublicLayout><PageTitle title="Từ vựng HSK" description="Chọn cấp độ để bắt đầu."/>{loading&&<p role="status">Đang tải…</p>}{error&&<Card><p role="alert">{error}</p><Button onClick={()=>{setLoading(true);setRetry(retry+1);}}>Thử lại</Button></Card>}<div className={s.grid}>{levels.map(level=><Card key={level.code}><BookOpen size={28} aria-hidden="true"/><h2>{level.title}</h2><p>{level.wordCount.toLocaleString("vi-VN")} từ</p><Link className={s.button} aria-label={`Khám phá ${level.title}`} href={`/vocabulary/hsk-${level.code}`}>Khám phá <ArrowRight size={18} aria-hidden="true"/></Link></Card>)}</div><details className={s.note}><summary>Nguồn từ vựng</summary><p>HSK 3.0 Words List / CC-CEDICT · CC BY-SA 4.0. Nghĩa gốc tiếng Anh; nghĩa tiếng Việt hiển thị khi đã có bản biên soạn. Từ được nhóm theo danh sách nguồn, không phải số từ tích lũy.</p><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noreferrer">Giấy phép CC BY-SA 4.0</a></details></PublicLayout>;
+}
+export function HskDetail({level="1"}:{level?:string}){
+ const [result,setResult]=useState<WordPage|null>(null);const [page,setPage]=useState(1);const [query,setQuery]=useState("");const [filter,setFilter]=useState("");const [loading,setLoading]=useState(true);const [error,setError]=useState("");const [retry,setRetry]=useState(0);
+ useEffect(()=>{let active=true;api<WordPage>(`catalog/levels/${level}/words?page=${page}&query=${encodeURIComponent(filter)}`).then(data=>{if(active){setResult(data);setError("");}}).catch(e=>{if(active)setError(e.message);}).finally(()=>{if(active)setLoading(false);});return()=>{active=false;};},[level,page,filter,retry]);
+ const pages=Math.max(1,Math.ceil((result?.total??0)/30));
+ return <PublicLayout><Link href="/vocabulary"><ArrowLeft size={16} aria-hidden="true"/> Cấp độ HSK</Link><PageTitle title={`HSK ${level}`} description={result?`${result.total.toLocaleString("vi-VN")} từ${filter?" phù hợp":""}`:undefined}><Link className={s.button} href={`/learn?level=${level}`}><BookOpen size={18} aria-hidden="true"/> Học từ</Link></PageTitle><form className={s.row} onSubmit={e=>{e.preventDefault();setLoading(true);setPage(1);setFilter(query.trim());setRetry(retry+1);}}><Input label="Tìm từ" type="search" maxLength={100} value={query} onChange={e=>setQuery(e.target.value)} placeholder="Chữ Hán, Pinyin, nghĩa…"/><Button type="submit" aria-label="Tìm kiếm"><Search size={18} aria-hidden="true"/></Button></form>{error&&<Card><p role="alert">{error}</p><Button onClick={()=>{setLoading(true);setRetry(retry+1);}}>Thử lại</Button></Card>}{loading?<p role="status">Đang tải…</p>:!error&&<><Card>{result?.items.length?<ul className={s.list}>{result.items.map(word=><li key={word.id} className={s.between}><div><strong className={`${s.han} ${styles.han}`} lang="zh-Hans">{word.simplified}</strong><p className={s.pinyin}>{word.pinyin}</p><WordMeaning word={word}/></div><AudioButton text={word.simplified}/></li>)}</ul>:<p>Không tìm thấy từ phù hợp.</p>}</Card><nav className={s.between} aria-label="Phân trang từ vựng"><Button secondary disabled={page<=1} aria-label="Trang trước" onClick={()=>{setLoading(true);setPage(page-1);}}><ChevronLeft aria-hidden="true"/></Button><span role="status">{page} / {pages}</span><Button secondary disabled={page>=pages} aria-label="Trang sau" onClick={()=>{setLoading(true);setPage(page+1);}}><ChevronRight aria-hidden="true"/></Button></nav><p className={s.note}>EN: nghĩa tiếng Anh từ dữ liệu gốc, chưa hiệu đính.</p></>}</PublicLayout>;
+}
+
+export function WordMeaning({word}:{word:CatalogWord}){const text=word.meaningVi??word.meaningEn??"Chưa có nghĩa";const language=word.meaningVi?"vi":"en";const label=word.meaningVi?"":" · EN";return text.length>100?<details><summary lang={language}>{text.split(",").slice(0,2).join(",").slice(0,100)}…{label}</summary><p lang={language}>{text}</p></details>:<p lang={language}>{text}{label}</p>;}

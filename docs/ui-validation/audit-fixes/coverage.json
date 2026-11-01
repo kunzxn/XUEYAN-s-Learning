@@ -1,0 +1,305 @@
+[
+  {
+    "route": "/progress",
+    "controls": [],
+    "h1": "Tiến độ học tập cá nhân",
+    "height": 812,
+    "metrics": [
+      {
+        "lines": 1,
+        "text": "248",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "89,2%",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "46,5",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "7 ngày",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "95%",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "68%",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "12%",
+        "whiteSpace": "nowrap"
+      }
+    ],
+    "scrollWidth": 360,
+    "title": "Tiến độ học tập | XUEYAN",
+    "width": 375
+  },
+  {
+    "route": "/resources",
+    "controls": [],
+    "h1": "Thư viện tài nguyên học thuật",
+    "height": 812,
+    "metrics": [],
+    "scrollWidth": 360,
+    "title": "Thư viện tài nguyên | XUEYAN",
+    "width": 375
+  },
+  {
+    "route": "/resources/remember-vocabulary",
+    "articleTop": 1097.5999755859375,
+    "controls": [],
+    "h1": "Cách học từ vựng tiếng Trung để nhớ lâu",
+    "height": 812,
+    "metrics": [],
+    "scrollWidth": 360,
+    "title": "Cách học từ vựng để nhớ lâu | XUEYAN",
+    "tocTop": 506.8000183105469,
+    "width": 375
+  },
+  {
+    "route": "/dictionary",
+    "controls": [],
+    "h1": "Từ điển Hán–Việt thông minh",
+    "height": 812,
+    "metrics": [],
+    "scrollWidth": 360,
+    "title": "Từ điển Hán–Việt | XUEYAN",
+    "width": 375
+  },
+  {
+    "route": "/about",
+    "controls": [],
+    "h1": "Học tiếng Trung có phương pháp, bền vững và thấu suốt",
+    "height": 812,
+    "metrics": [],
+    "scrollWidth": 360,
+    "title": "Giới thiệu | XUEYAN",
+    "width": 375
+  },
+  {
+    "route": "/profile",
+    "controls": [],
+    "h1": "Hồ sơ học viên",
+    "height": 812,
+    "metrics": [
+      {
+        "lines": 1,
+        "text": "248",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "46,5",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "89,2%",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "7 ngày",
+        "whiteSpace": "nowrap"
+      }
+    ],
+    "scrollWidth": 360,
+    "title": "Hồ sơ học viên | XUEYAN",
+    "width": 375
+  },
+  {
+    "route": "/collection/khong-ton-tai",
+    "controls": [],
+    "height": 812,
+    "metrics": [],
+    "scrollWidth": 375,
+    "title": "XUEYAN | Học tiếng Trung",
+    "width": 375
+  },
+  {
+    "route": "/lessons/1/learn",
+    "controls": [
+      {
+        "bottom": 812.0000228881836,
+        "height": 71.5999984741211,
+        "left": 16,
+        "right": 344,
+        "top": 740.4000244140625,
+        "width": 328,
+        "x": 16,
+        "y": 740.4000244140625
+      }
+    ],
+    "h1": "Học từ vựng mới",
+    "height": 812,
+    "metrics": [],
+    "scrollWidth": 360,
+    "title": "Học từ vựng Bài 01 | XUEYAN",
+    "width": 375
+  },
+  {
+    "route": "/progress",
+    "h1": "Tiến độ học tập cá nhân",
+    "height": 1000,
+    "metrics": [
+      {
+        "lines": 1,
+        "text": "248",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "89,2%",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "46,5",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "7 ngày",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "95%",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "68%",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "12%",
+        "whiteSpace": "nowrap"
+      }
+    ],
+    "scrollWidth": 1425,
+    "title": "Tiến độ học tập | XUEYAN",
+    "width": 1440
+  },
+  {
+    "route": "/resources",
+    "h1": "Thư viện tài nguyên học thuật",
+    "height": 1000,
+    "metrics": [],
+    "scrollWidth": 1425,
+    "title": "Thư viện tài nguyên | XUEYAN",
+    "width": 1440
+  },
+  {
+    "route": "/resources/remember-vocabulary",
+    "articleTop": 419.3999938964844,
+    "h1": "Cách học từ vựng tiếng Trung để nhớ lâu",
+    "height": 1000,
+    "metrics": [],
+    "scrollWidth": 1425,
+    "title": "Cách học từ vựng để nhớ lâu | XUEYAN",
+    "tocTop": 444.2000122070313,
+    "width": 1440
+  },
+  {
+    "route": "/dictionary",
+    "h1": "Từ điển Hán–Việt thông minh",
+    "height": 1000,
+    "metrics": [],
+    "scrollWidth": 1425,
+    "title": "Từ điển Hán–Việt | XUEYAN",
+    "width": 1440
+  },
+  {
+    "route": "/about",
+    "h1": "Học tiếng Trung có phương pháp, bền vững và thấu suốt",
+    "height": 1000,
+    "metrics": [],
+    "scrollWidth": 1425,
+    "title": "Giới thiệu | XUEYAN",
+    "width": 1440
+  },
+  {
+    "route": "/profile",
+    "h1": "Hồ sơ học viên",
+    "height": 1000,
+    "metrics": [
+      {
+        "lines": 1,
+        "text": "248",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "46,5",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "89,2%",
+        "whiteSpace": "nowrap"
+      },
+      {
+        "lines": 1,
+        "text": "7 ngày",
+        "whiteSpace": "nowrap"
+      }
+    ],
+    "scrollWidth": 1425,
+    "title": "Hồ sơ học viên | XUEYAN",
+    "width": 1440
+  },
+  {
+    "route": "/help",
+    "h1": "Chúng tôi có thể giúp gì cho bạn?",
+    "height": 1000,
+    "metrics": [],
+    "scrollWidth": 1425,
+    "title": "Trung tâm trợ giúp | XUEYAN",
+    "width": 1440
+  },
+  {
+    "route": "/dashboard",
+    "h1": "Chào Hùng! ☀️",
+    "height": 1000,
+    "metrics": [
+      {
+        "lines": 1,
+        "text": " 7 ngày",
+        "whiteSpace": "nowrap"
+      }
+    ],
+    "scrollWidth": 1425,
+    "title": "Hôm nay | XUEYAN",
+    "width": 1440
+  },
+  {
+    "route": "/lessons/1/learn",
+    "h1": "Học từ vựng mới",
+    "height": 1000,
+    "metrics": [],
+    "scrollWidth": 1425,
+    "title": "Học từ vựng Bài 01 | XUEYAN",
+    "width": 1440
+  },
+  {
+    "route": "/review/study?limit=3",
+    "h1": "Ôn tập hôm nay",
+    "height": 1024,
+    "ratings": 1,
+    "scrollWidth": 753,
+    "width": 768
+  }
+]

@@ -1,0 +1,24 @@
+- banner:
+  - link "Thoát phiên học":
+    - /url: /lessons/1
+    - text: Thoát phiên học
+  - heading "Luyện tập từ vựng" [level=1]
+  - progressbar "Tiến độ phiên học"
+  - link "Cài đặt phiên học":
+    - /url: /settings
+- main:
+  - generic: Câu 1/6
+  - paragraph: 学习
+  - paragraph: xuéxí
+  - button "Nghe phát âm 学习":
+    - text: Nghe phát âm
+  - status
+  - heading "Chọn nghĩa tiếng Việt chính xác" [level=2]
+  - button "Bạn bè"
+  - button "Công việc"
+  - button "Cảm ơn"
+  - button "Học tập"
+  - paragraph: "Điểm trong phiên: 0"
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- button "Open Next.js Dev Tools":
+- alert

@@ -1,0 +1,23 @@
+- main:
+  - link "XUEYAN · Thiết lập lộ trình":
+    - /url: /
+  - complementary:
+    - heading "Chọn nhịp học phù hợp với bạn" [level=2]
+    - generic: HSK 1 & Âm Hán–Việt
+  - generic: Bước 3/3
+  - text: XUEYAN · Học viện Hán ngữ
+  - heading "Khung giờ học phù hợp" [level=1]
+  - text: Thời điểm học
+  - combobox "Thời điểm học":
+    - option "Buổi tối · 20:00–21:30" [selected]
+    - option "Buổi sáng · 07:00–08:30"
+    - option "Giờ nghỉ trưa · 12:30–13:30"
+  - paragraph: "Mục tiêu: 30 từ/ngày · Giao tiếp đời thường. Chỉ lưu bản nháp mục tiêu trên thiết bị."
+  - button "Quay lại"
+  - button "Lưu nháp & Mở Dashboard" [active]
+  - status
+  - link "Bỏ qua thiết lập":
+    - /url: /dashboard
+  - paragraph: Dữ liệu minh họa • Chưa kết nối backend. Các thao tác thử nghiệm chỉ áp dụng trong giao diện hoặc lưu trên thiết bị này.
+- button "Open Next.js Dev Tools":
+- alert

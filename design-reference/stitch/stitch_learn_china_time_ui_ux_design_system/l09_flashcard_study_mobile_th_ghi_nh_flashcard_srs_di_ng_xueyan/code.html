@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Noto+Sans+SC:wght@400;500;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f5faff;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-primary": "#93cdf6", "secondary-fixed": "#9ef4ca", "secondary-container": "#9bf1c7", "tertiary-fixed": "#ffdea9", "on-tertiary-fixed-variant": "#5e4200", "on-primary-container": "#9ad5fd", "background": "#f5faff", "on-surface-variant": "#40484e", "primary": "#004563", "on-background": "#0a1e28", "on-primary": "#ffffff", "surface-bright": "#f5faff", "error": "#ba1a1a", "on-tertiary-fixed": "#271900", "primary-fixed-dim": "#93cdf6", "on-error": "#ffffff", "tertiary": "#563b00", "tertiary-container": "#745100", "on-primary-fixed": "#001e2e", "on-tertiary-container": "#fcc55f", "surface-container-lowest": "#ffffff", "surface-container-high": "#d7ebf9", "tertiary-fixed-dim": "#f4be59", "surface-container-highest": "#d2e5f4", "secondary": "#046c4b", "inverse-on-surface": "#e3f3ff", "on-secondary": "#ffffff", "surface-container-low": "#e9f5ff", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#005138", "surface-tint": "#236487", "on-primary-fixed-variant": "#004c6c", "on-surface": "#0a1e28", "inverse-surface": "#21333e", "primary-container": "#185d80", "primary-fixed": "#c7e7ff", "on-secondary-container": "#0f704f", "outline": "#71787e", "surface-dim": "#c9ddeb", "on-error-container": "#93000a", "surface-variant": "#d2e5f4", "outline-variant": "#c0c7ce", "surface-container": "#ddf1ff", "secondary-fixed-dim": "#82d7af", "on-tertiary": "#ffffff", "surface": "#f5faff", "on-secondary-fixed": "#002114" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-2xl": "3rem", "gutter-mobile": "1rem", "margin-mobile": "1rem", "space-md": "1rem", "margin": "2rem", "space-xl": "2rem", "space-lg": "1.5rem" }, fontFamily: { "body-md": ["Be Vietnam Pro"], "pinyin-display": ["Be Vietnam Pro"], "display-lg": ["Be Vietnam Pro"], "headline-lg": ["Be Vietnam Pro"], "hanzi-hero": ["Noto Sans SC"], "headline-md": ["Be Vietnam Pro"], "body-lg": ["Be Vietnam Pro"], "hanzi-inline": ["Noto Sans SC"], "headline-sm": ["Be Vietnam Pro"], "hanzi-card": ["Noto Sans SC"], "display-lg-mobile": ["Be Vietnam Pro"], "label-md": ["Be Vietnam Pro"], "headline-lg-mobile": ["Be Vietnam Pro"], "label-sm": ["Be Vietnam Pro"], "body-sm": ["Be Vietnam Pro"] }, fontSize: { "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }], "pinyin-display": ["18px", { lineHeight: "24px", letterSpacing: "0.02em", fontWeight: "500" }], "display-lg": ["44px", { lineHeight: "52px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "600" }], "hanzi-hero": ["72px", { lineHeight: "84px", fontWeight: "500" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }], "hanzi-inline": ["20px", { lineHeight: "28px", fontWeight: "500" }], "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }], "hanzi-card": ["40px", { lineHeight: "48px", fontWeight: "500" }], "display-lg-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "700" }], "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", fontWeight: "600" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><button aria-label="Thoát phiên học" class="w-11 h-11 flex items-center justify-center rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">close</span></button><img alt="logo.jpg" class="h-8 w-auto object-contain hidden sm:block" src="https://lh3.googleusercontent.com/aida/AEtjO1Vsh2LAS9uBPlaa3Xs2R0g6GcBsIpGZKk7ZVSkNHpGee_C6USFkNEaArq6SuvHQhj96dYoUCWPmC3RbD9IZnogeDkq9mUHlqLAdQSofXiohdm3NWzM_pPkinLFwgsYC3kAbKBs4fsppC5r3wMJ-IVdSC4rYeeRTDsKKKqiDjCdU0e7Whn3olkAgjfHXqBWaPON2ddVMlYcj6pLuwrWyOcd8GWNgIBMxZJdiwv7aIzLJN7BLlPOG2Kzm-TWviFs-Y5CFf2Ft053Jjg"/></div><div class="flex-1 flex flex-col items-center justify-center max-w-[200px] px-space-xs"><div class="flex items-center gap-space-xs"><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">Study Session</h1><span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded-full font-medium">8/24</span></div><div class="w-full bg-surface-container-high h-1.5 rounded-full mt-1.5 overflow-hidden"><div class="bg-secondary h-full rounded-full transition-all duration-300" style="width: 33.33%;"></div></div></div><div class="flex items-center gap-space-xs"><button aria-label="Bật tắt âm thanh" class="w-11 h-11 flex items-center justify-center rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><button aria-label="Cài đặt phiên học" class="w-11 h-11 flex items-center justify-center rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[20px]">tune</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-margin-mobile py-space-sm max-w-md mx-auto relative select-none">
+<!-- Interactive State Switcher Simulator Bar -->
+<div class="w-full bg-surface-container-high p-1 rounded-xl flex items-center justify-between mb-space-md shadow-sm">
+<button class="flex-1 py-1.5 px-2 rounded-lg font-label-sm text-label-sm text-center transition-all bg-surface-container-lowest text-primary shadow-sm font-semibold" id="btn-mode-question" onclick="setStudyMode('question')" type="button">
+      Chưa lật (Câu hỏi)
+    </button>
+<button class="flex-1 py-1.5 px-2 rounded-lg font-label-sm text-label-sm text-center transition-all text-on-surface-variant hover:text-on-surface" id="btn-mode-answer" onclick="setStudyMode('answer')" type="button">
+      Đã lật (Đáp án)
+    </button>
+<button class="py-1.5 px-2.5 rounded-lg font-label-sm text-label-sm text-center transition-all text-error hover:bg-error-container/40 flex items-center gap-1" id="btn-mode-error" onclick="toggleErrorToast()" type="button">
+<span class="material-symbols-outlined text-[16px]">wifi_off</span>
+<span>Lỗi lưu</span>
+</button>
+</div>
+<!-- Study Flashcard Stage -->
+<div class="w-full bg-surface-container-lowest rounded-2xl shadow-md p-space-lg flex flex-col justify-between cursor-pointer transition-all duration-300 relative overflow-hidden min-h-[390px]" id="flashcard" onclick="handleCardTap()">
+<!-- Decorative Ambient Watermark Stamp -->
+<div class="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-surface-container-high/40 pointer-events-none flex items-center justify-center">
+<span class="font-hanzi-card text-hanzi-card text-surface-variant opacity-30 select-none">学</span>
+</div>
+<!-- Card Header / Meta Bar -->
+<div class="flex items-center justify-between w-full relative z-10">
+<div class="flex items-center gap-space-xs">
+<span class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-semibold shadow-sm">
+          HSK 1
+        </span>
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full">
+          Từ số 142
+        </span>
+</div>
+<div class="flex items-center gap-1">
+<button aria-label="Phát âm từ vựng" class="w-9 h-9 rounded-full bg-surface-container hover:bg-primary-fixed text-primary flex items-center justify-center transition-colors" onclick="event.stopPropagation(); playPronunciation();" type="button">
+<span class="material-symbols-outlined text-[20px]" id="audio-icon">volume_up</span>
+</button>
+<button aria-label="Đánh dấu từ này" class="w-9 h-9 rounded-full bg-surface-container hover:bg-tertiary-fixed text-on-surface-variant flex items-center justify-center transition-colors" onclick="event.stopPropagation(); toggleBookmark();" type="button">
+<span class="material-symbols-outlined text-[20px]" id="star-icon">star_outline</span>
+</button>
+</div>
+</div>
+<!-- Center Stage: Hanzi Character -->
+<div class="flex flex-col items-center justify-center my-auto py-space-sm relative z-10">
+<div class="relative py-2 px-6">
+<span class="font-hanzi-hero text-hanzi-hero text-primary tracking-normal font-medium leading-none block drop-shadow-sm select-none">
+          学习
+        </span>
+</div>
+<!-- QUESTION STATE CONTENT -->
+<div class="flex flex-col items-center mt-space-md text-center transition-opacity duration-200" id="state-question-body">
+<div class="w-10 h-0.5 bg-surface-container-high rounded-full mb-3"></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1.5 bg-surface-container-low px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-[16px] text-primary">touch_app</span>
+          Chạm vào thẻ hoặc bấm nút dưới để xem nghĩa
+        </p>
+</div>
+<!-- ANSWER STATE CONTENT (Revealed) -->
+<div class="hidden flex-col items-center w-full mt-space-sm text-center transition-opacity duration-200" id="state-answer-body">
+<!-- Pinyin Display -->
+<div class="flex items-center gap-2 mb-1">
+<span class="font-pinyin-display text-pinyin-display text-primary tracking-wide font-semibold">
+            xuéxí
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">
+            Thanh 2 + Thanh 2
+          </span>
+</div>
+<!-- Sino-Vietnamese & Definitions -->
+<div class="flex items-center gap-2 mb-space-xs">
+<span class="font-label-md text-label-md bg-secondary-container text-on-secondary-container px-2.5 py-0.5 rounded-lg font-semibold tracking-wide">
+            HÁN - VIỆT: HỌC TẬP
+          </span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-space-sm">
+          học; học tập
+        </p>
+<!-- Etymology / Stroke Tip Pill -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-sm text-left mb-space-xs">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+              Câu ví dụ ngữ cảnh
+            </span>
+<button aria-label="Nghe câu ví dụ" class="text-primary hover:text-primary-container p-0.5 flex items-center" onclick="event.stopPropagation(); playExample();" type="button">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+</button>
+</div>
+<p class="font-hanzi-inline text-hanzi-inline text-on-surface font-medium leading-relaxed">
+            我每天学习中文。
+          </p>
+<p class="font-body-sm text-body-sm text-primary font-medium">
+            Wǒ měitiān xuéxí Zhōngwén.
+          </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Tôi học tiếng Trung mỗi ngày.
+          </p>
+</div>
+</div>
+</div>
+<!-- Card Base Micro Indicator -->
+<div class="w-full flex items-center justify-between text-on-surface-variant text-label-sm font-label-sm pt-2">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span>
+        Ghi nhớ SRS: Cấp 3
+      </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+        Hôm nay: 8 đã xong
+      </span>
+</div>
+</div>
+<!-- BOTTOM ACTION AREA -->
+<div class="w-full mt-space-md">
+<!-- Question Bottom Action: Show Answer Button -->
+<div class="w-full" id="state-question-action">
+<button class="w-full h-14 bg-primary text-on-primary rounded-xl font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-md hover:bg-primary-container active:scale-[0.99] transition-all" onclick="setStudyMode('answer')" type="button">
+<span class="material-symbols-outlined text-[24px]">visibility</span>
+<span>Hiện đáp án</span>
+</button>
+</div>
+<!-- Answer Bottom Action: 4 Memory Rating Buttons (2x2 Grid) -->
+<div class="hidden w-full flex-col gap-2" id="state-answer-action">
+<div class="grid grid-cols-2 gap-2 w-full">
+<!-- Col 1 Row 1: Quên (Soft light red/rose, red text, icon ✕) -->
+<button class="h-14 bg-error-container text-on-error-container rounded-xl flex items-center justify-center gap-2 shadow-sm hover:brightness-95 active:scale-[0.98] transition-all" onclick="submitRating('Quên')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+<span class="font-headline-sm text-headline-sm font-semibold">Quên</span>
+</button>
+<!-- Col 2 Row 1: Khó (Soft amber/yellow, dark amber text, icon ⚡) -->
+<button class="h-14 bg-tertiary-fixed text-on-tertiary-fixed font-headline-sm text-headline-sm rounded-xl flex items-center justify-center gap-2 shadow-sm hover:brightness-95 active:scale-[0.98] transition-all" onclick="submitRating('Khó')" type="button">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span class="font-headline-sm text-headline-sm font-semibold">Khó</span>
+</button>
+<!-- Col 1 Row 2: Nhớ (Soft cyan/teal, teal text, icon ✓) -->
+<button class="h-14 bg-surface-container-high text-primary rounded-xl flex items-center justify-center gap-2 shadow-sm hover:brightness-95 active:scale-[0.98] transition-all" onclick="submitRating('Nhớ')" type="button">
+<span class="material-symbols-outlined text-[20px]">check</span>
+<span class="font-headline-sm text-headline-sm font-semibold">Nhớ</span>
+</button>
+<!-- Col 2 Row 2: Dễ (Soft emerald/green, green text, icon 🌟) -->
+<button class="h-14 bg-secondary-container text-on-secondary-container rounded-xl flex items-center justify-center gap-2 shadow-sm hover:brightness-95 active:scale-[0.98] transition-all" onclick="submitRating('Dễ')" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline-sm text-headline-sm font-semibold">Dễ</span>
+</button>
+</div>
+<p class="font-label-sm text-label-sm text-center text-on-surface-variant mt-0.5">
+        Chọn mức độ thuộc từ để hệ thống tối ưu chu kỳ lặp lại
+      </p>
+</div>
+</div>
+<!-- SAVING-ERROR TOAST BANNER -->
+<div class="hidden mt-space-md w-full bg-error-container text-on-error-container p-space-sm rounded-xl shadow-md transition-all flex flex-col gap-2" id="saving-error-toast">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">wifi_off</span>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md font-semibold text-on-error-container">
+          Mất kết nối tạm thời
+        </p>
+<p class="font-body-sm text-body-sm text-on-error-container/90 leading-tight">
+          Đang lưu ngoại tuyến và tự động thử lại...
+        </p>
+</div>
+<button class="text-on-error-container/70 hover:text-on-error-container p-1 shrink-0" onclick="dismissToast()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex items-center justify-end gap-2 pt-1">
+<button class="px-3 py-1.5 bg-error text-on-error rounded-lg font-label-sm text-label-sm font-semibold shadow-sm hover:opacity-95 active:scale-95 transition-all flex items-center gap-1" onclick="retrySave()" type="button">
+<span class="material-symbols-outlined text-[14px]">refresh</span>
+        Thử lại ngay
+      </button>
+</div>
+</div>
+<!-- Subtle Success Rating Feedback HUD (Animated on user choice) -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface px-4 py-2 rounded-full font-label-md text-label-md shadow-lg flex items-center gap-2 pointer-events-none opacity-0 transition-opacity duration-200 z-50" id="feedback-pill">
+<span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span>
+<span id="feedback-text">Đã ghi nhận</span>
+</div>
+</div>
+<script>
+  let currentMode = 'question';
+  let isBookmarked = false;
+
+  function setStudyMode(mode) {
+    currentMode = mode;
+    const qBody = document.getElementById('state-question-body');
+    const aBody = document.getElementById('state-answer-body');
+    const qAction = document.getElementById('state-question-action');
+    const aAction = document.getElementById('state-answer-action');
+    const btnQ = document.getElementById('btn-mode-question');
+    const btnA = document.getElementById('btn-mode-answer');
+
+    if (mode === 'question') {
+      qBody.classList.remove('hidden');
+      aBody.classList.add('hidden');
+      qAction.classList.remove('hidden');
+      aAction.classList.add('hidden');
+
+      btnQ.className = "flex-1 py-1.5 px-2 rounded-lg font-label-sm text-label-sm text-center transition-all bg-surface-container-lowest text-primary shadow-sm font-semibold";
+      btnA.className = "flex-1 py-1.5 px-2 rounded-lg font-label-sm text-label-sm text-center transition-all text-on-surface-variant hover:text-on-surface";
+    } else {
+      qBody.classList.add('hidden');
+      aBody.classList.remove('hidden');
+      qAction.classList.add('hidden');
+      aAction.classList.remove('hidden');
+
+      btnA.className = "flex-1 py-1.5 px-2 rounded-lg font-label-sm text-label-sm text-center transition-all bg-surface-container-lowest text-primary shadow-sm font-semibold";
+      btnQ.className = "flex-1 py-1.5 px-2 rounded-lg font-label-sm text-label-sm text-center transition-all text-on-surface-variant hover:text-on-surface";
+    }
+  }
+
+  function handleCardTap() {
+    if (currentMode === 'question') {
+      setStudyMode('answer');
+    }
+  }
+
+  function toggleErrorToast() {
+    const toast = document.getElementById('saving-error-toast');
+    if (toast.classList.contains('hidden')) {
+      toast.classList.remove('hidden');
+    } else {
+      toast.classList.add('hidden');
+    }
+  }
+
+  function dismissToast() {
+    document.getElementById('saving-error-toast').classList.add('hidden');
+  }
+
+  function retrySave() {
+    const toast = document.getElementById('saving-error-toast');
+    toast.innerHTML = `
+      <div class="flex items-center gap-2 py-1">
+        <span class="material-symbols-outlined text-secondary text-[20px] animate-spin">sync</span>
+        <span class="font-label-md text-label-md text-on-error-container font-medium">Đang kết nối lại máy chủ...</span>
+      </div>
+    `;
+    setTimeout(() => {
+      toast.classList.add('hidden');
+      showFeedback('Đã đồng bộ dữ liệu ôn tập!');
+      // Reset toast template
+      toast.innerHTML = `
+        <div class="flex items-start gap-2.5">
+          <span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">wifi_off</span>
+          <div class="flex-1 min-w-0">
+            <p class="font-label-md text-label-md font-semibold text-on-error-container">Mất kết nối tạm thời</p>
+            <p class="font-body-sm text-body-sm text-on-error-container/90 leading-tight">Đang lưu ngoại tuyến và tự động thử lại...</p>
+          </div>
+          <button type="button" onclick="dismissToast()" class="text-on-error-container/70 hover:text-on-error-container p-1 shrink-0">
+            <span class="material-symbols-outlined text-[18px]">close</span>
+          </button>
+        </div>
+        <div class="flex items-center justify-end gap-2 pt-1">
+          <button type="button" onclick="retrySave()" class="px-3 py-1.5 bg-error text-on-error rounded-lg font-label-sm text-label-sm font-semibold shadow-sm hover:opacity-95 active:scale-95 transition-all flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">refresh</span>
+            Thử lại ngay
+          </button>
+        </div>
+      `;
+    }, 900);
+  }
+
+  function submitRating(level) {
+    showFeedback(`Đã đánh giá: ${level}`);
+    setTimeout(() => {
+      setStudyMode('question');
+    }, 400);
+  }
+
+  function showFeedback(text) {
+    const pill = document.getElementById('feedback-pill');
+    const label = document.getElementById('feedback-text');
+    label.innerText = text;
+    pill.classList.remove('opacity-0');
+    pill.classList.add('opacity-100');
+    setTimeout(() => {
+      pill.classList.remove('opacity-100');
+      pill.classList.add('opacity-0');
+    }, 1400);
+  }
+
+  function playPronunciation() {
+    const icon = document.getElementById('audio-icon');
+    icon.innerText = 'graphic_eq';
+    showFeedback('Phát âm: xuéxí');
+    setTimeout(() => {
+      icon.innerText = 'volume_up';
+    }, 700);
+  }
+
+  function playExample() {
+    showFeedback('Đang phát câu ví dụ...');
+  }
+
+  function toggleBookmark() {
+    isBookmarked = !isBookmarked;
+    const star = document.getElementById('star-icon');
+    if (isBookmarked) {
+      star.innerText = 'star';
+      star.style.fontVariationSettings = "'FILL' 1";
+      star.classList.add('text-tertiary-fixed-dim');
+      showFeedback('Đã gắn sao lưu từ vựng');
+    } else {
+      star.innerText = 'star_outline';
+      star.style.fontVariationSettings = "'FILL' 0";
+      star.classList.remove('text-tertiary-fixed-dim');
+      showFeedback('Đã bỏ gắn sao');
+    }
+  }
+</script></main></body></html>

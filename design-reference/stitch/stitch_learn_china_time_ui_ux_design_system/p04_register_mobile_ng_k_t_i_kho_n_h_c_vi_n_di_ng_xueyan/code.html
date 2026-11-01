@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P04_Register_Mobile — Đăng Ký Tài Khoản Học Viên Di Động XUEYAN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Be Vietnam Pro"', 'sans-serif'],
+            chinese: ['"Noto Sans SC"', 'sans-serif'],
+          },
+          colors: {
+            primary: {
+              DEFAULT: '#185D80',
+              hover: '#134B68',
+              surface: '#EAF3F8',
+              subtle: '#F0F7FB',
+            },
+            ivory: '#FAFAF7',
+            charcoal: '#20323D',
+            slate: '#5B6D7A',
+            borderLight: '#E2E8EC',
+            jade: '#1F7A58',
+            gold: '#C49332',
+          },
+          boxShadow: {
+            subtle: '0 4px 20px rgba(24, 93, 128, 0.05)',
+            card: '0 8px 24px rgba(32, 50, 61, 0.06)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-ivory text-charcoal font-sans min-h-screen flex flex-col justify-between antialiased selection:bg-primary/20 selection:text-primary max-w-[420px] mx-auto border-x border-borderLight shadow-sm">
+
+  <!-- Mobile Header: Back button + Logo + Login link -->
+  <header class="w-full px-4 py-3.5 flex items-center justify-between border-b border-borderLight/70 bg-white/90 backdrop-blur-md sticky top-0 z-30">
+    <a href="#" class="w-9 h-9 rounded-full flex items-center justify-center text-slate hover:text-charcoal hover:bg-ivory transition-colors" title="Quay lại">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+    </a>
+    
+    <div class="flex items-center">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4jWOF2-NX011w0ZvNYKpjWNqn-eq17KJ4ZR1DatpVBiE4bjofiKw89QkJTWm0_-z4257wUB5USO_I-sRzVKhravssyLGYTb16tipFRzNG-kO5a8IAAxEUv216NZA-Dui_NBg_jxiCeww4RfrGxPDCqrOAEWAnXxZzwwTJtXbx0a9fFTOJk2jGDfRhEj1XPDR4BtZKHYUYOND07uTKHI1jzzkpNoGisi5arGjPgbPtZinop9Aj9cytoJaJq1XzSTIkaw" alt="XUEYAN Logo" class="h-8 w-auto object-contain">
+    </div>
+
+    <a href="#" class="text-xs font-semibold text-primary px-2.5 py-1.5 rounded-lg bg-primary-surface hover:bg-primary/10 transition-colors">
+      Đăng nhập
+    </a>
+  </header>
+
+  <!-- Mobile Main Body: Compact Single-Column Flow -->
+  <main class="flex-1 px-4 py-5 flex flex-col">
+    
+    <!-- State Switcher Pill (Preview helper for Form and Verification States) -->
+    <div class="flex items-center justify-center mb-4">
+      <div class="inline-flex p-0.5 bg-white border border-borderLight rounded-lg text-xs shadow-sm">
+        <button id="mBtnForm" onclick="showMobileForm()" class="px-3 py-1 rounded-md font-medium text-primary bg-primary-surface transition-all">Form đăng ký</button>
+        <button id="mBtnSuccess" onclick="showMobileSuccess()" class="px-3 py-1 rounded-md font-medium text-slate transition-all hover:text-charcoal">Trạng thái xác thực</button>
+      </div>
+    </div>
+
+    <!-- 1. REGISTRATION FORM STATE -->
+    <div id="mStateForm" class="space-y-4">
+      
+      <!-- Encouraging Hero Card -->
+      <div class="bg-gradient-to-r from-primary to-[#134B68] text-white p-4 rounded-2xl shadow-card relative overflow-hidden">
+        <div class="absolute -right-3 -bottom-5 font-chinese text-7xl font-bold opacity-10 select-none pointer-events-none">
+          学
+        </div>
+        <div class="relative z-10">
+          <div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-white/15 text-[10px] font-medium tracking-wide text-primary-surface mb-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            Học viện Hán ngữ XUEYAN
+          </div>
+          <h1 class="text-lg font-bold text-white leading-tight">
+            Bắt đầu hành trình tiếng Trung của bạn
+          </h1>
+          <p class="text-xs text-blue-100/90 mt-1 leading-relaxed">
+            Học nhớ sâu qua gốc âm Hán - Việt & chu kỳ lặp lại ngắt quãng SRS.
+          </p>
+        </div>
+      </div>
+
+      <!-- Form Container Card -->
+      <div class="bg-white rounded-2xl p-4 border border-borderLight shadow-subtle space-y-4">
+        
+        <!-- Social Google Sign-Up -->
+        <button type="button" class="w-full py-2.5 px-3 rounded-xl border border-borderLight hover:border-slate/40 bg-white text-xs font-medium text-charcoal flex items-center justify-center gap-2.5 transition-all shadow-sm">
+          <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24">
+            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+            <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.76-2.1-6.7-4.93H1.28v3.15C3.29 21.36 7.37 24 12 24z"/>
+            <path fill="#FBBC05" d="M5.3 14.27c-.24-.72-.38-1.49-.38-2.27s.14-1.55.38-2.27V6.58H1.28C.46 8.2.01 10.05.01 12s.45 3.8 1.27 5.42l4.02-3.15z"/>
+            <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.37 0 3.29 2.64 1.28 6.58l4.02 3.15c.94-2.83 3.58-4.98 6.7-4.98z"/>
+          </svg>
+          <span>Đăng ký nhanh bằng Google</span>
+        </button>
+
+        <!-- Divider -->
+        <div class="relative flex items-center justify-center">
+          <div class="border-t border-borderLight w-full"></div>
+          <span class="bg-white px-2.5 text-[10px] text-slate uppercase tracking-wider font-semibold">hoặc email</span>
+        </div>
+
+        <!-- Form fields -->
+        <form class="space-y-3.5" onsubmit="event.preventDefault(); showMobileSuccess();">
+          
+          <!-- Field 1: Display Name -->
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <label for="mName" class="text-xs font-semibold text-charcoal">Tên hiển thị <span class="text-red-500">*</span></label>
+              <span class="text-[10px] text-jade font-medium">Hợp lệ</span>
+            </div>
+            <div class="relative">
+              <input type="text" id="mName" value="Minh Hoàng" required
+                class="w-full px-3 py-2 text-xs rounded-xl border border-jade bg-white text-charcoal focus:outline-none focus:ring-1 focus:ring-primary">
+              <div class="absolute inset-y-0 right-0 pr-2.5 flex items-center pointer-events-none text-jade">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Field 2: Email -->
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <label for="mEmail" class="text-xs font-semibold text-charcoal">Địa chỉ email <span class="text-red-500">*</span></label>
+              <span class="text-[10px] text-jade font-medium">Email khả dụng</span>
+            </div>
+            <div class="relative">
+              <input type="email" id="mEmail" value="minh.hoang@example.com" required
+                class="w-full px-3 py-2 text-xs rounded-xl border border-jade bg-white text-charcoal focus:outline-none focus:ring-1 focus:ring-primary">
+              <div class="absolute inset-y-0 right-0 pr-2.5 flex items-center pointer-events-none text-jade">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Field 3: Password -->
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <label for="mPass" class="text-xs font-semibold text-charcoal">Mật khẩu <span class="text-red-500">*</span></label>
+              <span class="text-[10px] text-jade font-medium">Khá mạnh</span>
+            </div>
+            <div class="relative">
+              <input type="text" id="mPass" value="Xueyan@2025" required
+                class="w-full pl-3 pr-9 py-2 text-xs rounded-xl border border-jade bg-white text-charcoal focus:outline-none focus:ring-1 focus:ring-primary">
+              <button type="button" class="absolute inset-y-0 right-0 pr-2.5 flex items-center text-slate hover:text-charcoal">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+              </button>
+            </div>
+            <!-- Requirements badge row -->
+            <div class="mt-1.5 flex items-center gap-2 text-[10px] text-jade">
+              <span class="flex items-center gap-0.5"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> ≥ 8 ký tự</span>
+              <span>•</span>
+              <span class="flex items-center gap-0.5"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Chữ & số</span>
+              <span>•</span>
+              <span class="flex items-center gap-0.5"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Ký tự đặc biệt</span>
+            </div>
+          </div>
+
+          <!-- Field 4: Password Confirmation -->
+          <div>
+            <div class="flex items-center justify-between mb-1">
+              <label for="mPassConfirm" class="text-xs font-semibold text-charcoal">Xác nhận mật khẩu <span class="text-red-500">*</span></label>
+              <span class="text-[10px] text-jade font-medium">Khớp mật khẩu</span>
+            </div>
+            <div class="relative">
+              <input type="password" id="mPassConfirm" value="Xueyan@2025" required
+                class="w-full pl-3 pr-9 py-2 text-xs rounded-xl border border-jade bg-white text-charcoal focus:outline-none focus:ring-1 focus:ring-primary">
+              <button type="button" class="absolute inset-y-0 right-0 pr-2.5 flex items-center text-slate hover:text-charcoal">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Terms checkbox -->
+          <div class="pt-1">
+            <label class="flex items-start gap-2 text-[11px] text-slate cursor-pointer">
+              <input type="checkbox" checked required class="mt-0.5 w-3.5 h-3.5 text-primary rounded border-borderLight focus:ring-primary">
+              <span>Đồng ý với <a href="#" class="text-primary font-medium underline">Điều khoản</a> và <a href="#" class="text-primary font-medium underline">Bảo mật</a> của XUEYAN.</span>
+            </label>
+          </div>
+
+          <!-- CTA Submit Button: Tạo tài khoản -->
+          <button type="submit" class="w-full py-3 px-4 rounded-xl bg-primary hover:bg-primary-hover active:scale-[0.99] text-white font-semibold text-xs shadow-md transition-all flex items-center justify-center gap-1.5">
+            <span>Tạo tài khoản</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </form>
+
+        <!-- Login Switch link -->
+        <div class="text-center pt-1 text-xs text-slate">
+          Đã có tài khoản?
+          <a href="#" class="font-semibold text-primary hover:underline ml-1">Đăng nhập</a>
+        </div>
+
+      </div>
+
+      <!-- Trust points footer note -->
+      <div class="px-2 text-center text-[10px] text-slate/80 space-y-1">
+        <p>🔒 Cam kết bảo mật thông tin & không chia sẻ cho bên thứ ba</p>
+        <p>Bản quyền © 2025 Học viện Hán ngữ XUEYAN</p>
+      </div>
+
+    </div>
+
+    <!-- 2. ACCOUNT CREATED (EMAIL VERIFICATION) STATE -->
+    <div id="mStateSuccess" class="hidden space-y-4 py-2">
+      <div class="bg-white rounded-2xl p-5 border border-borderLight shadow-subtle text-center space-y-4">
+        
+        <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-jade border border-emerald-100 flex items-center justify-center mx-auto shadow-sm">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+        </div>
+
+        <div>
+          <span class="inline-block px-2.5 py-0.5 rounded-full bg-emerald-50 text-jade text-[11px] font-semibold mb-1 border border-emerald-200">
+            Tạo tài khoản thành công
+          </span>
+          <h2 class="text-base font-bold text-charcoal">Xác thực tài khoản học viên</h2>
+          <p class="text-xs text-slate mt-1">
+            Email kích hoạt đã được gửi đến:
+          </p>
+          <div class="mt-2 inline-block px-3 py-1.5 bg-primary-subtle text-primary font-semibold text-xs rounded-lg border border-primary-surface">
+            minh.hoang@example.com
+          </div>
+        </div>
+
+        <!-- Next steps for mobile -->
+        <div class="bg-ivory rounded-xl p-3.5 border border-borderLight text-left space-y-2.5 text-xs">
+          <div class="font-semibold text-charcoal text-[11px] uppercase tracking-wider">3 bước kích hoạt:</div>
+          <div class="flex items-start gap-2">
+            <span class="w-4 h-4 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
+            <span class="text-slate">Mở ứng dụng Email trên điện thoại</span>
+          </div>
+          <div class="flex items-start gap-2">
+            <span class="w-4 h-4 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
+            <span class="text-slate">Nhấp nút <strong class="text-charcoal">“Xác nhận tài khoản”</strong></span>
+          </div>
+          <div class="flex items-start gap-2">
+            <span class="w-4 h-4 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
+            <span class="text-slate">Bắt đầu học ngay giáo trình <strong class="text-charcoal">HSK 1</strong></span>
+          </div>
+        </div>
+
+        <!-- Primary Action -->
+        <div class="space-y-2 pt-1">
+          <a href="#" class="w-full py-2.5 px-4 rounded-xl bg-primary hover:bg-primary-hover text-white text-xs font-semibold shadow-md flex items-center justify-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span>Mở hộp thư Email</span>
+          </a>
+          <button type="button" class="w-full py-2 text-[11px] text-slate hover:text-primary font-medium">
+            Chưa nhận được? Gửi lại mã (58s)
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    function showMobileForm() {
+      document.getElementById('mStateForm').classList.remove('hidden');
+      document.getElementById('mStateSuccess').classList.add('hidden');
+      document.getElementById('mBtnForm').className = "px-3 py-1 rounded-md font-medium text-primary bg-primary-surface transition-all";
+      document.getElementById('mBtnSuccess').className = "px-3 py-1 rounded-md font-medium text-slate transition-all hover:text-charcoal";
+    }
+
+    function showMobileSuccess() {
+      document.getElementById('mStateForm').classList.add('hidden');
+      document.getElementById('mStateSuccess').classList.remove('hidden');
+      document.getElementById('mBtnSuccess').className = "px-3 py-1 rounded-md font-medium text-primary bg-primary-surface transition-all";
+      document.getElementById('mBtnForm').className = "px-3 py-1 rounded-md font-medium text-slate transition-all hover:text-charcoal";
+    }
+  </script>
+</body>
+</html>

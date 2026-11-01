@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary":"#563b00","on-surface":"#0a1e28","surface-container-high":"#d7ebf9","on-primary-fixed":"#001e2e","surface":"#f5faff","inverse-on-surface":"#e3f3ff","on-surface-variant":"#40484e","on-background":"#0a1e28","outline":"#71787e","on-secondary-fixed":"#002114","on-error-container":"#93000a","secondary-fixed":"#9ef4ca","primary-fixed-dim":"#93cdf6","surface-tint":"#236487","on-tertiary":"#ffffff","surface-container":"#ddf1ff","surface-container-low":"#e9f5ff","on-primary-fixed-variant":"#004c6c","on-secondary":"#ffffff","surface-bright":"#f5faff","on-tertiary-container":"#fcc55f","secondary-fixed-dim":"#82d7af","on-tertiary-fixed":"#271900","on-primary":"#ffffff","on-secondary-container":"#0f704f","outline-variant":"#c0c7ce","surface-dim":"#c9ddeb","tertiary-container":"#745100","primary-container":"#185d80","on-tertiary-fixed-variant":"#5e4200","inverse-primary":"#93cdf6","on-error":"#ffffff","secondary-container":"#9bf1c7","secondary":"#046c4b","error":"#ba1a1a","primary-fixed":"#c7e7ff","surface-variant":"#d2e5f4","inverse-surface":"#21333e","surface-container-lowest":"#ffffff","background":"#f5faff","on-secondary-fixed-variant":"#005138","on-primary-container":"#9ad5fd","error-container":"#ffdad6","surface-container-highest":"#d2e5f4","tertiary-fixed-dim":"#f4be59","tertiary-fixed":"#ffdea9","primary":"#004563"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1.5rem","gutter-mobile":"1rem","space-sm":"0.5rem","margin-mobile":"1rem","margin":"2rem","space-md":"1rem","space-xl":"2rem","space-lg":"1.5rem","space-xs":"0.25rem","space-2xl":"3rem"},"fontFamily":{"display-lg-mobile":["Be Vietnam Pro"],"headline-sm":["Be Vietnam Pro"],"headline-lg":["Be Vietnam Pro"],"body-sm":["Be Vietnam Pro"],"hanzi-inline":["Noto Sans SC"],"body-md":["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"],"body-lg":["Be Vietnam Pro"],"label-md":["Be Vietnam Pro"],"hanzi-hero":["Noto Sans SC"],"hanzi-card":["Noto Sans SC"],"pinyin-display":["Be Vietnam Pro"],"headline-lg-mobile":["Be Vietnam Pro"],"display-lg":["Be Vietnam Pro"],"label-sm":["Be Vietnam Pro"]},"fontSize":{"display-lg-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"hanzi-inline":["20px",{"lineHeight":"28px","fontWeight":"500"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"hanzi-hero":["72px",{"lineHeight":"84px","fontWeight":"500"}],"hanzi-card":["40px",{"lineHeight":"48px","fontWeight":"500"}],"pinyin-display":["18px",{"lineHeight":"24px","letterSpacing":"0.02em","fontWeight":"500"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"600"}],"display-lg":["44px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 max-w-[1200px] mx-auto px-gutter flex items-center justify-between"><a class="flex items-center gap-space-sm" data-path="login" href="#"><img alt="logo.jpg" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vsh2LAS9uBPlaa3Xs2R0g6GcBsIpGZKk7ZVSkNHpGee_C6USFkNEaArq6SuvHQhj96dYoUCWPmC3RbD9IZnogeDkq9mUHlqLAdQSofXiohdm3NWzM_pPkinLFwgsYC3kAbKBs4fsppC5r3wMJ-IVdSC4rYeeRTDsKKKqiDjCdU0e7Whn3olkAgjfHXqBWaPON2ddVMlYcj6pLuwrWyOcd8GWNgIBMxZJdiwv7aIzLJN7BLlPOG2Kzm-TWviFs-Y5CFf2Ft053Jjg"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold">XUEYAN</span></a><nav class="flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="login" href="#">Đăng nhập</a><a aria-current="page" class="transition-colors text-primary font-bold" data-path="password-recovery" href="#">Khôi phục mật khẩu</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="verification-code" href="#">Xác thực mã</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="reset-password" href="#">Mật khẩu mới</a></nav><div class="flex items-center gap-space-md"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-80px)] flex flex-col justify-center"><div class="flex flex-col w-full">
+<div class="relative w-full max-w-[1240px] mx-auto px-gutter py-space-xl flex flex-col justify-center items-center min-h-[calc(100vh-140px)]">
+<!-- Background Scholarly Calligraphic Ambient Glows -->
+<div class="absolute -top-12 left-10 w-96 h-96 rounded-full bg-primary-fixed-dim/20 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute bottom-10 right-8 w-80 h-80 rounded-full bg-secondary-fixed/20 blur-3xl pointer-events-none -z-10"></div>
+<!-- Main Container: Dual-column Scholarly Architecture -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 min-h-[620px]">
+<!-- Left Column: Atmospheric Ink & Cultural Wisdom Canvas -->
+<div class="lg:col-span-5 relative bg-surface-container-low p-space-xl flex flex-col justify-between overflow-hidden">
+<!-- Vertical Oriental Watermark Calligraphy -->
+<div class="absolute top-6 left-6 select-none pointer-events-none opacity-20 text-on-surface font-hanzi-hero text-hanzi-card [writing-mode:vertical-rl] tracking-widest">
+          温故知新
+        </div>
+<div class="absolute bottom-8 right-6 select-none pointer-events-none opacity-15 text-primary font-hanzi-hero text-hanzi-card [writing-mode:vertical-rl] tracking-widest">
+          学海无涯
+        </div>
+<!-- Top Scholar Badge & Quote Context -->
+<div class="relative z-10">
+<div class="inline-flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-primary-container/10 text-primary-container mb-space-lg">
+<span class="material-symbols-outlined text-[18px]">auto_stories</span>
+<span class="font-label-sm text-label-sm">Xueyan Calligraphy & Focus</span>
+</div>
+<div class="space-y-space-xs mt-space-sm">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Ngạn ngữ Hán tự</span>
+<h2 class="font-hanzi-inline text-hanzi-inline text-on-surface font-medium">温故而知新，可以为师矣。</h2>
+<p class="font-pinyin-display text-pinyin-display text-primary-container italic">Wēn gù ér zhī xīn, kě yǐ wéi shī yǐ.</p>
+<p class="font-body-md text-body-md text-on-surface-variant pt-space-xs">
+              “Ôn cố nhi tri tân — Học tập là hành trình kiên nhẫn, tĩnh tại và bình tâm.”
+            </p>
+</div>
+</div>
+<!-- Artistic Book & Study Illustration Card -->
+<div class="relative z-10 my-space-lg">
+<div class="relative w-full rounded-xl overflow-hidden shadow-sm bg-surface-container-lowest group">
+<img class="w-full h-48 object-cover object-center group-hover:scale-105 transition-transform duration-700" data-alt="An ethereal scholarly still-life with an open traditional Chinese stitch-bound notebook, a fine wolf-hair calligraphy brush resting on a ceramic brush rest, steamy hot tea in a delicate celadon cup, gentle morning mist, soft diffuse sunlight and subtle bamboo shadows through a wooden window frame in serene ink wash blues and ivory tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKjAkq_n4lBsNi3IIfBwnS3KynsGpDHd8Sp0-PkzNPzAZCc3bomtHaJqBwUQAHk7f75tK2Qjh4rMSh6yn_MRcmm98e_GO9tFMpetD_XI6y5TxZmn3e5PfHTHXSqRVemgz2BaOjPOnCRNmnscO4AqjhBJwqq3I-W54lkN8OURHYRhPMhP_lOaUloeL4habIgB10UnSKD6XiLBA3ZIZJVq7PtvquH5GVAcVpEhihlqsbWD74HqfBfLXE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-3 left-4 right-4 flex items-center justify-between text-on-primary">
+<span class="font-label-sm text-label-sm font-medium tracking-wide">Bộ phận lưu trữ học thuật XUEYAN</span>
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</div>
+</div>
+</div>
+<!-- Left Footer / Tranquil Assurance -->
+<div class="relative z-10 pt-space-sm">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">shield</span>
+<span>Mã hóa bảo vệ tài khoản chuẩn xác và an tâm tuyệt đối.</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Security & Recovery Operations -->
+<div class="lg:col-span-7 p-space-xl lg:p-space-2xl flex flex-col justify-between bg-surface-container-lowest">
+<!-- Interactive State Segment Switcher (Demo / State Control) -->
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<img alt="XUEYAN Logo" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSa9rHgtj0qftGZdEOVz6Mvs1AmokvW2z2DovdBSxuzo_-sV9IUwOiUugrNzMJXHST7WnX9DE9VeMX5HXvnLrI_WNumbFGod1ypgPZRr0OJFp5N31I_vxmaDX_EL6QEMv0AMU9hOQZfDPVoanOJfYTOex6T1Z67dMLIG0PgVm6CjBw4eNNTk3FrP3BkOxXYeUsgBuDrpLM4ztROahZiW2waBeSNnhB8BxUg7LEmMbXEjKLWimU63DUnZJ9tVwYk9mdZg"/>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-primary-fixed-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">lock_reset</span>
+              Bảo mật tài khoản
+            </span>
+</div>
+<!-- Micro-controller toggling Form state vs Confirmation state -->
+<div class="inline-flex p-1 bg-surface-container-low rounded-lg gap-1">
+<button class="px-3 py-1 text-label-sm font-label-md rounded transition-colors bg-surface-container-lowest text-primary shadow-sm" id="tab-request-btn" onclick="switchState('request')">
+              Yêu cầu
+            </button>
+<button class="px-3 py-1 text-label-sm font-label-md rounded transition-colors text-on-surface-variant hover:text-on-surface" id="tab-confirm-btn" onclick="switchState('confirm')">
+              Đã gửi mã
+            </button>
+</div>
+</div>
+<!-- VIEW STATE A: Email Request Form -->
+<div class="space-y-space-lg transition-all duration-300" id="state-request-panel">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">
+              Bạn quên mật khẩu?
+            </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+              Đừng lo lắng, hãy nhập địa chỉ email đã liên kết với tài khoản XUEYAN của bạn. Chúng tôi sẽ gửi đường dẫn khôi phục mật khẩu trong vài phút.
+            </p>
+</div>
+<form class="space-y-space-lg" onsubmit="handleFormSubmit(event)">
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="learner-email">
+                Địa chỉ Email học viên <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 text-outline pointer-events-none material-symbols-outlined text-[20px]">
+                  mail
+                </span>
+<input class="w-full h-12 pl-11 pr-4 bg-surface-container-low rounded-xl text-on-surface placeholder:text-outline font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none transition-all" id="learner-email" placeholder="vd: nguyenvana@gmail.com" required="" type="email"/>
+</div>
+<div class="flex items-center gap-1.5 pt-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-outline">info</span>
+<span class="font-label-sm text-label-sm">Email dùng để đăng nhập hoặc nhận báo cáo học tập HSK.</span>
+</div>
+</div>
+<!-- Submit Button with Scholarly Tactile Press -->
+<button class="w-full h-12 bg-primary-container text-on-primary font-label-md text-label-md rounded-xl flex items-center justify-center gap-2 hover:bg-primary shadow-sm active:translate-y-0.5 transition-all" type="submit">
+<span>Gửi hướng dẫn</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</form>
+<!-- Back to login anchor -->
+<div class="pt-space-xs text-center">
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+              Quay lại đăng nhập
+            </a>
+</div>
+</div>
+<!-- VIEW STATE B: Neutral Confirmation State -->
+<div class="hidden space-y-space-lg transition-all duration-300" id="state-confirm-panel">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container mb-space-sm">
+<span class="material-symbols-outlined text-[32px]">mark_email_read</span>
+</div>
+<div class="space-y-space-xs">
+<span class="inline-block px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+              Đã xử lý yêu cầu
+            </span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">
+              Kiểm tra hộp thư điện tử
+            </h2>
+<div class="p-space-md rounded-xl bg-surface-container-low">
+<p class="font-body-md text-body-md text-on-surface font-semibold">
+                “Nếu email này đã được đăng ký, bạn sẽ nhận được hướng dẫn đặt lại mật khẩu.”
+              </p>
+</div>
+</div>
+<div class="space-y-space-sm text-on-surface-variant font-body-sm text-body-sm bg-surface-container/60 p-space-md rounded-xl">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">verified_user</span>
+<span>Vui lòng kiểm tra cả hộp thư chính, mục <strong>Quảng cáo</strong> hoặc <strong>Thư rác (Spam)</strong>.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">schedule</span>
+<span>Đường dẫn đặt lại mật khẩu có hiệu lực trong vòng <strong>30 phút</strong> kể từ thời điểm gửi.</span>
+</div>
+</div>
+<!-- Resend Action Feedback Block -->
+<div class="pt-space-xs">
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-outline">sync</span>
+<span class="font-label-md text-label-md text-on-surface" id="countdown-text">Chưa nhận được thư? Gửi lại sau (<span id="timer-sec">54</span>s)</span>
+</div>
+<button class="px-4 py-2 rounded-lg font-label-md text-label-md bg-surface-variant text-outline transition-all cursor-not-allowed" disabled="" id="resend-trigger-btn" onclick="triggerResend()">
+                Gửi lại ngay
+              </button>
+</div>
+<div class="hidden mt-2 p-2 rounded-lg bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex items-center justify-center gap-1.5 animate-pulse" id="resend-toast">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+              Đã gửi lại email hướng dẫn! Vui lòng kiểm tra hòm thư.
+            </div>
+</div>
+<!-- Actions -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-xs">
+<button class="w-full h-11 bg-surface-container text-on-primary-fixed-variant font-label-md text-label-md rounded-xl flex items-center justify-center gap-2 hover:bg-surface-container-high transition-colors" onclick="switchState('request')">
+<span class="material-symbols-outlined text-[18px]">keyboard_backspace</span>
+              Quay lại đăng nhập
+            </button>
+<a class="w-full h-11 bg-primary-container text-on-primary font-label-md text-label-md rounded-xl flex items-center justify-center gap-2 hover:bg-primary transition-colors" href="https://mail.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+              Mở hòm thư của bạn
+            </a>
+</div>
+</div>
+<!-- Academic Reassurance / System Footer Meta -->
+<div class="pt-space-lg flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">lock</span>
+<span>Hệ thống Xueyan Secure Token</span>
+</div>
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span>Cần trợ giúp khẩn?</span>
+<span class="material-symbols-outlined text-[14px]">call</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Quick Spaced Spaced-Repetition Return Pill -->
+<div class="mt-space-lg text-center">
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-high/60 hover:bg-surface-container-high text-on-primary-fixed-variant font-label-sm text-label-sm transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+        Trở về phòng học XUEYAN
+      </a>
+</div>
+</div>
+</div>
+<script>
+  let countdownTimer;
+  let remainingSeconds = 54;
+
+  function switchState(state) {
+    const reqPanel = document.getElementById('state-request-panel');
+    const confPanel = document.getElementById('state-confirm-panel');
+    const reqBtn = document.getElementById('tab-request-btn');
+    const confBtn = document.getElementById('tab-confirm-btn');
+
+    if (state === 'confirm') {
+      reqPanel.classList.add('hidden');
+      confPanel.classList.remove('hidden');
+
+      reqBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      reqBtn.classList.add('text-on-surface-variant');
+
+      confBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      confBtn.classList.remove('text-on-surface-variant');
+      startCountdown();
+    } else {
+      confPanel.classList.add('hidden');
+      reqPanel.classList.remove('hidden');
+
+      confBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      confBtn.classList.add('text-on-surface-variant');
+
+      reqBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      reqBtn.classList.remove('text-on-surface-variant');
+    }
+  }
+
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    switchState('confirm');
+  }
+
+  function startCountdown() {
+    clearInterval(countdownTimer);
+    remainingSeconds = 54;
+    const timerElem = document.getElementById('timer-sec');
+    const resendBtn = document.getElementById('resend-trigger-btn');
+    const countdownText = document.getElementById('countdown-text');
+
+    resendBtn.disabled = true;
+    resendBtn.classList.add('cursor-not-allowed', 'bg-surface-variant', 'text-outline');
+    resendBtn.classList.remove('bg-primary-container', 'text-on-primary', 'hover:bg-primary');
+
+    countdownTimer = setInterval(() => {
+      remainingSeconds--;
+      if (timerElem) timerElem.textContent = remainingSeconds;
+
+      if (remainingSeconds <= 0) {
+        clearInterval(countdownTimer);
+        countdownText.innerHTML = "Bạn đã có thể gửi lại email mới.";
+        resendBtn.disabled = false;
+        resendBtn.classList.remove('cursor-not-allowed', 'bg-surface-variant', 'text-outline');
+        resendBtn.classList.add('bg-primary-container', 'text-on-primary', 'hover:bg-primary');
+      }
+    }, 1000);
+  }
+
+  function triggerResend() {
+    const toast = document.getElementById('resend-toast');
+    toast.classList.remove('hidden');
+    startCountdown();
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 4000);
+  }
+</script></main><footer class="w-full bg-surface-container-low py-space-md mt-auto"><div class="max-w-[1200px] mx-auto px-gutter flex flex-col sm:flex-row items-center justify-between text-on-surface-variant font-label-sm text-label-sm gap-space-sm"><div>© 2025 XUEYAN 学研. Học tiếng Trung qua chiều sâu Hán - Việt.</div><div class="flex items-center gap-space-lg"><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="privacy-terms" href="#">Chính sách bảo mật</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Điều khoản sử dụng</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" data-path="support" href="#">Hỗ trợ học viên</a></div></div></footer></body></html>
