@@ -2,6 +2,7 @@
   "routes": [
     "/",
     "/about",
+    "/access-denied",
     "/account/login",
     "/account/register",
     "/admin",
@@ -49,7 +50,7 @@
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminShell",
-      "line": 16,
+      "line": 18,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/account/login\"",
@@ -58,7 +59,7 @@
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminShell",
-      "line": 16,
+      "line": 18,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/\"",
@@ -67,16 +68,16 @@
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminShell",
-      "line": 17,
+      "line": 19,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/admin\"",
-      "label": "XUEYAN<small>Không gian quản trị</small>"
+      "label": "<Image src=\"/xueyan-logo.jpg\" alt=\"\" width={44} height={44}/><span>XUEYAN<small>Không gian quản trị</small></span>"
     },
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminShell",
-      "line": 17,
+      "line": 19,
       "tag": "Link",
       "type": "navigate",
       "target": "{href}",
@@ -85,16 +86,16 @@
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminShell",
-      "line": 17,
+      "line": 19,
       "tag": "Link",
       "type": "navigate",
-      "target": "\"/my-learning\"",
-      "label": "Xem không gian học tập →"
+      "target": "\"/profile\"",
+      "label": "Hồ sơ của tôi →"
     },
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminShell",
-      "line": 17,
+      "line": 19,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/\"",
@@ -103,7 +104,7 @@
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminShell",
-      "line": 17,
+      "line": 19,
       "tag": "Button",
       "type": "action",
       "target": "{async()=>{try{await api(\"auth/logout\",{method:\"POST\"});router.replace(\"/account/login\");}catch(e){setError((e as Error).message);}}}",
@@ -112,7 +113,7 @@
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminOverview",
-      "line": 22,
+      "line": 24,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/admin/words\"",
@@ -121,7 +122,7 @@
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminOverview",
-      "line": 22,
+      "line": 24,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/admin/lessons\"",
@@ -130,7 +131,7 @@
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminOverview",
-      "line": 22,
+      "line": 24,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/admin/users\"",
@@ -139,7 +140,7 @@
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminCrud",
-      "line": 43,
+      "line": 45,
       "tag": "Button",
       "type": "action",
       "target": "{()=>void load()}",
@@ -148,7 +149,7 @@
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminCrud",
-      "line": 43,
+      "line": 45,
       "tag": "Button",
       "type": "action",
       "target": "{()=>open()}",
@@ -157,7 +158,7 @@
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminCrud",
-      "line": 43,
+      "line": 45,
       "tag": "Button",
       "type": "action",
       "target": "{()=>open(row)}",
@@ -166,7 +167,7 @@
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminCrud",
-      "line": 43,
+      "line": 45,
       "tag": "Button",
       "type": "action",
       "target": "{async()=>{try{setLearning(await api<Row[]>(`admin/users/${row.id}/learning`));}catch(e){setError((e as Error).message);}}}",
@@ -175,7 +176,7 @@
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminCrud",
-      "line": 43,
+      "line": 45,
       "tag": "Button",
       "type": "action",
       "target": "{()=>{setError(\"\");setDeleting(row);}}",
@@ -184,7 +185,7 @@
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminCrud",
-      "line": 44,
+      "line": 46,
       "tag": "Button",
       "type": "submit form",
       "target": "native/forwarded props",
@@ -193,7 +194,7 @@
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminCrud",
-      "line": 44,
+      "line": 46,
       "tag": "Button",
       "type": "action",
       "target": "{()=>{setEditing(null);setForm({});}}",
@@ -202,7 +203,7 @@
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminCrud",
-      "line": 45,
+      "line": 47,
       "tag": "Button",
       "type": "open dialog",
       "target": "{async()=>{setBusy(true);try{const result=await api<{message:string}>(`admin/${resource}/${deleting?.id}`,{method:\"DELETE\"});setMessage(result.message);setDeleting(null);await load();}catch(e){setError((e as Error).message);}finally{setBusy(false);}}}",
@@ -211,7 +212,7 @@
     {
       "file": "components/admin/AdminWorkspace.tsx",
       "component": "AdminCrud",
-      "line": 45,
+      "line": 47,
       "tag": "Button",
       "type": "action",
       "target": "{()=>setDeleting(null)}",
@@ -238,7 +239,7 @@
     {
       "file": "components/dashboard/DashboardHeader.tsx",
       "component": "DashboardHeader",
-      "line": 40,
+      "line": 46,
       "tag": "a",
       "type": "anchor",
       "target": "\"#dashboard-main\"",
@@ -247,7 +248,7 @@
     {
       "file": "components/dashboard/DashboardHeader.tsx",
       "component": "DashboardHeader",
-      "line": 42,
+      "line": 48,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/\"",
@@ -256,25 +257,34 @@
     {
       "file": "components/dashboard/DashboardHeader.tsx",
       "component": "DashboardHeader",
-      "line": 52,
+      "line": 58,
       "tag": "Link",
       "type": "navigate",
-      "target": "{item.href}",
-      "label": "{item.label}"
+      "target": "{item.href===\"/login\"&&account?\"/profile\":item.href===\"/my-learning\"&&account&&account.role!==\"learner\"?roleHome(account.role):item.href}",
+      "label": "{item.href===\"/login\"&&account?\"Trang cá nhân\":item.href===\"/my-learning\"&&account&&account.role!==\"learner\"?\"Không gian của tôi\":item.label}"
     },
     {
       "file": "components/dashboard/DashboardHeader.tsx",
       "component": "DashboardHeader",
-      "line": 59,
+      "line": 66,
       "tag": "Link",
       "type": "navigate",
-      "target": "\"/login\"",
-      "label": "Đăng nhập"
+      "target": "{account?\"/profile\":\"/login\"}",
+      "label": "{account?account.name:\"Đăng nhập\"}"
     },
     {
       "file": "components/dashboard/DashboardHeader.tsx",
       "component": "DashboardHeader",
-      "line": 60,
+      "line": 67,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "{roleHome(account.role)}",
+      "label": "Không gian của tôi"
+    },
+    {
+      "file": "components/dashboard/DashboardHeader.tsx",
+      "component": "DashboardHeader",
+      "line": 67,
       "tag": "button",
       "type": "action",
       "target": "{onStart}",
@@ -283,16 +293,7 @@
     {
       "file": "components/dashboard/DashboardHeader.tsx",
       "component": "DashboardHeader",
-      "line": 61,
-      "tag": "Link",
-      "type": "navigate",
-      "target": "\"/my-learning\"",
-      "label": "<UserRound size={19} aria-hidden=\"true\" />"
-    },
-    {
-      "file": "components/dashboard/DashboardHeader.tsx",
-      "component": "DashboardHeader",
-      "line": 64,
+      "line": 69,
       "tag": "button",
       "type": "action",
       "target": "{() => setMenuOpen((open) => !open)}",
@@ -301,7 +302,7 @@
     {
       "file": "components/dashboard/DashboardHero.tsx",
       "component": "DashboardHero",
-      "line": 27,
+      "line": 23,
       "tag": "button",
       "type": "action",
       "target": "{onStartLearning}",
@@ -310,7 +311,7 @@
     {
       "file": "components/dashboard/DashboardHero.tsx",
       "component": "DashboardHero",
-      "line": 30,
+      "line": 26,
       "tag": "a",
       "type": "anchor",
       "target": "\"#lo-trinh\"",
@@ -319,7 +320,7 @@
     {
       "file": "components/dashboard/FaqSection.tsx",
       "component": "FaqSection",
-      "line": 46,
+      "line": 45,
       "tag": "button",
       "type": "action",
       "target": "{() => setOpenIndex(isOpen ? null : index)}",
@@ -328,7 +329,7 @@
     {
       "file": "components/dashboard/FaqSection.tsx",
       "component": "FaqSection",
-      "line": 63,
+      "line": 62,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/teachers\"",
@@ -337,25 +338,16 @@
     {
       "file": "components/dashboard/FeaturedTeachers.tsx",
       "component": "FeaturedTeachers",
-      "line": 18,
+      "line": 22,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/teachers\"",
-      "label": "Tất cả giáo viên <ArrowRight size={17} aria-hidden=\"true\" />"
-    },
-    {
-      "file": "components/dashboard/FeaturedTeachers.tsx",
-      "component": "FeaturedTeachers",
-      "line": 34,
-      "tag": "Link",
-      "type": "navigate",
-      "target": "{`/teachers/${teacher.id}`}",
-      "label": "Xem hồ sơ giáo viên"
+      "label": "Xem hồ sơ giáo viên <ArrowRight size={18} aria-hidden=\"true\" />"
     },
     {
       "file": "components/dashboard/InteractiveVocabulary.tsx",
       "component": "InteractiveVocabulary",
-      "line": 78,
+      "line": 77,
       "tag": "button",
       "type": "action",
       "target": "{speakWord}",
@@ -364,16 +356,16 @@
     {
       "file": "components/dashboard/InteractiveVocabulary.tsx",
       "component": "InteractiveVocabulary",
-      "line": 104,
+      "line": 89,
       "tag": "button",
       "type": "action",
       "target": "{() => setFlipped((value) => !value)}",
-      "label": "<FlipHorizontal2 size={18} aria-hidden=\"true\" />{flipped ? \"Đã xem mặt sau\" : \"Thử lật thẻ ghi nhớ\"}"
+      "label": "<FlipHorizontal2 size={18} aria-hidden=\"true\" />{flipped ? \"Lật lại mặt trước\" : \"Thử lật thẻ ghi nhớ\"}"
     },
     {
       "file": "components/dashboard/InteractiveVocabulary.tsx",
       "component": "InteractiveVocabulary",
-      "line": 108,
+      "line": 93,
       "tag": "button",
       "type": "action",
       "target": "{toggleSaved}",
@@ -382,25 +374,34 @@
     {
       "file": "components/dashboard/LearningSections.tsx",
       "component": "HskPathways",
-      "line": 75,
+      "line": 30,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/vocabulary\"",
-      "label": "Toàn bộ 6 cấp độ chuyên sâu <ArrowRight size={17} aria-hidden=\"true\" />"
+      "label": "Xem tất cả <ArrowRight size={17} aria-hidden=\"true\" />"
     },
     {
       "file": "components/dashboard/LearningSections.tsx",
       "component": "HskPathways",
-      "line": 91,
+      "line": 35,
       "tag": "Link",
       "type": "navigate",
-      "target": "{[\"/vocabulary/hsk-1\", \"/vocabulary/hsk-3\", \"/vocabulary/hsk-4\", \"/vocabulary/hsk-6\"][index]}",
-      "label": "Xem chi tiết"
+      "target": "{level.href}",
+      "label": "<span>{level.label}</span><ArrowRight size={20} aria-hidden=\"true\" />"
+    },
+    {
+      "file": "components/dashboard/LearningSections.tsx",
+      "component": "LearningMethod",
+      "line": 56,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "{href}",
+      "label": "<Icon size={22} aria-hidden=\"true\" /><span>{label}</span><ArrowRight size={18} aria-hidden=\"true\" />"
     },
     {
       "file": "components/dashboard/LearningSections.tsx",
       "component": "ClosingCallToAction",
-      "line": 135,
+      "line": 77,
       "tag": "button",
       "type": "action",
       "target": "{onStart}",
@@ -468,6 +469,249 @@
       "type": "action",
       "target": "{onOpenReview}",
       "label": "Ôn tập <ArrowRight size={15} aria-hidden=\"true\" />"
+    },
+    {
+      "file": "components/screens/AccountLearning.tsx",
+      "component": "Feedback",
+      "line": 21,
+      "tag": "Button",
+      "type": "action",
+      "target": "{retry}",
+      "label": "Thử lại"
+    },
+    {
+      "file": "components/screens/AccountLearning.tsx",
+      "component": "AccountOverview",
+      "line": 36,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/review/study\"",
+      "label": "Bắt đầu ôn tập"
+    },
+    {
+      "file": "components/screens/AccountLearning.tsx",
+      "component": "AccountOverview",
+      "line": 36,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/vocabulary\"",
+      "label": "Học từ mới theo HSK"
+    },
+    {
+      "file": "components/screens/AccountLearning.tsx",
+      "component": "AccountOverview",
+      "line": 36,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/vocabulary\"",
+      "label": "Học từ mới"
+    },
+    {
+      "file": "components/screens/AccountLearning.tsx",
+      "component": "AccountOverview",
+      "line": 42,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/review/study\"",
+      "label": "<GraduationCap size={22} aria-hidden=\"true\"/><span><strong>Ôn tập SRS</strong><small>Lặp lại ngắt quãng các từ đến hạn</small></span>"
+    },
+    {
+      "file": "components/screens/AccountLearning.tsx",
+      "component": "AccountOverview",
+      "line": 43,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/vocabulary\"",
+      "label": "<BookOpen size={22} aria-hidden=\"true\"/><span><strong>Lộ trình HSK</strong><small>Học từ mới theo từng cấp độ</small></span>"
+    },
+    {
+      "file": "components/screens/AccountLearning.tsx",
+      "component": "AccountOverview",
+      "line": 44,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/dictionary\"",
+      "label": "<Search size={22} aria-hidden=\"true\"/><span><strong>Từ điển</strong><small>Tra chữ Hán, Pinyin, Hán–Việt</small></span>"
+    },
+    {
+      "file": "components/screens/AccountLearning.tsx",
+      "component": "AccountOverview",
+      "line": 45,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/collection\"",
+      "label": "<BookMarked size={22} aria-hidden=\"true\"/><span><strong>Sổ từ</strong><small>Từ bạn đã lưu để xem lại</small></span>"
+    },
+    {
+      "file": "components/screens/AccountLearning.tsx",
+      "component": "AccountProgress",
+      "line": 54,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/vocabulary\"",
+      "label": "Tiếp tục học HSK"
+    },
+    {
+      "file": "components/screens/AccountLearning.tsx",
+      "component": "AccountResults",
+      "line": 66,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/progress\"",
+      "label": "Xem tiến độ đã lưu"
+    },
+    {
+      "file": "components/screens/AccountLearning.tsx",
+      "component": "AccountResults",
+      "line": 72,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/dashboard\"",
+      "label": "Về Dashboard"
+    },
+    {
+      "file": "components/screens/AccountLearning.tsx",
+      "component": "AccountResults",
+      "line": 72,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/progress\"",
+      "label": "Xem tiến độ"
+    },
+    {
+      "file": "components/screens/AccountPreferences.tsx",
+      "component": "AccountPreferences",
+      "line": 15,
+      "tag": "Button",
+      "type": "action",
+      "target": "{()=>void load()}",
+      "label": "Tải lại bản trên server"
+    },
+    {
+      "file": "components/screens/AccountPreferences.tsx",
+      "component": "AccountPreferences",
+      "line": 15,
+      "tag": "Button",
+      "type": "action",
+      "target": "{()=>setStep(step-1)}",
+      "label": "Quay lại"
+    },
+    {
+      "file": "components/screens/AccountPreferences.tsx",
+      "component": "AccountPreferences",
+      "line": 15,
+      "tag": "Button",
+      "type": "submit form",
+      "target": "native/forwarded props",
+      "label": "{busy?\"Đang lưu…\":onboarding&&step<2?\"Tiếp tục\":\"Lưu vào tài khoản\"}"
+    },
+    {
+      "file": "components/screens/AccountPreferences.tsx",
+      "component": "AccountPreferences",
+      "line": 15,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/dashboard\"",
+      "label": "Về Dashboard"
+    },
+    {
+      "file": "components/screens/AccountPreferences.tsx",
+      "component": "AccountPreferences",
+      "line": 15,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/forgot-password\"",
+      "label": "Khôi phục mật khẩu qua email"
+    },
+    {
+      "file": "components/screens/AccountStudy.tsx",
+      "component": "AccountStudy",
+      "line": 60,
+      "tag": "Button",
+      "type": "action",
+      "target": "{()=>draft?.pending?void rate(draft.pending.rating):void load()}",
+      "label": "Thử lại"
+    },
+    {
+      "file": "components/screens/AccountStudy.tsx",
+      "component": "AccountStudy",
+      "line": 60,
+      "tag": "Button",
+      "type": "action",
+      "target": "{()=>restart()}",
+      "label": "Bắt đầu phiên mới"
+    },
+    {
+      "file": "components/screens/AccountStudy.tsx",
+      "component": "AccountStudy",
+      "line": 60,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/dashboard\"",
+      "label": "Về Dashboard"
+    },
+    {
+      "file": "components/screens/AccountStudy.tsx",
+      "component": "AccountStudy",
+      "line": 60,
+      "tag": "Button",
+      "type": "action",
+      "target": "{()=>void rate(i+1)}",
+      "label": "{busy?\"Đang lưu…\":label}"
+    },
+    {
+      "file": "components/screens/AccountStudy.tsx",
+      "component": "AccountStudy",
+      "line": 60,
+      "tag": "Button",
+      "type": "action",
+      "target": "{()=>persist({...draft,flipped:true})}",
+      "label": "Lật thẻ"
+    },
+    {
+      "file": "components/screens/AccountStudy.tsx",
+      "component": "AccountStudy",
+      "line": 60,
+      "tag": "Button",
+      "type": "action",
+      "target": "{()=>router.push(`/review/summary?events=${draft.events.join(',')}`)}",
+      "label": "Xem kết quả đã lưu"
+    },
+    {
+      "file": "components/screens/AccountStudy.tsx",
+      "component": "AccountStudy",
+      "line": 60,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "{`/review/summary?events=${draft.events.join(',')}`}",
+      "label": "Xem kết quả đã lưu"
+    },
+    {
+      "file": "components/screens/AccountStudy.tsx",
+      "component": "AccountStudy",
+      "line": 60,
+      "tag": "Button",
+      "type": "action",
+      "target": "{()=>restart(page+1)}",
+      "label": "Nhóm từ tiếp theo"
+    },
+    {
+      "file": "components/screens/AccountStudy.tsx",
+      "component": "AccountStudy",
+      "line": 60,
+      "tag": "Button",
+      "type": "action",
+      "target": "{()=>restart(draft?.page??page)}",
+      "label": "Bắt đầu phiên mới"
+    },
+    {
+      "file": "components/screens/AccountStudy.tsx",
+      "component": "AccountStudy",
+      "line": 60,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/vocabulary\"",
+      "label": "Chọn cấp HSK"
     },
     {
       "file": "components/screens/AuthScreens.tsx",
@@ -749,130 +993,229 @@
       "label": "Quay lại bản nháp"
     },
     {
-      "file": "components/screens/ConnectedLearning.tsx",
+      "file": "components/screens/ConnectedAuth.tsx",
       "component": "ConnectedAccount",
-      "line": 12,
+      "line": 16,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/\"",
-      "label": "XUEYAN · 学言"
+      "label": "<Image src=\"/xueyan-logo.jpg\" alt=\"Logo XUEYAN\" width={52} height={52} priority/><span>XUEYAN<small>Học tiếng Trung mỗi ngày</small></span>"
     },
     {
-      "file": "components/screens/ConnectedLearning.tsx",
+      "file": "components/screens/ConnectedAuth.tsx",
       "component": "ConnectedAccount",
-      "line": 12,
+      "line": 16,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/\"",
+      "label": "<ArrowLeft size={16} aria-hidden=\"true\"/>Trang chủ"
+    },
+    {
+      "file": "components/screens/ConnectedAuth.tsx",
+      "component": "ConnectedAccount",
+      "line": 16,
+      "tag": "button",
+      "type": "action",
+      "target": "{()=>setVisible(!visible)}",
+      "label": "{visible?<EyeOff size={19}/>:<Eye size={19}/>}"
+    },
+    {
+      "file": "components/screens/ConnectedAuth.tsx",
+      "component": "ConnectedAccount",
+      "line": 16,
       "tag": "Button",
       "type": "submit form",
       "target": "native/forwarded props",
-      "label": "{busy?\"Đang xử lý…\":register?\"Tạo tài khoản\":\"Đăng nhập\"}"
+      "label": "{busy?\"Đang xử lý…\":register?\"Tạo tài khoản\":\"Đăng nhập\"}<ArrowRight size={18} aria-hidden=\"true\"/>"
     },
     {
-      "file": "components/screens/ConnectedLearning.tsx",
+      "file": "components/screens/ConnectedAuth.tsx",
       "component": "ConnectedAccount",
-      "line": 12,
+      "line": 16,
       "tag": "Link",
       "type": "navigate",
-      "target": "{register?\"/account/login\":\"/account/register\"}",
-      "label": "{register?\"Đã có tài khoản? Đăng nhập\":\"Tạo tài khoản người học\"}"
+      "target": "{`${register?\"/login\":\"/register\"}${suffix}`}",
+      "label": "{register?\"Đăng nhập\":\"Tạo tài khoản\"}"
     },
     {
-      "file": "components/screens/ConnectedLearning.tsx",
-      "component": "ConnectedLearning",
-      "line": 21,
+      "file": "components/screens/ConnectedDictionary.tsx",
+      "component": "ConnectedDictionary",
+      "line": 17,
       "tag": "Link",
       "type": "navigate",
-      "target": "\"/\"",
-      "label": "XUEYAN"
+      "target": "\"/collection\"",
+      "label": "<Bookmark size={18} aria-hidden=\"true\"/>Sổ từ đã lưu"
     },
     {
-      "file": "components/screens/ConnectedLearning.tsx",
-      "component": "ConnectedLearning",
-      "line": 21,
-      "tag": "Link",
-      "type": "navigate",
-      "target": "\"/admin\"",
-      "label": "Quản trị"
+      "file": "components/screens/ConnectedDictionary.tsx",
+      "component": "ConnectedDictionary",
+      "line": 17,
+      "tag": "form",
+      "type": "submit form",
+      "target": "{event=>{event.preventDefault();setLoading(true);setPage(1);setFilter(q.trim());setAttempt(attempt+1);}}",
+      "label": "<Input name=\"query\" label=\"Tìm từ\" maxLength={100} type=\"search\" placeholder=\"学习, xue2xi2, nghĩa…\" value={q} onChange={event=>setQ(event.target.value)}/><Button"
     },
     {
-      "file": "components/screens/ConnectedLearning.tsx",
-      "component": "ConnectedLearning",
-      "line": 21,
-      "tag": "Link",
-      "type": "navigate",
-      "target": "\"/my-learning\"",
-      "label": "Từ đã học"
-    },
-    {
-      "file": "components/screens/ConnectedLearning.tsx",
-      "component": "ConnectedLearning",
-      "line": 21,
-      "tag": "Link",
-      "type": "navigate",
-      "target": "\"/learn\"",
-      "label": "Học từ vựng"
-    },
-    {
-      "file": "components/screens/ConnectedLearning.tsx",
-      "component": "ConnectedLearning",
-      "line": 21,
+      "file": "components/screens/ConnectedDictionary.tsx",
+      "component": "ConnectedDictionary",
+      "line": 17,
       "tag": "Button",
-      "type": "action",
-      "target": "{async()=>{try{await api(\"auth/logout\",{method:\"POST\"});router.replace(\"/account/login\");}catch(e){setError((e as Error).message);}}}",
-      "label": "Đăng xuất"
+      "type": "submit form",
+      "target": "native/forwarded props",
+      "label": "<Search size={19} aria-hidden=\"true\"/>"
     },
     {
-      "file": "components/screens/ConnectedLearning.tsx",
-      "component": "ConnectedLearning",
-      "line": 21,
+      "file": "components/screens/ConnectedDictionary.tsx",
+      "component": "ConnectedDictionary",
+      "line": 17,
       "tag": "Button",
-      "type": "action",
-      "target": "{()=>void load()}",
+      "type": "open dialog",
+      "target": "{()=>{setLoading(true);setAttempt(attempt+1);}}",
       "label": "Thử lại"
     },
     {
-      "file": "components/screens/ConnectedLearning.tsx",
-      "component": "ConnectedLearning",
-      "line": 21,
-      "tag": "Link",
-      "type": "navigate",
-      "target": "\"/account/login\"",
-      "label": "Đăng nhập"
-    },
-    {
-      "file": "components/screens/ConnectedLearning.tsx",
-      "component": "ConnectedLearning",
-      "line": 21,
-      "tag": "Link",
-      "type": "navigate",
-      "target": "\"/my-learning\"",
-      "label": "Xem từ đã học →"
-    },
-    {
-      "file": "components/screens/ConnectedLearning.tsx",
-      "component": "ConnectedLearning",
-      "line": 21,
+      "file": "components/screens/ConnectedDictionary.tsx",
+      "component": "ConnectedDictionary",
+      "line": 17,
       "tag": "Button",
       "type": "action",
-      "target": "{()=>void rate(i+1)}",
-      "label": "{busy?\"Đang lưu…\":label}"
+      "target": "{()=>void save(word)}",
+      "label": "{saved.includes(word.id)?<BookmarkCheck size={18} aria-hidden=\"true\"/>:<Bookmark size={18} aria-hidden=\"true\"/>}{account&&account.role!==\"learner\"?\"Dành cho học"
     },
     {
-      "file": "components/screens/ConnectedLearning.tsx",
-      "component": "ConnectedLearning",
-      "line": 21,
+      "file": "components/screens/ConnectedDictionary.tsx",
+      "component": "ConnectedDictionary",
+      "line": 17,
       "tag": "Button",
       "type": "open dialog",
-      "target": "{()=>{setFlipped(true);started.current=Date.now();}}",
-      "label": "Hiện nghĩa & tự đánh giá"
+      "target": "{()=>{setLoading(true);setPage(page-1);}}",
+      "label": "<ChevronLeft aria-hidden=\"true\"/>"
     },
     {
-      "file": "components/screens/ConnectedLearning.tsx",
-      "component": "ConnectedLearning",
-      "line": 21,
+      "file": "components/screens/ConnectedDictionary.tsx",
+      "component": "ConnectedDictionary",
+      "line": 17,
+      "tag": "Button",
+      "type": "open dialog",
+      "target": "{()=>{setLoading(true);setPage(page+1);}}",
+      "label": "<ChevronRight aria-hidden=\"true\"/>"
+    },
+    {
+      "file": "components/screens/ConnectedDictionary.tsx",
+      "component": "ConnectedDictionary",
+      "line": 17,
       "tag": "Link",
       "type": "navigate",
-      "target": "\"/learn\"",
-      "label": "Bắt đầu học →"
+      "target": "\"/login?next=%2Fdictionary\"",
+      "label": "Đăng nhập và quay lại từ điển"
+    },
+    {
+      "file": "components/screens/ConnectedDictionary.tsx",
+      "component": "SavedLibrary",
+      "line": 23,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/dictionary\"",
+      "label": "Tra và thêm từ"
+    },
+    {
+      "file": "components/screens/ConnectedDictionary.tsx",
+      "component": "SavedLibrary",
+      "line": 23,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/login?next=%2Fcollection\"",
+      "label": "Đăng nhập để xem sổ từ"
+    },
+    {
+      "file": "components/screens/ConnectedDictionary.tsx",
+      "component": "SavedLibrary",
+      "line": 23,
+      "tag": "Button",
+      "type": "open dialog",
+      "target": "{()=>{setLoading(true);setAttempt(attempt+1);}}",
+      "label": "Thử lại"
+    },
+    {
+      "file": "components/screens/ConnectedDictionary.tsx",
+      "component": "SavedLibrary",
+      "line": 23,
+      "tag": "Button",
+      "type": "action",
+      "target": "{async()=>{setBusy(word.id);try{await api(`library/words/${word.id}`,{method:\"DELETE\"});setWords(current=>current.filter(item=>item.id!==word.id));setStatus(`Đã bỏ lưu ${word.simplified}.`);}catch(e){setStatus((e as Error).message);}finally{setBusy(null);}}}",
+      "label": "<Trash2 size={18} aria-hidden=\"true\"/>"
+    },
+    {
+      "file": "components/screens/ConnectedProfile.tsx",
+      "component": "ConnectedProfile",
+      "line": 23,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "{edit?\"/profile\":roleHome(profile?.role??\"learner\")}",
+      "label": "<ArrowLeft size={17} aria-hidden=\"true\"/>{edit?\"Hồ sơ của tôi\":profile?.role===\"learner\"?\"Việc học của tôi\":\"Không gian của tôi\"}"
+    },
+    {
+      "file": "components/screens/ConnectedProfile.tsx",
+      "component": "ConnectedProfile",
+      "line": 23,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "{`/login?next=${encodeURIComponent(edit?\"/profile/edit\":\"/profile\")}`}",
+      "label": "Đăng nhập để mở hồ sơ"
+    },
+    {
+      "file": "components/screens/ConnectedProfile.tsx",
+      "component": "ConnectedProfile",
+      "line": 23,
+      "tag": "Button",
+      "type": "open dialog",
+      "target": "{()=>{setLoading(true);setAttempt(attempt+1);}}",
+      "label": "Tải lại hồ sơ"
+    },
+    {
+      "file": "components/screens/ConnectedProfile.tsx",
+      "component": "ConnectedProfile",
+      "line": 23,
+      "tag": "Button",
+      "type": "open dialog",
+      "target": "{()=>{imageRequest.current++;setStatus(\"\");setAvatar(null);setRemoveAvatar(true);setAvatarError(\"\");}}",
+      "label": "Xóa ảnh"
+    },
+    {
+      "file": "components/screens/ConnectedProfile.tsx",
+      "component": "ConnectedProfile",
+      "line": 23,
+      "tag": "Button",
+      "type": "submit form",
+      "target": "native/forwarded props",
+      "label": "{busy?\"Đang lưu…\":imageBusy?\"Đang xử lý ảnh…\":<><Save size={18} aria-hidden=\"true\"/> Lưu thay đổi</>}"
+    },
+    {
+      "file": "components/screens/ConnectedProfile.tsx",
+      "component": "ConnectedProfile",
+      "line": 23,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/profile/edit\"",
+      "label": "Chỉnh sửa hồ sơ"
+    },
+    {
+      "file": "components/screens/ConnectedProfile.tsx",
+      "component": "ConnectedProfile",
+      "line": 23,
+      "tag": "Button",
+      "type": "action",
+      "target": "{backup}",
+      "label": "<Download size={18} aria-hidden=\"true\"/>Xuất thông tin"
+    },
+    {
+      "file": "components/screens/ConnectedProfile.tsx",
+      "component": "ConnectedProfile",
+      "line": 23,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "{profile.role===\"learner\"?\"/my-learning\":roleHome(profile.role)}",
+      "label": "{profile.role===\"learner\"?\"Xem tiến độ\":\"Không gian của tôi\"}"
     },
     {
       "file": "components/screens/DiscoveryScreens.tsx",
@@ -1154,162 +1497,135 @@
       "label": "Thông tin lớp học →"
     },
     {
-      "file": "components/screens/LearnerDashboard.tsx",
-      "component": "LearnerDashboard",
-      "line": 10,
-      "tag": "button",
-      "type": "action",
-      "target": "{() => setState(value)}",
-      "label": "{label}"
-    },
-    {
-      "file": "components/screens/LearnerDashboard.tsx",
-      "component": "LearnerDashboard",
-      "line": 11,
+      "file": "components/screens/GoogleSignIn.tsx",
+      "component": "GoogleSignIn",
+      "line": 23,
       "tag": "Button",
       "type": "action",
-      "target": "{() => setState(\"active\")}",
+      "target": "native/forwarded props",
+      "label": "Tiếp tục với Google"
+    },
+    {
+      "file": "components/screens/GoogleSignIn.tsx",
+      "component": "GoogleSignIn",
+      "line": 23,
+      "tag": "Button",
+      "type": "action",
+      "target": "{()=>setRetry(retry+1)}",
+      "label": "Thử lại Google"
+    },
+    {
+      "file": "components/screens/HskScreens.tsx",
+      "component": "HskCatalog",
+      "line": 17,
+      "tag": "Button",
+      "type": "open dialog",
+      "target": "{()=>{setLoading(true);setRetry(retry+1);}}",
       "label": "Thử lại"
     },
     {
-      "file": "components/screens/LearnerDashboard.tsx",
-      "component": "LearnerDashboard",
-      "line": 11,
-      "tag": "ActionLink",
-      "type": "navigate",
-      "target": "\"/lessons/1\"",
-      "label": "Bắt đầu"
-    },
-    {
-      "file": "components/screens/LearnerDashboard.tsx",
-      "component": "LearnerDashboard",
-      "line": 11,
-      "tag": "UnavailableAction",
-      "type": "dialog: unavailable",
-      "target": "\"Chưa có màn hình học chữ Hán hoặc khóa Pinyin riêng.\"",
-      "label": "Bắt đầu"
-    },
-    {
-      "file": "components/screens/LearnerDashboard.tsx",
-      "component": "LearnerDashboard",
-      "line": 12,
-      "tag": "ActionLink",
-      "type": "navigate",
-      "target": "{state === \"empty\" ? \"/vocabulary\" : \"/review\"}",
-      "label": "{state === \"empty\" ? \"Khám phá lộ trình\" : \"Bắt đầu ôn tập 24 từ →\"}"
-    },
-    {
-      "file": "components/screens/LearnerDashboard.tsx",
-      "component": "LearnerDashboard",
-      "line": 13,
-      "tag": "ActionLink",
-      "type": "navigate",
-      "target": "\"/lessons/1/learn\"",
-      "label": "Nạp tiếp (+8 từ)"
-    },
-    {
-      "file": "components/screens/LearnerDashboard.tsx",
-      "component": "LearnerDashboard",
-      "line": 15,
-      "tag": "UnavailableAction",
-      "type": "dialog: unavailable",
-      "target": "\"Bài mua sắm HSK 2 chưa có trang/nội dung học tương ứng. Bài 01 hiện có là chào hỏi HSK 1.\"",
-      "label": "Tiếp tục bài học →"
-    },
-    {
-      "file": "components/screens/LearnerDashboard.tsx",
-      "component": "LearnerDashboard",
-      "line": 15,
-      "tag": "ActionLink",
-      "type": "navigate",
-      "target": "\"/classes/hsk2-k24\"",
-      "label": "Xem thông tin lớp"
-    },
-    {
-      "file": "components/screens/LearnerDashboard.tsx",
-      "component": "LearnerDashboard",
-      "line": 15,
-      "tag": "ActionLink",
-      "type": "navigate",
-      "target": "\"/collection/xuexi\"",
-      "label": "Khám phá chữ Hán"
-    },
-    {
-      "file": "components/screens/LearningScreens.tsx",
+      "file": "components/screens/HskScreens.tsx",
       "component": "HskCatalog",
-      "line": 15,
-      "tag": "ActionLink",
+      "line": 17,
+      "tag": "Link",
       "type": "navigate",
-      "target": "\"/vocabulary/hsk-1\"",
-      "label": "Tiếp tục học →"
+      "target": "{`/vocabulary/hsk-${level.code}`}",
+      "label": "<span className={styles.numeral} aria-hidden=\"true\" lang=\"zh-Hans\">{numerals[level.code]??level.code}</span><span className={styles.levelBody}><strong>{level.ti"
     },
     {
-      "file": "components/screens/LearningScreens.tsx",
+      "file": "components/screens/HskScreens.tsx",
       "component": "HskCatalog",
-      "line": 15,
-      "tag": "ActionLink",
-      "type": "navigate",
-      "target": "\"/onboarding\"",
-      "label": "Gợi ý lộ trình"
+      "line": 17,
+      "tag": "summary",
+      "type": "toggle disclosure",
+      "target": "native/forwarded props",
+      "label": "Nguồn từ vựng"
     },
     {
-      "file": "components/screens/LearningScreens.tsx",
+      "file": "components/screens/HskScreens.tsx",
       "component": "HskCatalog",
-      "line": 15,
-      "tag": "ActionLink",
+      "line": 17,
+      "tag": "a",
       "type": "navigate",
-      "target": "{`/vocabulary/hsk-${l.level}`}",
-      "label": "{l.lessons}bài học · Xem lộ trình →"
+      "target": "\"https://creativecommons.org/licenses/by-sa/4.0/\"",
+      "label": "Giấy phép CC BY-SA 4.0"
     },
     {
-      "file": "components/screens/LearningScreens.tsx",
+      "file": "components/screens/HskScreens.tsx",
       "component": "HskDetail",
-      "line": 19,
+      "line": 23,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/vocabulary\"",
-      "label": "← Lộ trình HSK"
+      "label": "<ArrowLeft size={16} aria-hidden=\"true\"/>Cấp độ HSK"
     },
     {
-      "file": "components/screens/LearningScreens.tsx",
+      "file": "components/screens/HskScreens.tsx",
       "component": "HskDetail",
-      "line": 19,
-      "tag": "ActionLink",
+      "line": 23,
+      "tag": "Link",
       "type": "navigate",
-      "target": "\"/lessons/1\"",
-      "label": "Bắt đầu bài học đầu tiên"
+      "target": "{`/learn?level=${level}`}",
+      "label": "<BookOpen size={18} aria-hidden=\"true\"/>Học từ"
     },
     {
-      "file": "components/screens/LearningScreens.tsx",
+      "file": "components/screens/HskScreens.tsx",
       "component": "HskDetail",
-      "line": 19,
-      "tag": "UnavailableAction",
-      "type": "dialog: unavailable",
-      "target": "{`HSK ${level} chưa có nội dung bài học tương ứng. Không chuyển sang bài HSK 1.`}",
-      "label": "Bắt đầu bài học đầu tiên"
+      "line": 23,
+      "tag": "form",
+      "type": "submit form",
+      "target": "{e=>{e.preventDefault();setLoading(true);setPage(1);setFilter(query.trim());setRetry(retry+1);}}",
+      "label": "<Input label=\"Tìm từ\" type=\"search\" maxLength={100} value={query} onChange={e=>setQuery(e.target.value)} placeholder=\"Chữ Hán, Pinyin, nghĩa…\"/><Button type=\"su"
     },
     {
-      "file": "components/screens/LearningScreens.tsx",
+      "file": "components/screens/HskScreens.tsx",
       "component": "HskDetail",
-      "line": 19,
-      "tag": "ActionLink",
-      "type": "navigate",
-      "target": "\"/lessons/1\"",
-      "label": "Xem bài học →"
+      "line": 23,
+      "tag": "Button",
+      "type": "submit form",
+      "target": "native/forwarded props",
+      "label": "<Search size={18} aria-hidden=\"true\"/>"
     },
     {
-      "file": "components/screens/LearningScreens.tsx",
+      "file": "components/screens/HskScreens.tsx",
       "component": "HskDetail",
-      "line": 19,
-      "tag": "UnavailableAction",
-      "type": "dialog: unavailable",
-      "target": "{`Chuyên đề ${i+1} của HSK ${level} chưa có trang/nội dung bài học.`}",
-      "label": "Xem bài học"
+      "line": 23,
+      "tag": "Button",
+      "type": "open dialog",
+      "target": "{()=>{setLoading(true);setRetry(retry+1);}}",
+      "label": "Thử lại"
+    },
+    {
+      "file": "components/screens/HskScreens.tsx",
+      "component": "HskDetail",
+      "line": 23,
+      "tag": "Button",
+      "type": "open dialog",
+      "target": "{()=>{setLoading(true);setPage(page-1);}}",
+      "label": "<ChevronLeft aria-hidden=\"true\"/>"
+    },
+    {
+      "file": "components/screens/HskScreens.tsx",
+      "component": "HskDetail",
+      "line": 23,
+      "tag": "Button",
+      "type": "open dialog",
+      "target": "{()=>{setLoading(true);setPage(page+1);}}",
+      "label": "<ChevronRight aria-hidden=\"true\"/>"
+    },
+    {
+      "file": "components/screens/HskScreens.tsx",
+      "component": "WordMeaning",
+      "line": 26,
+      "tag": "summary",
+      "type": "toggle disclosure",
+      "target": "native/forwarded props",
+      "label": "{text.split(\",\").slice(0,2).join(\",\").slice(0,100)}…{label}"
     },
     {
       "file": "components/screens/LearningScreens.tsx",
       "component": "LessonOverview",
-      "line": 22,
+      "line": 14,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/vocabulary/hsk-1\"",
@@ -1318,7 +1634,7 @@
     {
       "file": "components/screens/LearningScreens.tsx",
       "component": "LessonOverview",
-      "line": 22,
+      "line": 14,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "\"/lessons/1/learn\"",
@@ -1327,7 +1643,7 @@
     {
       "file": "components/screens/LearningScreens.tsx",
       "component": "LessonOverview",
-      "line": 22,
+      "line": 14,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "{href}",
@@ -1336,7 +1652,7 @@
     {
       "file": "components/screens/LearningScreens.tsx",
       "component": "WordList",
-      "line": 24,
+      "line": 16,
       "tag": "Link",
       "type": "navigate",
       "target": "{`/collection/${w.id}`}",
@@ -1345,7 +1661,7 @@
     {
       "file": "components/screens/LearningScreens.tsx",
       "component": "ReviewOverview",
-      "line": 27,
+      "line": 19,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "{`/review/study?limit=${limit}`}",
@@ -1354,7 +1670,7 @@
     {
       "file": "components/screens/LearningScreens.tsx",
       "component": "CollectionScreen",
-      "line": 35,
+      "line": 27,
       "tag": "Button",
       "type": "open dialog",
       "target": "{()=>setCreate(true)}",
@@ -1363,7 +1679,7 @@
     {
       "file": "components/screens/LearningScreens.tsx",
       "component": "CollectionScreen",
-      "line": 35,
+      "line": 27,
       "tag": "button",
       "type": "change tab/filter",
       "target": "{()=>setSelected(v)}",
@@ -1372,7 +1688,7 @@
     {
       "file": "components/screens/LearningScreens.tsx",
       "component": "CollectionScreen",
-      "line": 35,
+      "line": 27,
       "tag": "Button",
       "type": "submit form",
       "target": "native/forwarded props",
@@ -1381,7 +1697,7 @@
     {
       "file": "components/screens/LearningScreens.tsx",
       "component": "WordDetail",
-      "line": 39,
+      "line": 31,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/collection\"",
@@ -1390,7 +1706,7 @@
     {
       "file": "components/screens/LearningScreens.tsx",
       "component": "WordDetail",
-      "line": 39,
+      "line": 31,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "{`/review/study?word=${w.id}`}",
@@ -1399,11 +1715,47 @@
     {
       "file": "components/screens/LearningScreens.tsx",
       "component": "WordDetail",
-      "line": 39,
+      "line": 31,
       "tag": "Button",
       "type": "action",
       "target": "{()=>draft.save()}",
       "label": "Lưu trên thiết bị"
+    },
+    {
+      "file": "components/screens/PasswordRecovery.tsx",
+      "component": "PasswordRecovery",
+      "line": 12,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/forgot-password\"",
+      "label": "Yêu cầu khôi phục"
+    },
+    {
+      "file": "components/screens/PasswordRecovery.tsx",
+      "component": "PasswordRecovery",
+      "line": 12,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/login\"",
+      "label": "Đăng nhập"
+    },
+    {
+      "file": "components/screens/PasswordRecovery.tsx",
+      "component": "PasswordRecovery",
+      "line": 12,
+      "tag": "Button",
+      "type": "submit form",
+      "target": "native/forwarded props",
+      "label": "{!reset&&cooldown>0?`Gửi lại sau ${cooldown}s`:busy?\"Đang xử lý…\":reset?\"Lưu mật khẩu mới\":\"Yêu cầu liên kết khôi phục\"}"
+    },
+    {
+      "file": "components/screens/PasswordRecovery.tsx",
+      "component": "PasswordRecovery",
+      "line": 12,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/login\"",
+      "label": "Quay lại đăng nhập"
     },
     {
       "file": "components/screens/ProfileScreens.tsx",
@@ -1483,8 +1835,8 @@
       "line": 19,
       "tag": "ActionLink",
       "type": "navigate",
-      "target": "\"/settings\"",
-      "label": "Cài đặt tài khoản"
+      "target": "{teacher?\"/profile/edit\":\"/settings\"}",
+      "label": "Thông tin tài khoản"
     },
     {
       "file": "components/screens/ProfileScreens.tsx",
@@ -1570,7 +1922,7 @@
     {
       "file": "components/screens/StudyScreens.tsx",
       "component": "StudySession",
-      "line": 40,
+      "line": 41,
       "tag": "Button",
       "type": "action",
       "target": "{() => setSyncError(false)}",
@@ -1582,22 +1934,22 @@
       "line": 42,
       "tag": "Button",
       "type": "action",
-      "target": "{() => setMarked(!marked)}",
-      "label": "{marked ? \"Đã đánh dấu trong phiên\" : \"Đánh dấu\"}"
-    },
-    {
-      "file": "components/screens/StudyScreens.tsx",
-      "component": "StudySession",
-      "line": 44,
-      "tag": "Button",
-      "type": "action",
       "target": "{() => setPinyin(!pinyin)}",
       "label": "{pinyin ? \"Ẩn Pinyin\" : \"Hiện Pinyin\"}"
     },
     {
       "file": "components/screens/StudyScreens.tsx",
       "component": "StudySession",
-      "line": 48,
+      "line": 42,
+      "tag": "Button",
+      "type": "action",
+      "target": "{() => setMarked(!marked)}",
+      "label": "{marked ? \"Đã đánh dấu\" : \"Đánh dấu\"}"
+    },
+    {
+      "file": "components/screens/StudyScreens.tsx",
+      "component": "StudySession",
+      "line": 47,
       "tag": "Button",
       "type": "open dialog",
       "target": "{() => setFlipped(true)}",
@@ -1606,7 +1958,7 @@
     {
       "file": "components/screens/StudyScreens.tsx",
       "component": "StudySession",
-      "line": 48,
+      "line": 47,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "{`/lessons/1/practice?word=${word.id}`}",
@@ -1615,7 +1967,7 @@
     {
       "file": "components/screens/StudyScreens.tsx",
       "component": "StudySession",
-      "line": 48,
+      "line": 47,
       "tag": "Button",
       "type": "action",
       "target": "{() => advance()}",
@@ -1624,7 +1976,7 @@
     {
       "file": "components/screens/StudyScreens.tsx",
       "component": "StudySession",
-      "line": 48,
+      "line": 47,
       "tag": "Button",
       "type": "action",
       "target": "{() => advance(i + 1)}",
@@ -1633,7 +1985,7 @@
     {
       "file": "components/screens/StudyScreens.tsx",
       "component": "StudySession",
-      "line": 51,
+      "line": 50,
       "tag": "Button",
       "type": "action",
       "target": "{() => setExit(false)}",
@@ -1642,7 +1994,7 @@
     {
       "file": "components/screens/StudyScreens.tsx",
       "component": "StudySession",
-      "line": 51,
+      "line": 50,
       "tag": "Button",
       "type": "action",
       "target": "{() => finish(answers)}",
@@ -1651,7 +2003,7 @@
     {
       "file": "components/screens/StudyScreens.tsx",
       "component": "StudySession",
-      "line": 51,
+      "line": 50,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "{learn ? \"/lessons/1\" : wordId ? `/collection/${wordId}` : \"/review\"}",
@@ -1660,7 +2012,7 @@
     {
       "file": "components/screens/StudyScreens.tsx",
       "component": "PracticeScreen",
-      "line": 64,
+      "line": 63,
       "tag": "Button",
       "type": "action",
       "target": "{() => setAnswer(v)}",
@@ -1669,7 +2021,7 @@
     {
       "file": "components/screens/StudyScreens.tsx",
       "component": "PracticeScreen",
-      "line": 65,
+      "line": 64,
       "tag": "Button",
       "type": "action",
       "target": "{() => { if (index < words.length - 1) { setAnswers(current); setIndex(index + 1); setAnswer(null); } else { const id = finishSession(\"practice\", words.map(w => w.id), current); router.push(`/review/summary?source=lesson-1&run=${id}`); } }}",
@@ -1678,7 +2030,7 @@
     {
       "file": "components/screens/StudyScreens.tsx",
       "component": "SessionSummary",
-      "line": 75,
+      "line": 74,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "\"/dashboard\"",
@@ -1687,16 +2039,34 @@
     {
       "file": "components/screens/StudyScreens.tsx",
       "component": "SessionSummary",
-      "line": 75,
+      "line": 74,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "{result.mode === \"practice\" ? `/lessons/1/practice${total === 1 ? retry : \"\"}` : result.mode === \"learn\" ? \"/lessons/1/learn\" : `/review/study${retry}`}",
       "label": "<RotateCw size={18}/>Ôn lại bộ mẫu"
     },
     {
+      "file": "components/screens/TeacherProfile.tsx",
+      "component": "ZaloButton",
+      "line": 18,
+      "tag": "a",
+      "type": "navigate",
+      "target": "{ZALO_URL}",
+      "label": "<MessageCircle size={20} aria-hidden=\"true\" /><span>{children}</span><span className={t.srOnly}> (mở Zalo ở tab mới)</span>"
+    },
+    {
+      "file": "components/screens/TeacherProfile.tsx",
+      "component": "TeacherProfile",
+      "line": 50,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/vocabulary\"",
+      "label": "Xem lộ trình HSK <ArrowRight size={18} aria-hidden=\"true\" />"
+    },
+    {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherDirectory",
-      "line": 15,
+      "line": 16,
       "tag": "Button",
       "type": "action",
       "target": "{()=>{setQ(\"\");setGoal(\"\");setLevel(\"\");}}",
@@ -1705,7 +2075,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherDirectory",
-      "line": 15,
+      "line": 16,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "{`/teachers/${t.id}`}",
@@ -1714,7 +2084,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherDirectory",
-      "line": 15,
+      "line": 16,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "\"/about\"",
@@ -1723,7 +2093,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherProfile",
-      "line": 19,
+      "line": 20,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/teachers\"",
@@ -1732,7 +2102,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherProfile",
-      "line": 19,
+      "line": 20,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "{`/teachers/${t.id}/consultation`}",
@@ -1741,7 +2111,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherProfile",
-      "line": 19,
+      "line": 20,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "\"/resources\"",
@@ -1750,7 +2120,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherProfile",
-      "line": 19,
+      "line": 20,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "{`/teachers/${t.id}/consultation`}",
@@ -1759,7 +2129,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherProfile",
-      "line": 19,
+      "line": 20,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "\"/classes/hsk2-k24\"",
@@ -1768,7 +2138,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "ConsultationScreen",
-      "line": 23,
+      "line": 24,
       "tag": "Link",
       "type": "navigate",
       "target": "{`/teachers/${t.id}`}",
@@ -1777,7 +2147,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "ConsultationScreen",
-      "line": 23,
+      "line": 24,
       "tag": "Button",
       "type": "submit form",
       "target": "native/forwarded props",
@@ -1786,7 +2156,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "ConsultationScreen",
-      "line": 23,
+      "line": 24,
       "tag": "Button",
       "type": "action",
       "target": "{()=>setPreview(false)}",
@@ -1795,7 +2165,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherDashboard",
-      "line": 27,
+      "line": 28,
       "tag": "Button",
       "type": "action",
       "target": "{()=>setNewTeacher(!newTeacher)}",
@@ -1804,7 +2174,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherDashboard",
-      "line": 27,
+      "line": 28,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "\"/teacher/classes/hsk2-k24\"",
@@ -1813,7 +2183,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherDashboard",
-      "line": 27,
+      "line": 28,
       "tag": "UnavailableAction",
       "type": "dialog: unavailable",
       "target": "\"Lớp luyện đề HSK 3 chưa có màn hình quản lý riêng.\"",
@@ -1822,7 +2192,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherDashboard",
-      "line": 27,
+      "line": 28,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "\"/teacher/assignments/4\"",
@@ -1831,7 +2201,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherDashboard",
-      "line": 27,
+      "line": 28,
       "tag": "UnavailableAction",
       "type": "dialog: unavailable",
       "target": "{`Chưa có bản nộp hoặc màn hình chấm bài của ${n}.`}",
@@ -1840,7 +2210,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherDashboard",
-      "line": 27,
+      "line": 28,
       "tag": "UnavailableAction",
       "type": "dialog: unavailable",
       "target": "\"Chưa có màn hình xử lý yêu cầu tư vấn dành cho giảng viên.\"",
@@ -1849,7 +2219,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherDashboard",
-      "line": 27,
+      "line": 28,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "\"/teacher/classes/hsk2-k24\"",
@@ -1858,7 +2228,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherDashboard",
-      "line": 27,
+      "line": 28,
       "tag": "UnavailableAction",
       "type": "dialog: unavailable",
       "target": "{`Chưa có màn hình quản lý lớp ${n}.`}",
@@ -1867,7 +2237,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherClassDetail",
-      "line": 31,
+      "line": 32,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/teacher\"",
@@ -1876,7 +2246,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherClassDetail",
-      "line": 31,
+      "line": 32,
       "tag": "Button",
       "type": "open dialog",
       "target": "{()=>setDialog(true)}",
@@ -1885,7 +2255,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherClassDetail",
-      "line": 31,
+      "line": 32,
       "tag": "Button",
       "type": "open dialog",
       "target": "{()=>setDialog(true)}",
@@ -1894,7 +2264,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherClassDetail",
-      "line": 31,
+      "line": 32,
       "tag": "Button",
       "type": "open dialog",
       "target": "{()=>setDialog(true)}",
@@ -1903,7 +2273,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherClassDetail",
-      "line": 31,
+      "line": 32,
       "tag": "button",
       "type": "change tab/filter",
       "target": "{()=>setTab(v)}",
@@ -1912,7 +2282,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherClassDetail",
-      "line": 31,
+      "line": 32,
       "tag": "Button",
       "type": "open dialog",
       "target": "{()=>setDialog(true)}",
@@ -1921,7 +2291,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherClassDetail",
-      "line": 31,
+      "line": 32,
       "tag": "Button",
       "type": "open dialog",
       "target": "{()=>setDialog(true)}",
@@ -1930,7 +2300,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherClassDetail",
-      "line": 31,
+      "line": 32,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "\"/teacher/assignments/4\"",
@@ -1939,7 +2309,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherClassDetail",
-      "line": 31,
+      "line": 32,
       "tag": "UnavailableAction",
       "type": "dialog: unavailable",
       "target": "{`Chưa có trang chấm bài ${v}.`}",
@@ -1948,7 +2318,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherClassDetail",
-      "line": 31,
+      "line": 32,
       "tag": "UnavailableAction",
       "type": "dialog: unavailable",
       "target": "{`Chưa có bản nộp riêng của ${n}.`}",
@@ -1957,7 +2327,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "TeacherClassDetail",
-      "line": 31,
+      "line": 32,
       "tag": "Button",
       "type": "open dialog",
       "target": "{()=>setDialog(true)}",
@@ -1966,7 +2336,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "AssignmentReview",
-      "line": 35,
+      "line": 36,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/teacher/classes/hsk2-k24\"",
@@ -1975,7 +2345,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "AssignmentReview",
-      "line": 35,
+      "line": 36,
       "tag": "button",
       "type": "change tab/filter",
       "target": "{()=>setTab(v)}",
@@ -1984,7 +2354,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "AssignmentReview",
-      "line": 35,
+      "line": 36,
       "tag": "Button",
       "type": "action",
       "target": "{()=>setPinyin(!pinyin)}",
@@ -1993,7 +2363,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "AssignmentReview",
-      "line": 35,
+      "line": 36,
       "tag": "button",
       "type": "action",
       "target": "{()=>draft.update({comment:comment+\" \"+v+\".\"})}",
@@ -2002,7 +2372,7 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "AssignmentReview",
-      "line": 35,
+      "line": 36,
       "tag": "Button",
       "type": "action",
       "target": "{()=>{setStatus(\"\");draft.save();}}",
@@ -2011,11 +2381,74 @@
     {
       "file": "components/screens/TeacherScreens.tsx",
       "component": "AssignmentReview",
-      "line": 35,
+      "line": 36,
       "tag": "Button",
       "type": "submit form",
       "target": "native/forwarded props",
       "label": "Kiểm tra & Gửi (chưa kết nối)"
+    },
+    {
+      "file": "components/ui/AccountHeader.tsx",
+      "component": "AccountAvatar",
+      "line": 17,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/profile\"",
+      "label": "<Avatar name={account?.name??\"\"} version={account?.avatarVersion} size={36}/>"
+    },
+    {
+      "file": "components/ui/AccountHeader.tsx",
+      "component": "AccountHeader",
+      "line": 20,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/\"",
+      "label": "<Image src=\"/xueyan-logo.jpg\" alt=\"Logo XUEYAN\" width={44} height={44}/><span>XUEYAN<small>Học cùng nhịp của bạn</small></span>"
+    },
+    {
+      "file": "components/ui/AccountHeader.tsx",
+      "component": "AccountHeader",
+      "line": 20,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/admin\"",
+      "label": "Quản trị"
+    },
+    {
+      "file": "components/ui/AccountHeader.tsx",
+      "component": "AccountHeader",
+      "line": 20,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/teacher\"",
+      "label": "Giảng viên"
+    },
+    {
+      "file": "components/ui/AccountHeader.tsx",
+      "component": "AccountHeader",
+      "line": 20,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/dictionary\"",
+      "label": "<BookOpen size={21} aria-hidden=\"true\"/>"
+    },
+    {
+      "file": "components/ui/AccountHeader.tsx",
+      "component": "AccountHeader",
+      "line": 20,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/collection\"",
+      "label": "<Bookmark size={21} aria-hidden=\"true\"/>"
+    },
+    {
+      "file": "components/ui/AccountHeader.tsx",
+      "component": "AccountHeader",
+      "line": 20,
+      "tag": "Button",
+      "type": "open dialog",
+      "target": "{async()=>{setBusy(true);try{await api(\"auth/logout\",{method:\"POST\"});clear();router.replace(\"/login\");}catch(e){setError((e as Error).message);}finally{setBusy(false);}}}",
+      "label": "<LogOut size={19} aria-hidden=\"true\"/>"
     },
     {
       "file": "components/ui/ActivityHeatmap.tsx",
@@ -2029,7 +2462,7 @@
     {
       "file": "components/ui/Layouts.tsx",
       "component": "WorkspaceLayout",
-      "line": 43,
+      "line": 46,
       "tag": "a",
       "type": "anchor",
       "target": "\"#workspace-main\"",
@@ -2038,7 +2471,7 @@
     {
       "file": "components/ui/Layouts.tsx",
       "component": "WorkspaceLayout",
-      "line": 44,
+      "line": 47,
       "tag": "button",
       "type": "action",
       "target": "{() => setOpen(false)}",
@@ -2047,7 +2480,7 @@
     {
       "file": "components/ui/Layouts.tsx",
       "component": "WorkspaceLayout",
-      "line": 44,
+      "line": 47,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/\"",
@@ -2056,7 +2489,7 @@
     {
       "file": "components/ui/Layouts.tsx",
       "component": "WorkspaceLayout",
-      "line": 45,
+      "line": 48,
       "tag": "UnavailableAction",
       "type": "dialog: unavailable",
       "target": "\"Chưa có màn hình quản lý yêu cầu tư vấn của giảng viên; biểu mẫu học viên không phải nơi duyệt lịch.\"",
@@ -2065,7 +2498,7 @@
     {
       "file": "components/ui/Layouts.tsx",
       "component": "WorkspaceLayout",
-      "line": 45,
+      "line": 48,
       "tag": "Link",
       "type": "navigate",
       "target": "{href}",
@@ -2074,16 +2507,7 @@
     {
       "file": "components/ui/Layouts.tsx",
       "component": "WorkspaceLayout",
-      "line": 46,
-      "tag": "Link",
-      "type": "navigate",
-      "target": "{teacher ? \"/dashboard\" : \"/teacher\"}",
-      "label": "{teacher ? \"Chế độ học viên\" : \"Không gian giảng viên (mẫu)\"}"
-    },
-    {
-      "file": "components/ui/Layouts.tsx",
-      "component": "WorkspaceLayout",
-      "line": 46,
+      "line": 49,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/help\"",
@@ -2092,16 +2516,16 @@
     {
       "file": "components/ui/Layouts.tsx",
       "component": "WorkspaceLayout",
-      "line": 46,
+      "line": 49,
       "tag": "Link",
       "type": "navigate",
-      "target": "\"/settings\"",
-      "label": "<Settings size={16} />Cài đặt cá nhân"
+      "target": "{teacher?\"/profile/edit\":\"/settings\"}",
+      "label": "<Settings size={16} />{teacher?\"Thông tin tài khoản\":\"Cài đặt cá nhân\"}"
     },
     {
       "file": "components/ui/Layouts.tsx",
       "component": "WorkspaceLayout",
-      "line": 47,
+      "line": 50,
       "tag": "button",
       "type": "action",
       "target": "{() => setOpen(!open)}",
@@ -2110,16 +2534,16 @@
     {
       "file": "components/ui/Layouts.tsx",
       "component": "WorkspaceLayout",
-      "line": 47,
+      "line": 50,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/dictionary\"",
-      "label": "<Search size={18} aria-hidden=\"true\" />Tra chữ Hán, Pinyin, Hán–Việt…"
+      "label": "<Search size={18} aria-hidden=\"true\" /><span>Tra chữ Hán, Pinyin, Hán–Việt…</span>"
     },
     {
       "file": "components/ui/Layouts.tsx",
       "component": "WorkspaceLayout",
-      "line": 47,
+      "line": 50,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/notifications\"",
@@ -2128,16 +2552,7 @@
     {
       "file": "components/ui/Layouts.tsx",
       "component": "WorkspaceLayout",
-      "line": 47,
-      "tag": "Link",
-      "type": "navigate",
-      "target": "{teacher ? \"/teacher/profile\" : \"/profile\"}",
-      "label": "{teacher ? \"LA\" : \"H\"}"
-    },
-    {
-      "file": "components/ui/Layouts.tsx",
-      "component": "WorkspaceLayout",
-      "line": 47,
+      "line": 50,
       "tag": "UnavailableAction",
       "type": "dialog: unavailable",
       "target": "\"Chưa có màn hình quản lý yêu cầu tư vấn dành cho giảng viên.\"",
@@ -2146,16 +2561,16 @@
     {
       "file": "components/ui/Layouts.tsx",
       "component": "WorkspaceLayout",
-      "line": 47,
+      "line": 50,
       "tag": "Link",
       "type": "navigate",
       "target": "{href}",
-      "label": "<Icon size={21} aria-hidden=\"true\"/><small>{label}</small>"
+      "label": "<Icon size={21} aria-hidden=\"true\"/><small>{label === \"Hồ sơ học viên\" ? \"Hồ sơ\" : label}</small>"
     },
     {
       "file": "components/ui/Layouts.tsx",
       "component": "FocusLayout",
-      "line": 54,
+      "line": 57,
       "tag": "button",
       "type": "action",
       "target": "{onExit}",
@@ -2164,7 +2579,7 @@
     {
       "file": "components/ui/Layouts.tsx",
       "component": "FocusLayout",
-      "line": 54,
+      "line": 57,
       "tag": "Link",
       "type": "navigate",
       "target": "{exitHref}",
@@ -2173,7 +2588,7 @@
     {
       "file": "components/ui/Layouts.tsx",
       "component": "FocusLayout",
-      "line": 54,
+      "line": 57,
       "tag": "Link",
       "type": "navigate",
       "target": "\"/settings\"",
@@ -2191,7 +2606,7 @@
     {
       "file": "components/ui/Primitives.tsx",
       "component": "ActionLink",
-      "line": 21,
+      "line": 23,
       "tag": "Link",
       "type": "navigate",
       "target": "{href}",
@@ -2200,7 +2615,7 @@
     {
       "file": "components/ui/Primitives.tsx",
       "component": "UnavailableAction",
-      "line": 25,
+      "line": 27,
       "tag": "Button",
       "type": "open dialog",
       "target": "{() => setOpen(true)}",
@@ -2209,7 +2624,7 @@
     {
       "file": "components/ui/Primitives.tsx",
       "component": "UnavailableAction",
-      "line": 25,
+      "line": 27,
       "tag": "Button",
       "type": "action",
       "target": "{() => setOpen(false)}",
@@ -2218,7 +2633,7 @@
     {
       "file": "components/ui/Primitives.tsx",
       "component": "EmptyState",
-      "line": 39,
+      "line": 41,
       "tag": "ActionLink",
       "type": "navigate",
       "target": "{href}",
@@ -2227,7 +2642,7 @@
     {
       "file": "components/ui/Primitives.tsx",
       "component": "Dialog",
-      "line": 53,
+      "line": 55,
       "tag": "Button",
       "type": "action",
       "target": "{onClose}",
@@ -2236,20 +2651,65 @@
     {
       "file": "components/ui/Primitives.tsx",
       "component": "AudioButton",
-      "line": 61,
+      "line": 63,
       "tag": "Button",
       "type": "action",
       "target": "{speak}",
-      "label": "<Volume2 size={18} />Nghe phát âm"
+      "label": "<Volume2 size={18} aria-hidden=\"true\" />"
+    },
+    {
+      "file": "components/ui/ThemeToggle.tsx",
+      "component": "ThemeToggle",
+      "line": 26,
+      "tag": "button",
+      "type": "action",
+      "target": "{toggle}",
+      "label": "<span className={styles.icon} data-dark={dark} aria-hidden=\"true\"> <Sun size={18} className={styles.sun} /> <Moon size={18} className={styles.moon} /> </span>"
     },
     {
       "file": "components/ui/ValidatedForm.tsx",
       "component": "ValidatedForm",
-      "line": 55,
+      "line": 65,
       "tag": "form",
       "type": "submit form",
       "target": "{submit}",
       "label": "{props.children}{issues.map(issue => createPortal(<small id={issue.id} role=\"alert\" style={{ display: \"block\" }}>{issue.message}</small>, issue.host, issue.id))"
+    },
+    {
+      "file": "components/ui/WorkspaceAccess.tsx",
+      "component": "AccessDenied",
+      "line": 18,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "{roleHome(account.role)}",
+      "label": "Về không gian của tôi"
+    },
+    {
+      "file": "components/ui/WorkspaceAccess.tsx",
+      "component": "AccessDenied",
+      "line": 18,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "{`/login?next=${encodeURIComponent(returnTo)}`}",
+      "label": "Đăng nhập"
+    },
+    {
+      "file": "components/ui/WorkspaceAccess.tsx",
+      "component": "AccessDenied",
+      "line": 18,
+      "tag": "Button",
+      "type": "action",
+      "target": "{()=>retry?void retry():window.location.reload()}",
+      "label": "Thử lại"
+    },
+    {
+      "file": "components/ui/WorkspaceAccess.tsx",
+      "component": "AccessDenied",
+      "line": 18,
+      "tag": "Link",
+      "type": "navigate",
+      "target": "\"/\"",
+      "label": "Trang chủ"
     }
   ],
   "problems": []

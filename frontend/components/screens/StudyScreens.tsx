@@ -6,6 +6,7 @@ import { FocusLayout } from "@/components/ui/Layouts";
 import { ActionLink, AudioButton, Badge, Button, Card, Dialog, EmptyState, s } from "@/components/ui/Primitives";
 import { demoWords } from "@/lib/ui-demo-data";
 import { finishSession, readSession, serverSession, subscribeSession, weakWordIds, type StudyAnswer } from "@/lib/study-session";
+import { FlipCard } from "@/components/ui/FlipCard";
 import { WordList } from "./LearningScreens";
 
 export function StudySession({ learn = false, initialState = "default", wordId, limit = 6 }: { learn?: boolean; initialState?: string; wordId?: string; limit?: number }) {
@@ -38,12 +39,10 @@ export function StudySession({ learn = false, initialState = "default", wordId, 
   return <FocusLayout title={learn ? "Học từ vựng mới" : "Ôn tập hôm nay"} progress={answers.length / words.length * 100} onExit={() => setExit(true)}>
     <Badge>{index + 1}/{words.length} từ mẫu</Badge>
     {syncError && <Card><p role="alert">Mô phỏng lỗi đồng bộ. Phiên mẫu vẫn học tiếp được; kết quả này không gửi lên server.</p><Button secondary onClick={() => setSyncError(false)}>Đóng mô phỏng lỗi</Button></Card>}
-    <Card className={`${s.flashcard} ${s.studyCard}`}>
-      <div className={s.between}><Badge>{word.level}</Badge><Button secondary aria-pressed={marked} onClick={() => setMarked(!marked)}>{marked ? "Đã đánh dấu trong phiên" : "Đánh dấu"}</Button></div>
-      <div className={`${s.rice} ${s.studyAnswer}`}><p className={s.word} lang="zh-Hans">{word.han}</p>{pinyin && <p className={s.pinyin}>{word.pinyin}</p>}</div>
-      <div className={s.between}><Button secondary aria-pressed={pinyin} onClick={() => setPinyin(!pinyin)}>{pinyin ? "Ẩn Pinyin" : "Hiện Pinyin"}</Button><AudioButton text={word.han}/></div>
-      {flipped && <div className={`${s.studyAnswer} ${s.center}`}><Badge>Âm Hán–Việt: {word.hv}</Badge><h2>{word.meaning}</h2><p lang="zh-Hans" className={`${s.han} ${s.pinyin}`}>{word.example}</p>{pinyin && <p>{word.examplePinyin}</p>}<p className={s.muted}>{word.translation}</p></div>}
-    </Card>
+    <div className={s.between}><Badge>{word.level}</Badge><div className={s.row}><Button secondary aria-pressed={pinyin} onClick={() => setPinyin(!pinyin)}>{pinyin ? "Ẩn Pinyin" : "Hiện Pinyin"}</Button><Button secondary aria-pressed={marked} onClick={() => setMarked(!marked)}>{marked ? "Đã đánh dấu" : "Đánh dấu"}</Button></div></div>
+    <FlipCard cardKey={word.id} flipped={flipped} onFlip={setFlipped} label={`Thẻ ${word.han}`}
+      front={<><p className={s.word} lang="zh-Hans" style={{fontSize:"clamp(76px,16vw,128px)"}}>{word.han}</p>{pinyin && <p className={s.pinyin}>{word.pinyin}</p>}<AudioButton text={word.han}/></>}
+      back={<><p lang="zh-Hans" style={{fontFamily:"var(--font-han-serif)",fontSize:22,margin:0,color:"rgba(255,255,255,.85)"}}>{word.han} <span style={{fontFamily:"var(--font-sans)",fontSize:16}}>{word.pinyin}</span></p><h2 style={{fontFamily:"var(--font-heading)",fontSize:"clamp(28px,5vw,38px)",color:"#fff",margin:"4px 0"}}>{word.meaning}</h2><p style={{color:"rgba(255,255,255,.85)",margin:0,fontSize:14}}>Âm Hán–Việt: {word.hv}</p><p lang="zh-Hans" style={{fontFamily:"var(--font-han-serif)",fontSize:20,margin:"10px 0 0",color:"#fff"}}>{word.example}</p>{pinyin && <p style={{color:"rgba(255,255,255,.85)",margin:0,fontSize:14}}>{word.examplePinyin}</p>}<p style={{color:"rgba(255,255,255,.85)",margin:0,fontSize:14}}>{word.translation}</p></>}/>
     <div className={s.studyControls} aria-label="Điều khiển học từ">
       {!flipped ? <Button className={s.full} onClick={() => setFlipped(true)}><Eye size={18}/>Hiện đáp án · Space</Button> : learn ? <div className={s.actions}><ActionLink href={`/lessons/1/practice?word=${word.id}`} secondary>Luyện từ này</ActionLink><Button onClick={() => advance()}>Từ tiếp theo →</Button></div> : <div className={s.ratings}>{["Quên", "Khó", "Nhớ", "Dễ"].map((v, i) => <Button key={v} secondary onClick={() => advance(i + 1)}>{v} · {i + 1}</Button>)}</div>}
     </div>

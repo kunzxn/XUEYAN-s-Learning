@@ -1585,7 +1585,7 @@
 }
 
 /* Dashboard accessibility and narrow-screen safeguards. */
-.siteHeader, .page, .siteFooter { --focus-ring: #185d80; }
+.siteHeader, .page, .siteFooter { --focus-ring: var(--primary-strong); }
 .page section[id], .page { scroll-margin-top: 88px; }
 .page :focus-visible, .siteHeader :focus-visible, .siteFooter :focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 3px; }
 .reviewLink { border: 0; background: transparent; min-height: 44px; padding: 4px; font: inherit; color: var(--success); }
@@ -1679,3 +1679,11 @@
   .levelBtn, .stepBtn, .teaserPrimary, .levelBtn svg, .stepBtn svg { transition: none; }
   .levelBtn:hover, .stepBtn:hover, .teaserPrimary:hover { transform: none; }
 }
+
+/* Logo là ảnh nền sáng: đặt trên ô giấy để vẫn đọc được ở chế độ tối */
+:root[data-theme="dark"] .brandLogo { background: #f6f3ec; border-radius: 10px; padding: 3px; }
+.demoFaceHan{font-family:var(--font-han-serif);font-size:clamp(64px,12vw,104px);line-height:1.2;color:var(--text);margin:0}
+.demoFacePinyin{font-size:20px;font-weight:500;color:var(--primary-hover);margin:0}
+.demoBackMeaning{font-family:var(--font-heading);font-size:clamp(30px,5vw,40px);font-weight:600;color:rgb(var(--on-deep-rgb));margin:0}
+.demoBackNote{font-size:14px;color:rgba(var(--on-deep-rgb),.84);margin:0}
+.demoBackExample{font-family:var(--font-han-serif);font-size:22px;color:rgb(var(--on-deep-rgb));margin:10px 0 0}

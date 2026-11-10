@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import styles from "@/app/dashboard/dashboard.module.css";
 
+import ThemeToggle from "@/components/ui/ThemeToggle";
 import {AccountAvatar} from "@/components/ui/AccountHeader";
 import {useAccount} from "@/lib/session";
 import {roleHome} from "@/lib/workspace-roles";
@@ -61,6 +62,7 @@ export default function DashboardHeader({ onStart }: { onStart: () => void }) {
         </nav>
 
         <div className={styles.headerActions}>
+          <ThemeToggle />
           <Link className={styles.loginLink} href={account?"/profile":"/login"}>{account?account.name:"Đăng nhập"}</Link>
           {account&&account.role!=="learner"?<Link href={roleHome(account.role)} className={styles.headerCta}>Không gian của tôi</Link>:<button type="button" className={styles.headerCta} onClick={onStart}>Thiết lập lộ trình</button>}
           <AccountAvatar className={styles.profileLink}/>

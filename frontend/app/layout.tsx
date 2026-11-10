@@ -29,6 +29,8 @@ const notoSerifSc = Noto_Serif_SC({
   display: "swap",
 });
 
+const themeScript=`try{var s=localStorage.getItem("xueyan-theme");var d=s?s==="dark":matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.dataset.theme=d?"dark":"light"}catch(e){}`;
+
 export const metadata: Metadata = {
   title: "XUEYAN | Học tiếng Trung",
   description: "XUEYAN — học tiếng Trung qua chữ Hán, Pinyin, từ vựng HSK và thực hành ghi nhớ.",
@@ -36,7 +38,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="vi" className={`${beVietnamPro.variable} ${notoSansSc.variable} ${notoSerifSc.variable} ${sourceSerif.variable}`}>
+    <html lang="vi" suppressHydrationWarning className={`${beVietnamPro.variable} ${notoSansSc.variable} ${notoSerifSc.variable} ${sourceSerif.variable}`}>
+      <head><script dangerouslySetInnerHTML={{__html:themeScript}}/></head>
       <body><SessionProvider>{children}</SessionProvider></body>
     </html>
   );

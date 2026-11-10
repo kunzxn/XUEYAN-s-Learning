@@ -12,3 +12,19 @@
 .ratings button:nth-child(4){background:var(--success-soft);border-color:var(--success);color:var(--success-on-soft)}
 .ratings button:hover:not(:disabled){filter:brightness(.96)}
 @media(max-width:760px){.studyCard{min-height:0;padding:20px;gap:12px}.ratings{gap:8px}.ratings button{padding:10px 4px}.riceBox{padding:16px 12px}}
+.studyStage{display:grid;gap:20px;width:100%;max-width:620px;margin:8px auto 0}
+.studyStage .controls{min-height:64px;align-items:flex-start}
+.studyStage .ratings{position:static;padding:0;background:none;animation:ratingsIn 380ms 420ms cubic-bezier(.16,1,.3,1) both}
+.studyStage .ratings button{transition:transform 140ms cubic-bezier(.16,1,.3,1),filter 140ms,box-shadow 140ms}
+.studyStage .ratings button:hover:not(:disabled){transform:translateY(-2px);box-shadow:var(--shadow-sm)}
+.studyStage .ratings button:active:not(:disabled){transform:translateY(1px) scale(.97)}
+.faceHan{font-family:var(--font-han-serif);font-size:clamp(76px,16vw,128px);font-weight:500;line-height:1.2;color:var(--text);margin:0}
+.backHan{font-family:var(--font-han-serif);font-size:22px;line-height:1.4;color:rgba(var(--on-deep-rgb),.85);margin:0}
+.backHan span{font-family:var(--font-sans),sans-serif;font-size:16px;margin-left:6px}
+.studyCard h2.backMeaning,.backMeaning{font-family:var(--font-heading);font-size:clamp(28px,5vw,38px);font-weight:600;line-height:1.25;color:rgb(var(--on-deep-rgb));margin:4px 0;text-wrap:balance}
+.backNote{color:rgba(var(--on-deep-rgb),.82);font-size:14px;margin:0}
+@keyframes ratingsIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.studyStage .ratings{animation:none}.studyStage .ratings button{transition:none}}
+.keys{text-align:center;font-size:13px;color:var(--text-soft);margin:0}
+.keys kbd{font:inherit;font-size:12px;font-weight:600;padding:2px 8px;border:1px solid var(--border-control);border-bottom-width:2px;border-radius:6px;background:var(--surface);color:var(--text)}
+@media(hover:none){.keys{display:none}}

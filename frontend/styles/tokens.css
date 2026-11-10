@@ -77,6 +77,12 @@
   --leading-han: 1.5;
   --leading-pinyin: 1.7;
 
+  /* Mặt "mực đậm" — luôn tối ở cả hai chế độ, chữ trắng đặt lên */
+  --deep: #0a4262;
+  --deep-edge: #155a7f;
+  --on-deep-rgb: 255, 255, 255;
+  color-scheme: light;
+
   /* Layout */
   --layout-width: 1200px;
   --sidebar-width: 264px;
@@ -108,3 +114,62 @@
   --duration-fast: 120ms;
   --duration: 180ms;
 }
+
+/* Chế độ tối — vẫn là xanh nước biển, sáng hơn để đủ tương phản trên nền mực */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --background: #0a141c;
+  --surface: #111e29;
+  --surface-muted: #172735;
+  --surface-strong: #1f3445;
+  --surface-high: #2b4458;
+  --paper-warm: #15232f;
+
+  --text: #e8f0f6;
+  --text-soft: #b7c6d2;
+  --muted: #94a6b4;
+  --border: #2e4456;
+  --border-subtle: #213243;
+  --border-control: #62798c;
+
+  --primary: #62b6ea;
+  --primary-hover: #8acaf1;
+  --primary-strong: #8acaf1;
+  --primary-soft: #12303f;
+  --primary-fixed: #183c52;
+
+  --seal: #c24a3e;
+  --seal-soft: #3b1d1a;
+  --seal-on-soft: #f3b4ac;
+
+  --secondary: #4fc796;
+  --success: #4fc796;
+  --success-soft: #11372a;
+  --success-on-soft: #9be7c4;
+  --warning: #e3ad3f;
+  --warning-soft: #3a2d0d;
+  --warning-on-soft: #f3d48d;
+  --danger: #f27a70;
+  --danger-soft: #3d1b19;
+  --info: #62b6ea;
+  --accent: #e3a93b;
+
+  --chart-secondary: #3f7e9a;
+  --chart-tertiary: #4a8fae;
+  --focus-ring: #8acaf1;
+
+  --primary-rgb: 98, 182, 234;
+  --success-rgb: 79, 199, 150;
+  --warning-rgb: 227, 173, 63;
+  --surface-rgb: 17, 30, 41;
+  --ink-rgb: 0, 0, 0;
+  --white-rgb: 10, 20, 28;
+
+  --deep: #0e3c58;
+  --deep-edge: #2a6a8f;
+
+  --shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35), 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-overlay: 0 24px 56px rgba(0, 0, 0, 0.6);
+}
+

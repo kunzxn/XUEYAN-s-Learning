@@ -2,6 +2,7 @@
 
 import { useState, useSyncExternalStore } from "react";
 import { Bookmark, CheckCircle2, FlipHorizontal2, Volume2 } from "lucide-react";
+import { FlipCard } from "@/components/ui/FlipCard";
 import styles from "@/app/dashboard/dashboard.module.css";
 
 const savedCardKey = "xueyan-saved-friend-card";
@@ -79,29 +80,15 @@ export default function InteractiveVocabulary() {
             </button>
           </div>
 
-          <div className={styles.demoDetails}>
-            <div className={styles.definitionPanel}>
-              <span className={styles.detailLabel}>{flipped ? "Mặt sau" : "Nghĩa"}</span>
-              <p>
-                {flipped ? (
-                  <><strong><span lang="zh-Hans">朋友</span> (péngyou)</strong>: người bạn đồng hành.</>
-                ) : (
-                  <strong>Bạn bè</strong>
-                )}
-              </p>
-            </div>
-            <div className={styles.contextPanel}>
-              <span className={styles.detailLabel}>Ví dụ</span>
-              <p className={styles.contextHanzi} lang="zh-Hans">他们是我的好朋友。</p>
-              <p className={styles.contextTranslation}>Tāmen shì wǒ de hǎo péngyou.<br /><span>Họ là những người bạn tốt của tôi.</span></p>
-            </div>
-          </div>
+          <FlipCard flipped={flipped} onFlip={setFlipped} label="Thẻ 朋友" seal="友"
+            front={<><p className={styles.demoFaceHan} lang="zh-Hans">朋友</p><p className={styles.demoFacePinyin}>péngyou</p></>}
+            back={<><p className={styles.demoBackMeaning}>Bạn bè</p><p className={styles.demoBackNote}>Âm Hán Việt: BẰNG HỮU</p><p className={styles.demoBackExample} lang="zh-Hans">他们是我的好朋友。</p><p className={styles.demoBackNote}>Họ là những người bạn tốt của tôi.</p></>} />
 
           <div className={styles.demoActions}>
             <div className={styles.demoButtonGroup}>
               <button type="button" className={styles.flipButton} aria-pressed={flipped} onClick={() => setFlipped((value) => !value)}>
                 <FlipHorizontal2 size={18} aria-hidden="true" />
-                {flipped ? "Đã xem mặt sau" : "Thử lật thẻ ghi nhớ"}
+                {flipped ? "Lật lại mặt trước" : "Thử lật thẻ ghi nhớ"}
               </button>
               <button type="button" className={styles.saveButton} aria-pressed={saved} onClick={toggleSaved}>
                 {saved ? <CheckCircle2 size={18} aria-hidden="true" /> : <Bookmark size={18} aria-hidden="true" />}
