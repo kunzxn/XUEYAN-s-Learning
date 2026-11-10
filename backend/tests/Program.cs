@@ -22,11 +22,12 @@ if(args.Contains("--cleanup")) {
  DELETE learning.AvatarImages WHERE UserId=@id; DELETE learning.CollectionWords WHERE UserId=@id; DELETE learning.Collections WHERE UserId=@id;
  DELETE learning.ReviewEvents WHERE UserId=@id; DELETE learning.StudySessions WHERE UserId=@id;
  DELETE learning.WordProgress WHERE UserId=@id; DELETE auth.AuditEvents WHERE ActorId=@id;
- DELETE auth.ExternalIdentities WHERE UserId=@id; DELETE auth.Sessions WHERE UserId=@id; DELETE auth.PasswordCredentials WHERE UserId=@id;
+ DELETE auth.PasswordResets WHERE UserId=@id; DELETE auth.ExternalIdentities WHERE UserId=@id; DELETE auth.Sessions WHERE UserId=@id; DELETE auth.PasswordCredentials WHERE UserId=@id;
  DELETE learning.Preferences WHERE UserId=@id; DELETE learning.Profiles WHERE UserId=@id;
  DELETE auth.Users WHERE UserId=@id;
  """,("id",id));
  await Exec("DELETE catalog.Lessons WHERE Slug LIKE @prefix; DELETE classroom.Teachers WHERE Slug LIKE @prefix; DELETE catalog.Words WHERE Slug LIKE @prefix;",("prefix",fixture.Prefix+"%"));
+ var outbox=Path.Combine(root,"mail-outbox");if(Directory.Exists(outbox))foreach(var file in Directory.GetFiles(outbox,"*.txt")){if((await File.ReadAllTextAsync(file)).StartsWith("To: "+fixture.Prefix+"-",StringComparison.Ordinal))File.Delete(file);}
  File.Delete(fixtureFile);Console.WriteLine("PASS temporary fixtures removed; no existing user records were targeted.");return;
 }
 if(File.Exists(fixtureFile))throw new Exception("Previous test fixture exists. Run --cleanup before a new run.");
@@ -71,6 +72,14 @@ var eventId=Guid.NewGuid();var review=new {wordId,rating=3,durationMs=2500,event
 await Expect(learner,HttpMethod.Post,"learning/reviews",review,200);await Expect(learner,HttpMethod.Post,"learning/reviews",review,200);
 await Expect(learner,HttpMethod.Post,"learning/reviews",new {wordId,rating=1,durationMs=2500,eventId},409);
 var progress=await Expect(learner,HttpMethod.Get,"learning/progress",null,200);
+var overview=await Expect(learner,HttpMethod.Get,"learning/overview",null,200);
+if(overview.GetProperty("learned").GetInt32()!=1||overview.GetProperty("firstReviewsToday").GetInt32()!=1)throw new Exception("Overview does not reflect saved learning");
+var results=await Expect(learner,HttpMethod.Get,$"learning/results?events={eventId}",null,200);
+if(results.GetArrayLength()!=1||results[0].GetProperty("rating").GetInt32()!=3)throw new Exception("Saved result mismatch");
+await Expect(other,HttpMethod.Get,$"learning/results?events={eventId}",null,404);
+await Expect(learner,HttpMethod.Get,"learning/results?events=invalid",null,400);
+await Expect(learner,HttpMethod.Get,$"learning/results?events={eventId},{eventId}",null,400);
+Console.WriteLine("PASS account overview, persisted results, ownership and event validation");
 if(progress.GetArrayLength()!=1||progress[0].GetProperty("repetitions").GetInt32()!=1)throw new Exception("Progress/retry mismatch");
 if((await Expect(other,HttpMethod.Get,"learning/progress",null,200)).GetArrayLength()!=0)throw new Exception("Cross-user leak");
 if((await Expect(admin,HttpMethod.Get,$"admin/users/{learnerId}/learning",null,200)).GetArrayLength()!=1)throw new Exception("Admin progress missing");

@@ -118,3 +118,17 @@ var firstNonce=ConfigNonce(null);
 Assert(firstNonce.Length==64&&firstNonce.All(Uri.IsHexDigit),"Google config issues random challenge");
 Assert(ConfigNonce(firstNonce)==firstNonce,"Google config reuses browser challenge across repeated loads");
 Assert(ConfigNonce("bad-cookie")!="bad-cookie","Google config replaces malformed challenge");
+
+// Pure configuration checks: no network, no real mail credentials.
+var mailEnvironment=new Microsoft.Extensions.Hosting.Internal.HostingEnvironment{EnvironmentName="Production"};
+var mailValues=new Dictionary<string,string?>{{"Mail:Host","smtp.gmail.com"},{"Mail:Port","587"},{"Mail:From","fixture@gmail.com"},{"Mail:Username","fixture@gmail.com"},{"Mail:Password","fixture-only-not-a-real-password"},{"Recovery:WebOrigin","https://xueyan-fixture.vercel.app"}};
+RecoveryMailSettings LoadMail(Dictionary<string,string?> values)=>RecoveryMailSettings.Load(new ConfigurationBuilder().AddInMemoryCollection(values).Build(),mailEnvironment);
+var mailSettings=LoadMail(mailValues);
+Assert(!mailSettings.Local&&mailSettings.From!.DisplayName=="XUEYAN"&&mailSettings.From.Address=="fixture@gmail.com","SMTP sender displays XUEYAN with the real authenticated Gmail address");
+foreach(var invalid in new[]{("Mail:Port","465"),("Mail:Port","invalid"),("Mail:Username","other@gmail.com"),("Mail:Password",""),("Mail:From","no-reply@unverified.example"),("Recovery:WebOrigin","http://xueyan-fixture.vercel.app"),("Recovery:WebOrigin","https://example.com/path"),("Recovery:WebOrigin","https://example.com?token=x"),("Recovery:WebOrigin","https://user:pass@example.com")}){
+ var changed=new Dictionary<string,string?>(mailValues){[invalid.Item1]=invalid.Item2};
+ try{LoadMail(changed);throw new Exception("Invalid mail configuration accepted");}catch(ApiError e){Assert(e.Status==503,"mail configuration rejects unsafe/unsupported "+invalid.Item1);}
+}
+try{LoadMail(new());throw new Exception("Production silently fell back to local mail");}catch(ApiError e){Assert(e.Status==503,"production requires real SMTP configuration");}
+var localMail=RecoveryMailSettings.Load(new ConfigurationBuilder().Build(),new Microsoft.Extensions.Hosting.Internal.HostingEnvironment{EnvironmentName="Development"});
+Assert(localMail.Local&&localMail.WebOrigin=="http://localhost:3000","local-only fallback remains explicit in Development");

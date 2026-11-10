@@ -3,9 +3,12 @@ public interface ILearningRepository {
  Task<object> Words(Actor actor);
  Task<object> Due(Actor actor);
  Task<object> Progress(Actor actor);
+ Task<object> Overview(Actor actor);
+ Task<object> Queue(Actor actor,string ids);
+ Task<object> Results(Actor actor,string events);
  Task Save(Actor actor,ReviewRequest review);
 }
-public sealed class LearningRepository(Database db,ISpacedRepetitionScheduler scheduler,TimeProvider clock,IEfReadRepository reads):ILearningRepository {
+public sealed partial class LearningRepository(Database db,ISpacedRepetitionScheduler scheduler,TimeProvider clock,IEfReadRepository reads):ILearningRepository {
  public async Task<object> Words(Actor actor)=>await reads.Words(actor);
  public async Task<object> Progress(Actor actor)=>await reads.Progress(actor);
  public async Task<object> Due(Actor actor)=>await reads.Due(actor);

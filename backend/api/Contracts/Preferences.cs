@@ -1,0 +1,1 @@
+public sealed record PreferencesRequest(int DailyWordGoal,string? TargetLevelCode,string? Purpose,bool ShowPinyin,bool ShowHanViet,bool Autoplay,string StudyTime,string Version,bool CompleteOnboarding=false);

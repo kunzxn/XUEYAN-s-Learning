@@ -20,7 +20,8 @@ $migrations = @(
     @('007-learned-history','07-learned-history.sql'),
     @('008-hsk-google','08-hsk-google.sql'),
     @('009-user-profile','09-user-profile.sql'),
-    @('010-workspace-roles','10-workspace-roles.sql')
+    @('010-workspace-roles','10-workspace-roles.sql'),
+    @('011-password-recovery','11-password-recovery.sql')
 )
 foreach ($migration in $migrations) {
     $version = $migration[0]
