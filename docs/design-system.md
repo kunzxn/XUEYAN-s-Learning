@@ -1,6 +1,6 @@
 # XUEYAN Design System
 
-**Hướng thiết kế: "Mực xanh & giấy".** Xanh mực (lấy từ logo nét cọ) là màu chủ đạo trên nền giấy sáng; son đỏ kiểu ấn triện (`--seal`) chỉ dùng cho điểm nhấn rất nhỏ như dấu kicker. Chữ Hán hiển thị bằng Noto Serif SC (`--font-han-serif`) trong ô mễ tự cách (`.rice`), pinyin và nghĩa tiếng Việt dùng Be Vietnam Pro với line-height ≥ 1.65 để không cắt dấu thanh.
+**Hướng thiết kế: "Mực xanh & giấy".** Xanh mực (lấy từ logo nét cọ) là màu chủ đạo trên nền giấy ấm (`--background: #F6F3EC`); son đỏ kiểu ấn triện (`--seal`) chỉ dùng cho điểm nhấn rất nhỏ như dấu kicker. Chữ Hán hiển thị bằng Noto Serif SC (`--font-han-serif`) trong ô mễ tự cách (`.rice`), pinyin và nghĩa tiếng Việt dùng Be Vietnam Pro với line-height ≥ 1.65 để không cắt dấu thanh.
 
 Shared visual tokens live in `frontend/styles/tokens.css` under `:root`, imported by `frontend/app/globals.css`. Use these variables instead of adding page-level color literals.
 
@@ -11,9 +11,9 @@ Shared visual tokens live in `frontend/styles/tokens.css` under `:root`, importe
 | Primary | `--primary` | `#0A4262` |
 | Primary hover | `--primary-hover` | `#155A7F` |
 | Primary soft | `--primary-soft` | `#E9F5FF` |
-| Background | `--background` | `#F5F8FA` |
-| Surface | `--surface` | `#FFFFFF` |
-| Muted surface | `--surface-muted` | `#E9F5FF` |
+| Background | `--background` | `#F6F3EC` |
+| Surface | `--surface` | `#FFFEFA` |
+| Muted surface | `--surface-muted` | `#EFEBE1` |
 | Main text | `--text` | `#0A1E28` |
 | Muted text | `--text-soft` | `#40484E` |
 | Border | `--border` | `#C0C7CE` |
@@ -47,3 +47,12 @@ Use `--space-1` through `--space-16` (4, 8, 12, 16, 24, 32, 48, 64px). Standard 
 - **Dialogs and disclosures:** use semantic buttons, keyboard focus management, and `aria-expanded`/`aria-controls` for expandable content.
 
 The canonical style reference is `frontend/dashboard.html`; the original `frontend/dasboard.html` is retained. The public reference maps to `/`, and learner Dashboard Stitch layouts map to `/dashboard`. Shared components are in `frontend/components/ui/`; page layouts use scoped CSS Modules. Full source inventory and route mapping are in `docs/ui-migration.md`.
+
+## Quy tắc tránh giao diện "mẫu AI"
+
+- Tiêu đề trang và tiêu đề khối dùng font serif `--font-heading` (Source Serif 4, hỗ trợ tiếng Việt); phần giao diện thao tác vẫn dùng Be Vietnam Pro.
+- Không đặt nhãn viết hoa (kicker/eyebrow) phía trên tiêu đề. Tiêu đề tự đủ nghĩa.
+- Không dùng lưới thẻ cùng cỡ kiểu icon + tiêu đề + mô tả, thẻ "số to + nhãn nhỏ", hay đánh số 01/02/03 khi thứ tự không mang thông tin. Dùng danh sách kẻ dòng hoặc cột chữ.
+- Không dùng viền màu bên trái cho callout/ghi chú, không dùng kính mờ hoặc chip nổi làm trang trí.
+- Chữ Hán luôn đặt trong ô mễ tự cách (`.rice`) khi là nội dung học chính.
+- Logo JPG nền trắng được hòa vào nền bằng `mix-blend-mode: multiply` (xem `globals.css`).

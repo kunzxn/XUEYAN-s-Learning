@@ -13,10 +13,6 @@ export default function DashboardHero({
     <section className={styles.heroSection}>
       <div className={styles.heroGrid}>
         <div className={styles.heroCopy}>
-          <div className={styles.methodBadge}>
-            <span className={styles.liveDot} aria-hidden="true" />
-            Học từ mới · Ôn đúng lúc
-          </div>
           <h1>
             Học tiếng Trung mỗi ngày, <em>nhớ lâu từng từ.</em>
           </h1>

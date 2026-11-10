@@ -5,20 +5,20 @@
  */
 :root {
   /* Surface — giấy */
-  --background: #f5f8fa;
-  --surface: #ffffff;
-  --surface-muted: #edf3f7;
-  --surface-strong: #e1ecf3;
-  --surface-high: #d0e0ea;
-  --paper-warm: #faf7f1;
+  --background: #f6f3ec;
+  --surface: #fffefa;
+  --surface-muted: #efebe1;
+  --surface-strong: #e6e0d1;
+  --surface-high: #d9d2c0;
+  --paper-warm: #fbf7ec;
 
   /* Ink — chữ và viền */
-  --text: #0c1f2b;
-  --text-soft: #3f4c55;
-  --muted: #667580;
-  --border: #c5d0d8;
-  --border-subtle: #dde6ec;
-  --border-control: #75848f;
+  --text: #16212b;
+  --text-soft: #474d54;
+  --muted: #666b70;
+  --border: #cbc3b1;
+  --border-subtle: #e3ddce;
+  --border-control: #7b7568;
 
   /* Brand — xanh mực */
   --primary: #0a4262;
@@ -60,6 +60,7 @@
 
   /* Typography */
   --font-mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+  --font-heading: var(--font-display), "Source Serif 4", Georgia, "Times New Roman", serif;
   --font-han-serif: var(--font-zh-serif), "Noto Serif SC", "Songti SC", "SimSun", serif;
   --font-body-size: 16px;
   --font-label-size: 12px;

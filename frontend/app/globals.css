@@ -64,6 +64,11 @@ img {
   display: block;
 }
 
+/* Logo là JPG nền trắng: hòa vào nền giấy thay vì hiện thành ô sáng. */
+img[src*="xueyan-logo"] {
+  mix-blend-mode: multiply;
+}
+
 .app-shell {
   display: flex;
   min-height: 100vh;

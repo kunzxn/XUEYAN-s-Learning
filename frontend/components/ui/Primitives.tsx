@@ -34,7 +34,7 @@ export function Badge({ children, tone }: { children: ReactNode; tone?: "success
 }
 export function DemoNotice() { return <p className={s.note}>Bản xem trước · Chưa đồng bộ tài khoản.</p>; }
 export function PageTitle({ title, description, children }: { title: string; description?: string; children?: ReactNode }) {
-  return <div className={s.heading}><div><span className={s.kicker}>XUEYAN · Học viện Hán ngữ</span><h1>{title}</h1>{description && <p>{description}</p>}</div>{children}</div>;
+  return <div className={s.heading}><div><h1>{title}</h1>{description && <p>{description}</p>}</div>{children}</div>;
 }
 export function Progress({ value, label }: { value: number; label: string }) { return <progress className={s.progress} max={100} value={value} aria-label={label}>{value}%</progress>; }
 export function EmptyState({ title, description, href, action = "Quay lại" }: { title: string; description: string; href?: string; action?: string }) {

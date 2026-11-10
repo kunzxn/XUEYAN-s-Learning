@@ -1,40 +1,30 @@
+import Image from "next/image";
 import Link from "next/link";
-import { demoTeachers } from "@/lib/ui-demo-data";
 import { ArrowRight } from "lucide-react";
 import styles from "@/app/dashboard/dashboard.module.css";
-import { TeacherImage } from "@/components/dashboard/LearningSections";
-
-const teachers = demoTeachers.slice(0, 3);
+import { ZaloButton } from "@/components/screens/TeacherProfile";
 
 export default function FeaturedTeachers() {
   return (
     <section className={styles.sectionContainer} id="giao-vien">
-      <div className={styles.sectionHeadingRow}>
-        <div className={styles.sectionHeading}>
-          <span className={styles.eyebrow}>Chuyên môn học thuật</span>
-          <h2>Đội ngũ giáo viên đồng hành</h2>
-          <p>Danh bạ minh họa; tên, ảnh và thông tin chuyên môn chưa được xác minh để công bố.</p>
+      <div className={styles.teacherTeaser}>
+        <div className={styles.teaserPhoto}>
+          <Image src="/teacher/tuyet-nhi-aodai.jpg" alt="Giáo viên Trần Thị Tuyết Nhi" width={1330} height={2000} sizes="(max-width: 760px) 60vw, 260px" />
         </div>
-        <Link className={styles.textLink} href="/teachers">Tất cả giáo viên <ArrowRight size={17} aria-hidden="true" /></Link>
-      </div>
-      <div className={styles.teacherGrid}>
-        {teachers.map((teacher) => (
-          <article className={styles.teacherCard} key={teacher.name}>
-            <div className={styles.teacherImageFrame}>
-              <TeacherImage src={teacher.image} alt={`Ảnh minh họa ${teacher.name}`} />
-              <span className={styles.teacherCredential}>{"Hồ sơ minh họa"}</span>
-            </div>
-            <div className={styles.teacherBody}>
-              <div className={styles.teacherNameRow}>
-                <h3>{teacher.name}</h3>
-                <span>{teacher.level}</span>
-              </div>
-              <p className={styles.teacherSchool}>{teacher.headline}</p>
-              <p className={styles.teacherDescription}>{teacher.detail}</p>
-              <Link href={`/teachers/${teacher.id}`} className={styles.teacherLink}>Xem hồ sơ giáo viên</Link>
-            </div>
-          </article>
-        ))}
+        <div className={styles.teaserBody}>
+          <h2>Trần Thị Tuyết Nhi</h2>
+          <ul className={styles.teaserChips} aria-label="Thành tích nổi bật">
+            <li>HSK 6</li>
+            <li>Cử nhân Ngôn ngữ Trung</li>
+            <li>Giải nhì Diễn cảm tiếng Trung 2026</li>
+          </ul>
+          <div className={styles.teaserActions}>
+            <Link className={styles.teaserPrimary} href="/teachers">
+              Xem hồ sơ giáo viên <ArrowRight size={18} aria-hidden="true" />
+            </Link>
+            <ZaloButton className={styles.teaserZalo}>Thông tin liên hệ</ZaloButton>
+          </div>
+        </div>
       </div>
     </section>
   );

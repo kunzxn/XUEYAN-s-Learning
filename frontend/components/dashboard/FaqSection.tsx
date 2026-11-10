@@ -31,7 +31,6 @@ export default function FaqSection() {
     <section className={`${styles.faqSection} ${styles.fullBand}`} id="faq">
       <div className={styles.faqContainer}>
         <div className={`${styles.sectionHeading} ${styles.centerHeading}`}>
-          <span className={styles.eyebrow}>Giải đáp băn khoăn</span>
           <h2>Câu hỏi thường gặp</h2>
           <p>Những thông tin giúp bạn bắt đầu hành trình học tiếng Trung cùng XUEYAN.</p>
         </div>

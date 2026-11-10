@@ -58,9 +58,7 @@ export default function InteractiveVocabulary() {
     <section className={`${styles.vocabularySection} ${styles.fullBand}`} id="tu-vung">
       <div className={styles.demoContainer}>
         <div className={`${styles.sectionHeading} ${styles.centerHeading}`}>
-          <span className={styles.eyebrow}>Tương tác trực quan</span>
-          <h2>Trải nghiệm học một từ vựng cùng XUEYAN</h2>
-          <p>Khám phá nghĩa và ngữ cảnh của một từ qua thẻ ghi nhớ.</p>
+          <h2>Thử lật một thẻ từ</h2>
         </div>
 
         <article className={styles.demoCard}>
@@ -83,17 +81,17 @@ export default function InteractiveVocabulary() {
 
           <div className={styles.demoDetails}>
             <div className={styles.definitionPanel}>
-              <span className={styles.detailLabel}>{flipped ? "Mặt sau của thẻ" : "Giải nghĩa từ"}</span>
+              <span className={styles.detailLabel}>{flipped ? "Mặt sau" : "Nghĩa"}</span>
               <p>
                 {flipped ? (
-                  <><strong><span lang="zh-Hans">朋友</span> (péngyou)</strong> là người bạn đồng hành; hai người cùng chia sẻ và hỗ trợ nhau.</>
+                  <><strong><span lang="zh-Hans">朋友</span> (péngyou)</strong>: người bạn đồng hành.</>
                 ) : (
-                  <><strong>Bạn bè, người bạn đồng hành.</strong> Gợi nhớ mối liên kết và sự sẻ chia giữa những người bạn.</>
+                  <strong>Bạn bè</strong>
                 )}
               </p>
             </div>
             <div className={styles.contextPanel}>
-              <span className={styles.detailLabel}>Ngữ cảnh đàm thoại</span>
+              <span className={styles.detailLabel}>Ví dụ</span>
               <p className={styles.contextHanzi} lang="zh-Hans">他们是我的好朋友。</p>
               <p className={styles.contextTranslation}>Tāmen shì wǒ de hǎo péngyou.<br /><span>Họ là những người bạn tốt của tôi.</span></p>
             </div>
@@ -110,7 +108,6 @@ export default function InteractiveVocabulary() {
                 {saved ? "Đã lưu vào sổ từ" : "Lưu vào sổ từ cá nhân"}
               </button>
             </div>
-            <span className={styles.studyGoal}>Mục tiêu: ghi nhớ sau 4 chu kỳ</span>
           </div>
           <p className={styles.feedbackMessage} role="status" aria-live="polite">{feedback}</p>
         </article>
