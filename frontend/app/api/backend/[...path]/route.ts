@@ -1,7 +1,7 @@
 import { NextRequest } from "next/server";
 
 export const runtime = "nodejs";
-const allowed = /^(auth\/(login|logout|register|refresh|me|session|google|google\/config)|profile(\/avatar)?|library\/words(\/[0-9]+)?|catalog\/words|catalog\/levels(\/(1|2|3|4|5|6|7-9)\/words)?|admin\/(words|lessons|teachers|users|overview|levels)(\/[a-zA-Z0-9-]+){0,2}|learning\/(words|progress|due|reviews))$/;
+const allowed = /^(auth\/(login|logout|register|forgot-password|reset-password|refresh|me|session|google|google\/config)|profile(\/avatar)?|library\/words(\/[0-9]+)?|catalog\/words|catalog\/levels(\/(1|2|3|4|5|6|7-9)\/words)?|admin\/(words|lessons|teachers|users|overview|levels)(\/[a-zA-Z0-9-]+){0,2}|learning\/(words|progress|due|reviews|overview|results|preferences|queue))$/;
 async function proxy(request: NextRequest, { params }: { params: Promise<{path:string[]}> }) {
   const path=(await params).path.join("/");
   if(!allowed.test(path))return Response.json({error:"Không có API này."},{status:404});

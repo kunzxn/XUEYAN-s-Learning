@@ -1,15 +1,17 @@
 # XUEYAN Design System
 
+**Hướng thiết kế: "Mực xanh & giấy".** Xanh mực (lấy từ logo nét cọ) là màu chủ đạo trên nền giấy sáng; son đỏ kiểu ấn triện (`--seal`) chỉ dùng cho điểm nhấn rất nhỏ như dấu kicker. Chữ Hán hiển thị bằng Noto Serif SC (`--font-han-serif`) trong ô mễ tự cách (`.rice`), pinyin và nghĩa tiếng Việt dùng Be Vietnam Pro với line-height ≥ 1.65 để không cắt dấu thanh.
+
 Shared visual tokens live in `frontend/styles/tokens.css` under `:root`, imported by `frontend/app/globals.css`. Use these variables instead of adding page-level color literals.
 
 ## Color
 
 | Role | Token | Value |
 | --- | --- | --- |
-| Primary | `--primary` | `#004563` |
-| Primary hover | `--primary-hover` | `#185D80` |
+| Primary | `--primary` | `#0A4262` |
+| Primary hover | `--primary-hover` | `#155A7F` |
 | Primary soft | `--primary-soft` | `#E9F5FF` |
-| Background | `--background` | `#F5FAFF` |
+| Background | `--background` | `#F5F8FA` |
 | Surface | `--surface` | `#FFFFFF` |
 | Muted surface | `--surface-muted` | `#E9F5FF` |
 | Main text | `--text` | `#0A1E28` |
@@ -17,7 +19,8 @@ Shared visual tokens live in `frontend/styles/tokens.css` under `:root`, importe
 | Border | `--border` | `#C0C7CE` |
 | Success | `--success` | `#046C4B` |
 | Warning | `--warning` | `#745100` |
-| Danger | `--danger` | `#BA1A1A` |
+| Danger | `--danger` | `#B3261E` |
+| Seal accent (hạn chế) | `--seal` | `#B23A2E` |
 | Info | `--info` | `#185D80` |
 | Focus ring | `--focus-ring` | ``#185D80`` |
 | Chart accents | `--chart-secondary`, `--chart-tertiary` | `#7CB1C6`, `#78B8D0` |
@@ -33,7 +36,7 @@ Use semantic foreground tokens (`--success-on-soft`, `--warning-on-soft`) on tin
 
 ## Spacing, Radius, Shadow
 
-Use `--space-1` through `--space-16` (4, 8, 12, 16, 24, 32, 48, 64px). Standard surfaces use `--radius-sm` (8px), `--radius-md` (12px), and `--radius-lg` (16px); reserve `--radius-xl` (20px) for featured areas. Use `--shadow-sm`, `--shadow`, and `--shadow-overlay` for increasing elevation.
+Use `--space-1` through `--space-16` (4, 8, 12, 16, 24, 32, 48, 64px). Standard surfaces use `--radius-sm` (6px), `--radius-md` (10px), and `--radius-lg` (14px); reserve `--radius-xl` (18px) for featured areas. Use `--shadow-sm`, `--shadow`, and `--shadow-overlay` for increasing elevation.
 
 ## Components
 

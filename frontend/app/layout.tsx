@@ -1,6 +1,6 @@
 import {SessionProvider} from "@/lib/session";
 import type { Metadata } from "next";
-import { Be_Vietnam_Pro, Noto_Sans_SC } from "next/font/google";
+import { Be_Vietnam_Pro, Noto_Sans_SC, Noto_Serif_SC } from "next/font/google";
 import "./globals.css";
 
 const beVietnamPro = Be_Vietnam_Pro({
@@ -15,6 +15,13 @@ const notoSansSc = Noto_Sans_SC({
   weight: ["400", "500", "700"],
 });
 
+const notoSerifSc = Noto_Serif_SC({
+  variable: "--font-zh-serif",
+  subsets: ["latin"],
+  weight: ["500", "700"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "XUEYAN | Học tiếng Trung",
   description: "XUEYAN — học tiếng Trung qua chữ Hán, Pinyin, từ vựng HSK và thực hành ghi nhớ.",
@@ -22,7 +29,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="vi" className={`${beVietnamPro.variable} ${notoSansSc.variable}`}>
+    <html lang="vi" className={`${beVietnamPro.variable} ${notoSansSc.variable} ${notoSerifSc.variable}`}>
       <body><SessionProvider>{children}</SessionProvider></body>
     </html>
   );

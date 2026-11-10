@@ -1,3 +1,3 @@
-export const metadata = { title: 'Đặt lại mật khẩu | XUEYAN', description: 'Đặt lại mật khẩu trên XUEYAN — học tiếng Trung qua chữ Hán, Pinyin và thực hành.' };
-import {AuthScreen} from "@/components/screens/AuthScreens";
-export default async function Page({searchParams}:{searchParams:Promise<{demo?:string}>}){const {demo}=await searchParams;return <AuthScreen kind="reset" demo={demo}/>;}
+import {PasswordRecovery} from '@/components/screens/PasswordRecovery';
+export const metadata={title:'Đặt lại mật khẩu | XUEYAN',referrer:'no-referrer' as const};
+export default async function Page({searchParams}:{searchParams:Promise<{token?:string}>}){const {token}=await searchParams;return <PasswordRecovery reset token={token}/>;}

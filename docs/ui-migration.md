@@ -100,3 +100,23 @@ Chi tiết và giới hạn: [hồ sơ và từ điển](account-profile-and-dic
 - [x] Kiểm tra URL trực tiếp, sai vai trò, refresh và thao tác trình duyệt bằng fixture.
 
 Xem [quyền không gian](workspace-role-access.md).
+
+## 2026-11-02 — Hợp nhất luồng học viên
+
+- [x] Dashboard/ôn tập/tiến độ dùng dữ liệu tài khoản SQL, bỏ số cố định và demo query trên các route chính.
+- [x] HSK → học từ mới → lưu reviews → kết quả SQL → Dashboard/tiến độ; ôn tập chỉ lấy từ đến hạn thật.
+- [x] Các URL bài học mẫu cũ redirect về học HSK 1; implementation ConnectedLearning/LearnerDashboard cũ tái sử dụng component thật.
+- [x] Lint/typecheck/build và smoke API/HTTP production qua; fixture đã dọn.
+- [ ] Bấm thử desktop/mobile/bàn phím: công cụ trình duyệt chưa khởi tạo được trong lượt này.
+
+Chi tiết và giới hạn: [hợp nhất học viên](learner-flow-unification.md).
+
+## 2026-11-02 — Tiếp tục hoàn thiện học viên
+
+- [x] Khôi phục phiên Flashcard theo tài khoản/mode, đúng vị trí/mặt thẻ, xác minh lại hàng đợi và lượt học từ SQL.
+- [x] Onboarding/cài đặt lưu SQL, gồm mục tiêu/giờ học/Pinyin; Dashboard nhận mục tiêu mới.
+- [x] Khôi phục mật khẩu bằng token một lần và thu hồi phiên cũ; SMTP sender có cấu hình, thư local riêng khi Development chưa có SMTP.
+- [x] API/draft tests, lint/typecheck/build qua; browser hoạt động lại và đã bấm các thao tác chính mobile/desktop. Các mục chưa bấm ở đợt trước vẫn là lịch sử kiểm tra đợt trước.
+- [ ] Gửi email ra hộp thư thật: chờ có tài khoản SMTP và cấu hình trên server.
+
+Chi tiết: [cài đặt và khôi phục](account-settings-and-recovery.md).
