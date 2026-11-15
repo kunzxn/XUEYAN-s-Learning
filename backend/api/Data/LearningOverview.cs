@@ -4,6 +4,21 @@ public sealed partial class LearningRepository {
   await using var c=await db.Open(actor);var rows=await Database.Query(c,"SELECT WordId Id,Simplified,Pinyin,HanViet,MeaningVi,MeaningEn FROM catalog.PublishedWords WHERE WordId IN (SELECT TRY_CONVERT(bigint,value) FROM STRING_SPLIT(@ids,','))",("ids",ids));
   if(rows.Count!=values.Length)throw new ApiError(409,"Có từ không còn khả dụng. Hãy bắt đầu phiên mới.");return rows;
  }
+ // Từ chưa có lượt học nào, lọc ở SQL thay vì tải toàn bộ tiến độ về trình duyệt. Thứ tự giống learning/words (mới nhất trước).
+ public async Task<object> NewWords(Actor actor,int limit){
+  if(limit is <1 or >50)throw new ApiError(400,"Số từ mỗi phiên phải từ 1 đến 50.");
+  await using var c=await db.Open(actor);
+  return await Database.Query(c,"SELECT TOP (@limit) w.WordId Id,w.Simplified,w.Pinyin,w.HanViet,w.MeaningVi,w.MeaningEn FROM catalog.PublishedWords w WHERE NOT EXISTS(SELECT 1 FROM learning.WordProgress p WHERE p.UserId=@user AND p.WordId=w.WordId) ORDER BY w.WordId DESC",("limit",limit),("user",actor.UserId));
+ }
+ // Trong danh sách id ứng viên (tối đa 100), trả về các id mà người học chưa có lượt học.
+ public async Task<object> Unseen(Actor actor,string ids){
+  var values=(ids??"").Split(',',StringSplitOptions.RemoveEmptyEntries);
+  if(values.Length is <1 or >100||values.Any(v=>!long.TryParse(v,out var id)||id<=0))throw new ApiError(400,"Danh sách từ không hợp lệ (tối đa 100).");
+  await using var c=await db.Open(actor);
+  var rows=await Database.Query(c,"SELECT WordId FROM learning.WordProgress WHERE UserId=@user AND WordId IN (SELECT TRY_CONVERT(bigint,value) FROM STRING_SPLIT(@ids,','))",("user",actor.UserId),("ids",ids));
+  var seen=rows.Select(r=>Convert.ToInt64(r["wordId"])).ToHashSet();
+  return values.Select(long.Parse).Distinct().Where(id=>!seen.Contains(id)).ToArray();
+ }
  public async Task<object> Overview(Actor actor){
   await using var connection=await db.Open();
   // Same owner restriction as Save; no identity is accepted from the request.

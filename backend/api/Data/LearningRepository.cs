@@ -4,6 +4,8 @@ public interface ILearningRepository {
  Task<object> Due(Actor actor);
  Task<object> Progress(Actor actor);
  Task<object> Overview(Actor actor);
+ Task<object> NewWords(Actor actor,int limit);
+ Task<object> Unseen(Actor actor,string ids);
  Task<object> Queue(Actor actor,string ids);
  Task<object> Results(Actor actor,string events);
  Task Save(Actor actor,ReviewRequest review);

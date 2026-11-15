@@ -4,6 +4,8 @@ public interface ILearningService
     Task<object> Progress(Actor actor);
     Task<object> Due(Actor actor);
     Task<object> Overview(Actor actor);
+    Task<object> NewWords(Actor actor,int limit);
+    Task<object> Unseen(Actor actor,string ids);
     Task<object> Queue(Actor actor,string ids);
     Task<object> Results(Actor actor,string events);
     Task Review(Actor actor,ReviewRequest request);
@@ -14,6 +16,8 @@ public sealed class LearningService(ILearningRepository repository,IEfReadReposi
     public Task<object> Progress(Actor actor)=>repository.Progress(actor);
     public Task<object> Due(Actor actor)=>repository.Due(actor);
     public Task<object> Overview(Actor actor)=>repository.Overview(actor);
+    public Task<object> NewWords(Actor actor,int limit)=>repository.NewWords(actor,limit);
+    public Task<object> Unseen(Actor actor,string ids)=>repository.Unseen(actor,ids);
     public Task<object> Queue(Actor actor,string ids)=>repository.Queue(actor,ids);
     public Task<object> Results(Actor actor,string events)=>repository.Results(actor,events);
     public Task Review(Actor actor,ReviewRequest request){
