@@ -1250,7 +1250,10 @@ img[src*="xueyan-logo"] {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  /* Thẻ lật tự có phương án cross-fade, nên không bị tắt hoàn toàn ở đây. */
+  *:not([data-flip-card]):not([data-flip-card] *),
+  *:not([data-flip-card]):not([data-flip-card] *)::before,
+  *:not([data-flip-card]):not([data-flip-card] *)::after {
     animation: none !important;
     transition: none !important;
     scroll-behavior: auto !important;

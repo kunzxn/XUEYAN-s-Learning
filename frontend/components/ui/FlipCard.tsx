@@ -15,6 +15,8 @@ type FlipCardProps = {
   /** Chữ ấn đỏ in lên mặt sau khi lật. */
   seal?: string;
   label?: string;
+  /** Nội dung đọc to (aria-live) khi thẻ lật; rỗng nghĩa là không thông báo. */
+  announce?: string;
 };
 
 /**
@@ -22,7 +24,7 @@ type FlipCardProps = {
  * không có chiều cao cố định. Mặt đang ẩn bị `inert` để bàn phím và trình đọc màn hình bỏ qua.
  * Khi người dùng bật giảm chuyển động, thẻ chuyển bằng cross-fade thay vì xoay.
  */
-export function FlipCard({ front, back, flipped, onFlip, cardKey, seal = "记", label = "Thẻ từ vựng" }: FlipCardProps) {
+export function FlipCard({ front, back, flipped, onFlip, cardKey, seal = "记", label = "Thẻ từ vựng", announce = "" }: FlipCardProps) {
   function click(event: MouseEvent<HTMLDivElement>) {
     if ((event.target as HTMLElement).closest("button,a,input,summary")) return;
     onFlip(!flipped);
@@ -35,7 +37,8 @@ export function FlipCard({ front, back, flipped, onFlip, cardKey, seal = "记", 
     }
   }
   return (
-    <div className={styles.scene} key={cardKey}>
+    <>
+    <div className={styles.scene} key={cardKey} data-flip-card="">
       <div
         className={styles.card}
         data-flipped={flipped}
@@ -56,5 +59,7 @@ export function FlipCard({ front, back, flipped, onFlip, cardKey, seal = "记", 
         </div>
       </div>
     </div>
+    <span className={styles.live} role="status" aria-live="polite" aria-atomic="true">{announce}</span>
+    </>
   );
 }
