@@ -41,7 +41,7 @@
 .danger { background:var(--danger-soft); color:var(--danger); }
 
 /* ---------- Surfaces ---------- */
-.card { padding:24px; background:var(--surface); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); box-shadow:var(--shadow-sm); }
+.card { padding:24px; background:var(--surface); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); }
 .card h2 { font-size:var(--text-xl); line-height:1.4; margin-bottom:14px; letter-spacing:-.005em; }
 .card h3 { font-size:var(--text-lg); line-height:1.45; }
 .card p { line-height:var(--leading-body); }

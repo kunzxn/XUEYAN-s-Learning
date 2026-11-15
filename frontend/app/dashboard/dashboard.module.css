@@ -1687,3 +1687,10 @@
 .demoBackMeaning{font-family:var(--font-heading);font-size:clamp(30px,5vw,40px);font-weight:600;color:rgb(var(--on-deep-rgb));margin:0}
 .demoBackNote{font-size:14px;color:rgba(var(--on-deep-rgb),.84);margin:0}
 .demoBackExample{font-family:var(--font-han-serif);font-size:22px;color:rgb(var(--on-deep-rgb));margin:10px 0 0}
+
+/* Điện thoại hẹp: đủ chỗ cho nút đổi giao diện mà không đẩy nút menu ra khỏi màn hình */
+@media (max-width: 440px) {
+  .brandCopy small { display: none; }
+  .headerCta { padding: 0 6px; }
+  .headerActions > button:first-child { width: 36px; height: 36px; }
+}

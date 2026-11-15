@@ -8,3 +8,4 @@
 .icon[data-dark="true"] .sun { opacity: 0; transform: rotate(80deg) scale(.4); }
 .icon[data-dark="true"] .moon { opacity: 1; transform: rotate(0) scale(1); }
 @media (prefers-reduced-motion: reduce) { .icon svg { transition: opacity 150ms; transform: none !important; } }
+@media (max-width: 440px) { .toggle { width: 36px; height: 36px; } }
