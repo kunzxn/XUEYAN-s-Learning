@@ -21,7 +21,7 @@ export default function DashboardHero({
           </p>
           <div className={styles.heroActions}>
             <button type="button" className={styles.primaryButton} onClick={onStartLearning}>
-              Học thử Bài 01 <ArrowRight size={18} aria-hidden="true" />
+              Bắt đầu với HSK 1 <ArrowRight size={18} aria-hidden="true" />
             </button>
             <a className={styles.secondaryButton} href="#lo-trinh">Khám phá lộ trình</a>
           </div>

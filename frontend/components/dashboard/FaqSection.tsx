@@ -19,8 +19,8 @@ const questions = [
     answer: "Lịch ôn tập sắp xếp từ cần luyện lại theo từng phiên học, giúp bạn quay lại với từ vựng một cách đều đặn.",
   },
   {
-    question: "Tôi có thể tham gia các lớp học trực tiếp với giảng viên không?",
-    answer: "Bạn có thể xem thông tin và lịch đồng hành của đội ngũ giáo viên tại trang Giáo viên.",
+    question: "Tôi có thể hỏi trực tiếp cô giáo không?",
+    answer: "Website do cô Trần Thị Tuyết Nhi xây dựng để học sinh ôn luyện từ vựng HSK. Bạn có thể xem giới thiệu và nhắn Zalo cho cô tại trang Giáo viên.",
   },
 ];
 

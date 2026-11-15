@@ -10,3 +10,6 @@
 .story h2,.formPanel h1{font-family:var(--font-heading);font-weight:600;letter-spacing:-.015em}
 .story h2 em{font-style:normal;color:var(--primary)}
 .illustration{display:grid;place-items:center;min-height:0;margin:24px 0}
+
+.forgot{margin:-4px 0 0;text-align:right;font-size:14px}
+.forgot a{color:var(--primary-strong);font-weight:600;text-decoration:underline;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:44px}

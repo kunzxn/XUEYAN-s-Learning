@@ -74,7 +74,7 @@ export function ClosingCallToAction({ onStart }: { onStart: () => void }) {
           <h2>Mỗi ngày một ít, chữ Hán sẽ quen tay.</h2>
           <p>Tiếp tục bài học hiện tại và giữ nhịp học vừa sức với bạn.</p>
         </div>
-        <button type="button" className={styles.ctaLightButton} onClick={onStart}>Học thử Bài 01</button>
+        <button type="button" className={styles.ctaLightButton} onClick={onStart}>Chọn cấp HSK để học</button>
       </div>
     </section>
   );

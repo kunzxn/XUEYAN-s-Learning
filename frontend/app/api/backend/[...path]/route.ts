@@ -32,6 +32,6 @@ async function proxy(request: NextRequest, { params }: { params: Promise<{path:s
     const headers=new Headers({"Content-Type":upstream.headers.get("Content-Type")??"application/json","Cache-Control":"no-store","X-Content-Type-Options":"nosniff"});
     for(const cookie of [...refreshedCookies,...upstream.headers.getSetCookie()])headers.append("Set-Cookie",cookie);
     return new Response(upstream.status===204?null:await upstream.arrayBuffer(),{status:upstream.status,headers});
-  }catch{return Response.json({error:"Chưa kết nối được dịch vụ SQL Server. Hãy khởi chạy backend; thao tác chưa được lưu."},{status:503});}
+  }catch(error){console.error("[api-proxy] upstream unreachable:",(error as Error).message);return Response.json({error:"Hệ thống đang bận hoặc mất kết nối. Dữ liệu chưa được lưu, hãy thử lại sau ít phút."},{status:503});}
 }
 export {proxy as GET,proxy as POST,proxy as PUT,proxy as DELETE};
