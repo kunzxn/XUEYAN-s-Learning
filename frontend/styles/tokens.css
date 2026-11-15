@@ -5,20 +5,20 @@
  */
 :root {
   /* Surface — giấy */
-  --background: #f6f3ec;
-  --surface: #fffefa;
-  --surface-muted: #efebe1;
-  --surface-strong: #e6e0d1;
-  --surface-high: #d9d2c0;
-  --paper-warm: #fbf7ec;
+  --background: #f4f6f9;
+  --surface: #ffffff;
+  --surface-muted: #edf0f4;
+  --surface-strong: #e1e6ec;
+  --surface-high: #d0d7e0;
+  --paper-warm: #f8fafc;
 
   /* Ink — chữ và viền */
   --text: #16212b;
-  --text-soft: #474d54;
-  --muted: #666b70;
-  --border: #cbc3b1;
-  --border-subtle: #e3ddce;
-  --border-control: #7b7568;
+  --text-soft: #465162;
+  --muted: #637082;
+  --border: #d3d9e2;
+  --border-subtle: #e5e9ef;
+  --border-control: #6d7888;
 
   /* Brand — xanh mực */
   --primary: #0a4262;

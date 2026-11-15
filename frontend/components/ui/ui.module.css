@@ -262,4 +262,4 @@
 }
 @media(prefers-reduced-motion:reduce) { .layout *, .layout *::before { transition:none!important; animation:none!important; } }
 
-:root[data-theme="dark"] .brand img { background: #f6f3ec; border-radius: 10px; padding: 3px; }
+:root[data-theme="dark"] .brand img { background: #ffffff; border-radius: 10px; padding: 3px; }

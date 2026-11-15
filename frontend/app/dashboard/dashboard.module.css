@@ -1681,7 +1681,7 @@
 }
 
 /* Logo là ảnh nền sáng: đặt trên ô giấy để vẫn đọc được ở chế độ tối */
-:root[data-theme="dark"] .brandLogo { background: #f6f3ec; border-radius: 10px; padding: 3px; }
+:root[data-theme="dark"] .brandLogo { background: #ffffff; border-radius: 10px; padding: 3px; }
 .demoFaceHan{font-family:var(--font-han-serif);font-size:clamp(64px,12vw,104px);line-height:1.2;color:var(--text);margin:0}
 .demoFacePinyin{font-size:20px;font-weight:500;color:var(--primary-hover);margin:0}
 .demoBackMeaning{font-family:var(--font-heading);font-size:clamp(30px,5vw,40px);font-weight:600;color:rgb(var(--on-deep-rgb));margin:0}
@@ -1693,4 +1693,18 @@
   .brandCopy small { display: none; }
   .headerCta { padding: 0 6px; }
   .headerActions > button:first-child { width: 36px; height: 36px; }
+}
+
+/* Màn trung bình: menu ngang không rớt dòng */
+@media (min-width: 801px) and (max-width: 1180px) {
+  .mainNav { gap: 14px; }
+  .mainNav a { white-space: nowrap; font-size: 0.8125rem; }
+  .loginLink { display: none; }
+  .brandCopy small { display: none; }
+  .headerCta { white-space: nowrap; padding: 0 14px; }
+  .headerActions { gap: 8px; }
+}
+@media (min-width: 801px) and (max-width: 940px) {
+  .mainNav { gap: 10px; }
+  .mainNav a { font-size: 0.78rem; }
 }
