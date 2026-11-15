@@ -5,13 +5,12 @@ import {useCallback,useEffect,useState} from "react";
 import {api} from "@/lib/api-client";
 import {useAccount} from "@/lib/session";
 import {WorkspaceLayout} from "@/components/ui/Layouts";
-import {BookOpen,BookMarked,GraduationCap,Search} from "lucide-react";
 import {Button,Card,Input,PageTitle,s} from "@/components/ui/Primitives";
 import type {CatalogWord} from "./HskScreens";
 import l from "./learning.module.css";
 
 type Learned=CatalogWord&{repetitions:number;lastReviewedAt:string;nextReviewAt:string};
-type Overview={learned:number;due:number;reviewedToday:number;firstReviewsToday:number;goal:number;streak:number};
+type Overview={recentDays?:string[];learned:number;due:number;reviewedToday:number;firstReviewsToday:number;goal:number;streak:number};
 type Result=CatalogWord&{wordId:number;eventId:string;rating:number;durationMs:number;reviewedAt:string};
 function useData<T>(path:string){
  const [data,setData]=useState<T>();const [error,setError]=useState("");const [loading,setLoading]=useState(true);
@@ -20,31 +19,31 @@ function useData<T>(path:string){
 }
 function Feedback({loading,error,retry}:{loading:boolean;error:string;retry:()=>void}){return <>{loading&&<p role="status">Đang tải dữ liệu tài khoản…</p>}{error&&<Card><p role="alert">{error}</p><Button onClick={retry}>Thử lại</Button></Card>}</>;}
 const WEEKDAYS=["CN","T2","T3","T4","T5","T6","T7"];
-function WeekStamps({streak,studiedToday}:{streak:number;studiedToday:boolean}){
- const today=new Date();
- const days=Array.from({length:7},(_,i)=>{const back=6-i;const d=new Date(today);d.setDate(today.getDate()-back);const stamped=studiedToday?back<streak:back>=1&&back<=streak;return {label:back===0?"Nay":WEEKDAYS[d.getDay()],stamped,today:back===0};});
- return <ol className={l.week} aria-label={`Chuỗi học ${streak} ngày liên tục`}>{days.map((d,i)=><li key={i} className={l.day} data-today={d.today||undefined}><span className={l.stamp} data-on={d.stamped||undefined} style={{"--i":i} as React.CSSProperties} lang="zh-Hans" aria-hidden="true">{d.stamped?"记":""}</span><small>{d.label}</small></li>)}</ol>;
+const VN_OFFSET=7*3600e3;
+function vnDay(back:number){return new Date(Date.now()+VN_OFFSET-back*86400e3).toISOString().slice(0,10);}
+function WeekStamps({streak,recentDays}:{streak:number;recentDays:string[]}){
+ const learned=new Set(recentDays);
+ const days=Array.from({length:7},(_,i)=>{const back=6-i;const key=vnDay(back);return {label:back===0?"Nay":WEEKDAYS[new Date(key+"T00:00:00Z").getUTCDay()],stamped:learned.has(key),today:back===0};});
+ return <ol className={l.week} aria-label={`Chuỗi học ${streak} ngày liên tục. Đã học ${recentDays.length} trong 7 ngày gần nhất`}>{days.map((d,i)=><li key={i} className={l.day} data-today={d.today||undefined}><span className={l.stamp} data-on={d.stamped||undefined} style={{"--i":i} as React.CSSProperties} lang="zh-Hans" aria-hidden="true">{d.stamped?"记":""}</span><small>{d.label}</small></li>)}</ol>;
 }
+function OverviewSkeleton(){return <div className={l.today} aria-busy="true" role="status" aria-label="Đang tải dữ liệu học"><div className={l.skeleton} style={{minHeight:280}}/><div className={l.skeleton} style={{minHeight:280}}/></div>;}
+function OverviewError({message,retry}:{message:string;retry:()=>void}){return <Card><p role="alert"><strong>Không tải được dữ liệu học.</strong></p><p className={s.muted}>{message}</p><p className={s.muted}>Hãy kiểm tra kết nối mạng. Nếu bạn là người vận hành, kiểm tra dịch vụ API và SQL Server đang chạy.</p><Button onClick={retry}>Thử lại</Button></Card>;}
 export function AccountOverview({review=false}:{review?:boolean}){
- const {data,error,loading,load}=useData<Overview>("learning/overview");const {account}=useAccount();
+ const {data,error,loading,load}=useData<Overview>("learning/overview");const due=useData<CatalogWord[]>("learning/due");const {account}=useAccount();
  const hour=new Date().getHours();const greet=hour<11?"Chào buổi sáng":hour<18?"Chào buổi chiều":"Chào buổi tối";
- return <WorkspaceLayout live><PageTitle title={review?"Ôn tập SRS":`${greet}, ${account?.name??"bạn"}`} description="Tiến độ được lưu theo tài khoản của bạn."/><Feedback loading={loading} error={error} retry={()=>void load()}/>{!loading&&!error&&data&&<>
-  <div className={l.today}>
+ const fresh=!!data&&data.learned===0;
+ return <WorkspaceLayout live><PageTitle title={review?"Ôn tập SRS":`${greet}, ${account?.name??"bạn"}`}/>{loading&&<OverviewSkeleton/>}{error&&<OverviewError message={error} retry={()=>void load()}/>}{!loading&&!error&&data&&<>
+  <div className={l.today} data-fresh={fresh||undefined}>
    <section className={l.focus} aria-labelledby="today-title"><span className={l.watermark} lang="zh-Hans" aria-hidden="true">学</span>
-    <h2 id="today-title">{data.due>0?`${data.due} từ đến hạn ôn tập`:data.learned>0?"Hôm nay chưa có từ cần ôn":"Bắt đầu với cấp HSK đầu tiên"}</h2>
-    <p>{data.due>0?"Ôn ngay khi từ còn trong trí nhớ để nhớ lâu hơn.":data.learned>0?"Bạn có thể học thêm từ mới để giữ nhịp học.":"Bạn chưa học từ nào. Chọn một cấp HSK để bắt đầu."}</p>
-    <div className={l.focusActions}>{data.due>0?<Link className={l.primaryCta} href="/review/study">Bắt đầu ôn tập</Link>:<Link className={l.primaryCta} href="/vocabulary">Học từ mới theo HSK</Link>}{data.due>0&&<Link className={l.ghostCta} href="/vocabulary">Học từ mới</Link>}</div>
-    <div className={l.goal}><div className={l.goalHead}><span>Từ mới hôm nay</span><strong>{data.firstReviewsToday}/{data.goal}</strong></div><div className={l.goalTrack} role="progressbar" aria-label="Mục tiêu học từ mới hôm nay" aria-valuemin={0} aria-valuemax={data.goal} aria-valuenow={Math.min(data.goal,data.firstReviewsToday)}><span style={{width:`${Math.min(100,data.firstReviewsToday/data.goal*100)}%`}}/></div></div>
+    <h2 id="today-title">{data.due>0?`${data.due} từ đến hạn ôn tập`:fresh?"Bắt đầu với 5 từ đầu tiên":"Hôm nay chưa có từ cần ôn"}</h2>
+    <p>{data.due>0?"Ôn ngay khi từ còn trong trí nhớ để nhớ lâu hơn.":fresh?"Chọn một cấp HSK, học vài từ đầu, rồi quay lại vào ngày mai để ôn.":"Bạn có thể học thêm từ mới để giữ nhịp học."}</p>
+    <div className={l.focusActions}>{data.due>0?<Link className={l.primaryCta} href="/review/study">Bắt đầu ôn tập</Link>:<Link className={l.primaryCta} href="/vocabulary">{fresh?"Chọn cấp HSK":"Học từ mới theo HSK"}</Link>}{data.due>0&&<Link className={l.ghostCta} href="/vocabulary">Học từ mới</Link>}</div>
+    {!fresh&&<div className={l.goal}><div className={l.goalHead}><span>Từ mới học hôm nay</span><strong>{data.firstReviewsToday}/{data.goal}</strong></div><div className={l.goalTrack} role="progressbar" aria-label="Mục tiêu học từ mới hôm nay" aria-valuemin={0} aria-valuemax={data.goal} aria-valuenow={Math.min(data.goal,data.firstReviewsToday)}><span style={{width:`${Math.min(100,data.firstReviewsToday/data.goal*100)}%`}}/></div><small className={l.goalHint}>Mục tiêu tính theo từ học lần đầu trong ngày.</small></div>}
    </section>
-   <section className={l.streak} aria-labelledby="streak-title"><h2 id="streak-title">Chuỗi học <strong>{data.streak}</strong> ngày</h2><WeekStamps streak={data.streak} studiedToday={data.reviewedToday>0||data.firstReviewsToday>0}/><dl className={l.mini}><div><dt>Đã ôn hôm nay</dt><dd>{data.reviewedToday} từ</dd></div><div><dt>Đã có lượt học</dt><dd>{data.learned} từ</dd></div></dl></section>
+   {!fresh&&<section className={l.streak} aria-labelledby="streak-title"><h2 id="streak-title">Chuỗi học <strong>{data.streak}</strong> ngày</h2><WeekStamps streak={data.streak} recentDays={data.recentDays??[]}/><dl className={l.mini}><div><dt>Từ đã ôn lại hôm nay</dt><dd>{data.reviewedToday}</dd></div><div><dt>Từ đã có lượt học</dt><dd>{data.learned}</dd></div></dl></section>}
   </div>
-  <nav className={l.shortcuts} aria-label="Lối tắt học tập">
-   <Link href="/review/study"><GraduationCap size={22} aria-hidden="true"/><span><strong>Ôn tập SRS</strong><small>Lặp lại ngắt quãng các từ đến hạn</small></span></Link>
-   <Link href="/vocabulary"><BookOpen size={22} aria-hidden="true"/><span><strong>Lộ trình HSK</strong><small>Học từ mới theo từng cấp độ</small></span></Link>
-   <Link href="/dictionary"><Search size={22} aria-hidden="true"/><span><strong>Từ điển</strong><small>Tra chữ Hán, Pinyin, Hán–Việt</small></span></Link>
-   <Link href="/collection"><BookMarked size={22} aria-hidden="true"/><span><strong>Sổ từ</strong><small>Từ bạn đã lưu để xem lại</small></span></Link>
-  </nav>
-  <p className={s.note}>Thống kê ngày theo giờ Việt Nam (UTC+7). “Đã có lượt học” gồm cả từ còn quên hoặc khó, chưa đồng nghĩa đã thành thạo.</p></>}</WorkspaceLayout>;
+  {data.due>0&&due.data&&due.data.length>0&&<section className={l.queue} aria-labelledby="queue-title"><div className={l.queueHead}><h2 id="queue-title">Sắp ôn</h2><Link href="/review/study">Ôn cả {data.due} từ</Link></div><ul>{due.data.slice(0,5).map(w=><li key={w.id}><strong lang="zh-Hans">{w.simplified}</strong><span>{w.pinyin}</span><em>{w.meaningVi??w.meaningEn}</em></li>)}</ul></section>}
+  <details className={l.how}><summary>Cách tính số liệu</summary><p>Ngày tính theo giờ Việt Nam (UTC+7). “Từ đã có lượt học” gồm cả từ còn quên hoặc khó, chưa đồng nghĩa đã thành thạo. Con dấu hiện ngày bạn có ít nhất một lượt học trong 7 ngày gần nhất.</p></details></>}</WorkspaceLayout>;
 }
 export function AccountProgress(){
  const {data,error,loading,load}=useData<Learned[]>("learning/progress");const [query,setQuery]=useState("");

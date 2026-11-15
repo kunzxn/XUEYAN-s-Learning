@@ -21,7 +21,7 @@ public sealed partial class LearningRepository {
   var dates=days.Select(row=>DateOnly.Parse((string)row["day"]!)).ToHashSet();
   var cursor=dates.Contains(today)?today:today.AddDays(-1);var streak=0;
   while(dates.Contains(cursor)){streak++;cursor=cursor.AddDays(-1);}
-  rows[0]["streak"]=streak;rows[0]["timezone"]="Asia/Ho_Chi_Minh";
+  rows[0]["streak"]=streak;rows[0]["recentDays"]=Enumerable.Range(0,7).Select(i=>today.AddDays(-i)).Where(dates.Contains).Select(d=>d.ToString("yyyy-MM-dd")).ToArray();rows[0]["timezone"]="Asia/Ho_Chi_Minh";
   return rows[0];
  }
  public async Task<object> Results(Actor actor,string events){

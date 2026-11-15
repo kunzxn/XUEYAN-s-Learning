@@ -86,3 +86,23 @@
 @media (max-width: 960px) { .today { grid-template-columns: 1fr; } }
 @media (max-width: 760px) { .focus, .result { padding: 24px; } .shortcuts, .wordGrid { grid-template-columns: 1fr; } .watermark { font-size: 150px; } .resultSeal { width: 48px; height: 48px; font-size: 26px; } }
 @media (prefers-reduced-motion: reduce) { .focus, .streak, .wordTile, .result, .resultList li, .goalTrack span, .split span, .stamp[data-on], .resultSeal { animation: none; } .primaryCta:hover, .wordTile:hover { transform: none; } }
+
+.today[data-fresh] { grid-template-columns: 1fr; }
+.skeleton { border-radius: var(--radius-xl); background: linear-gradient(100deg, var(--surface-muted) 30%, var(--surface-strong) 50%, var(--surface-muted) 70%); background-size: 300% 100%; animation: shimmer 1.4s linear infinite; }
+@keyframes shimmer { from { background-position: 100% 0; } to { background-position: 0 0; } }
+.goalHint { color: rgba(var(--on-deep-rgb), .75); font-size: 12px; }
+.queue { margin-top: 28px; }
+.queueHead { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+.queueHead h2 { font-family: var(--font-heading); font-size: 22px; font-weight: 600; margin: 0; }
+.queueHead a { color: var(--primary); font-weight: 600; font-size: 14px; }
+.queueHead a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.queue ul { list-style: none; border-top: 1px solid var(--border); }
+.queue li { display: grid; grid-template-columns: 72px 110px minmax(0, 1fr); align-items: center; gap: 12px; padding: 12px 4px; border-bottom: 1px solid var(--border-subtle); }
+.queue li strong { font-family: var(--font-han-serif); font-size: 26px; font-weight: 600; }
+.queue li span { color: var(--primary); font-weight: 600; font-size: 14px; }
+.queue li em { font-style: normal; color: var(--text-soft); font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.how { margin-top: 20px; color: var(--text-soft); font-size: 13px; }
+.how summary { cursor: pointer; width: fit-content; }
+.how p { margin-top: 8px; max-width: 64ch; line-height: 1.7; }
+@media (max-width: 760px) { .queue li { grid-template-columns: 56px 1fr; } .queue li em { grid-column: 1 / -1; white-space: normal; } }
+@media (prefers-reduced-motion: reduce) { .skeleton { animation: none; } }
