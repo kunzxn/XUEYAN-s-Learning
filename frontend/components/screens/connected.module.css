@@ -29,3 +29,9 @@
 .keys input{width:16px;height:16px;accent-color:var(--primary-strong);margin:0}
 .keys kbd{font:inherit;font-size:12px;font-weight:600;padding:2px 8px;border:1px solid var(--border-control);border-bottom-width:2px;border-radius:6px;background:var(--surface);color:var(--text)}
 @media(hover:none){.keys{display:none}}
+
+/* Điện thoại: nút Lật thẻ / đánh giá luôn nằm trên thanh điều hướng dưới, không phải cuộn xuống tìm */
+@media(max-width:760px){
+ .studyStage .controls{position:sticky;bottom:calc(72px + env(safe-area-inset-bottom));z-index:5;background:var(--background);padding:10px 0;margin-top:-10px;min-height:0;align-items:stretch}
+ .studyStage .controls>button{width:100%;min-height:52px}
+}

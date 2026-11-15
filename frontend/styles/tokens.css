@@ -79,6 +79,12 @@
 
   /* Mặt "mực đậm" — luôn tối ở cả hai chế độ, chữ trắng đặt lên */
   --deep: #0a4262;
+  /* Màu dùng trên mặt --deep (luôn tối, cả hai giao diện): thanh mục tiêu và tỷ lệ đánh giá */
+  --goal-fill: #7fd0a8;
+  --rating-1: #f27a70;
+  --rating-2: #e3ad3f;
+  --rating-3: #62b6ea;
+  --rating-4: #4fc796;
   --deep-edge: #155a7f;
   --on-deep-rgb: 255, 255, 255;
   color-scheme: light;

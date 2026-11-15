@@ -143,3 +143,11 @@
   .card[data-flipped="true"] .back > :not(.seal) { animation: none; }
   @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
 }
+
+/* Màn thấp (điện thoại ngang, máy nhỏ): thu chiều cao thẻ để mặt sau và nút vẫn vừa khung nhìn */
+@media (max-height: 700px) and (max-width: 760px) {
+  .face { min-height: 260px; padding: 20px 16px 32px; }
+}
+@media (max-height: 480px) {
+  .face { min-height: 200px; padding: 16px 16px 28px; }
+}

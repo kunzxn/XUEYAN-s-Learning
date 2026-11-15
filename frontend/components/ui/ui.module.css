@@ -267,3 +267,6 @@
 }
 
 :root[data-theme="dark"] .brand img { background: #ffffff; border-radius: 10px; padding: 3px; }
+
+/* Nút đổi giao diện trong thanh tiện ích đủ 44px cho ngón tay (thanh này còn chỗ, khác header công khai) */
+.utility button[aria-pressed], .focusHeader button[aria-pressed] { width:44px; height:44px; }
