@@ -34,7 +34,9 @@ function Add-Setting($name, $value) { $settings.Add([ordered]@{ name = $name; va
 
 Add-Setting 'ConnectionStrings__Database' "Server=tcp:$SqlServer,1433;Database=$Database;User ID=$ApiUser;Password=$apiPassword;Encrypt=true;TrustServerCertificate=false;Pooling=false"
 if (-not $KeepJwtKey) {
-    Add-Setting 'Jwt__SigningKey' ([Convert]::ToBase64String([Security.Cryptography.RandomNumberGenerator]::GetBytes(64)))
+    $jwtBytes = New-Object byte[] 64
+    [Security.Cryptography.RandomNumberGenerator]::Create().GetBytes($jwtBytes)
+    Add-Setting 'Jwt__SigningKey' ([Convert]::ToBase64String($jwtBytes))
 }
 Add-Setting 'Jwt__Issuer' 'xueyan-api'
 Add-Setting 'Jwt__Audience' 'xueyan-web'
