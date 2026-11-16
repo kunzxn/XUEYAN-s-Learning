@@ -24,6 +24,7 @@ __pycache__/
 Thumbs.db
 *.log
 .vs/
+.claude/
 artifacts/
 
 # .NET API output and private local test credentials

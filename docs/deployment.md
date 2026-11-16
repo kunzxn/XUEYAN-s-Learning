@@ -6,10 +6,16 @@ Thứ tự bắt buộc: **database → API → frontend**. Frontend cần đị
 
 1. Azure Portal → tạo **SQL Database** (server mới, bật SQL authentication, đặt admin riêng).
 2. Firewall: bật *Allow Azure services*, thêm IP máy bạn để chạy migration.
-3. Chạy migration `backend/database/sqlserver/00…07` **theo thứ tự**, bằng SSMS hoặc `sqlcmd` với tài khoản admin.
-   - Script 00 tạo database: trên Azure SQL hãy bỏ qua 00 vì database đã tạo ở bước 1.
-   - Script `Initialize-Database.ps1` dùng Windows auth cho SQL local, không dùng trực tiếp cho Azure.
-4. Script 06 tạo SQL principal cho API (không có quyền DDL). Dùng chính tài khoản này làm chuỗi kết nối runtime, **không** dùng admin.
+3. Chạy migration `01` đến `11` trong `backend/database/sqlserver/` bằng script có sẵn (SQL authentication, mật khẩu nhập qua prompt ẩn, không lộ ra lệnh):
+
+   ```powershell
+   cd backend/database/sqlserver
+   ./Initialize-AzureDatabase.ps1 -Server <server>.database.windows.net -User <admin> -CreateApiUser
+   ```
+
+   - Bỏ qua `00-create-database.sql`: database đã tạo ở bước 1, và collation nên chọn `Latin1_General_100_CI_AS_SC` ngay lúc tạo.
+   - `Initialize-Database.ps1` dùng Windows auth cho SQL local, không dùng cho Azure.
+4. API không đăng nhập bằng tài khoản admin. Script 06 tạo các user `xueyan_api_*` KHÔNG có login; API kết nối bằng một user riêng (`xueyan_api_app`, tạo bởi `-CreateApiUser`) rồi `EXECUTE AS USER` theo vai trò. Dùng user này trong chuỗi kết nối runtime. Hiện user được thêm vào `db_owner` cho giống môi trường local; thu hẹp quyền là việc làm sau.
 5. Nhập dữ liệu HSK: `dotnet run --project backend/api -- --import-hsk` với chuỗi kết nối trỏ tới Azure SQL (chạy một lần từ máy bạn).
 6. Tạo admin đầu tiên: đặt `XUEYAN_ADMIN_EMAIL`, `XUEYAN_ADMIN_PASSWORD` rồi `dotnet run --project backend/api -- --bootstrap-admin`.
 
@@ -22,7 +28,7 @@ Thứ tự bắt buộc: **database → API → frontend**. Frontend cần đị
 
 | Tên | Giá trị |
 | --- | --- |
-| `ConnectionStrings__Database` | `Server=tcp:<server>.database.windows.net,1433;Database=<db>;User ID=<api-user>;Password=<mật-khẩu>;Encrypt=true;TrustServerCertificate=false` |
+| `ConnectionStrings__Database` | `Server=tcp:<server>.database.windows.net,1433;Database=XUEYAN_Development;User ID=xueyan_api_app;Password=<mật-khẩu>;Encrypt=true;TrustServerCertificate=false;Pooling=false` (**bắt buộc** `Pooling=false`, API sẽ từ chối kết nối nếu thiếu) |
 | `Jwt__SigningKey` | chuỗi ngẫu nhiên dài ≥ 64 ký tự (tạo mới, không dùng lại khóa local) |
 | `Jwt__Issuer`, `Jwt__Audience` | ví dụ `xueyan-api`, `xueyan-web` |
 | `Google__ClientId` | Client ID của Google OAuth |
