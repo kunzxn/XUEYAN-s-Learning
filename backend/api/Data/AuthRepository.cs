@@ -33,14 +33,24 @@ public sealed class AuthRepository(Database db):IAuthRepository
     var existing=await find.ExecuteScalarAsync();
     if(existing is Guid id)userId=id;
     else {
-     using var duplicate=Database.Command(c,"SELECT COUNT(*) FROM auth.Users WITH(UPDLOCK,HOLDLOCK) WHERE NormalizedEmail=LOWER(@email)",("email",email));duplicate.Transaction=tx;
-     if(Convert.ToInt32(await duplicate.ExecuteScalarAsync())>0)throw new ApiError(409,"Email này đã có tài khoản. Hãy đăng nhập bằng mật khẩu; liên kết Google cho tài khoản cũ chưa khả dụng.");
-     userId=Guid.NewGuid();using var create=Database.Command(c,"""
-      INSERT auth.Users(UserId,Email,RoleCode,Status,EmailVerifiedAt) VALUES(@id,@email,'learner','active',SYSUTCDATETIME());
-      INSERT learning.Profiles(UserId,DisplayName) VALUES(@id,@name);
-      INSERT learning.Preferences(UserId) VALUES(@id);
-      INSERT auth.ExternalIdentities(Provider,Subject,UserId) VALUES('google',@sub,@id);
-      """,("id",userId),("email",email),("name",name),("sub",sub));create.Transaction=tx;await create.ExecuteNonQueryAsync();
+     using var existingUser=Database.Command(c,"SELECT UserId FROM auth.Users WITH(UPDLOCK,HOLDLOCK) WHERE NormalizedEmail=LOWER(@email)",("email",email));existingUser.Transaction=tx;
+     if(await existingUser.ExecuteScalarAsync() is Guid matchedId){
+      userId=matchedId;
+      using var link=Database.Command(c,"""
+       IF EXISTS(SELECT 1 FROM auth.ExternalIdentities WHERE Provider='google' AND UserId=@id AND Subject<>@sub)
+        THROW 51040,'Tài khoản này đã được liên kết với một tài khoản Google khác.',1;
+       UPDATE auth.Users SET EmailVerifiedAt=COALESCE(EmailVerifiedAt,SYSUTCDATETIME()) WHERE UserId=@id;
+       IF NOT EXISTS(SELECT 1 FROM auth.ExternalIdentities WHERE Provider='google' AND UserId=@id)
+        INSERT auth.ExternalIdentities(Provider,Subject,UserId) VALUES('google',@sub,@id);
+       """,("id",userId),("sub",sub));link.Transaction=tx;await link.ExecuteNonQueryAsync();
+     } else {
+      userId=Guid.NewGuid();using var create=Database.Command(c,"""
+       INSERT auth.Users(UserId,Email,RoleCode,Status,EmailVerifiedAt) VALUES(@id,@email,'learner','active',SYSUTCDATETIME());
+       INSERT learning.Profiles(UserId,DisplayName) VALUES(@id,@name);
+       INSERT learning.Preferences(UserId) VALUES(@id);
+       INSERT auth.ExternalIdentities(Provider,Subject,UserId) VALUES('google',@sub,@id);
+       """,("id",userId),("email",email),("name",name),("sub",sub));create.Transaction=tx;await create.ExecuteNonQueryAsync();
+     }
     }tx.Commit();
    }catch{tx.Rollback();throw;}
   }

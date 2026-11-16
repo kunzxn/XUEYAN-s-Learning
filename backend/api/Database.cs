@@ -7,7 +7,12 @@ public sealed class Database(IConfiguration configuration)
     {
         var connection = new SqlConnection(configuration.GetConnectionString("Database") ?? throw new InvalidOperationException("Database connection is not configured."));
         try {
-        await connection.OpenAsync();
+        for (var attempt = 1; ; attempt++) {
+            try { await connection.OpenAsync(); break; }
+            catch (SqlException ex) when (attempt < 4 && ex.Number is 40613 or 40197 or 40501 or 49918 or 49919 or 49920 or -2) {
+                await Task.Delay(TimeSpan.FromSeconds(8));
+            }
+        }
         await Execute(connection, "SET QUOTED_IDENTIFIER ON; SET ANSI_NULLS ON; SET ARITHABORT ON; SET ANSI_WARNINGS ON; SET NUMERIC_ROUNDABORT OFF;");
         if (actor != null)
         {

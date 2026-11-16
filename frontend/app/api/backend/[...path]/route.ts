@@ -16,13 +16,13 @@ async function proxy(request: NextRequest, { params }: { params: Promise<{path:s
     const execute=()=>fetch(`${base}/${path}${request.nextUrl.search}`,{
       method:request.method,headers:{"Content-Type":"application/json","X-Xueyan-Client":"web",cookie:cookieHeader(),
         ...(request.headers.get("authorization")?{Authorization:request.headers.get("authorization")!}:jar.has("xueyan_session")?{Authorization:`Bearer ${jar.get("xueyan_session")}`}:{})},
-      body,cache:"no-store",signal:AbortSignal.timeout(20000),redirect:"error"
+      body,cache:"no-store",signal:AbortSignal.timeout(55000),redirect:"error"
     });
     let upstream=await execute();
     const refreshedCookies:string[]=[];
     // Retry at most once. Never fall back from an explicit invalid bearer token.
     if(upstream.status===401&&jar.has("xueyan_refresh")&&!request.headers.has("authorization")&&!/^auth\/(login|register|logout|refresh|google|google\/config)$/.test(path)){
-      const refresh=await fetch(`${base}/auth/refresh`,{method:"POST",headers:{"X-Xueyan-Client":"web",cookie:cookieHeader()},cache:"no-store",signal:AbortSignal.timeout(20000),redirect:"error"});
+      const refresh=await fetch(`${base}/auth/refresh`,{method:"POST",headers:{"X-Xueyan-Client":"web",cookie:cookieHeader()},cache:"no-store",signal:AbortSignal.timeout(55000),redirect:"error"});
       if(refresh.ok){
         refreshedCookies.push(...refresh.headers.getSetCookie());
         for(const cookie of refreshedCookies){const entry=cookie.split(";")[0];const index=entry.indexOf("=");if(index>0)jar.set(entry.slice(0,index),entry.slice(index+1));}
