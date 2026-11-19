@@ -29,11 +29,12 @@ public sealed partial class LearningRepository {
     (SELECT COUNT(*) FROM learning.WordProgress p JOIN catalog.Words w ON w.WordId=p.WordId WHERE p.UserId=@user AND p.NextReviewAt<=SYSUTCDATETIME() AND w.Status='published') AS Due,
     (SELECT COUNT(DISTINCT WordId) FROM learning.ReviewEvents WHERE UserId=@user AND CONVERT(date,DATEADD(hour,7,ReviewedAt))=@today) AS ReviewedToday,
     (SELECT COUNT(*) FROM (SELECT WordId FROM learning.ReviewEvents WHERE UserId=@user GROUP BY WordId HAVING CONVERT(date,DATEADD(hour,7,MIN(ReviewedAt)))=@today) firsts) AS FirstReviewsToday,
-    COALESCE((SELECT DailyWordGoal FROM learning.Preferences WHERE UserId=@user),20) AS Goal;
+    COALESCE((SELECT DailyWordGoal FROM learning.Preferences WHERE UserId=@user),20) AS Goal,
+    (SELECT STRING_AGG(Day,',') FROM (SELECT DISTINCT CONVERT(varchar(10),DATEADD(hour,7,ReviewedAt),23) AS Day FROM learning.ReviewEvents WHERE UserId=@user) d) AS ActiveDays;
    """,("user",actor.UserId));
-  var days=await Database.Query(connection,"SELECT DISTINCT CONVERT(varchar(10),DATEADD(hour,7,ReviewedAt),23) AS Day FROM learning.ReviewEvents WHERE UserId=@user ORDER BY Day DESC",("user",actor.UserId));
+  var activeDays=rows[0]["activeDays"] as string;rows[0].Remove("activeDays");
   var today=DateOnly.FromDateTime(clock.GetUtcNow().UtcDateTime.AddHours(7));
-  var dates=days.Select(row=>DateOnly.Parse((string)row["day"]!)).ToHashSet();
+  var dates=string.IsNullOrEmpty(activeDays)?new HashSet<DateOnly>():activeDays.Split(',').Select(DateOnly.Parse).ToHashSet();
   var cursor=dates.Contains(today)?today:today.AddDays(-1);var streak=0;
   while(dates.Contains(cursor)){streak++;cursor=cursor.AddDays(-1);}
   rows[0]["streak"]=streak;rows[0]["recentDays"]=Enumerable.Range(0,7).Select(i=>today.AddDays(-i)).Where(dates.Contains).Select(d=>d.ToString("yyyy-MM-dd")).ToArray();rows[0]["timezone"]="Asia/Ho_Chi_Minh";

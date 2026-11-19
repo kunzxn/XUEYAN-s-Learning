@@ -12,7 +12,7 @@ public sealed class EfReadRepository(Database database,TimeProvider clock):IEfRe
 {
     private async Task<LearningDbContext> Open(Actor actor){
         var connection=await database.Open(actor);
-        try{return new(new DbContextOptionsBuilder<LearningDbContext>().UseSqlServer(connection,contextOwnsConnection:true).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking).Options);}
+        try{return new(new DbContextOptionsBuilder<LearningDbContext>().UseSqlServer(connection.Connection,contextOwnsConnection:false).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking).Options,connection);}
         catch{await connection.DisposeAsync();throw;}
     }
     public async Task<IReadOnlyList<WordDto>> Words(Actor actor){await using var db=await Open(actor);return await db.PublishedWords.AsNoTracking().OrderByDescending(w=>w.WordId).Take(200).Select(w=>new WordDto(w.WordId,w.Slug,w.Simplified,w.Pinyin,w.HanViet,w.MeaningVi,w.MeaningEn)).ToListAsync();}

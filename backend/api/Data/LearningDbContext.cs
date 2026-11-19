@@ -1,8 +1,18 @@
 using Microsoft.EntityFrameworkCore;
 
 // Read model of the existing, SQL-migrated database. EF never EnsureCreated/Migrate here.
-public sealed class LearningDbContext(DbContextOptions<LearningDbContext> options):DbContext(options)
+public sealed class LearningDbContext(DbContextOptions<LearningDbContext> options, PooledConnection? pooled = null):DbContext(options)
 {
+    public override async ValueTask DisposeAsync()
+    {
+        await base.DisposeAsync();
+        if (pooled != null) await pooled.DisposeAsync();
+    }
+    public override void Dispose()
+    {
+        base.Dispose();
+        pooled?.Dispose();
+    }
     public DbSet<WordRead> Words=>Set<WordRead>();
     public DbSet<PublishedWordRead> PublishedWords=>Set<PublishedWordRead>();
     public DbSet<ProgressRead> Progress=>Set<ProgressRead>();

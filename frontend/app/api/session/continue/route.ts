@@ -6,7 +6,7 @@ export async function GET(request:NextRequest){
  const refresh=request.cookies.get("xueyan_refresh")?.value;
  if(!refresh)return NextResponse.redirect(login,303);
  try{
-  const result=await fetch(`${process.env.XUEYAN_API_URL??"http://127.0.0.1:5108"}/auth/refresh`,{method:"POST",headers:{"X-Xueyan-Client":"web",cookie:`xueyan_refresh=${refresh}`},cache:"no-store",signal:AbortSignal.timeout(10000),redirect:"error"});
+  const result=await fetch(`${process.env.XUEYAN_API_URL??"http://127.0.0.1:5108"}/auth/refresh`,{method:"POST",headers:{"X-Xueyan-Client":"web",cookie:`xueyan_refresh=${refresh}`},cache:"no-store",signal:AbortSignal.timeout(55000),redirect:"error"});
   if(!result.ok){if(result.status!==401)return NextResponse.redirect(new URL("/access-denied?unavailable=1",request.url),303);return NextResponse.redirect(login,303);}
   const response=NextResponse.redirect(new URL(target,request.url),303);response.headers.set("Cache-Control","no-store");
   for(const cookie of result.headers.getSetCookie())response.headers.append("Set-Cookie",cookie);

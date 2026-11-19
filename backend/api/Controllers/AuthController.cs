@@ -3,18 +3,21 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.RateLimiting;
 
 [ApiController,Route("auth")]
-public sealed class AuthController(IAuthService service,ICurrentActor current,IHostEnvironment environment,GoogleLoginService google,IProfileService? profiles=null):ControllerBase
+public sealed class AuthController(IAuthService service,ICurrentActor current,IHostEnvironment environment,GoogleLoginService google,IProfileService? profiles=null,Database? database=null):ControllerBase
 {
     [AllowAnonymous,HttpGet("session"),ResponseCache(NoStore=true,Location=ResponseCacheLocation.None)]
-    public async Task<IActionResult> Session(){
+    public Task<IActionResult> Session(){
         if(HttpContext.Items[JwtAuthentication.ActorKey] is not Actor actor){
-            if(Request.Cookies.ContainsKey("xueyan_session")||Request.Cookies.ContainsKey("xueyan_refresh")||Request.Headers.ContainsKey("Authorization"))return Unauthorized(new{error="Phiên đăng nhập cần được làm mới."});
-            return new JsonResult(null);
+            database?.Warmup();
+            if(Request.Cookies.ContainsKey("xueyan_session")||Request.Cookies.ContainsKey("xueyan_refresh")||Request.Headers.ContainsKey("Authorization"))return Task.FromResult<IActionResult>(Unauthorized(new{error="Phiên đăng nhập cần được làm mới."}));
+            return Task.FromResult<IActionResult>(new JsonResult(null));
         }
-        var profile=await profiles!.Get(actor);return Ok(new{actor.UserId,actor.Role,Name=profile.DisplayName,profile.AvatarVersion,profile.ShowPinyin,profile.TargetLevelCode});
+        _ = profiles;
+        return Task.FromResult<IActionResult>(Ok(new{actor.UserId,actor.Role,actor.Name,actor.AvatarVersion,actor.ShowPinyin,actor.TargetLevelCode}));
     }
     [AllowAnonymous,HttpGet("google/config"),EnableRateLimiting("auth")]
     public IActionResult GoogleConfig(){
+        database?.Warmup();
         if(string.IsNullOrWhiteSpace(google.ClientId))return Ok(new{enabled=false});
         // React development mode and multiple tabs can request config concurrently.
         // Reuse this browser's challenge instead of invalidating an already rendered button.

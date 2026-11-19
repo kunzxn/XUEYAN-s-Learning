@@ -15,9 +15,10 @@ public sealed class CatalogController(Database database):ControllerBase
    AND (@q='' OR CHARINDEX(@q,w.Simplified)>0 OR CHARINDEX(@q,REPLACE(w.Pinyin,' ','' ) COLLATE Latin1_General_100_CI_AI_SC)>0 OR CHARINDEX(@q,REPLACE(COALESCE(w.MeaningVi,w.MeaningEn,''),' ','' ) COLLATE Latin1_General_100_CI_AI_SC)>0 OR CHARINDEX(@q,REPLACE(COALESCE(w.HanViet,''),' ','' ) COLLATE Latin1_General_100_CI_AI_SC)>0)
    """;
   var values=new (string,object?)[]{("q",normalized),("level",level),("skip",(page-1)*20)};
-  var count=await Database.Query(c,"SELECT COUNT(*) Total "+source,values);
-  var items=await Database.Query(c,"SELECT w.WordId Id,w.Simplified,w.Pinyin,w.HanViet,w.MeaningVi,w.MeaningEn "+source+" ORDER BY CASE WHEN w.Simplified=@q THEN 0 ELSE 1 END,w.WordId OFFSET @skip ROWS FETCH NEXT 20 ROWS ONLY",values);
-  return new{items,total=count[0]["total"],page,pageSize=20};
+  var items=await Database.Query(c,"SELECT w.WordId Id,w.Simplified,w.Pinyin,w.HanViet,w.MeaningVi,w.MeaningEn,COUNT(*) OVER() Total "+source+" ORDER BY CASE WHEN w.Simplified=@q THEN 0 ELSE 1 END,w.WordId OFFSET @skip ROWS FETCH NEXT 20 ROWS ONLY",values);
+  var total=items.Count>0?Convert.ToInt32(items[0]["total"]):page==1?0:Convert.ToInt32((await Database.Query(c,"SELECT COUNT(*) Total "+source,values))[0]["total"]);
+  foreach(var item in items)item.Remove("total");
+  return new{items,total,page,pageSize=20};
  }
  [HttpGet("levels")]
  public async Task<object> Levels(){await using var c=await database.Open();return await Database.Query(c,"""
@@ -34,8 +35,9 @@ public sealed class CatalogController(Database database):ControllerBase
   await using var c=await database.Open();
   const string source=" FROM catalog.Words w JOIN catalog.WordLevels wl ON wl.WordId=w.WordId JOIN catalog.Levels l ON l.LevelId=wl.LevelId JOIN catalog.Frameworks f ON f.FrameworkId=l.FrameworkId WHERE w.Status='published' AND f.Code='HSK-3.0' AND l.Code=@level AND (@q='' OR CHARINDEX(@q,w.Simplified)>0 OR CHARINDEX(@q,w.Pinyin)>0 OR CHARINDEX(@q,COALESCE(w.MeaningVi,w.MeaningEn,''))>0)";
   var values=new (string,object?)[]{("level",level),("q",query?.Trim()??""),("skip",(page-1)*pageSize),("take",pageSize)};
-  var total=await Database.Query(c,"SELECT COUNT(*) Total"+source,values);
-  var items=await Database.Query(c,"SELECT w.WordId Id,w.Simplified,w.Pinyin,w.HanViet,w.MeaningVi,w.MeaningEn"+source+" ORDER BY COALESCE(wl.SourceOrder,2147483647),w.WordId OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY",values);
-  return new{items,total=total[0]["total"],page,pageSize};
+  var items=await Database.Query(c,"SELECT w.WordId Id,w.Simplified,w.Pinyin,w.HanViet,w.MeaningVi,w.MeaningEn,COUNT(*) OVER() Total"+source+" ORDER BY COALESCE(wl.SourceOrder,2147483647),w.WordId OFFSET @skip ROWS FETCH NEXT @take ROWS ONLY",values);
+  var total=items.Count>0?Convert.ToInt32(items[0]["total"]):page==1?0:Convert.ToInt32((await Database.Query(c,"SELECT COUNT(*) Total"+source,values))[0]["total"]);
+  foreach(var item in items)item.Remove("total");
+  return new{items,total,page,pageSize};
  }
 }

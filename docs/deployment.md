@@ -28,7 +28,7 @@ Thứ tự bắt buộc: **database → API → frontend**. Frontend cần đị
 
 | Tên | Giá trị |
 | --- | --- |
-| `ConnectionStrings__Database` | `Server=tcp:<server>.database.windows.net,1433;Database=XUEYAN_Development;User ID=xueyan_api_app;Password=<mật-khẩu>;Encrypt=true;TrustServerCertificate=false;Pooling=false` (**bắt buộc** `Pooling=false`, API sẽ từ chối kết nối nếu thiếu) |
+| `ConnectionStrings__Database` | `Server=tcp:<server>.database.windows.net,1433;Database=XUEYAN_Development;User ID=xueyan_api_app;Password=<mật-khẩu>;Encrypt=true;TrustServerCertificate=false;Pooling=true` (`Database.cs` tự động kích hoạt hai connection pool độc lập cho system và actor kèm `REVERT` an toàn) |
 | `Jwt__SigningKey` | chuỗi ngẫu nhiên dài ≥ 64 ký tự (tạo mới, không dùng lại khóa local) |
 | `Jwt__Issuer`, `Jwt__Audience` | ví dụ `xueyan-api`, `xueyan-web` |
 | `Google__ClientId` | Client ID của Google OAuth |

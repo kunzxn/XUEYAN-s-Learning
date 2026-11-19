@@ -32,7 +32,7 @@ if ($apiPassword -match '[;''"{}=]') { throw 'The password contains characters t
 $settings = New-Object System.Collections.Generic.List[object]
 function Add-Setting($name, $value) { $settings.Add([ordered]@{ name = $name; value = [string]$value; slotSetting = $false }) }
 
-Add-Setting 'ConnectionStrings__Database' "Server=tcp:$SqlServer,1433;Database=$Database;User ID=$ApiUser;Password=$apiPassword;Encrypt=true;TrustServerCertificate=false;Pooling=false"
+Add-Setting 'ConnectionStrings__Database' "Server=tcp:$SqlServer,1433;Database=$Database;User ID=$ApiUser;Password=$apiPassword;Encrypt=true;TrustServerCertificate=false;Pooling=true"
 if (-not $KeepJwtKey) {
     $jwtBytes = New-Object byte[] 64
     [Security.Cryptography.RandomNumberGenerator]::Create().GetBytes($jwtBytes)

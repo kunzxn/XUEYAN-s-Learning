@@ -52,7 +52,8 @@ public sealed class AuthRepository(Database db):IAuthRepository
        """,("id",userId),("email",email),("name",name),("sub",sub));create.Transaction=tx;await create.ExecuteNonQueryAsync();
      }
     }tx.Commit();
-   }catch{tx.Rollback();throw;}
+   }catch(Microsoft.Data.SqlClient.SqlException e)when(e.Number==51040){tx.Rollback();throw new ApiError(409,e.Message);}
+   catch{tx.Rollback();throw;}
   }
   return userId;
     }
@@ -69,8 +70,8 @@ public sealed class AuthRepository(Database db):IAuthRepository
     public Task<SessionRecord?> FindSessionById(Guid id)=>Find("s.SessionId=@value",id);
     private async Task<SessionRecord?> Find(string predicate,object value) {
         await using var c=await db.Open();
-        var rows=await Database.Query(c,"SELECT s.SessionId,s.TokenHash,s.ExpiresAt,u.UserId,u.RoleCode,p.DisplayName FROM auth.Sessions s JOIN auth.Users u ON u.UserId=s.UserId JOIN learning.Profiles p ON p.UserId=u.UserId WHERE "+predicate+" AND s.ExpiresAt>SYSUTCDATETIME() AND s.RevokedAt IS NULL AND u.Status='active'",("value",value));
-        if(rows.Count!=1)return null;var r=rows[0];return new((Guid)r["sessionId"]!,new((Guid)r["userId"]!,(string)r["roleCode"]!,(string)r["displayName"]!,(byte[])r["tokenHash"]!),(DateTime)r["expiresAt"]!);
+        var rows=await Database.Query(c,"SELECT s.SessionId,s.TokenHash,s.ExpiresAt,u.UserId,u.RoleCode,p.DisplayName,v.ShowPinyin,v.TargetLevelCode,a.Version AvatarVersion FROM auth.Sessions s JOIN auth.Users u ON u.UserId=s.UserId JOIN learning.Profiles p ON p.UserId=u.UserId JOIN learning.Preferences v ON v.UserId=u.UserId LEFT JOIN learning.AvatarImages a ON a.UserId=u.UserId WHERE "+predicate+" AND s.ExpiresAt>SYSUTCDATETIME() AND s.RevokedAt IS NULL AND u.Status='active'",("value",value));
+        if(rows.Count!=1)return null;var r=rows[0];return new((Guid)r["sessionId"]!,new((Guid)r["userId"]!,(string)r["roleCode"]!,(string)r["displayName"]!,(byte[])r["tokenHash"]!,r["avatarVersion"] is byte[] av?Convert.ToBase64String(av):null,(bool)r["showPinyin"]!,(string?)r["targetLevelCode"]),(DateTime)r["expiresAt"]!);
     }
     public async Task Revoke(byte[] hash){await using var c=await db.Open();await Database.Execute(c,"UPDATE auth.Sessions SET RevokedAt=SYSUTCDATETIME() WHERE TokenHash=@hash",("hash",hash));}
 }

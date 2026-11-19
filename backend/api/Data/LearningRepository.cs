@@ -23,16 +23,23 @@ public sealed partial class LearningRepository(Database db,ISpacedRepetitionSche
  private async Task SaveOnce(Actor actor,ReviewRequest review){
   await using var connection=await db.Open();using var transaction=connection.BeginTransaction(System.Data.IsolationLevel.Serializable);
   try {
-   using(var authorization=Database.Command(connection,"SELECT COUNT(*) FROM auth.Sessions s JOIN auth.Users u ON u.UserId=s.UserId WHERE s.TokenHash=@hash AND s.UserId=@user AND s.RevokedAt IS NULL AND s.ExpiresAt>SYSUTCDATETIME() AND u.Status='active'",("hash",actor.Hash),("user",actor.UserId))){authorization.Transaction=transaction;if(Convert.ToInt32(await authorization.ExecuteScalarAsync())!=1)throw new ApiError(401,"Phiên đăng nhập không còn hợp lệ.");}
-   using(var duplicate=Database.Command(connection,"SELECT WordId,Rating FROM learning.ReviewEvents WITH(UPDLOCK,HOLDLOCK) WHERE UserId=@user AND ClientEventId=@event",("user",actor.UserId),("event",review.EventId))){
-    duplicate.Transaction=transaction;using var reader=await duplicate.ExecuteReaderAsync();
-    if(await reader.ReadAsync()){
-     if(reader.GetInt64(0)!=review.WordId||reader.GetByte(1)!=review.Rating)throw new ApiError(409,"Lượt học này đã được lưu với kết quả khác.");
+   string? previousState=null,previousVersion=null;
+   using(var check=Database.Command(connection,"""
+    SELECT
+     (SELECT COUNT(*) FROM auth.Sessions s JOIN auth.Users u ON u.UserId=s.UserId WHERE s.TokenHash=@hash AND s.UserId=@user AND s.RevokedAt IS NULL AND s.ExpiresAt>SYSUTCDATETIME() AND u.Status='active') AS ValidSession,
+     (SELECT TOP(1) WordId FROM learning.ReviewEvents WITH(UPDLOCK,HOLDLOCK) WHERE UserId=@user AND ClientEventId=@event) AS DupWordId,
+     (SELECT TOP(1) Rating FROM learning.ReviewEvents WITH(UPDLOCK,HOLDLOCK) WHERE UserId=@user AND ClientEventId=@event) AS DupRating,
+     (SELECT TOP(1) SchedulerState FROM learning.WordProgress WITH(UPDLOCK,HOLDLOCK) WHERE UserId=@user AND WordId=@word) AS PrevState,
+     (SELECT TOP(1) SchedulerVersion FROM learning.WordProgress WITH(UPDLOCK,HOLDLOCK) WHERE UserId=@user AND WordId=@word) AS PrevVersion;
+    """,("hash",actor.Hash),("user",actor.UserId),("event",review.EventId),("word",review.WordId))){
+    check.Transaction=transaction;using var reader=await check.ExecuteReaderAsync();
+    if(!await reader.ReadAsync()||reader.GetInt32(0)!=1)throw new ApiError(401,"Phiên đăng nhập không còn hợp lệ.");
+    if(!reader.IsDBNull(1)){
+     if(reader.GetInt64(1)!=review.WordId||reader.GetByte(2)!=review.Rating)throw new ApiError(409,"Lượt học này đã được lưu với kết quả khác.");
      await reader.DisposeAsync();transaction.Commit();return;
     }
+    if(!reader.IsDBNull(3)){previousState=reader.GetString(3);previousVersion=reader.GetString(4);}
    }
-   string? previousState=null,previousVersion=null;
-   using(var previous=Database.Command(connection,"SELECT SchedulerState,SchedulerVersion FROM learning.WordProgress WITH(UPDLOCK,HOLDLOCK) WHERE UserId=@user AND WordId=@word",("user",actor.UserId),("word",review.WordId))){previous.Transaction=transaction;using var reader=await previous.ExecuteReaderAsync();if(await reader.ReadAsync()){previousState=reader.GetString(0);previousVersion=reader.GetString(1);}}
    var now=clock.GetUtcNow().UtcDateTime;
    var schedule=scheduler.Next(review.Rating,previousState,previousVersion,now);
    using var command=Database.Command(connection,"""
